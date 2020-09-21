@@ -1,0 +1,94 @@
+﻿v1.4.0
+
+  * Made picturebox a little bigger, and moved outside of bounds of main window for better ergonomics
+  * Added image-preview checkbox to not have to alt-click on an image to trigger display
+  * Added some extra checking for file path operations
+  * Fixed some thread-safety issues
+  * Added "Launch External" to context menu to launch a file with it's associated external program
+  * Switched search method, 2x faster, especially on extra large folders (2000+ files)
+  * Ordered files in list
+  * Prevent from searching for a reference of oneself (foo.css inside foo.css)
+  * Made form resizable
+  * Added button to cancel a search in progress in case of long running instance
+  * Added pseudo-dropdown to pattern textboxes
+	* Items are auto-added after a sucessful search
+	* Items can be deleted via a right-click on the textbox
+  * Added update check in help menu
+  * Added auto-update check to option panel
+  * Added exclusion list to option panel
+    * Can be file names or folders (backslash).
+	* Anything matched will be ignored
+  * Added a treeview pane to see in which files ressources are used in
+    * Has some context menus, but some things like multi-select do not work in treeviews, thus the Flat View pane that remains
+  * Fixed Visual Studio from crashing when double-clicking a file
+    * This was happeneing when "track active item in solution explorer" was already checked in VS options
+  * Switched .csproj back to VS2013 temporarily to fix some issues on 2013. Has no impact on 2015
+
+v1.3.2
+
+  * Fixed problems with certain case insensitive searches
+  * Made picturebox bigger
+
+v1.3.1
+
+  * Added SVG, CSS, JS to default item list
+  * Added scss to default files list
+  * Made search culture-invariant / case-insensitive
+  * Added Visual Studio: Enterprise & Community to supported platform list
+
+v1.3
+
+  * Alt-Click in list will show image thumbnail if it's an image
+  * Double-Click on list will open & set focus to item in solution explorer (VSIX only)
+  * Shell integration (EXE only)
+    - Add/Remove from Help menu, or register/unregister from command line with -s t
+  * More file stats
+
+v1.2
+
+  * Changed UI a bit
+  * Context menus
+    - Select All
+    - Select Other
+    - Export Selection
+    - Delete Selection
+    - Explore Here
+    - Verify Existence (VSIX only: launches automated VS file search)
+      - In Solution
+      - In Project
+  * Command line parameters (EXE only)
+    -p path
+    -r report type
+    -f find regexp
+    -i inside regexp
+  * Help Menu
+    - Manual
+    - Changelog
+    - Website
+    - About
+    - License
+  * More file stats
+  * More error handling
+
+v1.1
+
+  * Disable delete button if no are files selected
+  * Enable searching in website projects (VSIX)
+  * More error messages on invalid and/or unsuccessful operations
+
+v1.0 (VSIX)
+
+  * .EXE and VSIX versions now share same code-base
+  * various modifications to accommodate different behavior in Visual Studio Mode & Standalone Mode
+  * Enable searching in application projects
+
+v1.0 (EXE)
+
+  * Toggle between used/unused lists
+  * Export used/unused lists
+  * Delete file(s) with confirmation prompt
+  * Save search criteria after search
+  * Show errors on invalid regexps
+  * Restore search criteria on application launch
+  * Double click used/unused list opens containing directory
+  * Allow passing file/directory path via command line

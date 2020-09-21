@@ -1,0 +1,1010 @@
+﻿<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+	<meta charset="utf-8"><meta name="theme-color" content="#000"/>
+	<meta name="viewport" content="width=device-width" />
+	<!--[if lt IE 9]> <script src="../js/css3-mediaqueries.js"></script> <![endif]-->
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="icon" type="image/png" href="https://www.topciment.com/favicon.png" />
+	<meta name="Language" content="DE" />
+
+	<link
+		href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<title>Mikrozement Topciment, Hersteller von Mikrozement</title>
+	<meta name="description"
+		content="Spaniens Top-Verkäufer von Spachtelmassen. Spezialisiert an der Herstellung und Entwicklung von Mikrozement." />
+
+	<link rel="canonical" href="https://www.topciment.com/de/" />
+	<link rel="alternate" href="https://www.topciment.com/de/" hreflang="de-DE" />
+	<link rel="alternate" href="https://www.topciment.com/" hreflang="es-ES" />
+	<link rel="alternate" href="https://www.topciment.com/en/" hreflang="en-GB" />
+	<link rel="alternate" href="https://www.topciment.com/fr/" hreflang="fr-FR" />
+	<link rel="alternate" href="https://www.topciment.com/it/" hreflang="it-IT" />
+	<link rel="alternate" href="https://www.topciment.com/nl/" hreflang="nl-NL" />
+	<link rel="alternate" href="https://www.topciment.com/gr/" hreflang="el-GR" />
+	<link rel="alternate" href="https://www.topciment.ru/" hreflang="ru-RU" />
+	<link rel="alternate" href="https://www.topciment.us/" hreflang="en-US" />
+	<link rel="alternate" href="https://www.topciment.us/es/" hreflang="es-US" />
+	<link rel="alternate" href="https://www.topciment.cn/" hreflang="zh-CN" />
+
+	<link rel="stylesheet" type="text/css" href="../js/jquery.fullPage.css" />
+
+	<!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="../js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#fullpage').fullpage({
+
+				anchors: ['microcemento', 'colores', 'sistemas', 'galeria', 'garantia', 'profesionales',
+					'distribuidores', 'nosotros', 'noticias', 'contacto'
+				]
+
+			});
+		});
+
+		var $isAnimatedSecond = $('.second .is-animated'),
+			$isAnimatedSecondSingle = $('.second .is-animated__single');
+
+		/* this code is part of the onLeave callback */
+		if (index == 1 && nextIndex == 2) {
+			$isAnimatedSecond.addClass('animated fadeInUpBig');
+			$isAnimatedSecond.eq(0).css('animation-delay', '.3s');
+			$isAnimatedSecond.eq(1).css('animation-delay', '.6s');
+			$isAnimatedSecond.eq(2).css('animation-delay', '.9s');
+			$isAnimatedSecondSingle.addClass('animated rollIn').css('animation-delay', '1.7s');
+		}
+
+		function mostrar() {
+			document.getElementById('oculto').style.display = 'block';
+			document.getElementById('visible').style.display = 'none';
+		}
+
+		function ocultar() {
+			document.getElementById('oculto').style.display = 'none';
+			document.getElementById('visible').style.display = 'block';
+		}
+
+		function mostrarmovil() {
+			document.getElementById('ocultomovil').style.display = 'block';
+			document.getElementById('visiblemovil').style.display = 'none';
+		}
+
+		function ocultarmovil() {
+			document.getElementById('ocultomovil').style.display = 'none';
+			document.getElementById('visiblemovil').style.display = 'block';
+		}
+
+		function mostrarSubmenu() {
+
+			if (document.getElementById) {
+				var aux = document.getElementById('submenumovil').style;
+				aux.display = aux.display ? "" : "block";
+			}
+
+		}
+
+		$(document).ready(function () {
+			$altoPag = $(window).height();
+			document.getElementById('ocultomovil').style.height = 300;
+		});
+	</script>
+	<style>
+		/* Reset CSS
+		 * --------------------------------------- */
+		body,
+		div,
+		dl,
+		dt,
+		dd,
+		ul,
+		ol,
+		li,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		pre,
+		form,
+		fieldset,
+		input,
+		textarea,
+		p,
+		blockquote,
+		th,
+		td {
+			padding: 0;
+			margin: 0;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		table {
+			border-spacing: 0;
+		}
+
+		fieldset,
+		img {
+			border: 0;
+		}
+
+		address,
+		caption,
+		cite,
+		code,
+		dfn,
+		em,
+		strong,
+		th,
+		var {
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		strong {
+			font-weight: bold;
+		}
+
+		ol,
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		caption,
+		th {
+			text-align: left;
+
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: normal;
+			font-size: 100%;
+			margin: 0;
+			padding: 0;
+			color: #444;
+		}
+
+		q:before,
+		q:after {
+			content: '';
+		}
+
+		abbr,
+		acronym {
+			border: 0;
+		}
+
+		/* Defining each section background and styles
+	* --------------------------------------- */
+		#section0 {
+			background-image: url(../imagenes/casa-isabel-flat.jpg);
+			background-size: cover;
+		}
+
+		#section1 {
+			background-image: url(../imagenes/colores-topciment.jpg);
+			background-size: cover;
+		}
+
+		#section2 {
+			background-image: url(../imagenes/muestras-sistemas.jpg);
+			background-size: cover;
+		}
+
+		#section3 {
+			background-image: url(../imagenes/topciment-galeria.jpg);
+			background-size: cover;
+		}
+
+		#section4 {
+			background-image: url(../imagenes/imagen-top-ciment-5.jpg);
+			background-size: cover;
+		}
+
+		#section5 {
+			background-image: url(../imagenes/topciment-profesionales.jpg);
+			background-size: cover;
+		}
+
+		#section6 {
+			background-image: url(../imagenes/topciment-microcemento-distribuidores.jpg);
+			background-size: cover;
+		}
+
+		#section7 {
+			background-image: url(../imagenes/imagen-top-ciment-1.jpg);
+			background-size: cover;
+		}
+
+		#sectionNoticias {
+			background-image: url(../images/topciment_news_opt.jpg);
+			/*background-size:cover;*/
+			background-size: 80%;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		@media screen and (max-width:767px) {
+			#sectionNoticias {
+				background-size: 100%;
+			}
+		}
+
+		#section8 {
+			background-image: url(../imagenes/topciment-microcemento-contacto2.jpg);
+			background-size: cover;
+		}
+
+		#section9 {
+			background-color: #000;
+		}
+
+
+
+		.myContent {
+			height: 300px;
+		}
+	</style>
+
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-7390116-30', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+
+		fbq('init', '358666781190455');
+		fbq('track', "PageView");
+	</script> <noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=358666781190455&ev=PageView&noscript=1" /></noscript>
+
+	<script>
+		function MM_validateForm() { //v4.0
+			if (document.forms["contacto"].elements["aviso_legal"].checked) {
+				getherrors = '';
+			} else {
+				getherrors = '- Debe aceptar la PolÃ­tica de Privacidad';
+			}
+			var i, p, q, nm, test, num, min, max, errors = '',
+				args = MM_validateForm.arguments;
+			for (i = 0; i < (args.length - 2); i += 3) {
+				test = args[i + 2];
+				val = document.getElementById(args[i]);
+				if (val) {
+					nm = val.name;
+					if ((val = val.value) != "") {
+						if (test.indexOf('isEmail') != -1) {
+							p = val.indexOf('@');
+							if (p < 1 || p == (val.length - 1)) errors += '- ' + nm +
+								' debe ser una direcciÃ³n de email correcta.\n';
+						} else if (test != 'R') {
+							num = parseFloat(val);
+							if (isNaN(val)) errors += '- ' + nm + ' must contain a number.\n';
+							if (test.indexOf('inRange') != -1) {
+								p = test.indexOf(':');
+								min = test.substring(8, p);
+								max = test.substring(p + 1);
+								if (num < min || max < num) errors += '- ' + nm + ' must contain a number between ' + min +
+									' and ' + max + '.\n';
+							}
+						}
+					} else if (test.charAt(0) == 'R') errors += '- ' + nm + ' es necesario.\n';
+				}
+			}
+			if ((errors) || (getherrors))
+				alert("Han ocurrido los siguientes errores:\n" + errors + getherrors);
+			document.MM_returnValue = ((errors == '') && (getherrors == ''));
+		}
+	</script>
+</head>
+
+<body>
+	<div id="header">
+		<div class="menuBar" style="position:fixed; transform: translate3d(0px, 0px, 1px);">
+			<div class="menuBarContent">
+
+				<a href="index.html"><img class="imgLogo" src="../imagenes/logo-top-ciment.png" alt="Topciment"></a>
+
+
+				<div class="menu idiomas">
+					<ul>
+						<li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+						<li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de"
+								class="activolang">De</a></li>
+						<li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it">It</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+					</ul>
+				</div>
+
+				<div class="menu botones">
+					<ul>
+						<li><a href="mikrozement-informationen.html">Mikrozement</a></li>
+						<li><a href="mikrozement-farben.html">Farben</a></li>
+						<li><a href="systeme.html">Systeme</a></li>
+						<li><a href="galerie.html">Galerie</a></li>
+						<li><a href="garantie.html">Garantie</a></li>
+						<li><a href="die-ecke-vom-fachmann.html">Profis</a></li>
+						<li><a href="vertriebspartner.html">Vertriebspartner</a></li>
+						<li><a href="uber-uns.html">Über Uns</a></li>
+						<li><a href="nachrichten.html">Nachrichten</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<!-- MENU ESTADO INICIAL MOVIL-->
+
+	<div id="visiblemovil">
+		<div style="opacity:1; padding-top:0px; z-index:1000;"><a href="#menu"
+				style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="mostrarmovil()"><img
+					src="../imagenes/icono-menu-abrir-white.png" width="26" height="20" alt="menu" /></a></div>
+	</div>
+
+	<!-- MENU DESPLEGADO MOVIL-->
+
+	<div id="ocultomovil">
+		<div id="ocultomovilinterno">
+			<div id="menuidiomasmovil">
+				<ul>
+					<li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+					<li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a></li>
+					<li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
+					<li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de"
+							class="activolang">De</a></li>
+					<li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it">It</a></li>
+					<li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
+					<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a></li>
+					<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+				</ul>
+			</div>
+			<div id="menuocultomovil">
+				<ul>
+					<li><a href="mikrozement-informationen.html" onclick="ocultarmovil()">Mikrozement</a></li>
+					<li><a href="mikrozement-farben.html" onclick="ocultarmovil()">Farben</a></li>
+					<li><a href="systeme.html" onclick="ocultarmovil()">Sistems</a></li>
+					<li><a href="galerie.html" onclick="ocultarmovil()">Galerie</a></li>
+					<li><a href="garantie.html" onclick="ocultarmovil()">Garantie</a></li>
+					<li><a href="die-ecke-vom-fachmann.html" onclick="ocultarmovil()">Profis</a></li>
+					<li><a href="vertriebspartner.html" onclick="ocultarmovil()">Vertriebspartner</a></li>
+					<li><a href="uber-uns.html" onclick="ocultarmovil()">Über Uns</a></li>
+					<li><a href="nachrichten.html" onclick="ocultarmovil()">Nachrichten</a></li>
+					<li><a href="kontakt.html" onclick="ocultarmovil()">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="cerrarEquis"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100"
+				onclick="ocultarmovil()"><img src="../imagenes/equis-cerrar.png" width="28" height="28"
+					alt="Cerrar" /></a></div>
+	</div>
+
+
+
+
+	<div id="fullpage">
+		<div class="section fullscreen background parallax" id="section0">
+			<div class="content-a" onClick="location.href='mikrozement-informationen.html'" style="cursor:pointer;">
+				<div class="contenedorTexto">
+					<div id="texto-microcemento" class="content-b textoArribaDerecha texto40pixeles"
+						style="text-align:right;" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "1"}'>
+						<h1 style="text-decoration:none; color:#000;font-weight: 300; font-size=1.1em!important">Es ist
+							nicht nur <span class="negrita">Mikrozement</span><br>
+							Es ist <span class="negrita">Topciment</span></h1><br>
+						<h2 style="text-decoration:none; color:#000;font-weight: 300;font-size=1.1em!important">
+							Kontinuierliche Beschichtung von hoher Qualität und ist leicht zu pflegen</h2>
+					</div>
+					<div id="texto1"><span class="texto40pixeles">Ausgezeichnete Verarbeitbarkeit durch geschultes
+							Fachpersonal</span><br>
+						<span class="texto40pixeles">Vielfalt in Farbe und Aussehen</span></div>
+					<div id="texto2"><span class="texto40pixeles">Hohe Haftung zum Untergrund</span><br>
+						<span class="texto40pixeles">Rasche Verarbeitung und Inbetriebnahme</span></div>
+				</div>
+			</div>
+		</div>
+		<div class="section fullscreen background parallax" id="section1">
+			<div class="content-a" onClick="location.href='mikrozement-farben.html'" style="cursor:pointer;">
+				<div class="contenedorTexto">
+					<div id="texto-colores" class="content-b textoAbajoDerecha" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "1"}' style="background-color:rgba(255,255,255,.4); padding:10px 20px 20px 20px;">
+						<span class="negrita">Farbkarte mit Graufarben</span><br>
+						Erdfarben, Lebende und Neutrale Farben sowie
+						dekorative Farben für metallic-Lackierungen und Rost Effekt.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section fullscreen background parallax" id="section2">
+			<div class="content-a" onClick="location.href='systeme.html'" style="cursor:pointer;">
+				<div class="contenedorTexto">
+					<div id="texto-sistemas" class="content-b textoCentroBajo" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "1"}'>
+						<span class="negrita textoNegro">Ein System... eine Lösung</span><br>
+						<span class="textoNegro">Das beste System garantiert den Erfolg bei Ihrer Arbeit. Mikrozement
+							für jede Oberfläche.
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section fullscreen background parallax" id="section3">
+			<div class="content-a" onClick="location.href='galerie.html'" style="cursor:pointer;">
+				<div class="contenedorTexto">
+					<div id="texto-galeria" class="content-b textoArribaDerecha" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "1"}'>
+						<span class="negrita">Finde die Inspiration</span><br>
+						Galerie von Bilder nach Kategorien geordnet. Werke von unseren Fachleuten.
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section fullscreen background parallax" id="section4">
+			<div class="content-a" onClick="location.href='garantie.html'" style="cursor:pointer;">
+				<div class="contenedorTexto">
+					<div id="texto-garantia" class="content-b textoArribaDerecha" style="text-align:left"
+						data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "1"}'>
+						<span class="negrita">Wir stellen Mikrozement her und garantieren Qualität</span></br>
+						<div style="text-align:left">Die Qualität unserer Produkte ist das Ergebnis , kontinuierliche r
+							Feedback s zwischen unseren Kunden und unseren Technikern. Produkte sind von unabhängigen
+							Instituten zertifiziert worden.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section fullscreen background parallax" id="section5">
+			<div class="content-a" onClick="location.href='die-ecke-vom-fachmann.html'" style="cursor:pointer;">
+				<div class="contenedorTexto">
+					<div id="texto-profesionales" class="content-b textoArribaDerecha" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "1"}'>
+						<span class="negrita textoBlanco">Unterstützend an Profis</span></br>
+						<span class="textoBlanco">Wir geben unsere Erfahrung an Fachleute weiter. Beste Ausbildung und
+							permanent technische Beratung zeichnen uns aus.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section fullscreen background parallax" id="section6">
+			<div class="content-a" onClick="location.href='vertriebspartner.html'" style="cursor:pointer;">
+				<div class="contenedorTexto">
+					<div id="texto-distribuidores" class="content-b textoCentroBajo" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "1"}'>
+						<span class="negrita textoNegro">Möchten Sie Vertriebspartner werden?</span></br>
+						<span class="textoNegro">Topciment verfügt über ein Netz von Vertriebspartnern auf der ganzen
+							Welt.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section fullscreen background parallax" id="section7">
+			<div class="content-a" onClick="location.href='uber-uns.html'" style="cursor:pointer;">
+				<div class="contenedorTexto">
+					<div id="texto-nosotros" class="content-b textoArribaDerecha" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "1"}'>
+						<span class="negrita">Über uns</span></br>
+						Hersteller von kontinuierlicher dekorativer Beschichtung, Marktführer im Bereich Fugenlos.
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="section fullscreen background parallax" id="sectionNoticias">
+			<div class="content-a" onClick="location.href='nachrichten.html'" style="cursor:pointer;">
+
+				<div class="contenedorTexto" style="width:100%">
+					<div id="texto-noticiashome" class="content-b" data-animate-scroll='{"x": "100",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "1"}'>
+						<span class="negrita">Nachrichten</span><br>
+						Letzte Nachrichten
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="section fullscreen background parallax" id="section8">
+			<div class="content-a">
+				<div class="contenedorTexto">
+					<div id="texto-contacto" class="content-b textoArribaDerecha">
+						<span class="negrita">Kontaktieren Sie uns</span></br>
+						<!-- Note :
+   - You can modify the font style and form style to suit your website.
+   - Code lines with comments “Do not remove this code”  are required for the form to work properly, make sure that you do not remove these lines of code.
+   - The Mandatory check script can modified as to suit your business needs.
+   - It is important that you test the modified form before going live.
+   - Do not remove captcha and other form elements that are necessary for the form to work.  -->
+						<!-- Note :
+   - You can modify the font style and form style to suit your website.
+   - Code lines with comments ���Do not remove this code���  are required for the form to work properly, make sure that you do not remove these lines of code.
+   - The Mandatory check script can modified as to suit your business needs.
+   - It is important that you test the modified form before going live.
+   - Do not remove captcha and other form elements that are necessary for the form to work.  -->
+						<!-- Note :
+   - You can modify the font style and form style to suit your website.
+   - Code lines with comments ���Do not remove this code���  are required for the form to work properly, make sure that you do not remove these lines of code.
+   - The Mandatory check script can modified as to suit your business needs.
+   - It is important that you test the modified form before going live.
+   - Do not remove captcha and other form elements that are necessary for the form to work.  -->
+						<div id='crmWebToEntityForm' style='width:404px;margin:auto;'>
+							<META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
+							<form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2193829000000221034
+								method='POST'
+								onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2193829000000221034()'
+								accept-charset='UTF-8'>
+								<input type='text' style='display:none;' name='xnQsjsdp'
+									value='0bc3358bdd3baefdb791a8c5b584c69212d1c4bf9f87c329186bb76ccb66d5cf'></input>
+								<input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+								<input type='text' style='display:none;' name='xmIwtLD'
+									value='b9c761651d784b3338501c899dd43e573fd1c9052846fed7b28e65811a7af2d8'></input>
+								<input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
+								<input type='text' style='display:none;' name='returnURL'
+									value='https://www.topciment.com/de/gracias.html'> </input><br></br>
+								<!-- Do not remove this code. -->
+								<input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
+								<input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
+								<!-- Do not remove this code. -->
+								<style>
+									#crmWebToEntityForm tr,
+									#crmWebToEntityForm td {
+										padding: 6px;
+										border-spacing: 0px;
+										border-width: 0px;
+									}
+								</style>
+								<table
+									style='width:404px;background-color:#ffffff;background-color:&#x23;f7f7f7;color:black'>
+									<tr>
+										<td colspan='2' align='left'
+											style='color:black;font-family:Arial;font-size:16px;word-break: break-word;'>
+											<strong>Eine Frage&#x3f;</strong></td>
+									</tr> <br></br>
+									<tr>
+										<td style='width:260px;'><span
+												style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Name<span
+													style='color:red;'>*</span></span><br><input type='text'
+												maxlength='40' style='width:100%;' name='First Name'></input></td>
+										<td style='width: 140px;'></td>
+									</tr>
+									<tr>
+										<td style='width:260px;'><span
+												style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Nachname<span
+													style='color:red;'>*</span></span><br><input type='text'
+												maxlength='80' style='width:100%;' name='Last Name'></input></td>
+										<td style='width: 140px;'></td>
+									</tr>
+									<tr>
+										<td style='width:260px;'><span
+												style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Email<span
+													style='color:red;'>*</span></span><br><input type='text'
+												maxlength='100' style='width:100%;' name='Email'></input></td>
+										<td style='width: 140px;'></td>
+									</tr>
+									<tr>
+										<td style='width:260px;'><span
+												style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Telefonnummer<span
+													style='color:red;'>*</span></span><br><input type='text'
+												maxlength='30' style='width:100%;' name='Phone'></input></td>
+										<td style='width: 140px;'></td>
+									</tr>
+									<tr>
+										<td style='width:260px;'><span
+												style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Land
+												/ Region<span style='color:red;'>*</span></span><br><input type='text'
+												maxlength='100' style='width:100%;' name='City'></input></td>
+										<td style='width: 140px;'></td>
+									</tr>
+									<tr>
+										<td style='width:260px;'><span
+												style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Meldung<span
+													style='color:red;'>*</span></span><br><textarea maxlength='2000'
+												style='width:100%;' name='LEADCF9'
+												style='width:100%;box-sizing:border-box;'>&nbsp;</textarea></td>
+										<td style='width: 140px;'></td>
+									</tr>
+									<tr>
+										<td style='width:260px;'><span
+												style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Ich
+												bin damit einverstanden, kommerzielle Kommunik<span
+													style='color:red;'>*</span></span><br><input type='checkbox'
+												name='LEADCF109'></input></td>
+										<td style='width: 140px;'></td>
+									</tr>
+									<tr>
+										<td style='width:260px;'><span
+												style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Ich
+												habe die Datenschutzerklärung gelesen und akze<span
+													style='color:red;'>*</span></span><br><input type='checkbox'
+												name='LEADCF102'></input></td>
+										<td style='width: 140px;word-break: break-word; vertical-align: bottom;'><a
+												href='https&#x3a;&#x2f;&#x2f;www.topciment.com&#x2f;de&#x2f;nutzungsbedingungen-und-datenschutzerklarung.html'
+												target='_blank'>Datenschutzerkl&auml;rung</a></td>
+									<tr>
+										<td style='width:260px;'><span
+												style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Genehmigung
+												der Datenübermittlung an Dritte<span
+													style='color:red;'>*</span></span><br><input type='checkbox'
+												name='LEADCF106'></input></td>
+										<td style='width: 140px;'></td>
+									</tr>
+									<tr>
+										<td style='width:260px;box-sizing:border-box;'><span
+												style='nowrap:nowrap;text-align:top;font-size:14px;font-family:Arial;width:100%;box-sizing:border-box;line-height:22px;'>Introduzca
+												el captcha</span><br>
+											<input type='text' style='width:100%;box-sizing:border-box;' maxlength='80'
+												name='enterdigest' /></td>
+										<td style='min-width:140px;'></td>
+									</tr>
+									<tr>
+										<!-- Do not remove this code. -->
+										<td style='width:260px;box-sizing:border-box;'><img id='imgid'
+												src='https://crm.zoho.com/crm/CaptchaServlet?formId=b9c761651d784b3338501c899dd43e573fd1c9052846fed7b28e65811a7af2d8&grpid=0bc3358bdd3baefdb791a8c5b584c69212d1c4bf9f87c329186bb76ccb66d5cf'>
+											<a href='javascript:;' onclick='reloadImg()'>Recargar</a></td>
+										<td style='min-width:140px;'></td>
+									</tr>
+									<tr>
+									<tr style='display:none;'>
+										<td
+											style='word-break: break-word;text-align:top;font-size:14px;font-family:Arial;width:30%'>
+											Fuente de Posible cliente</td>
+										<td style='width:40%;'>
+											<select style='width:100%;box-sizing:border-box;' name='Lead Source'>
+												<option value='-None-'>-None-</option>
+												<option value='00&#x20;Importado&#x20;A3ERP'>00 Importado A3ERP</option>
+												<option value='04&#x20;Captaci&oacute;n&#x20;nuestra'>04
+													Captaci&oacute;n nuestra</option>
+												<option value='05&#x20;Distribuidor'>05 Distribuidor</option>
+												<option value='Cambio&#x20;de&#x20;nombre'>Cambio de nombre</option>
+												<option value='Facebook'>Facebook</option>
+												<option value='Feria'>Feria</option>
+												<option value='Festool'>Festool</option>
+												<option value='Recuperado&#x20;de&#x20;Topciment'>Recuperado de
+													Topciment</option>
+												<option value='Web'>Web</option>
+											</select></td>
+										<td style='width: 140px;'></td>
+									</tr>
+									<tr>
+									<tr style='display:none;'>
+										<td
+											style='word-break: break-word;text-align:top;font-size:14px;font-family:Arial;width:30%'>
+											Empresa grupo</td>
+										<td style='width:40%;'>
+											<select style='width:100%;box-sizing:border-box;' name='LEADCF20' multiple>
+												<option selected value='Topciment'>Topciment</option>
+												<option value='Luxury&#x20;Concrete'>Luxury Concrete</option>
+												<option value='Bet&oacute;n&#x20;Cir&eacute;'>Bet&oacute;n Cir&eacute;
+												</option>
+												<option value='Marca&#x20;Blanca&#x20;TT'>Marca Blanca TT</option>
+												<option value='Generic&#x20;LX'>Generic LX</option>
+												<option value='Smartcret'>Smartcret</option>
+											</select></td>
+										<td style='width: 140px;'></td>
+									</tr>
+
+									<tr>
+										<td colspan='2' align='center'
+											style='text-align:left; padding-top:15px;font-size:14px;'>
+											<input style='margin-right: 5px;cursor: pointer;font-size:14px;color:black'
+												id='formsubmit' type='submit' value='Enviar'></input> <input
+												type='reset' name='reset'
+												style='cursor: pointer;font-size:14px;color:black'
+												value='Restablecer'></input> </td>
+									</tr>
+								</table>
+								<script>
+									var mndFileds = new Array('First Name', 'Last Name', 'Phone', 'Email', 'LEADCF9', 'LEADCF102', 'LEADCF109',
+										'LEADCF106', 'City');
+									var fldLangVal = new Array('Name', 'Nachname', 'Telefonnummer', 'Email', 'Meldung',
+										'Ich habe die Datenschutzerklärung gelesen und akze',
+										'Ich bin damit einverstanden, kommerzielle Kommunik', 'Genehmigung der Datenübermittlung an Dritte',
+										'Land / Region');
+									var name = '';
+									var email = '';
+
+									/* Do not remove this code. */
+									function reloadImg() {
+										if (document.getElementById('imgid').src.indexOf('&d') !== -1) {
+											document.getElementById('imgid').src = document.getElementById('imgid').src.substring(0, document
+												.getElementById('imgid').src.indexOf('&d')) + '&d' + new Date().getTime();
+										} else {
+											document.getElementById('imgid').src = document.getElementById('imgid').src + '&d' + new Date()
+												.getTime();
+										}
+									}
+
+									function checkMandatory2193829000000221034() {
+										for (i = 0; i < mndFileds.length; i++) {
+											var fieldObj = document.forms['WebToLeads2193829000000221034'][mndFileds[i]];
+											if (fieldObj) {
+												if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
+													if (fieldObj.type == 'file') {
+														alert('Seleccione un archivo para cargar.');
+														fieldObj.focus();
+														return false;
+													}
+													alert(fldLangVal[i] + ' no puede estar vacío.');
+													fieldObj.focus();
+													return false;
+												} else if (fieldObj.nodeName == 'SELECT') {
+													if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
+														alert(fldLangVal[i] + ' no puede ser nulo.');
+														fieldObj.focus();
+														return false;
+													}
+												} else if (fieldObj.type == 'checkbox') {
+													if (fieldObj.checked == false) {
+														alert('Please accept  ' + fldLangVal[i]);
+														fieldObj.focus();
+														return false;
+													}
+												}
+												try {
+													if (fieldObj.name == 'Last Name') {
+														name = fieldObj.value;
+													}
+												} catch (e) {}
+											}
+										}
+										trackVisitor();
+										document.getElementById('formsubmit').disabled = true;
+									}
+								</script>
+								<script type='text/javascript' id='VisitorTracking'>
+									var $zoho = $zoho || {};
+									$zoho.salesiq = $zoho.salesiq || {
+										widgetcode: 'fab8868be7c7826bd4dfc38932c5e31667aa7f784083239cd30a0cd43fc6a2dd6a3b789df620b2847c948e7c2859b7e2',
+										values: {},
+										ready: function () {
+											$zoho.salesiq.floatbutton.visible('hide');
+										}
+									};
+									var d = document;
+									s = d.createElement('script');
+									s.type = 'text/javascript';
+									s.id = 'zsiqscript';
+									s.defer = true;
+									s.src = 'https://salesiq.zoho.com/widget';
+									t = d.getElementsByTagName('script')[0];
+									t.parentNode.insertBefore(s, t);
+
+									function trackVisitor() {
+										try {
+											if ($zoho) {
+												var LDTuvidObj = document.forms['WebToLeads2193829000000221034']['LDTuvid'];
+												if (LDTuvidObj) {
+													LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid();
+												}
+												var firstnameObj = document.forms['WebToLeads2193829000000221034']['First Name'];
+												if (firstnameObj) {
+													name = firstnameObj.value + ' ' + name;
+												}
+												$zoho.salesiq.visitor.name(name);
+												var emailObj = document.forms['WebToLeads2193829000000221034']['Email'];
+												if (emailObj) {
+													email = emailObj.value;
+													$zoho.salesiq.visitor.email(email);
+												}
+											}
+										} catch (e) {}
+									}
+								</script>
+							</form>
+							<!-- Do not remove this code. -->
+							<iframe name='captchaFrame' style='display:none;'></iframe>
+						</div>
+					</div>
+
+
+
+
+
+				</div>
+
+				<div class="footer">
+					<div class="footerContent">
+
+						<a href="https://www.youtube.com/user/TopCiment" target="_blank"><span class="fa-stack"><span
+									class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-youtube fa-stack-1x"></i>
+								</span></span></a>
+						<a href="https://www.instagram.com/topciment/" target="_blank"><span class="fa-stack"><span
+									class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-instagram  fa-stack-1x"></i>
+								</span></span></a>
+						&nbsp;<a href="https://api.whatsapp.com/send?phone=34647913586&text=Hallo&source=&data="
+							target="_blank"><span class="fa-stack"><span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-whatsapp fa-stack-1x"></i>
+								</span></a>
+						&nbsp;<a href="https://www.pinterest.com/topciment/" target="_blank"><span
+								class="fa-stack"><span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-pinterest fa-stack-1x"></i>
+								</span></a>
+						&nbsp;
+						<a href="https://es-es.facebook.com/topciment.microcemento" target="_blank"><span
+								class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x icon"></i>
+								<i class="fa fa-facebook fa-stack-1x"></i>
+							</span></a>
+						&nbsp;
+						<a href="https://twitter.com/topciment" target="_blank"><span class="fa-stack"><span
+									class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-twitter fa-stack-1x"></i>
+								</span></a>
+						&nbsp;
+						<a href="https://www.linkedin.com/company/2880536/" target="_blank"><span class="fa-stack"><span
+									class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-linkedin fa-stack-1x"></i>
+								</span></a>
+
+						<p>Rosas 33, Manises 46940 Spanien - Telefon: <a href="tel:+34963925989" class="textoBlanco">+34
+								963 92 59 89</a> <a href="mailto:info@topciment.com"
+								class="negrita textoBlanco">info@topciment.com</a></p>
+						<p><a href="nutzungsbedingungen-und-datenschutzerklarung.html" rel="nofollow"
+								class="textoBlanco">Nutzungsbedingungen und Datenschutzerklärung</a> | <a
+								href="cookie-richtlinie.html" rel="nofollow" class="textoBlanco">Cookie-Richtlinie</a>
+						</p>
+
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function () {
+				altoPag = $(window).height();
+				document.getElementById('ocultomovil').style.maxHeight = altoPag;
+			});
+		</script>
+		<script type="text/javascript">
+			var $zoho = $zoho || {};
+			$zoho.salesiq = $zoho.salesiq || {
+				widgetcode: "fab8868be7c7826bd4dfc38932c5e31667aa7f784083239cd30a0cd43fc6a2dd6a3b789df620b2847c948e7c2859b7e2",
+				values: {},
+				ready: function () {}
+			};
+			var d = document;
+			s = d.createElement("script");
+			s.type = "text/javascript";
+			s.id = "zsiqscript";
+			s.defer = true;
+			s.src = "https://salesiq.zoho.com/widget";
+			t = d.getElementsByTagName("script")[0];
+			t.parentNode.insertBefore(s, t);
+			d.write("<div id='zsiqwidget'></div>");
+		</script>
+		<!--div id="barritaloca">
+<div id="textoBarritaloca">
+ Diese Website benutzt eigene und Cookies von Drittanbietern fÃ¼r den Betrieb und anonyme Nutzungsstatistiken der Bahn zu erhalten.
+Wenn Sie durchsuchen weiterhin betrachten seine Verwendung zu akzeptieren. Sie kÃ¶nnen die Einstellungen Ã¤ndern oder mehr Informationen erhalten Cookies Policy<a href="cookie-richtlinie.html" target="_blank" style="color:#fff">Cookie-Richtlinie</a>. <a href="javascript:void(0);" style="padding:4px;background:#F5B026;text-decoration:none;color:#fff;" onclick="PonerCookie();"><b>ICH STIMME</b></a>
+ </div>
+</div>
+<script>
+function getCookie(c_name){
+ var c_value = document.cookie;
+ var c_start = c_value.indexOf(" " + c_name + "=");
+ if (c_start == -1){
+  c_start = c_value.indexOf(c_name + "=");
+ }
+ if (c_start == -1){
+  c_value = null;
+ }else{
+  c_start = c_value.indexOf("=", c_start) + 1;
+  var c_end = c_value.indexOf(";", c_start);
+  if (c_end == -1){
+   c_end = c_value.length;
+  }
+  c_value = unescape(c_value.substring(c_start,c_end));
+ }
+ return c_value;
+}
+function setCookie(c_name,value,exdays){
+ var exdate=new Date();
+ exdate.setDate(exdate.getDate() + exdays);
+ var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+ document.cookie=c_name + "=" + c_value;
+}
+if(getCookie('aviso')!="1"){
+ document.getElementById("barritaloca").style.display="block";
+}
+function PonerCookie(){
+ setCookie('aviso','1',365);
+ document.getElementById("barritaloca").style.display="none";
+}
+</script-->
+		<script type='text/javascript' src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
+<script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script></body>
+
+</html>

@@ -1,0 +1,31 @@
+
+
+
+# Con especificamos cache
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 10 days"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType text/plain "access plus 1 week"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/x-icon "access plus 3 months"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType text/javascript "access plus 1 week"
+ExpiresByType application/x-icon "access plus 3 months"
+</IfModule>
+# terminadoRewriteEngine On
+RewriteBase /
+
+RewriteCond %{SERVER_PORT} 80
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+#RewriteRule (.*)index\.html$ /$1 [NS,R=301,L]
+ErrorDocument 404 /404page.html
+Redirect 301 /colores.html https://www.topciment.com/sistemas/sttandard-microcemento-bicomponente.html#colores
+Redirect 301 /sttandard.html https://www.topciment.com/sistemas/sttandard-microcemento-bicomponente.html
+Redirect 301 /efectto.html https://www.topciment.com/sistemas/sttandard-microcemento-bicomponente.html
+

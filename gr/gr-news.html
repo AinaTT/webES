@@ -1,0 +1,854 @@
+﻿<!DOCTYPE html>
+<html lang="el-GR">
+
+<head>
+    <meta charset="utf-8"><meta name="theme-color" content="#000"/>
+    <meta name="viewport" content="width=device-width" />
+    <!--[if lt IE 9]> <script src="../js/css3-mediaqueries.js"></script> <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../css/gr-estilo.css">
+    <link rel="icon" type="image/png" href="https://www.topciment.com/favicon.png" />
+    <meta name="Language" content="el-GR" />
+
+    <link href='https://fonts.googleapis.com/css?family=GFS+Neohellenic:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../css/animate.css">
+
+
+    <title>Νέα TopCiment</title>
+    <meta name="description" content="Επικαιρότητα, ειδήσεις και νέα TopCiment" />
+
+
+
+    <style type="text/css">
+        div.ocultable{display: none;}
+    </style>
+
+    <script type="text/javascript">
+        function mostrar(){
+        document.getElementById('oculto').style.display = 'block';
+        document.getElementById('visible').style.display = 'none';}
+
+        function ocultar(){
+        document.getElementById('oculto').style.display = 'none';
+        document.getElementById('visible').style.display = 'block';}
+        function mostrarmovil(){
+        document.getElementById('ocultomovil').style.display = 'block';
+        document.getElementById('visiblemovil').style.display = 'none';}
+
+        function ocultarmovil(){
+        document.getElementById('ocultomovil').style.display = 'none';
+        document.getElementById('visiblemovil').style.display = 'block';
+        }
+
+        function mostrarSubmenu(){
+
+        	if (document.getElementById)
+            {
+                var aux = document.getElementById('submenumovil').style;
+                aux.display = aux.display? "":"block";
+            }
+
+        }
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-7390116-30', 'auto');
+          ga('send', 'pageview');
+    </script>
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '358666781190455');
+        fbq('track', "PageView");
+    </script> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=358666781190455&ev=PageView&noscript=1" /></noscript>
+</head>
+
+<body style="-moz-transform:none; -webkit-transform:none; -o-transform:none; -ms-transform:none; transform:none; " id="body">
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58c7cbcfe7778885"></script>
+
+
+
+    <div id="header">
+        <div class="menuBar" style="position:fixed; transform: translate3d(0px, 0px, 1px);">
+            <div class="menuBarContent">
+
+                <a href="index.html"><img class="imgLogo" src="../imagenes/microcemento-topciment.png" alt="Topciment"></a>
+
+                <div class="menu idiomas">
+                    <ul>
+                        <li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+                        <li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a></li>
+                        <li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
+                        <li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a></li>
+                        <li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it">It</a></li>
+                        <li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
+                        <li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="el-GR" class="activolang">Gr</a></li>
+                        <li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu botones">
+                    <ul>
+                        <li><a href="gr-microcement.html">Πατητή Τσιμεντοκονία</a></li>
+                        <li><a href="gr-microcement-colours.html">Χρώματα</a></li>
+                        <li><a href="gr-microcemento-system.html">Συστήματα</a></li>
+                        <li><a href="gr-gallery.html">Φωτογραφίες</a></li>
+                        <li><a href="gr-guarantee.html">Εγγύηση</a></li>
+                        <li><a href="gr-professionals.html">Επαγγελματίες</a></li>
+                        <li><a href="gr-dealers.html">Διανομείς</a></li>
+                        <li><a href="gr-about-us.html">Η  εταιρεία</a></li>
+                        <li><a href="gr-news.html" class="activo">Νέα</a></li>
+                        <li><a href="gr-contact.html">Επικοινωνία</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorMenuOculto">
+            <div id="sidebar" class="menuOculto menuMicrocementos stick">
+                <ul>
+                    <li><h1><a href="#up" style="font-size:26px">Νέα</a><</h1></li>
+                    <li><a href="#efecttoquartz"> Η Topciment παρουσιάζει το Efectto!</a></li>
+                    <li><a href="#sttandard"> Topciment αλλάζει την εικόνα της!</a></li>
+					<li><a href="#festool">H Topciment συστήνει την <br>Festool για μια τέλεια εφαρμογή</a></li><br>
+					<li><a href="#colours">Λάθη που πρέπει να αποφευχθούν<br>στον συνδυασμό των χρωμάτων</a></li><br>
+					<li><a href="#kitchen-microcement">Πατητή τσιμεντοκονία<br> στην κουζίνα</a></li><br>
+					<li><a href="#no-problems">Πατητή Τσιμεντοκονία χωρίς<br>προβλήματα</a></li><br>
+					<li><a href="#new-products">Νέα προϊόντα για την <br>καθαριότητα και την <br> συντήρηση του μικροτσιμέντου</a></li><br>
+                    <li><a href="#que-es-microcemento">Η Τοpciment ανανεώνει<br> τη συνεργασία της με τη CYPE <br>για ακόμη μια χρονιά</a></li><br>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU ESTADO INICIAL MOVIL-->
+
+    <div id="visiblemovil">
+        <div style="opacity:1; padding-top:0px; z-index:1000;"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="mostrarmovil()"><img src="../imagenes/icono-menu-abrir-white.png" width="26" height="20" alt="menu" /></a></div>
+    </div>
+
+    <!-- MENU DESPLEGADO MOVIL-->
+
+    <div id="ocultomovil">
+        <div id="ocultomovilinterno">
+
+            <div id="menuidiomasmovil">
+                <ul>
+                    <li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it">It</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="el-GR" class="activolang">Gr</a></li>
+                    <li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+                </ul>
+            </div>
+            <div id="menuocultomovil">
+                <ul>
+                    <li><a href="gr-microcement.html" onclick="ocultarmovil()">Πατητή Τσιμεντοκονία</a></li>
+                    <li><a href="gr-microcement-colours.html" onclick="ocultarmovil()">Χρώματα</a></li>
+                    <li><a href="gr-microcemento-system.html" onclick="ocultarmovil()">Συστήματα</a></li>
+                    <li><a href="gr-gallery.html" onclick="ocultarmovil()">Φωτογραφίες</a></li>
+                    <li><a href="gr-guarantee.html" onclick="ocultarmovil()">Εγγύηση</a></li>
+                    <li><a href="gr-professionals.html" onclick="ocultarmovil()">Επαγγελματίες</a></li>
+                    <li><a href="gr-dealers.html" onclick="ocultarmovil()">Διανομείς</a></li>
+                    <li><a href="gr-about-us.html" onclick="ocultarmovil()">Η  εταιρεία</a></li>
+                    <li><a href="gr-news.html" onclick="ocultarmovil()">Νέα</a></li>
+                    <li><a href="gr-contact.html" onclick="ocultarmovil()">Επικοινωνία</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="cerrarEquis"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="ocultarmovil()"><img src="../imagenes/equis-cerrar.png" width="28" height="28" alt="Cerrar" /></a></div>
+    </div>
+
+
+
+    <div id="main">
+        <div class="container clearfix">
+            <div id="content">
+                <section id="up">
+                    <!--div class="fullscreen background parallax" style="background-image:url('../imagenes/evita-problemas-microcemento-con-profesionales.jpg');" data-img-width="1450" data-img-height="950" data-diff="100">
+                        <div class="content-a">
+                        </div>
+                    </div-->
+                    <!-- Start new -->
+
+						<div style="float:none; clear:both; height:100px;"></div>
+					<a id="efecttoquartz" style="display: block; height: 135px;visibility: hidden;"></a>
+					<div class="contenedorMenuOculto">
+						<div class="contenedorMagenDerecha">
+
+							<h1 id="queeselmicrocemento"
+								data-animate-scroll='{"x": "-100","y": "0", "alpha": "0", "duration": "1"}'><span
+									style=" padding:5px;">Η Topciment παρουσιάζει το Efectto!</span></h1>
+						</div>
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div class="titular wow fadeInRight estiloNormal16justificado">
+									<p> Η Topciment παρουσιάζει το Efectto, <strong>την νέα σειρά συνεχόμενων επιστρώσεων έτοιμων για χρήση </strong> υψηλής διακόσμησης.
+										<br><br>
+									</p><a href="https://www.topciment.com/gr/efectto.html"> <img
+											src="https://www.topciment.com/imagenes/efectto/noticia_efecto2-.jpg"
+											alt="Efectto" width="100%" height="auto" /></a>
+
+									<br><br>
+									<p>Το Efectto είναι μια ευρεία γκάμα προϊόντων με μεγάλη ποικιλία φινιρισμάτων που θα αποκαλυφθούν τους προσεχείς μήνες. Το πρώτο από αυτά τα νέα προϊόντα που βλέπουν το φως είναι το Efectto Quartz.
+									</p>
+									<p>Το  <strong> Efectto Quartz </strong>οφείλει το όνομά του στο ορυκτό και φυσικό φινίρισμα που το χαρακτηρίζει. Μόλις εφαρμοστεί, αυτό το προϊόν επιτρέπει την επίτευξη εξαιρετικών διακοσμητικών φινιρισμάτων. Το τελείωμα του είναι παρόμοιο με την πατητή τσιμεντοκονία, αλλά με πολύ πιο φυσική υφή και χωρίς 'σύννεφα'.</p>
+
+									<p>Επιπλέον, ένα από τα μεγάλα πλεονεκτήματα που έχει το Efectto Quartz είναι ότι είναι έτοιμο για χρήση, οπότε η προετοιμασία του είναι λιγότερο επίπονη και πιο πρακτική. Απλά πρέπει να ανοίξετε την συσκευασία και να αρχίσετε να εργάζεστε.</p>
+
+									<a href="https://www.topciment.com/gr/efectto.html"> <img
+											src="https://www.topciment.com/imagenes/efectto/logo-effecto-bn.png"
+											alt="Sttandard" width="100%" height="auto" /></a>
+									<p>Τόσο το <strong>Efectto Quartz</strong>  όσο και τα υπόλοιπα προϊόντα της οικογένειας Efectto είναι αποτέλεσμα μιας επίπονης έρευνας για νέα υλικά και τεχνικές παραγωγής, προκειμένου να προσφέρουμε στους πελάτες μας προϊόντα υψηλής ποιότητας.</p>
+									<p>Η Topciment, με την προθυμία της να καινοτομεί, προσφέρει στον επαγγελματία ένα μοναδικό προϊόν, που σπάει τα στερεότυπα και τις διακοσμητικές συμβάσεις.</p>
+									<br><br>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End new -->
+                    <div style="float:none; clear:both; height:100px;"></div>
+         <a id="sttandard" style="display: block; height: 135px;visibility: hidden;"></a>
+
+
+         <div class="contenedorMenuOculto">
+                <div class="contenedorMagenDerecha" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); perspective: 1000px;">
+
+                    <h1 id="queeselmicrocemento" data-animate-scroll="{&quot;x&quot;: &quot;-100&quot;,
+        &quot;y&quot;: &quot;0&quot;,
+        &quot;alpha&quot;: &quot;0&quot;,
+        &quot;duration&quot;: &quot;1&quot;}" class="animateScroll" style="transform: matrix(1, 0, 0, 1, 0, 0); visibility: inherit; opacity: 1; transform-style: flat;"><span style=" padding:5px;">
+                Topciment αλλάζει την εικόνα της!</span></h1>
+                </div>
+
+                <div class="contenedorMenuOculto">
+                    <div class="contenedorMagenDerecha">
+                        <div class="titular wow fadeInRight estiloNormal16justificado">
+                            <p>Στην Topciment αποφασίσαμε να πάμε ένα βήμα παραπέρα όσον αφορά στον σχεδιασμό:
+                                 ανανεώσαμε την εικόνα και την αισθητική των προϊόντων μας.
+                                  <strong> Παρουσιάζουμε την γκάμα των προϊόντων μας Sttandard </strong> με την ίδια ποιότητα και απόδοση,
+                                  αλλά με μια ανανεωμένη εικόνα, πολύ πιο οπτική και σύγχρονη, χωρίς να χάνεται η ουσία Topciment.
+                                <br><br>
+                            </p><img src="https://www.topciment.com/imagenes/sttandard/Sttandard_Bodegon_Horizontal.jpg" alt="Sttandard" width="100%" height="auto">
+
+                            <br><br>
+                            <p>Με αυτή τη βελτίωση θέλουμε να ανεβούμε ένα βήμα όσον αφορά στον σχεδιασμό και να έχουμε την εικόνα που πραγματικά αντιπροσωπεύει την μάρκα μας.
+
+                                <strong>Υλικό TOP, σχέδιο TOP.</strong>
+                            </p>
+                            <p>Επιπλέον, συνδέσαμε ένα συγκεκριμένο χρώμα με κάθε ένα από τα προϊόντα, για να διευκολύνουμε τον εντοπισμό τους και <strong> έτσι να διευκολύνουμε το έργο </strong> όλων των ανθρώπων που εργάζονται με τα υλικά μας.</p>
+                            <p>Το διακριτικό TT της Topciment έχει εξέχουσα θέση σε αυτόν τον νέο σχεδιασμό και υπήρξε ο κεντρικός άξονας αυτής της ανανέωσης της εικόνας
+                                 και της ονομασίας του προϊόντος. Έτσι η γραμμή της πατητής τσιμεντοκονίας μας αλλάζει όνομα. Πρόκειται για μια ριψοκίνδυνη κίνηση,
+                                  αλλά περνάμε από ένα πολύ κοινό όνομα, όπως το 'δύο συστατικών', σε ένα το οποίο είναι κομμένο και ραμμένο στα μέτρα της Topciment:
+                                   Sttandard, πάντα με το TT να ενισχύει το εμπορικό σήμα. </p>
+                            <p>Ως εκ τούτου, <strong> από τώρα και στο εξής η πατητή τσιμεντοκονία μας των δύο συστατικών μετονομάζεται σε:</strong></p>
+                            <ul>
+
+                                <li> <a href="https://www.topciment.com/gr/sttandard.html"> Sttandard Microbase
+                                        20KG</a></li>
+                                <li><a href="https://www.topciment.com/gr/sttandard.html"> Sttandard Microfino
+                                        20KG</a></li>
+                                <li>
+                                    <a href="https://www.topciment.com/gr/sttandard.html">Sttandard
+                                        Microstone 20KG</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.topciment.com/gr/sttandard.html">Sttandard
+                                        Microdeck 20KG</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.topciment.com/gr/sttandard.html">Sttandard
+                                        Aquaciment 20KG</a>
+                                </li>
+
+                            </ul>
+                            <p>Ωστόσο, αυτή η αλλαγή δεν είναι μόνο στο αισθητικό επίπεδο αλλά και στην ποιότητα και την εργονομία των κουβάδων, επειδή δεν επικεντρωνόμαστε μόνο στην εικόνα αλλά και στην επίτευξη της καλύτερης ποιότητας σε ό, τι περιβάλλει την Topciment.</p>
+                            <a href="https://www.topciment.com/gr/sttandard.html"> <img src="https://www.topciment.com/imagenes/sttandard/logo-sttandard-bn.jpg" alt="Logo Sttandard" width="100%" height="auto"></a>
+                            <p>Με όλες αυτές τις βελτιώσεις, η Topciment θέλει να ενισχύσει την εικόνα και τη θέση της <strong> ως η καλύτερη μάρκα πατητής τσιμεντοκονίας</strong>
+                                 από την άποψη της ποιότητας των υλικών καθώς και από άποψη σχεδιασμού.
+                                 Πάντα χωρίς να ξεχνάμε τους ανθρώπους που δουλεύουν μαζί μας, γιατί όλα είναι για αυτούς.</p>
+
+                            <br><br>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div style="float:none; clear:both; height:100px;"></div>
+        <a id="festool" style="display: block; height: 135px;visibility: hidden;"></a>
+
+		<div class="contenedorMenuOculto">
+        <div class="contenedorMagenDerecha">
+
+			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'><span style=" padding:5px;font-size: 1em;"> H Topciment συστήνει την Festool για μια τέλεια εφαρμογή</span></h2>
+            </div>
+
+	<div class="contenedorMenuOculto">
+    	<div class="contenedorMagenDerecha">
+			<div id="mitadTextoIzquierda">
+				<p>Η καλή εφαρμογή της πατητής τσιμεντοκονίας εξαρτάται από πολλούς παράγοντες, ένας από αυτούς είναι και τα προϊόντα ποιότητας, τα οποία πρέπει να έχει ένας επαγγελματίας που κατέχει την τεχνική εφαρμογής και ταυτόχρονα χρησιμοποιεί τα καλύτερα εργαλεία για να επιτύχει ένα εξαιρετικό αποτέλεσμα.</p>
+				<strong>Η μέθοδος εφαρμογής Topciment απαιτεί διαφορετικά εργαλεία για κάθε ένα από τα διαφορετικά βήματα. Σύμφωνα με τα βήματα της διαδικασίας εφαρμογής, προτείνουμε τις ακόλουθες μηχανές Festool:</strong>
+				<p>εξαιρετικές μηχανές για την επίτευξη ενός ομοιόμορφου και εύχρηστου μείγματος. Το σύστημα ErgoFix επιτρέπει την προσαρμογή του ύψους της ράβδου ώστε να αποφευχθεί τραυματισμός της πλάτης. Επιπλέον, η κατασκευή των ελαστικών ακμών της είναι σχεδιασμένη ώστε να αντέχει πιθανές προσκρούσεις και ισχυρά χτυπήματα. Σε αυτά τα μίξερ μπορούμε να ενσωματώσουμε ράβδους χωρίς την χρήση εργαλείων. Συγκεκριμένα, οι ελικοειδείς ράβδοι HS είναι τέλεια προσαρμοσμένες στις μηχανές και μπορούν να κινούν έως και 60 κιλά υλικού. Είναι ιδανικές για βαριά και ιξώδη μίγματα, όπως η πατητή τσιμεντοκονία, τα αυτοεπιπεδούμενα ή τα εποξικά.</p>
+
+				</div>
+				<div id="mitadTextoDerecha"><p>
+				<img src="https://www.topciment.com/imagenes/herramientas-festool-mezcladora-microcemento.jpg" width="100%" alt="Mixers and Stirrers MX">
+			</div>
+		</div>
+	<div style="float:none; clear:both; height:100px;"></div>
+		<div class="contenedorMagenDerecha">
+			<div id="mitadTextoIzquierda">
+				<strong>Έκκεντρο τριβείο ROTEX:</strong>Αυτό το μοντέλο μηχανών είναι το καλύτερο για την λείανση της πατητής τσιμεντοκονίας και την αφαίρεση ατελειών και ανάγλυφων. Είναι ένα θεμελιώδες εργαλείο για την ολοκλήρωση της διαδικασίας εφαρμογής. Ξεχωρίζει η εργονομική του λαβή, η ευκολία με την οποία αλλάζει πορεία και η ικανότητα του να κάνει τρεις τύπους κίνησης για διαφορετικά εφέ στην λείανση: τραχύ, λεπτό ή γυαλισμένο. Συνιστούμε να συναρμολογήσετε στο τριβείο την μπλε πλάκα λείανσης ROTEX με την απαιτούμενη σκληρότητα για τα προϊόντα Topciment. Με στόχο την λείανση υψηλής απόδοσης, την υψηλή ποιότητα και την σκέψη για την υγεία των χρηστών, η Festool έχει κατοχυρώσει με δίπλωμα ευρεσιτεχνίας το σύστημα MULTI-JETSTREAM, το οποίο επιτρέπει τη συνεχή αναζωογόνηση του αέρα, την ψύξη του μηχανήματος και τη μείωση των εμποδίων.</p>
+				</div>
+				<div id="mitadTextoDerecha"><p>
+				<img src="https://www.topciment.com/imagenes/lijadoras-excentricas-microcemento.jpg" width="100%" alt="Sanders eccentric ROTEX">
+			</div>
+		</div>
+	<div style="float:none; clear:both; height:100px;"></div>
+		<div class="contenedorMagenDerecha">
+			<div id="mitadTextoIzquierda">
+				<p><strong>Κινητά συστήματα Cleantec:</strong>σύγχρονες ηλεκτρικές σκούπες με τις οποίες επιτυγχάνεται εξαιρετική καθαριότητα σε χρόνο ρεκόρ. Είναι ο καλύτερος τρόπος για να αποφύγετε τα σύννεφα ρύπων κατά την εκτέλεση των εργασιών. Παρομοίως, εμποδίζει την εισπνοή συνεχούς σκόνης που μπορεί να προκαλέσει επιβλαβείς επιδράσεις στην υγεία των ανθρώπων που χρησιμοποιούν τα τριβεία σε καθημερινή βάση. Από την άλλη πλευρά, ο σχεδιασμός τους επιτρέπει μια άνετη μεταφορά, αφού έχουν ισχυρή δομή, μεγάλους τροχούς και χαλύβδινους άξονες για να αποφευχθεί οποιαδήποτε ζημιά κατά τη διάρκεια του ταξιδιού και τυχόν ανατροπές.</p>
+
+				<p>Τα αποτελέσματα της χρήσης αυτών των εργαλείων, σε συνδυασμό με τα προϊόντα Topciment για την εφαρμογή της πατητής τσιμεντοκονίας, είναι έργα υψηλής ποιότητας, καθαρά και υγιεινά.</p>
+				<P>More information: <a href=" https://www.festool.co.uk/">https://www.festool.co.uk/ </a>
+
+				</div>
+				<div id="mitadTextoDerecha"><p>
+				<img src="https://www.topciment.com/imagenes/modernos-aspiradores-cleantex-para-microcemento.jpg" width="100%" alt="CLEANTEC mobile systems">
+			</div>
+		</div>
+	</div>
+
+		</div>
+
+
+		<div style="float:none; clear:both; height:100px;"></div>
+<a id="" style="display: block; height: 135px;visibility: hidden;"></a>
+
+		<div class="contenedorMenuOculto">
+        <div class="contenedorMagenDerecha">
+
+			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'><span style=" padding:5px;">Νέα </span></h2>
+            </div>
+
+                    <div class="contenedorMenuOculto">
+    	<div class="contenedorMagenDerecha">
+			<div>
+				<h2>Σε συνεργασία με το <a href="http://www.aboutdecorationblog.com/terrace-without-limits-microcement/" rel="nofollow">About Decoration Blog</a>, κάναμε μια δημοσίευση,</h2>
+				<p>	όπου σας παρουσιάζουμε διάφορες εφαρμογές που μπορούν να γίνουν με πατητή τσιμεντοκονία σε εξωτερικούς χώρους.
+				Μήπως ήρθε η ώρα να κάνετε αυτήν την αλλαγή στην βεράντα ή στον κήπο σας;  Εμπνευστείτε από τις παρακάτω ιδέες!</p>
+
+			<div>
+				<img src="https://www.topciment.com/imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento03.jpg" width="100%" alt="About Decoration Blog">
+			</div>
+		</div>
+	</div>
+
+		</div>
+
+
+
+
+<div style="float:none; clear:both; height:100px;"></div>
+<a id="colours" style="display: block; height: 135px;visibility: hidden;"></a>
+
+		<div class="contenedorMenuOculto">
+        <div class="contenedorMagenDerecha">
+
+			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'><span style=" padding:5px;">Λάθη που πρέπει να αποφευχθούν στον συνδυασμό των χρωμάτων</span></h2>
+            </div>
+
+                    <div class="contenedorMenuOculto">
+    	<div class="contenedorMagenDerecha">
+			<div id="mitadTextoIzquierda">
+				<h2>Η χρήση τολμηρών χρωμάτων στην διακόσμηση είναι τάση, αλλά πρέπει να δώσουμε ιδιαίτερη προσοχή για να μην γίνουν λάθη.</h2>
+				<p> Στο interior design ο συνδυασμός ορισμένων τόνων μπορεί να καταλήξει σε πραγματική καταστροφή. Βέβαια, μπορεί ο συνδυασμός των χρωμάτων να είναι ένα επικίνδυνο παιχνίδι αλλά είναι προσιτό σε όλους. Ακόμα και αν συχνά πιστεύεται ότι αυτή η τέχνη προορίζεται μόνο για τους επαγγελματίες στον τομέα της διακόσμησης. <strong>Στην Topciment σας προτείνουμε ορισμένα κόλπα για να πετύχετε το τέλειο αποτέλεσμα </strong>,όταν θα κάνετε ανακαίνιση σε διαφορετικούς χώρους στο σπίτι σας</p>
+				<h3>1o Λάθος - Ο συνδυασμός παραπάνω από 3 χρώματα</h3>
+				<p>Στο interior design, αυτός είναι ένας από τους βασικούς κανόνες:η ένωση περισσότερων από τριών διαφορετικών τόνων στο ίδιο δωμάτιο δεν επιτυγχάνει αρμονία.<strong>Ο συνδυασμός τεσσάρων ή περισσότερων χρωμάτων μπορεί να προκαλέσει σύγχυση.</strong>Μια πολύ καλή ιδέα είναι να στοιχηματίσετε <a href="https://www.topciment.com/gr/gr-microcement-colours.html">στο ίδιο φάσμα χρωμάτων: </a>για παράδειγμα, από το απαλό ροζ στο φούξια, περνώντας μέσα από το φραμπουάζ. Η χρήση διαφορετικών εντάσεων βοηθά στην αποφυγή λαθών.</p>
+				<img src="../imagenes/combinar-colores/colores-microcemento-1.jpg" width="100%" alt="Ο συνδυασμός παραπάνω από 3 χρώματα">
+
+				<h3>2ο Λάθος - Κατάχρηση των αντιθέσεων</h3>
+				<p>Οι έντονοι χρωματικοί τόνοι δημιουργούν έλξη στο μάτι, αλλά η εφαρμογή διαφόρων στον ίδιο χώρο, μπορεί να μας κουράσει μετά από λίγο καιρό. Εντυπωσιακοί συνδυασμοί που λειτουργούν σε εστιατόρια ή ξενοδοχεία,<strong>μπορεί σε μια τραπεζαρία να κουράσουν και να δημιουργήσουν οπτική απόρριψη.</strong> Μια καλή επιλογή είναι να δοκιμάσετε έναν τοίχο, και αν το αποτέλεσμα δεν είναι αυτό που θέλετε, μπορείτε να το αναδιατάξετε ή να αλλάξετε τα διακοσμητικά στοιχεία μέχρι να έχετε το επιθυμητό αποτέλεσμα.</p>
+				<img src="../imagenes/combinar-colores/colores-microcemento-2.jpg" width="100%" alt="Κατάχρηση των αντιθέσεων">
+			</div>
+
+			<div id="mitadTextoDerecha">
+
+				<h3>3ο λάθος - Η μη διαδοροποίηση του χώρου</h3>
+				<p>Μέσα σε ένα σπίτι υπάρχουν δωμάτια όπου οι έντονοι συνδυασμοί μπορεί να ενοχλήσουν. Τα υπνοδωμάτια, οι κουζίνες και τα καθιστικά είναι περιοχές όπου περνάτε πολύ χρόνο και τα ασυνήθιστα χρώματα τείνουν να κουράζουν το μάτι. Οι περιοχές διέλευσης και σύνδεσης όπως ο διάδρομος ή η είσοδος,<strong> επιτρέπουν να κάνετε προκλητικούς συνδυασμούς </strong>με την τέλεια ευκαιρία να απελευθερώσουν την φαντασία.</p>
+				<img src="../imagenes/combinar-colores/colores-microcemento-3.jpg" width="100%" alt="Η μη διαδοροποίηση του χώρου">
+
+				<h3>4ο λάθος - Το ότι σκέφτεστε μόνο τους τοίχους</h3>
+				<p>Πρέπει να θυμάστε ότι στην διακόσμηση δεν συμμετέχουν μόνο <a href="https://www.topciment.com/en/systems.html">οι τοίχοι και τα δάπεδα,</a>μπορείτε επίσης να χρησιμοποιήσετε σανίδες, πόρτες, έπιπλα ή οροφές. Δημιουργήστε ένα περίγραμμα μέσα σε έναν τοίχο ή παίξτε με τις αντιθέσεις στο πλαίσιο της πόρτας, που μπορεί να δημιουργήσει μια εκπληκτική σύνθεση. Με τον ίδιο τρόπο, καναπέδες, χαλιά ή μαξιλάρια, μεταξύ άλλων, που έχουν χρώμα και μπορούν να δημιουργήσουν <a href="https://www.topciment.com/gr/gr-gallery.html">θαυμάσια σύνολα.</a><strong>Το βασικό είναι να διαφοροποιήσετε τις αναλογίες, τις δοσολογίες και να τολμήσετε. </strong> </p>
+				<img src="../imagenes/combinar-colores/colores-microcemento-4.jpg" width="100%" alt="Το ότι σκέφτεστε μόνο τους τοίχους">
+
+				<h3>5ο λάθος - Οι σκούροι τόνοι στην αρχική διακόσμηση</h3>
+				<p>Η ιδέα της αλλαγής μπορεί να οδηγήσει στο να ξεχνάμε ότι το ίδιο το σπίτι είναι ήδη ντυμένο με χρώματα, τόσο στους τοίχους όσο και στα δάπεδα και στα παράθυρα και τις πόρτες. Η δημιουργία μιας σύνθεσης χωρίς να ληφθούν υπόψη οι ήδη υπάρχοντες τόνοι μπορεί να υποβαθμίσει το τελικό αποτέλεσμα. Το πιο απλό είναι <strong>να ξεκινήσετε ένα έργο με τα υπάρχοντα στοιχεία, τα οποία χρησιμεύουν ως σημείο αναφοράς, </strong>και να επιτευχθεί ισορροπία από αυτό το σημείο.</p>
+				<img src="../imagenes/combinar-colores/colores-microcemento-5.jpg" width="100%" alt="Οι σκούροι τόνοι στην αρχική διακόσμηση">
+			</div>
+		</div>
+	</div>
+
+		</div>
+
+<div style="float:none; clear:both; height:100px;"></div>
+
+<a id="kitchen-microcement" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
+
+                    <div class="contenedorMenuOculto">
+                        <div class="contenedorMagenDerecha">
+
+                            <h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'><span style=" padding:5px;">Πατητή τσιμεντοκονία<br> στην κουζίνα</span></h2><br>
+                        </div>
+
+                        <div class="contenedorMenuOculto">
+                            <div class="contenedorMagenDerecha">
+                                <div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'>
+                                    <p><h3>Τα καλύτερα γεύματα ετοιμάζονται σε ένα περιβάλλον που λειτουργεί ως πηγή έμπνευσης.</h3></p>
+									<p>Κάθε σεφ χρειάζεται στοιχεία που συνοδεύουν τη δημιουργικότητά του και η πατητή τσιμεντοκονία βοηθάει σε αυτό μιας και είναι ένα προϊόν εξαιρετικά ευέλικτο: υπάρχουν διαφορετικά φινιρίσματα για κάθε γούστο. Είτε θέλετε να φτιάξετε μια νέα κουζίνα είτε θέλετε να κάνετε μια ανακαίνιση, μπορείτε να επιτύχετε εντελώς μοναδικά αποτελέσματα. Στην περίπτωση της ανακαίνισης, εφαρμόζεται στην υπάρχουσα επίστρωση με μέγιστο πάχος 3 χιλιοστών, γεγονός που επιτρέπει μια γρήγορη αλλαγή σε τοίχους και δάπεδα, χωρίς την ανάγκη εργασιών, θορύβου και υπολειμμάτων.</p>
+                                    <p>Η πατητή τσιμεντοκονία είναι ένα ουδέτερο υλικό που συνδυάζεται με κάθε τύπο κουζίνας: από κλασικές μέχρι σύγχρονες και από industrial μέχρι σκανδιναβικές. Οι ανοιχτές αποχρώσεις προσδίδουν φωτεινότητα και πλάτος, ενώ οι σκοτεινές δημιουργούν ζεστούς χώρους. Σε ανοιχτές κουζίνες, η πατητή τσιμεντοκονία προσφέρει τη δυνατότητα κάλυψης του δαπέδου και του καθιστικού, εναρμονίζοντας το σύνολο και δημιουργώντας συνέχεια. Εάν, ωστόσο, αυτό που επιθυμείτε είναι να δημιουργήσετε αντιθέσεις και ξεχωριστούς χώρους, μπορείτε να επιλέξετε αντίθετα χρώματα και να διαφοροποιήσετε με αυτόν τον τρόπο τα δωμάτια. Αφού επιλέξετε το φινίρισμα, το επόμενο βήμα είναι να επιλέξετε έπιπλα ανάλογα με τα χρώματα που χρησιμοποιήσατε. Υπάρχει ακόμα η επιλογή να καλύψετε τα έπιπλα με πατητή τσιμεντοκονία για να πετύχετε ένα πρωτότυπο και μοναδικό σχέδιο.
+
+									</p>
+                                </div>
+                                <div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "2"}'>
+
+
+									<h3>Η κουζίνα πρέπει να διατηρείται καθαρή καθώς είναι ο χώρος στον οποίο βρίσκονται οι τροφές. </h3>
+									<p>Το δάπεδο όμως και οι τοίχοι εκτίθενται συνεχώς σε λιπαρές ουσίες και σε υγρά που στάζουν. Από αυτή την άποψη, η πατητή τσιμεντοκονία έχει ένα μεγάλο πλεονέκτημα μιας και η συντήρησή της είναι πολύ απλή. Επειδή δεν υπάρχουν αρμοί, ο καθαρισμός είναι πολύ εύκολος: με την σειρά προϊόντων <a href="https://www.topciment.com/gr/gr-microcemento-system.html" >Ecoclean της Topciment</a> το δάπεδο και οι τοίχοι θα ακτινοβολούν καθαριότητα. Με αυτόν τον τρόπο αποφεύγεται η χρήση επιθετικών προϊόντων όπως η χλωρίνη ή η αμμωνία, τα οποία δημιουργούν δυσάρεστες οσμές και μπορούν να προκαλέσουν προβλήματα υγείας.</p>
+
+									<p>Η άνεση και η εξατομίκευση συνδυάζονται για να αποκτήσετε φανταστικές κουζίνες με ένα κοινό στοιχείο: την επίστρωση με πατητή τσιμεντοκονία.</p>
+
+
+									<p><a href="https://www.topciment.com/gr/gr-microcement.html" ><img src="../imagenes/microcemento-cocinas.jpg" width="100%" alt="Τα καλύτερα γεύματα ετοιμάζονται σε ένα περιβάλλον που λειτουργεί ως πηγή έμπνευσης." title="Τα καλύτερα γεύματα ετοιμάζονται σε ένα περιβάλλον που λειτουργεί ως πηγή έμπνευσης."></a>
+									</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+<div style="float:none; clear:both; height:100px;"></div>
+
+<a id="no-problems" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
+
+                    <div class="contenedorMenuOculto">
+                        <div class="contenedorMagenDerecha">
+
+                            <h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'><span style=" padding:5px;">Πατητή Τσιμεντοκονία <br>χωρίς προβλήματα</span></h2><br>
+                        </div>
+
+                        <div class="contenedorMenuOculto">
+                            <div class="contenedorMagenDerecha">
+                                <div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'>
+                                    <p><h3>Πώς να αποφύγετε προβλήματα με την πατητή τσιμεντοκονία; Μια εφαρμογή με την Topciment εγγυάται προϊόντα υψηλής ποιότητας, πιστοποιημένους τεχνίτες και ειδικούς στην πατητή τσιμεντοκονία.</h3></p>
+									<p>Μια ανακαίνιση με πατητή τσιμεντοκονία από έμπειρους επαγγελματίες και ποιοτικά προϊόντα εμποδίζει την εμφάνιση προβλημάτων κατά τη διάρκεια και μετά την περάτωση του έργου.</p>
+                                    <p>Το πρώτο βήμα είναι να επιλέξετε έναν ειδικό που γνωρίζει τα διαφορετικά υλικά και επιλέγει αυτά που έχουν την καλύτερη ποιότητα.</p>
+                                    <p>Η διαφοροποίηση των <a href="https://www.topciment.com/gr/gr-microcement.html#tipos-de-microcemento">τύπων πατητής τσιμεντοκονίας</a> και η εφαρμογή τους στην επιφάνεια για την οποία έχουν αναπτυχθεί είναι ουσιαστικής σημασίας για την εξασφάλιση μιας επιτυχημένης ανακαίνισης. Οι κατάλληλες συμβουλές αρχίζουν με την ανάλυση του υποστρώματος που πρόκειται να επικαλυφθεί και τον υπολογισμό των υλικών, του χρόνου και του κόστους, προσαρμοσμένο στα τετραγωνικά μέτρα που θα ανακαινιστούν.</p>
+
+                                </div>
+                                <div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "2"}'>
+
+									<p>Για να τοποθετήσετε την πατητή τσιμεντοκονία <strong>δεν είναι απαραίτητο να σηκώσετε το αρχικό υπόστρωμα, πρέπει ωστόσο να προετοιμαστεί σωστά</strong>. Εάν υπάρχουν αρμοί στο δάπεδο ή στους τοίχους, πρέπει να ενοποιηθεί η διαφορά ύψους και η απορρόφηση μεταξύ του υλικού και των αρμών. Μόλις ισοπεδωθεί η βάση, πρέπει να τοποθετηθεί ένα αστάρι το οποίο, εγγυάται την προσκόλληση μεταξύ του υπάρχοντος και του νέου υλικού και αφήνει την επιφάνεια με ομοιογενή απορρόφηση. Συνιστάται επίσης <strong>να χρησιμοποιείτε υαλόπλεγμα για να αποτρέψετε τη δημιουργία ρωγμών στη βάση.</strong></p>
+									<p><h3>Οι οδηγίες για τη χρήση της πατητής τσιμεντοκονίας πρέπει να τηρούνται αυστηρά για να εξασφαλιστεί ένα έργο χωρίς προβλήματα.</h3> Ένας καλός επαγγελματίας θα αναμίξει σωστά τα συστατικά των διαφόρων προϊόντων για να εξασφαλίσει τη μέγιστη απόδοση τους (σκληρότητα, αδιαβροχοποίηση, κλπ.). Από την άλλη πλευρά, <strong>ο σεβασμός των χρόνων στεγνώματος είναι απαραίτητος για να αποφευχθεί η εμφάνιση λεκέδων υγρασίας</strong>. Μια δουλειά που ακολουθεί πιστά τα βήματα της εφαρμογής δεν δημιουργεί δυσκολίες.</p>
+									<p>Μια εφαρμογή με την Topciment εγγυάται προϊόντα υψηλής ποιότητας, πιστοποιημένους τεχνίτες και ειδικούς στην πατητή τσιμεντοκονία, τεχνική υποστήριξη κατά την εκτέλεση του έργου και μια αποτελεσματική ομάδα η οποία είναι δίπλα σας για την επίλυση υφιστάμενων αμφιβολιών.<a href="https://www.topciment.com/gr/gr-contact.html"> Επικοινωνήστε μαζί μας</a> εάν χρειάζεστε περισσότερες πληροφορίες.</p>
+
+
+									<a href="https://www.topciment.com/gr/gr-microcemento-system.html"><img border="0" src="../imagenes/evita-problemas-microcemento-con-profesionales.jpg" height="100%" width"100%" alt="Πατητή Τσιμεντοκονία χωρίς προβλήματα" title="Πατητή Τσιμεντοκονία χωρίς προβλήματα" ></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+<div style="float:none; clear:both; height:100px;"></div>
+
+<a id="new-products" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
+
+                    <div class="contenedorMenuOculto">
+                        <div class="contenedorMagenDerecha">
+
+                            <h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'><span style=" padding:5px;">Νέα προϊόντα για την καθαριότητα και την συντήρηση της πατητής τσιμεντοκονίας</span></h2><br>
+                        </div>
+
+                        <div class="contenedorMenuOculto">
+                            <div class="contenedorMagenDerecha">
+                                <div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'>
+                                    <p>Η Topciment λανσάρει τέσσερα νέα προϊόντα ειδικά σχεδιασμένα για την φροντίδα, την συντήρηση και την καθαριότητα της πατητής τσιμεντοκονίας. Τα καθαριστικά Ecoclean και Ecoclean PRO είναι οικολογικά και η χρήση τους
+                                        ενδείκνυται για οικιακή και επαγγελματική χρήση αντίστοιχα. </p>
+
+                                </div>
+                                <div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "2"}'>
+                                    <p>Με τα κεριά διατήρησης για δάπεδα Ceraciment και Ceraciment PRO διατηρείται η σκληρότητα και η φυσική λάμψη για πολύ περισσότερο. Η ειδική τους φόρμουλα επιτρέπει τον εμπλουτισμό και την διείσδυση στα επεξεργασμένα
+                                        δάπεδα και πιο συγκεκριμένα στα δάπεδα από πατητή τσιμεντοκονία.</p>
+                                    <p>Στην ενότητα για Επαγγελματίες >> Τεχνικά Έγγραφα(Professionals >> Technical Sheets) μπορείτε να κατεβάσετε σε μορφή pdf τα έγγραφα για αυτήν την νέα γκάμα προϊόντων της Topciment για την καθαριότητα και την φροντίδα.</p>
+                                    <p><a href="https://www.topciment.com/en/gr-professionals.html#fichas-tecnicas"><img border="0" src="../imagenes/productos-limpieza-y-mantenimiento.jpg" height="100%" width"100%" alt="Νέα προϊόντα για την καθαριότητα και την συντήρηση της πατητής τσιμεντοκονίας" title="Νέα προϊόντα για την καθαριότητα και την συντήρηση της πατητής τσιμεντοκονίας" ></a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div style="float:none; clear:both; height:100px;"></div>
+
+                    <a id="que-es-microcemento" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
+
+                    <div class="contenedorMenuOculto">
+                        <div class="contenedorMagenDerecha">
+
+                            <h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'><span style=" padding:5px;">Η Τοpciment ανανεώνει τη συνεργασία της με τη CYPE για ακόμη μια χρονιά</span></h2>
+                        </div>
+
+                        <div class="contenedorMenuOculto">
+                            <div class="contenedorMagenDerecha">
+                                <div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'>
+                                    <p>Η Τοpciment ανανέωσε τη συνεργασία της με τη CYPE για ακόμη μια χρονιά. Με αυτή τη συμφωνία, η εταιρεία πατητής τσιμεντοκονίας microcemento θα εξακολουθήσει να συνεργάζεται με τους επαγγελματίες του κατασκευαστικού
+                                        κλάδου στον τομέα της κατάρτισης προϋπολογισμού έργων.</p>
+                                    <p>Έτσι λοιπόν, η εταιρεία με έδρα τη Manises καθιερώνεται ως μια από τις επιχειρήσεις που ενδιαφέρεται ενεργά και εστιάζει στη συνεργασία με αρχιτέκτονες και μηχανικούς. Η εν λόγω συμφωνία δίνει στους συγκεκριμένους επαγγελματίες
+                                        τη δυνατότητα να βρίσκουν ακριβείς και αναλυτικές περιγραφές των χαρακτηριστικών κάθε μονάδας έργου, εν προκειμένω της πατητής τσιμεντοκονίας, μέσω του συστήματος υπολογισμού τιμών.</p>
+                                </div>
+                                <div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "2"}'>
+                                    <p>Το σύστημα υπολογισμού τιμών, μια πλατφόρμα την οποία επισκέπτονται ετησίως πάνω από δύο εκατομμύρια χρήστες, είναι ένα αποτελεσματικό ηλεκτρονικό εργαλείο που χρησιμοποιείται από αρχιτέκτονες και υπεύθυνους έργων και
+                                        το οποίο υπολογίζει τις προβλεπόμενες τιμές και το κόστος και διευκολύνει έτσι την πλήρη και αξιόπιστη τεκμηρίωση ενός έργου. Περιλαμβάνει επίσης τις πληροφορίες που αφορούν τους κατασκευαστές και τα προϊόντα τους.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="float:none; clear:both; height:100px;"></div>
+
+                    <a id="resbaladicidad" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
+
+
+                    <div class="contenedorMenuOculto">
+                        <div class="contenedorMagenDerecha">
+
+                            <h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'><span style=" padding:5px;">Ολισθηρότητα</span></h2>
+                        </div>
+
+                        <div class="contenedorMenuOculto">
+                            <div class="contenedorMagenDerecha">
+                                <div class="titular wow fadeInRight estiloNormal16justificado">
+                                    <p>Η αντίσταση στην ολίσθηση ενός δαπέδου είναι θεμελιώδης παράγοντας ασφάλειας, ο οποίος καθορίζεται από τη φύση της επιφάνειας. Η μειωμένη πρόσφυση μπορεί να οδηγήσει σε απώλεια ισορροπίας και να αυξήσει τον κίνδυνο
+                                        πτώσεων. Πρόκειται για ένα χαρακτηριστικό στο οποίο πρέπει να δίνεται προσοχή κατά την επιλογή των υλικών που θα χρησιμοποιηθούν στην κατασκευή δαπέδων.</p>
+                                    <p>Οι απαιτήσεις των κανονισμών ασφαλείας όσον αφορά την ολισθηρότητα του δαπέδου εξαρτώνται από το είδος της δραστηριότητας που λαμβάνει χώρα πάνω στο δάπεδο, την κλίση και την τοποθεσία του.</p>
+                                    <p>Με γνώμονα την παροχή λύσεων που εγγυώνται την ασφάλεια των πελατών μας, η Τοpciment πραγματοποίησε δοκιμές ολισθηρότητας στο Wessex, το μοναδικό εργαστήριο στην Ισπανία που ειδικεύεται σε δοκιμές τέτοιου είδους. Δεδομένου
+                                        ότι η εφαρμογή της πατητής τσιμεντοκονίας είναι μια διαδικασία που επηρεάζεται από πολλούς παράγοντες, πραγματοποιήσαμε δοκιμές με διάφορες εναλλακτικές εφαρμογής και φινιρίσματος, ούτως ώστε να πετύχουμε ένα αποτέλεσμα
+                                        που να συμμορφώνεται με τους ισχύοντες εθνικούς και διεθνείς κανονισμούς σχετικά με την ολισθηρότητα.</p>
+                                    <p>Με βάση τα αποτελέσματα αυτών των δοκιμών, οι τεχνικοί μπορούν να επιλέγουν το κατάλληλο σύστημα επίστρωσης ανάλογα με τις ανάγκες ολισθηρότητας, προκειμένου να συμμορφώνονται με τις απαιτήσεις των κανονισμών ασφαλείας.
+                                        Πρέπει ωστόσο να έχουμε υπόψη μας ότι η πατητή τσιμεντοκονία τοποθετείται in situ και ο τρόπος εφαρμογής από τον εκάστοτε τεχνίτη επηρεάζει το τελικό αποτέλεσμα, ως εκ τούτου τα αποτελέσματα των δοκιμών που παρέχουμε
+                                        θεωρούνται ενδεικτικά.</p>
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div style="float:none; clear:both; height:100px;"></div>
+
+        <div class="footerInterior">
+            <div class="footerContent">
+        <a href="https://www.youtube.com/user/TopCiment" target="_blank"><span class="fa-stack"><span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x icon"></i>
+          <i class="fa fa-youtube fa-stack-1x"></i>
+        </span></span></a>
+<a href="https://www.instagram.com/topciment/" target="_blank"><span class="fa-stack"><span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x icon"></i>
+          <i class="fa fa-instagram  fa-stack-1x"></i>
+        </span></span></a> &nbsp;
+                <a href="https://api.whatsapp.com/send?phone=34647913586&text=Hola&source=&data=" target="_blank"><span class="fa-stack"><span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x icon"></i>
+          <i class="fa fa-whatsapp fa-stack-1x"></i>
+        </span></a> &nbsp;
+                <a href="https://www.pinterest.com/topciment/" target="_blank"><span class="fa-stack"><span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x icon"></i>
+          <i class="fa fa-pinterest fa-stack-1x"></i>
+        </span></a> &nbsp;
+                <a href="https://es-es.facebook.com/topciment.microcemento" target="_blank"><span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x icon"></i>
+          <i class="fa fa-facebook fa-stack-1x"></i>
+        </span></a> &nbsp;
+                <a href="https://twitter.com/topciment" target="_blank"><span class="fa-stack"><span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x icon"></i>
+          <i class="fa fa-twitter fa-stack-1x"></i>
+        </span></a> &nbsp;
+                <a href="https://www.linkedin.com/company/2880536/" target="_blank"><span class="fa-stack"><span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x icon"></i>
+          <i class="fa fa-linkedin fa-stack-1x"></i>
+        </span></a>
+                <p>Rosas 33, · Manises 46940 · Ισπανία · Τηλ.: <a href="tel:+34963925989" class="textoBlanco">+34 963 92 59 89</a> <a href="mailto:info@topciment.com" class="negrita textoBlanco">info@topciment.com</a></p>
+                <p><a href="gr-terms-conditions-and-privacy-statement.html" rel="nofollow" class="textoBlanco">Όροι χρήσης και Πολιτική απορρήτου</a> | <a href="gr-cookie-policy.html" rel="nofollow" class="textoBlanco">Χρήση cookies</a></p>
+
+            </div>
+        </div>
+
+        <!-- include jQuery -->
+        <script src="../js/jquery-2.1.4.min.js"></script>
+
+        <script src="../js/jquery-1.9.1.min.js"></script>
+        <script src='../js/jquery.scrollto.js'></script>
+
+        <script languaje="Javascript">
+            <!--
+            document.write('<style type="text/css">div.ocultable{display: none;}</style>');
+            function MostrarOcultar(capa,enlace)
+            {
+                if (document.getElementById)
+                {
+                    var aux = document.getElementById(capa).style;
+                    aux.display = aux.display? "":"block";
+                }
+            }
+            //-->
+        </script>
+
+        <script type="text/javascript">
+            // Alto de la ventana del navegador
+            $(document).ready(function() {
+            	altoPag = $(window).height();
+            	altoPagOk = altoPag - 135;
+
+            	altoMenu = $('.menuMicrocementos').height();
+            		//topMenu=((altoPagOk/2) - (altoMenu/2) + 135);
+            topMenu=200;
+
+            	//$('#wrapper').css('height', $alto);
+            	anchoPag = $(window).width();
+
+            	if(anchoPag > 1025) {
+
+            		$('.menuMicrocementos').css('display', 'block');
+            		$('.menuMicrocementos').css('top', topMenu);
+            	}
+
+            });
+
+            $(window).resize(function () {
+            	ancho=$(window).width();
+            	topMenu=200;
+
+
+            	if(ancho > 1200) {
+
+            		$('.menuMicrocementos').css('display', 'block');
+            		$('.menuMicrocementos').css('top', topMenu);
+            	}
+
+            	if(ancho < 1199) {
+
+            		$('.menuMicrocementos').css('display', 'none');
+            		$('.menuGaleria').css('display', 'none');
+            		$('.menuSistemas').css('display', 'none');
+            		$('.menuColores').css('display', 'none');
+            		$('.menuGarantia').css('display', 'none');
+            		$('.menuProfesionales').css('display', 'none');
+            		$('.menuDistribuidores').css('display', 'none');
+            		$('.menuNosotros').css('display', 'none');
+            		$('.menuContacto').css('display', 'none');
+            	}
+
+            });
+            //-->
+        </script>
+
+        <script>
+            $(document).ready(function(){
+                /**
+                 * This part does the "fixed navigation after scroll" functionality
+                 * We use the jQuery function scroll() to recalculate our variables as the
+                 * page is scrolled/
+                 */
+
+                /**
+                 * This part causes smooth scrolling using scrollto.js
+                 * We target all a tags inside the nav, and apply the scrollto.js to it.
+                 */
+                $(".menuMicrocementos a").click(function(evn){
+                    evn.preventDefault();
+                    $('html,body').scrollTo(this.hash, this.hash);
+                });
+                /**
+                 * This part handles the highlighting functionality.
+                 * We use the scroll functionality again, some array creation and
+                 * manipulation, class adding and class removing, and conditional testing
+                 */
+                var aChildren = $(".menuMicrocementos li").children(); // find the a children of the list items
+                var aArray = []; // create the empty aArray
+                for (var i=0; i < aChildren.length; i++) {
+                    var aChild = aChildren[i];
+                    var ahref = $(aChild).attr('href');
+                    aArray.push(ahref);
+                } // this for loop fills the aArray with attribute href values
+
+                $(window).scroll(function(){
+                    var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
+                    var windowHeight = $(window).height(); // get the height of the window
+                    var docHeight = $(document).height();
+
+                    for (var i=0; i < aArray.length; i++) {
+                        var theID = aArray[i];
+                        var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+        				var divPos = divPos - 200;
+                        var divHeight = $(theID).height(); // get the height of the div in question
+                        if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                            $("a[href='" + theID + "']").addClass("activo");
+                        } else {
+                            $("a[href='" + theID + "']").removeClass("activo");
+                        }
+                    }
+
+                    if(windowPos + windowHeight == docHeight) {
+                        if (!$(".menuMicrocementos li:last-child a").hasClass("activo")) {
+                            var navActiveCurrent = $("activo").attr("href");
+                            $("a[href='" + navActiveCurrent + "']").removeClass("activo");
+                            $(".menuMicrocementos li:last-child a").addClass("activo");
+                        }
+                    }
+                });
+            });
+        </script>
+
+        <script type="text/javascript" src="../js/parallax.js"></script>
+        <script type="text/javascript" src="../js/codigo2.js"></script>
+
+        <script src="../js/TweenMax.min.js"></script>
+
+        <script src="../js/animate-scroll.js"></script>
+        <script>
+            anchoPag = $(window).width();
+
+            	if(anchoPag > 767) {
+                  $(document).animateScroll();
+
+            	}
+        </script>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+            	altoPag = $(window).height();
+            	document.getElementById('ocultomovil').style.maxHeight = altoPag;
+            });
+        </script>
+
+        <script type="text/javascript">
+            document.getElementById('body').setAttribute("style",""); document.getElementById('body').style.cssText="";
+        </script>
+
+        <script type="text/javascript">
+            var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};var d=document;s=d.createElement("script");s.type="text/javascript";s.defer=true;s.src="https://salesiq.zoho.com/gruponegociosposlu/float.ls?embedname=gruponegociosposlu";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+        </script>
+
+        <!--div id="barritaloca">
+            <div id="textoBarritaloca">Αυτή η ιστοσελίδα χρησιμοποιεί δικά της cookies και τρίτων για την λειτουργία της, καθώς επίσης και για την σύνταξη ανώνυμων στατιστικών επισκεψιμότητας. Εάν συνεχίσετε την πλοήγηση σας, συνεπάγεται ότι παρέχετε την συναίνεση σας στην χρήση
+                cookies. <br /> Μπορείτε να αλλάξετε την ρύθμιση παραμέτρων ή να αποκτήσετε περισσότερες πληροφορίες σχετικά με την<a href="https://www.topciment.com/gr/gr-cookie-policy.html" target="_blank" style="color:#fff">Πολιτική των Cookies</a>.
+                <a href="javascript:void(0);" style="padding:4px;background:#F5B026;text-decoration:none;color:#fff;" onclick="PonerCookie();"><b>ΔΕΧΟΜΑΙ</b></a>
+            </div>
+        </div>
+        <script>
+            function getCookie(c_name){
+             var c_value = document.cookie;
+             var c_start = c_value.indexOf(" " + c_name + "=");
+             if (c_start == -1){
+              c_start = c_value.indexOf(c_name + "=");
+             }
+             if (c_start == -1){
+              c_value = null;
+             }else{
+              c_start = c_value.indexOf("=", c_start) + 1;
+              var c_end = c_value.indexOf(";", c_start);
+              if (c_end == -1){
+               c_end = c_value.length;
+              }
+              c_value = unescape(c_value.substring(c_start,c_end));
+             }
+             return c_value;
+            }
+            function setCookie(c_name,value,exdays){
+             var exdate=new Date();
+             exdate.setDate(exdate.getDate() + exdays);
+             var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+             document.cookie=c_name + "=" + c_value;
+            }
+            if(getCookie('aviso')!="1"){
+             document.getElementById("barritaloca").style.display="block";
+            }
+            function PonerCookie(){
+             setCookie('aviso','1',365);
+             document.getElementById("barritaloca").style.display="none";
+            }
+        </script>
+        <script type='text/javascript' src='https://www.topciment.com/zcga.js'></script>
+        <script type='text/javascript' src='https://crm.zoho.com/crm/javascript/zcga.js'></script>
+    </div>
+<script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script></body>
+
+</html>

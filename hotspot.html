@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio Test</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="container1">
+      <input type="checkbox" class="input" id="input1" name="inputs" />
+      <input type="checkbox" class="input" id="input2" name="inputs" />
+      <input type="checkbox" class="input" id="input3" name="inputs" />
+      <label for="input1">
+        <div id="b1" class="button">1</div>
+      </label>
+      <label for="input2">
+        <div id="b2" class="button">2</div>
+      </label>
+      <label for="input3">
+        <div id="b3" class="button">3</div>
+      </label>
+      <div id="content1" class="content">
+        <div style="text-align: right;">
+          <label for="input1" class="cross">X</label>
+        </div>
+        <!--     <h1>Efectto Quartz Small Grain</h1>
+      <p class="bodyCopy">Efectto Quartz Small Grain es el listo al uso de Topciment® destinado a ser el acabado del
+        Sistema Paredes. Este material de grano fino se aplica en una sola mano después de aplicar el Efectto Quartz Big
+        Grain.</p>
+      <a href="sistemas/efectto-microcemento-listo-al-uso.html#small-grain" class="cta">Ver más</a> -->
+
+        <div class="row text-center">
+          <div class="col-md-12">
+            <h2>Efectto Quartz Small</h2>
+            <br />
+            <img
+              class="img-fluid"
+              src="imagenes/efectto/efectto_paredes_rectangular.jpg"
+            />
+          </div>
+        </div>
+      </div>
+      <div id="content2" class="content">
+        <div style="text-align: right;">
+          <label for="input2" class="cross">X</label>
+        </div>
+        <h1>Efectto Quartz Medium Grain</h1>
+        <p class="bodyCopy">
+          Efectto Quartz Medium Grain es el listo al uso de Topciment® destinado
+          a ser el acabado del Sistema Suelos. Este material de grano medio se
+          aplica en una sola mano después de aplicar el Efectto Quartz Super
+          Grain.
+        </p>
+        <a
+          href="sistemas/efectto-microcemento-listo-al-uso.html#medium-grain"
+          class="cta"
+          >Ver más</a
+        >
+      </div>
+      <div id="content3" class="content">
+        <div style="text-align: right;">
+          <label for="input3" class="cross">X</label>
+        </div>
+        <h1>Efectto Quartz Super Grain</h1>
+        <p class="bodyCopy">
+          Efectto Quartz Super Grain el listo al uso de Topciment® destinado a
+          ser la base del Sistema Suelos aunque se puede utilizar como acabado.
+          Este material de grano grueso se aplica en dos manos antes de aplicar
+          el Efectto Quartz Medium Grain.
+        </p>
+        <a
+          href="sistemas/efectto-microcemento-listo-al-uso.html#super-grain"
+          class="cta"
+          >Ver más</a
+        >
+      </div>
+    </div>
+  <script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script></body>
+  <style>
+    body {
+      margin: 0 !important;
+      padding: 0 !important;
+      width: 100% !important;
+    }
+
+    .container1 {
+      position: relative;
+      overflow: hidden;
+      height: 60vw;
+      background-image: url(imagenes/sistemas/fondo5.jpg);
+      background-size: cover;
+    }
+
+    input {
+      display: none;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .button {
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      background-color: black;
+      display: block;
+      padding: 10px 16px;
+      border-radius: 100%;
+      cursor: pointer;
+      animation: fadein 0.5s;
+      animation: pulse 1.5s infinite;
+    }
+
+    .content {
+      background: white;
+      padding: 1rem 1rem 2rem 1rem;
+      text-align: center;
+      display: none;
+      width: 30%;
+      margin-left: 35%;
+      margin-top: 15%;
+      border-radius: 8px;
+      box-shadow: 0 4px 2px -2px rgba(211, 47, 47, 0);
+    }
+
+    .cross {
+      font-weight: bold;
+    }
+
+    #b1 {
+      position: absolute;
+      left: 64%;
+      top: 26%;
+    }
+
+    #b2 {
+      position: absolute;
+      left: 51%;
+      top: 52%;
+    }
+
+    #b3 {
+      position: absolute;
+      left: 80%;
+      top: 80%;
+    }
+
+    #input1:checked ~ #content1,
+    #input2:checked ~ #content2,
+    #input3:checked ~ #content3 {
+      display: block !important;
+      animation: fadein 0.5s;
+    }
+
+    input:checked ~ label .button {
+      display: none !important;
+      animation: fadeout 0.5s;
+    }
+
+    .button:hover {
+      color: black;
+      background: white;
+    }
+
+    .cta {
+      display: inline-block;
+      background: black;
+      color: white;
+      padding: 12px 24px;
+      margin-top: 48px;
+      border-radius: 24px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      text-decoration: underline !important;
+      box-shadow: 0 0 0 6px rgba(27, 27, 27, 0.4);
+    }
+
+    @keyframes fadein {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeout {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes pulse {
+      from {
+        box-shadow: 0 0 0 0px rgb(0, 0, 0);
+      }
+
+      to {
+        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0);
+      }
+    }
+
+    /* inspired by this article/tutorial > https://curated.email/hotspots-in-email */
+  </style>
+</html>

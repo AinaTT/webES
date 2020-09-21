@@ -1,0 +1,753 @@
+﻿<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" type="text/css" href="../../css/estilo.css">
+	<link rel="icon" type="image/png" href="https://www.topciment.com/favicon.png" />
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link
+		href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://www.topciment.com/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.topciment.com/css/animate.css">
+	<title>Mikrozement Rechner</title>
+	<meta name="description" content="Möchten Sie Mikrozement auf eine Oberfläche anwenden und wissen nicht." />
+
+	<link rel="stylesheet" href="themes/Bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="../css/print.css" media="print" />
+	<!-- Nuevo estilo und js zu página -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../../css/restyle.css">
+	<script type='text/javascript' src='../../js/mycode.js'></script>
+	<!-- End new styles -->
+	<link rel="icon" type="img/png" href="https://www.topciment.com/favicon.png" />
+	<link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.0.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<script src="themes/jquery-1.8.2.min.js"></script>
+	<script src="themes/jquery.mobile-1.4.0.min.js"></script>
+
+	<style>
+		#myTable {
+			border: 1px solid #d6d6d6;
+		}
+
+		thead {
+			background: #DFE2E3;
+		}
+
+		th {
+			border-bottom: 1px solid #d6d6d6;
+		}
+
+		tr:nth-child(even) {
+			background: #f3f3f3;
+		}
+	</style>
+
+	<script>
+		$(document).ready(function () {
+
+			// ### DATA BASE ### ///
+			// MICROS rendimiento según metros >> kg/m2
+			var r_base_suelo_juntas = 3; // envases 20kg 3
+			var r_base_pared_juntas = 2.5; // envases 20kg antes 3
+			var r_base_suelo_liso = 2; // envases 20kg
+			var r_base_pared_lisa = 2; // envases 20kg
+			var r_base_suelo_stone = 1; // envases 20kg
+			var r_base_suelo_stone_juntas = 1.5; // envases 20kg antes 2
+			var r_fino = 0.5; // envases 10kg und 20kg
+			var r_deck = 1; // envase 20kg
+			var r_stone = 2; // envase 20kg
+			var r_rustico = 2; // envase 20kg
+
+
+			// RESINA  rendimiento según kilos zu micro ltr/kg
+			var r_resina_base = 0.30; // envases 5L und 25L
+			var r_resina_fino = 0.45; // envases 5L und 25L
+			var r_resina_deck = 0.35; // envases 5L und 25L
+			var r_resina_stone = 0.27; // envases 5L und 25L
+			var r_resina_rustico = 0.30; // envases 5L und 25L
+
+
+
+			// PROMOTOR  rendimiento según metros
+			var r_promotor = 0.10; // envase 5L
+			var r_malla = 0.95; // envase 50m
+
+
+
+			// Pigmentos, por mano / cantidad zu manos pigmentadas en el sistema ¡¡¡POR ENVASE!!!
+			var pigmento_suelo_juntas = 3; // 2 base 1 deck  - 1 base
+			var pigmento_suelo_liso = 2; // 1 base 1 deck  - 1 base
+			var pigmento_pared_juntas = 4; // 1 base 2 fino  - 2 base
+			var pigmento_pared_lisa = 3; // 1 base 2 fino  - 1 base
+			var pigmento_suelo_stone = 2; // 1 base 1 stone - 1 base
+
+
+
+			// SELLADOR  rendimiento según metros
+			var r_presealer = 0.12; // envase 5L
+			var r_sellador = 0.15; // envase 6L
+
+
+
+
+			// ### FIN DATA BASE ### ///
+
+
+			var metros_suelo = localStorage.getItem('metros_suelo');
+			var superficie_suelo = localStorage.getItem('superficie_suelo');
+			var color_suelo = localStorage.getItem('color_suelo');
+
+			var metros_pared = localStorage.getItem('metros_pared');
+			var superficie_pared = localStorage.getItem('superficie_pared');
+			var color_pared = localStorage.getItem('color_pared');
+
+			var metros_antideslizante = localStorage.getItem('metros_antideslizante');
+			var superficie_antideslizante = localStorage.getItem('superficie_antideslizante');
+			var color_antideslizante = localStorage.getItem('color_antideslizante');
+
+			var metros_rustico = localStorage.getItem('metros_rustico');
+			var superficie_rustico = localStorage.getItem('superficie_rustico');
+			var color_rustico = localStorage.getItem('color_rustico');
+
+
+			// ### ES SUELO
+			if (metros_suelo >= 1 && superficie_suelo != 'Escoge') {
+
+				switch (superficie_suelo) {
+					case 'Terrazo o Marmol':
+						var promotor_suelo = 'Primacem Plus';
+						var kilos_base_suelo = Math.ceil(metros_suelo * r_base_suelo_liso);
+						var litros_promotor_suelo = (metros_suelo * r_promotor / 2.5) / 2;
+						break;
+					case 'Gres, azulejo o porcelánico (con juntas)':
+						var promotor_suelo = 'Primacem Plus';
+						var kilos_base_suelo = Math.ceil(metros_suelo *
+							2.5); //Before:  	var kilos_base_suelo = Math.ceil(metros_suelo * r_base_suelo_juntas);
+
+						var litros_promotor_suelo = Math.ceil(metros_suelo * r_promotor / 2.5);
+
+						break;
+					case 'Solera':
+						var promotor_suelo = 'Acricem';
+						var kilos_base_suelo = Math.ceil(metros_suelo * r_base_suelo_liso);
+						var litros_promotor_suelo = Math.ceil((metros_suelo * r_promotor / 2.5) / 2);
+
+						break;
+					case 'Autonivelante':
+						var promotor_suelo = 'Acricem';
+						var kilos_base_suelo = Math.ceil(metros_suelo * r_base_suelo_liso);
+						var litros_promotor_suelo = Math.ceil((metros_suelo * r_promotor / 2.5) / 2);
+						break;
+				}
+
+
+				var kilos_micro_suelo = Math.ceil(metros_suelo * r_deck);
+				var unidades_base_suelo = Math.ceil(kilos_base_suelo / 20); //TODO
+				var unidades_micro_suelo = Math.ceil(kilos_micro_suelo / 20);
+				var litros_resina_base_suelo = Math.ceil(kilos_base_suelo * r_resina_base);
+				var litros_resina_micro_suelo = Math.ceil(kilos_micro_suelo * r_resina_deck);
+				var litros_resina_total_suelo = Math.ceil(litros_resina_base_suelo + litros_resina_micro_suelo);
+				var unidades_malla_suelo = Math.ceil(metros_suelo / 50);
+				var unidades_pigmento_suelo = Math.ceil(metros_suelo / 20) + unidades_micro_suelo;
+				var litros_presealer_suelo = Math.ceil(metros_suelo * r_presealer / 5);
+				var litros_sellador_suelo = Math.ceil(metros_suelo * r_sellador / 6);
+
+				/*  Math.ceil(litros_promotor_suelo / 2) + ' Stücke  zu 5 lt */
+				var suelo = '<strong>Untergrund</strong>: ' + superficie_suelo + ' | <strong>Meter</strong>: ' +
+					metros_suelo + ' | <strong>Farbe</strong>: ' + color_suelo;
+				var _suelo = '<tr><td>Primer  <strong>' + promotor_suelo + '</td><td>' +
+					litros_promotor_suelo + ' Stücke  zu 5 Litern.</td></tr>' +
+					'<tr><td> <strong>Builtex</strong> Gewebe ' + metros_suelo + ' Meter</td><td>' +
+					unidades_malla_suelo + ' zu 50 m2</td></tr>' +
+					'<tr><td><strong>Microbase</strong> Microcement </td><td> ' + unidades_base_suelo +
+					' Eimer zu 20kg. (' + kilos_base_suelo + ' kg. Microbase)</td></tr>' +
+					'<tr><td> <strong>Microdeck</strong> Microcement</td><td> ' + unidades_micro_suelo +
+					' Eimer zu 20kg.(' + kilos_micro_suelo + ' kg. Microdeck)</td></tr>' +
+					'<tr><td> <strong>Acricem</strong> Harz</td><td> ' + Math.ceil(litros_resina_total_suelo / 5) +
+					' Stücke  zu 5 Litern. ó ' + Math.ceil(litros_resina_total_suelo / 25) +
+					' Stücke  zu 25 Litern. (' +
+					Math.ceil(litros_resina_base_suelo) + ' Litern für Microbase und ' + Math.ceil(
+						litros_resina_micro_suelo) + ' Litern für Microdeck )</td></tr>' +
+					'<tr><td><strong>Pigment dose</strong> ' + unidades_pigmento_suelo + '</td><td> ' + Math
+					.ceil(metros_suelo / 20) + ' für Microbase und ' + unidades_micro_suelo +
+					' für Microdeck . Farbe' + color_suelo + '</td></tr>' +
+					'<tr><td> <strong>Presealer</strong> Primer</td><td> ' + litros_presealer_suelo +
+					'  Stücke  zu 5 Litern.</td></tr>' +
+					'<tr><td> <strong>Topsealer WT</strong> Sealer</td><td> ' + litros_sellador_suelo +
+					' Stücke  zu 5 + 1 Litern.</td></tr>';
+
+				$('#suelo').html(suelo);
+				$('#_suelo').html(_suelo);
+
+			}
+			// ### ES PARED
+			if (metros_pared >= 1 && superficie_pared != 'Escoge') {
+				switch (superficie_pared) {
+					case 'Azulejo':
+						var promotor_pared = 'Primacem Plus';
+						var kilos_base_pared = Math.ceil(metros_pared * r_base_pared_juntas);
+						var litros_promotor_pared = Math.ceil((metros_pared * r_promotor / 5) * 2);
+
+						break;
+					case 'Pladur':
+						var promotor_pared = 'Primacem ABS';
+						var kilos_base_pared = Math.ceil(metros_pared * r_base_pared_lisa);
+						var litros_promotor_pared = Math.ceil(metros_pared * r_promotor / 5);
+
+						break;
+					case 'Enfoscado':
+						var promotor_pared = 'Acricem';
+						var kilos_base_pared = Math.ceil(metros_pared * r_base_pared_lisa);
+						var litros_promotor_pared = Math.ceil(metros_pared * r_promotor / 5);
+
+						break;
+				}
+
+				var kilos_micro_pared = Math.ceil(metros_pared * r_fino);
+				var unidades_base_pared = Math.ceil(kilos_base_pared / 20);
+				var unidades_micro_pared = Math.ceil(kilos_micro_pared / 20);
+				var litros_resina_base_pared = (kilos_base_pared * r_resina_base);
+				var litros_resina_micro_pared = (kilos_micro_pared * r_resina_fino);
+				var litros_resina_total_pared = Math.ceil(litros_resina_base_pared + litros_resina_micro_pared);
+				var unidades_malla_pared = Math.ceil(metros_pared / 50);
+				var unidades_pigmento_pared = Math.ceil(metros_pared / 20) + unidades_micro_pared;
+				var litros_presealer_pared = Math.ceil(metros_pared * r_presealer);
+				var litros_sellador_pared = Math.ceil(metros_pared * r_sellador / 6);
+
+				console.log((metros_pared * r_promotor / 5) * 2);
+
+				var pared = '<strong>Untergrund</strong>: ' + superficie_pared + ' | <strong>Meter</strong>: ' +
+					metros_pared + ' | <strong>Farbe</strong>: ' + color_pared;
+
+				var _pared = '<tr><td>Primer  <strong>' + promotor_pared + '</strong></td><td> ' +
+					litros_promotor_pared + ' Stücke  zu 5 Litern.</td></tr>' +
+					'<tr><td> <strong>Builtex</strong>  Gewebe ' + metros_pared + ' Meter</td><td>' +
+					unidades_malla_pared + ' zu 50 m2</td></tr>' +
+					'<tr><td> <strong>Microbase</strong> Microcement</td><td> ' + unidades_base_pared +
+					' Eimer zu 20kg.(' + kilos_base_pared + ' kg. Microbase)</td></tr>' +
+					'<tr><td> <strong>Microfino</strong> Microcement</td><td> ' + unidades_micro_pared +
+					' Eimer zu 20kg.(' + kilos_micro_pared + ' kg. Microfino)</td></tr>' +
+					'<tr><td> <strong>Acricem</strong> Harz</td><td> ' + Math.round(litros_resina_total_pared / 5) +
+					' Stücke  zu 5 Litern. ó ' + Math.ceil(litros_resina_total_pared / 25) +
+					' Stücke  zu 25 Litern. (' +
+					Math.round(litros_resina_base_pared) + ' Litern für Microbase und ' + Math.round(
+						litros_resina_micro_pared) + ' Litern für Microfino )</td></tr>' +
+					'<tr><td><strong>Pigment dose</strong> ' + unidades_pigmento_pared + '</td><td> ' + Math
+					.ceil(metros_pared / 20) + ' für Microbase und ' + unidades_micro_pared +
+					' für Microfino . Farbe' + color_pared + '</td></tr>' +
+					'<tr><td> <strong>Presealer</strong> Primer</td><td> ' + Math.ceil(litros_presealer_pared /
+						5) + '  Stücke  zu 5 Litern.</td></tr>' +
+					'<tr><td> <strong>Topsealer WT</strong> Sealer</td><td>' + litros_sellador_pared +
+					' Stücke  zu 5 + 1 Litern.</td></tr>';
+
+				$('#pared').html(pared);
+				$('#_pared').html(_pared);
+			}
+
+
+
+			// ES ANTIDESLIZANTE
+			if (metros_antideslizante >= 1 && superficie_antideslizante != 'Escoge') {
+
+				switch (superficie_antideslizante) {
+					case 'Solera':
+						var promotor_antideslizante = 'Acricem';
+						var kilos_base_antideslizante = Math.ceil(metros_antideslizante * r_base_suelo_stone);
+						break;
+					case 'Ceramic flooring (with joints)':
+						var promotor_antideslizante = 'Primacem Plus';
+						var kilos_base_antideslizante = Math.ceil(metros_antideslizante * r_base_suelo_stone_juntas);
+						console.log("con juntas" + kilos_base_antideslizante);
+						break;
+				}
+
+
+				var litros_promotor_antideslizante = Math.ceil(metros_antideslizante * r_promotor / 5);
+				/* var kilos_base_antideslizante = Math.ceil(metros_antideslizante * r_base_suelo_stone); */
+				var kilos_micro_antideslizante = Math.ceil(metros_antideslizante * r_stone);
+				var unidades_base_antideslizante = Math.ceil(kilos_base_antideslizante / 20);
+				var unidades_micro_antideslizante = Math.ceil(kilos_micro_antideslizante / 20);
+				var litros_resina_base_antideslizante = (kilos_base_antideslizante * r_resina_base);
+				var litros_resina_micro_antideslizante = Math.ceil(kilos_micro_antideslizante * r_resina_stone);
+				var litros_resina_total_antideslizante = Math.ceil(litros_resina_base_antideslizante +
+					litros_resina_micro_antideslizante);
+				var unidades_malla_antideslizante = Math.ceil(metros_antideslizante / 50);
+				var unidades_pigmento_antideslizante = Math.ceil(metros_antideslizante / 20) +
+					unidades_micro_antideslizante;
+				var litros_presealer_antideslizante = Math.ceil(metros_antideslizante * r_presealer);
+				var litros_sellador_antideslizante = Math.ceil(metros_antideslizante * r_sellador / 6);
+
+				var antideslizante = '<strong>Untergrund</strong>: ' + superficie_antideslizante +
+					' | <strong>Meter</strong>: ' + metros_antideslizante + ' | <strong>Farbe</strong>: ' +
+					color_antideslizante;
+
+				var _antideslizante = '<tr><td>Primer  <strong>' + promotor_antideslizante + '</strong></td><td> ' +
+					Math.ceil(litros_promotor_antideslizante) + ' Stücke  zu 5 Litern.</td></tr>' +
+					'<tr><td> <strong>Builtex</strong>  Gewebe' + metros_antideslizante + ' Meter</td><td>' +
+					unidades_malla_antideslizante + ' zu 50 m2</td></tr>' +
+					'<tr><td> <strong>Microbase</strong> Microcement</td><td> ' + unidades_base_antideslizante +
+					' Eimer zu 20kg.(' + kilos_base_antideslizante + 'kg. Microbase für aplicación) </td></tr>' +
+					'<tr><td><strong>Microstone</strong> Microcement </td><td> ' + unidades_micro_antideslizante +
+					' Eimer zu 20kg.(' + kilos_micro_antideslizante + ' kg. Microstone)</td></tr>' +
+					'<tr><td> <strong>Acricem</strong> Harz</td><td> ' + Math.ceil(
+						litros_resina_total_antideslizante / 5) + ' Stücke  zu 5 Litern. ó ' + Math.ceil(
+						litros_resina_total_antideslizante / 25) + ' Stücke  zu 25 Litern. (' + Math.round(
+						litros_resina_base_antideslizante) + ' Litern für Microbase und ' + Math.round(
+						litros_resina_micro_antideslizante) + ' Litern für Microstone )</td></tr>' +
+					'<tr><td><strong>Pigment dose</strong> </td><td> ' + unidades_micro_antideslizante +
+					' dosis für Microstone . Farbe' + color_antideslizante + '</td></tr>' +
+					'<tr><td> <strong>Presealer</strong> Primer</td><td> ' + Math.ceil(
+						litros_presealer_antideslizante / 5) + '  Stücke  zu 5 Litern.</td></tr>' +
+					'<tr><td> <strong>Topsealer WT</strong> Sealer</td><td>' + litros_sellador_antideslizante +
+					' Stücke  zu 5 + 1 Litern.</td></tr>';
+
+
+				$('#antideslizante').html(antideslizante);
+				$('#_antideslizante').html(_antideslizante);
+			}
+
+		});
+	</script>
+
+
+</head>
+
+<body>
+
+
+	<div id="header">
+
+		<div class="menuBar" style="position:fixed; transform: translate3d(0px, 0px, 1px);">
+			<div class="menuBarContent">
+
+				<a href="../index.html" target="_blank"><img class="imgLogo logo1"
+						src="../../imagenes/microcemento-topciment.png" alt="Topciment">
+					<img class="imgLogo logo2" src="../../imagenes/logos/logoBlanco2.png" alt="Topciment"
+						style="max-width: 60px; max-height: 60px;">
+				</a>
+
+				<div class="menu idiomas">
+					<ul>
+						<li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+						<li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a>
+						</li>
+						<li class="lang"><a class="activolang" href="https://www.topciment.com/de/" rel="alternate"
+								hreflang="de">De</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it">It</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+					</ul>
+				</div>
+
+
+				<!-- Start Menu -->
+				<div class="menu botones" style="margin-left:100px">
+					<ul>
+						<li><a href="mikrozement-informationen.html" target="_blank">Mikrozement</a></li>
+						<li><a href="systeme.html" target="_blank">Systeme</a></li>
+						<li><a href="galerie.html" target="_blank">Galerie</a></li>
+						<li><a href="die-ecke-vom-fachmann.html" target="_blank">Profis</a></li>
+						<li><a class="activo" href="nachrichten.html" target="_blank">Nachrichten</a></li>
+						<li><a href="kontakt.html" target="_blank">Kontakt</a></li>
+					</ul>
+					<div class="dropdown" style="top: -20px;">
+						<button class="dropbtn" style="background-color: black;
+						border: none;">
+							<img src="../../imagenes/flags/germany.png" alt="Topciment germany web"
+								Title="Topciment germany web">
+						</button>
+						<div class="dropdown-content">
+							<a href="https://www.topciment.com"> <img src="../../imagenes/flags/spain.png"
+									alt="Topciment Spanish Web" Title="Topciment Spanish Web"> </a>
+							<a href="https://www.topciment.com/en"><img src="../../imagenes/flags/united-kingdom.png"
+									alt="Topciment english web" Title="Topciment english web"></a>
+							<a href="https://www.topciment.com/fr/"><img src="../../imagenes/flags/france.png"
+									alt="Topciment french web" Title="Topciment french web"></a>
+							<a href="https://www.topciment.com/it/"><img src="../../imagenes/flags/italy.png"
+									alt="Topciment italian web" title="Topciment italian web"></a>
+							<a href="https://www.topciment.com/nl/"><img src="../../imagenes/flags/netherlands.png"
+									alt="Topciment dutch web" title="Topciment dutch web"></a>
+							<a href="https://www.topciment.com/gr/"><img src="../../imagenes/flags/greece.png"
+									alt="Topciment greek web" title="Topciment greek web"></a>
+							<a class="ultimo" href="https://www.topciment.ru/"><img
+									src="../../imagenes/flags/russia.png" alt="Topciment russian web"
+									title="Topciment russian web"></a>
+						</div>
+					</div>
+				</div>
+				<!-- End Menu -->
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		function mostrar() {
+			document.getElementById('oculto').style.display = 'block';
+			document.getElementById('visible').style.display = 'none';
+		}
+
+		function ocultar() {
+			document.getElementById('oculto').style.display = 'none';
+			document.getElementById('visible').style.display = 'block';
+		}
+
+		function mostrarmovil() {
+			document.getElementById('ocultomovil').style.display = 'block';
+			document.getElementById('visiblemovil').style.display = 'none';
+		}
+
+		function ocultarmovil() {
+			document.getElementById('ocultomovil').style.display = 'none';
+			document.getElementById('visiblemovil').style.display = 'block';
+		}
+
+		function mostrarSubmenu() {
+
+			if (document.getElementById) {
+				var aux = document.getElementById('submenumovil').style;
+				aux.display = aux.display ? "" : "block";
+			}
+
+		}
+	</script>
+
+	<!-- MENU ESTADO INICIAL MOVIL-->
+
+	<div id="visiblemovil">
+		<div style="opacity:1; padding-top:0px; z-index:1000;"><a href="#menu"
+				style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="mostrarmovil()"><img
+					src="../../imagenes/icono-menu-abrir-white.png" width="26" height="20" alt="menu" /></a></div>
+	</div>
+
+	<!-- MENU DESPLEGADO MOVIL-->
+
+	<div id="ocultomovil">
+		<div id="ocultomovilinterno">
+
+			<div id="menuidiomasmovil">
+				<ul>
+					<li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+					<li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en"
+							class="activolang">En</a></li>
+					<li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
+					<li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a></li>
+					<li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it">It</a></li>
+					<li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
+					<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a></li>
+					<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+				</ul>
+			</div>
+			<div id="menuocultomovil">
+				<ul>
+					<li><a href="mikrozement-informationen.html" target="_blank"
+							onclick="ocultarmovil()">Mikrozement</a></li>
+					<!--<li><a href="mikrozement-farben.html" onclick="ocultarmovil()">Farben</a></li>-->
+					<li><a href="systeme.html" target="_blank" onclick="ocultarmovil()">Systeme</a></li>
+					<li><a href="galerie.html" target="_blank" onclick="ocultarmovil()">Galerie</a></li>
+					<!--<li><a href="garantie.html" onclick="ocultarmovil()">Garantie</a></li>-->
+					<li><a href="die-ecke-vom-fachmann.html" target="_blank" onclick="ocultarmovil()">Profis</a></li>
+					<!--<li><a href="vertriebspartner.html" onclick="ocultarmovil()">Vertriebspartner</a></li>-->
+					<!--<li><a href="uber-uns.html" onclick="ocultarmovil()">Über Uns</a></li>-->
+					<li><a href="nachrichten.html" target="_blank" onclick="ocultarmovil()">Nachrichten</a></li>
+					<li><a href="kontakt.html" target="_blank" onclick="ocultarmovil()">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="cerrarEquis"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100"
+				onclick="ocultarmovil()"><img src="../../imagenes/equis-cerrar.png" width="28" height="28"
+					alt="Cerrar" /></a>
+		</div>
+	</div>
+
+	<div data-role="page" data-theme="a">
+
+		<p></br></p>
+		<div data-role="header" data-position="inline">
+			<p></br></p>
+			<h1>Material-Rechner</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#" data-icon="arrow-l" data-rel="back" class="mt-4">Zurück</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div data-role="main" class="ui-content">
+
+			<h2>Sie haben Boden nicht gewählt</h2>
+			<p id="suelo"></p>
+			<table data-role="table" data-mode="" class="ui-responsive ui-shadow" id="myTable">
+				<thead>
+					<tr>
+						<th>Benötigtes Produkt</th>
+						<th>RErforderliche Einheiten </th>
+					</tr>
+				</thead>
+				<tbody id="_suelo">
+					<tr>
+						<td>Sie haben Boden nicht gewählt</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table> <br />
+			<hr />
+
+			<h2>Sie haben Wand gewählt</h2>
+			<p id="pared"></p>
+			<table data-role="table" data-mode="" class="ui-responsive ui-shadow" id="myTable">
+				<thead>
+					<tr>
+						<th>Benötigtes Produkt</th>
+						<th>RErforderliche Einheiten </th>
+					</tr>
+				</thead>
+				<tbody id="_pared">
+					<tr>
+						<td>Sie haben Wand nicht gewählt</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table> <br />
+			<hr />
+
+
+			<h2>Sie haben Außenbereich gewählt</h2>
+			<p id="antideslizante"></p>
+			<table data-role="table" data-mode="" class="ui-responsive ui-shadow" id="myTable">
+				<thead>
+					<tr>
+						<th>Benötigtes Produkt</th>
+						<th>RErforderliche Einheiten </th>
+					</tr>
+				</thead>
+				<tbody id="_antideslizante">
+					<tr>
+						<td>Sie haben Rutschfest nicht gewählt</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table> <br />
+			<hr />
+			<!-- 		<h2>Ha indicado rustico</h2>
+			<p id="rustico"></p>
+			<table data-role="table" data-mode="" class="ui-responsive ui-shadow" id="myTable">
+				<thead>
+					<tr>
+						<th>Benötigtes Produkt</th>
+						<th>RErforderliche Einheiten </th>
+					</tr>
+				</thead>
+				<tbody id="_pared">
+					<tr>
+						<td>No ha indicado rustico</td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table> --> <br />
+			<hr />
+			</table>
+		</div>
+
+		<!-- START Footer -->
+
+		<!-- start footer -->
+		<footer class="footerp">
+			<div class="contenedorMenuOculto contenedorF">
+				<div class="row row1">
+					<div class="col-md-3 col1F">
+						<h6 class="tituloF productosF"><strong>PRODUKTE</strong></h6>
+						<ul class="ulF productosF">
+							<li class="sttandardF"><a class="linkB"
+									href="../systeme/sttandard-zwei-komponenten-mikrozement.html" target="_blank">Zwei
+									Komponenten Mikrozement</a>
+							</li>
+							<li class="evoluttionF"><a class="linkB"
+									href="../systeme/evoluttion-ein-komponenten-mikrozement.html" target="_blank">Ein
+									Komponenten Mikrozement</a>
+							</li>
+							<li class="efecF"><a class="linkB"
+									href="../systeme/efectto-gebrauchsfertige-mikrozement.html"
+									target="_blank">Gebrauchsfertige Mikrozement
+								</a>
+							</li>
+							<li class="puremF"><a class="linkB"
+									href="../systeme/pure-mettal-metallische-beschichtung.html"
+									target="_blank">Metallische
+									Beschichtung</a></li>
+							<li class="classicF"><a class="linkB" href="../systeme/classic-mettal-metallic-farben.html"
+									target="_blank">Metallic
+									farben</a></li>
+							<li class="elitteF"><a class="linkB" href="../systeme/elitte-metallische-glasuren-und.html"
+									target="_blank">Metallische
+									Glasuren und
+									Metallpigmente</a></li>
+							<li class="primacemF"><a class="linkB" href="../systeme/primacem-primers.html"
+									target="_blank">Primers</a></li>
+							<li class="arcocemF"><a class="linkB" href="../systeme/arcocem-pigmente.html"
+									target="_blank">Pigmente</a></li>
+							<li class="topsealerF"><a class="linkB" href="../systeme/topsealer-lacke.html"
+									target="_blank">Lacke</a></li>
+							<li class="limpieF"><a class="linkB"
+									href="../systeme/reinigung-und-pflege-von-mikrozement.html"
+									target="_blank">Reinigung
+									und Pflege von
+									Mikrozement</a></li>
+							<li class="herramF"><a class="linkB" href="../systeme/werkzeuge.html"
+									target="_blank">Werkzeuge</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col2F">
+						<h6 class="tituloF proyectosF"><strong>PRODUKTE</strong></h6>
+						<ul class="ulF proyectos">
+							<li class="suelosF"><a class="linkB" href="../galerie.html#suelos"
+									target="_blank">Bodenrenovierung</a></li>
+							<li class="paredesF"><a class="linkB" href="../galerie.html#paredes" target="_blank">Wände
+									Beschichtungen</a>
+							</li>
+							<li class="banyoF"><a class="linkB" href="../galerie.html#banyo"
+									target="_blank">Badezimmerrenovierung</a></li>
+							<li class="cocinasF"><a class="linkB" href="../galerie.html#cocinas"
+									target="_blank">Küchenrenovierung</a></li>
+							<li class="decontiuosF"><a class="linkB" href="../galerie.html#decontinuos"
+									target="_blank">Fugenlose dekorative
+									Beschichtungen</a></li>
+							<li class="mueblesF"><a class="linkB" href="../galerie.html#muebles"
+									target="_blank">Möbeldekoration</a></li>
+							<li class="azulejosF"><a class="linkB" href="../galerie.html#azulejos"
+									target="_blank">Fliesenabdeckung</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col3F">
+						<h6 class="tituloF"><strong>PROFIS</strong></h6>
+						<ul class="ulF profesionalesF">
+							<li class="clientesF"><a class="linkB" href="portalcliente" target="_blank">Customer
+									portal</a></li>
+							<li class="distriF"><a class="linkB" href="../vertriebspartner.html"
+									target="_blank">Vertriebspartner</a></li>
+							<!-- Distribuidores -->
+							<li class="garantF"><a class="linkB" href="../garantie.html" target="_blank">Garantie</a>
+							</li>
+							<li class="fichatF"><a class="linkB" href="../downloads.html#fichas-tecnicas-topciment"
+									target="_blank">Technische
+									Datenblätter</a></li>
+							<li class="descargasF"><a class="linkB" href="../downloads.html#catalogo-topciment"
+									target="_blank">Downloads</a>
+							</li>
+							<li class="videotutF"><a class="linkB" href="../video-tutorials-microcement.html"
+									target="_blank">Video
+									tutorials</a></li>
+							<li class="calcF"><a class="linkB" href="../../calc/index.html"
+									target="_blank">Taschenrechner</a></li>
+							<li class="selloF"><a class="linkB" href="../qualitats-siegel.html"
+									target="_blank">Qualitätssiegel</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col4F">
+						<h6 class="tituloF"><strong>FIRMA</strong></h6>
+						<ul class="ulF empresaF">
+							<li class="nosotrosF"><a class="linkB" href="../uber-uns.html" target="_blank">Über uns</a>
+							</li>
+							<!-- sobre nosotros -->
+							<li class="noticiasF"><a class="linkB" href="../nachrichten.html"
+									target="_blank">Neuigkeiten</a></li>
+							<!-- noticias -->
+							<li class="contactoF"><a class="linkB" href="../kontakt.html" target="_blank">Kontakt</a>
+							</li>
+							<li class="newsletterF"><a class="linkB" href="http://zc.vg/T1cBj"
+									target="_blank">Abonnieren Sie unseren
+									Newsletter</a>
+							</li>
+							<li class="atencionF">Kundendienst Montag bis Freitag von 09.00h - 18.00h</li>
+							<li class="numFooter">+34 963 92 59 89</li>
+							<li class="emailF"> info@topciment.com</li>
+						</ul>
+						<p>
+							<!-- Youtube -->
+							<a class="linkB social1" href="https://www.youtube.com/user/TopCiment" target="_blank">
+								<span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-youtube fa-stack-1x"></i>
+								</span></a>
+							<!-- Instagrm -->
+							<a class="linkB social2" href="https://www.instagram.com/topciment/" target="_blank">
+								<span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-instagram  fa-stack-1x"></i>
+								</span></a>
+							<!--  Whatsap -->
+							<a class="linkB social3"
+								href="https://api.whatsapp.com/send?phone=34647913586&amp;text=Hola&amp;source=&amp;data="
+								target="_blank"><span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-whatsapp fa-stack-1x"></i>
+								</span></a>
+							<!--Pinterest -->
+							<a class="linkB social4" href="https://www.pinterest.com/topciment/" target="_blank"><span
+									class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-pinterest fa-stack-1x"></i>
+								</span></a>
+							<!--Facebook-->a
+							<a class="linkB social5" href="https://es-es.facebook.com/topciment.microcemento"
+								target="_blank"><span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-facebook fa-stack-1x"></i>
+								</span></a>
+							<!-- Twitter -->
+							<a class="linkB social6" href="https://twitter.com/topciment" target="_blank"><span
+									class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-twitter fa-stack-1x"></i>
+								</span></a>
+							<!-- Linkedin -->
+							<a class="linkB social7" href="https://www.linkedin.com/company/2880536/"
+								target="_blank"><span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-linkedin fa-stack-1x"></i>
+								</span></a>
+						</p>
+					</div>
+				</div>
+				<div class="row row2">
+					<div class="col-md-1 col-12 col5F">
+						<a href="../index.html" target="_blank"><img
+								src=" ../../imagenes/logos/Topciment-cuadrado-blanco.png" class="img-fluid logoF" /></a>
+					</div>
+					<div class="col-md-11 col6F">
+						<small class="direccionF"> © 2020 Grupo Negocios PO,S.L.U. Rosas 33, Manises 46940
+							España</small><br class="brF">
+						<small class="privaF">
+							<a class="linkB politicaF" href="../nutzungsbedingungen-und-datenschutzerklarung.html"
+								rel="nofollow" target="_blank">
+								Nutzungsbedingungen und Datenschutzerklärung</a> |
+							<a class="linkB cookieF" href="../cookie-richtlinie.html" target="_blank" rel="nofollow"
+								class="textoBlanco">Cookie-Richtlinie</a></small>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- end footer -->
+		<script data-id='xenioo' data-node='app' src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
+		<!-- END Footer -->
+	</div>
+
+	<script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script>
+</body>
+
+</html>
