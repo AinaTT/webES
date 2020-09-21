@@ -24,6 +24,16 @@
 
   <link rel="stylesheet" href="../css/animate.css">
 
+  <!-- Nuevo estilo y js de página -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/restyle.css">
+  <script type='text/javascript' src='../js/mycode.js'></script>
+  <!-- End new styles -->
 
   <title>Conseils techniques pour les professionnels du béton ciré.</title>
   <meta name="description"
@@ -118,43 +128,6 @@
   </script> <noscript><img height="1" width="1" style="display:none"
       src="https://www.facebook.com/tr?id=358666781190455&ev=PageView&noscript=1" /></noscript>
 
-  <script>
-    function MM_validateForm() { //v4.0
-      if (document.forms["contacto"].elements["aviso_legal"].checked) {
-        getherrors = '';
-      } else {
-        getherrors = '- Debe aceptar la Política de Privacidad';
-      }
-      var i, p, q, nm, test, num, min, max, errors = '',
-        args = MM_validateForm.arguments;
-      for (i = 0; i < (args.length - 2); i += 3) {
-        test = args[i + 2];
-        val = document.getElementById(args[i]);
-        if (val) {
-          nm = val.name;
-          if ((val = val.value) != "") {
-            if (test.indexOf('isEmail') != -1) {
-              p = val.indexOf('@');
-              if (p < 1 || p == (val.length - 1)) errors += '- ' + nm + ' debe ser una dirección de email correcta.\n';
-            } else if (test != 'R') {
-              num = parseFloat(val);
-              if (isNaN(val)) errors += '- ' + nm + ' must contain a number.\n';
-              if (test.indexOf('inRange') != -1) {
-                p = test.indexOf(':');
-                min = test.substring(8, p);
-                max = test.substring(p + 1);
-                if (num < min || max < num) errors += '- ' + nm + ' must contain a number between ' + min + ' and ' +
-                  max + '.\n';
-              }
-            }
-          } else if (test.charAt(0) == 'R') errors += '- ' + nm + ' es necesario.\n';
-        }
-      }
-      if ((errors) || (getherrors))
-        alert("Han ocurrido los siguientes errores:\n" + errors + getherrors);
-      document.MM_returnValue = ((errors == '') && (getherrors == ''));
-    }
-  </script>
 </head>
 
 <body style="-moz-transform:none; -webkit-transform:none; -o-transform:none; -ms-transform:none; transform:none; "
@@ -168,8 +141,11 @@
     <div class="menuBar" style="position:fixed; transform: translate3d(0px, 0px, 1px);">
       <div class="menuBarContent">
 
-        <a href="index.html"><img class="imgLogo" src="../imagenes/logo-top-ciment.png" alt="Topciment"></a>
 
+        <a href="index.html"><img class="imgLogo logo1" src="../imagenes/microcemento-topciment.png" alt="Topciment">
+          <img class="imgLogo logo2" src="../imagenes/logos/logoBlanco2.png" alt="Topciment"
+            style="max-width: 60px; max-height: 60px;">
+        </a>
 
         <div class="menu idiomas">
           <ul>
@@ -185,20 +161,32 @@
           </ul>
         </div>
 
-        <div class="menu botones">
+
+
+        <div class="menu botones" style="margin-left:100px">
           <ul>
-            <li><a href="information-beton-cire.html">Béton Ciré</li>
-            <li><a href="couleurs-du-beton-cire.html">Couleurs</a></li>
+            <li><a href="information-beton-cire.html">Béton Ciré</a></li>
             <li><a href="solutions-en-beton-cire-pour-toutes-les-surfaces.html">Systèmes</a></li>
             <li><a href="photos-du-revetement-decoratif-beton-cire.html">Photos</a></li>
-            <li><a href="garantie.html">Garantie</a></li>
-            <li><a href="professionnels.html" class="activo">Professionnels</a></li>
-            <li><a href="concessionnaires.html">Distributeur</a></li>
-            <li><a href="entreprise.html">Qui sommes-nous?</a></li>
+            <li><a class="activo" href="professionnels.html">Professionnels</a></li>
             <li><a href="nouvelles.html">Nouvelles</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+          <div class="dropdown" style="top: -20px;">
+            <button class="dropbtn"><img src="../imagenes/flags/france.png"></button>
+            <div class="dropdown-content">
+              <a href="https://www.topciment.com"> <img src="../imagenes/flags/spain.png"> </a>
+              <a href="https://www.topciment.com/fr/"><img src="../imagenes/flags/united-kingdom.png"></a>
+              <a href="https://www.topciment.com/de/"><img src="../imagenes/flags/germany.png"></a>
+              <a href="https://www.topciment.com/it/"><img src="../imagenes/flags/italy.png"></a>
+              <a href="https://www.topciment.com/nl/"><img src="../imagenes/flags/netherlands.png"></a>
+              <a href="https://www.topciment.com/gr/"><img src="../imagenes/flags/greece.png"></a>
+              <a class="ultimo" href="https://www.topciment.ru/"><img src="../imagenes/flags/russia.png"></a>
+            </div>
+          </div>
         </div>
+
+
       </div>
     </div>
 
@@ -208,8 +196,8 @@
           <li><a href="#up" style="font-size:26px">Professionnels</a></li>
           <li><a href="#profesionales-microcemento">Cours d’application<br>de béton ciré</a></li>
           <li><a href="#metodos-de-aplicacion">Méthodes d’application</a></li>
-          <li><a href="#fichas-tecnicas">Fiches Techniques</a></li>
-          <li><a href="#contacto">Contact</a></li>
+          <li><a href="telechargements.html#fichas-tecnicas-topciment">Fiches Techniques</a></li>
+          <li><a href="contact.html#contactanos" target="_blank">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -246,13 +234,13 @@
       <div id="menuocultomovil">
         <ul>
           <li><a href="information-beton-cire.html" onclick="ocultarmovil()">Béton Ciré</a></li>
-          <li><a href="couleurs-du-beton-cire.html" onclick="ocultarmovil()">Couleurs</a></li>
+          <!--<li><a href="couleurs-du-beton-cire.html" onclick="ocultarmovil()">Couleurs</a></li>-->
           <li><a href="solutions-en-beton-cire-pour-toutes-les-surfaces.html" onclick="ocultarmovil()">Systèmes</a></li>
           <li><a href="photos-du-revetement-decoratif-beton-cire.html" onclick="ocultarmovil()">Photos</a></li>
-          <li><a href="garantie.html" onclick="ocultarmovil()">Garantie</a></li>
+          <!--<li><a href="garantie.html" onclick="ocultarmovil()">Garantie</a></!-->
           <li><a href="professionnels.html" onclick="ocultarmovil()">Professionnels</a></li>
-          <li><a href="concessionnaires.html" onclick="ocultarmovil()">Distributeur</a></li>
-          <li><a href="entreprise.html" onclick="ocultarmovil()">Qui sommes-nous?</a></li>
+          <!--<a href="concessionnaires.html" onclick="ocultarmovil()">Distributeur</a>-->
+          <!--<a href="entreprise.html" onclick="ocultarmovil()">Qui sommes-nous?</a>-->
           <li><a href="nouvelles.html" onclick="ocultarmovil()">Nouvelles</a></li>
           <li><a href="contact.html" onclick="ocultarmovil()">Contact</a></li>
         </ul>
@@ -266,12 +254,12 @@
 
 
   <div id="main">
-    <div class="container clearfix">
+    <div>
       <div id="content">
         <section id="up">
           <div class="fullscreen background parallax"
-            style="background-image:url('../imagenes/topciment-profesionales.jpg');" data-img-width="1500"
-            data-img-height="930" data-diff="100">
+            style="background-image:url('../imagenes/sistemas/Topciment_Apoyando_Profesionales2.jpg');"
+            data-img-width="1500" data-img-height="930" data-diff="100">
             <div class="content-a">
               <!--<div class="contenedorTexto">
 					<div class="content-b textoAbajoDerecha" data-animate-scroll='{"x": "-100",
@@ -283,7 +271,7 @@
     			</div> -->
             </div>
           </div><a id="profesionales-microcemento"
-            style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
+            style="display: block; height: 60px; margin-top: -60px; visibility: hidden;"></a>
 
           <div class="contenedorMenuOculto">
             <div class="contenedorMagenDerecha">
@@ -364,6 +352,8 @@
                   <p><strong>Réaliser le cours m’intéresse ! </strong> <br>
                     Si vous êtes intéressé par la réalisation du cours, envoyez-nous vos coordonnées en complétant ce
                     <strong>formulaire. </strong> </p>
+                  <iframe width="100%" height="400px" src="https://www.youtube-nocookie.com/embed/P5wloRudWBs?rel=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
@@ -393,7 +383,7 @@
 
       <div id="separador50px"></div>
 
-      <a id="metodos-de-aplicacion" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
+      <a id="metodos-de-aplicacion" style="display: block; height: 60px; margin-top: -60px; visibility: hidden;"></a>
 
       <div class="contenedorMenuOculto">
         <div class="contenedorMagenDerecha">
@@ -464,7 +454,7 @@
       <section class="mbr-section mbr-section-hero mbr-section-full mbr-after-navbar" id="header4-0"
         data-bg-video="https://youtu.be/GYKoO9Z10sg?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0">
         <div class="mbr-table-cell">
-          <div class="container">
+          <div class="">
             <div class="row">
               <div class="mbr-section col-md-10 col-md-offset-1 text-xs-center">
               </div>
@@ -472,582 +462,245 @@
           </div>
         </div>
       </section>
+      <footer class="footerp">
+        <div class="contenedorMenuOculto contenedorF">
+          <div class="row row1">
+            <div class="col-md-3 col1F">
+              <h6 class="tituloF productosF"><strong>PRODUITS</strong></h6>
+              <ul class="ulF productosF">
+                <li class="sttandardF"><a class="linkB" href="systemes/sttandard-beton-cire-bicomposant.html">Béton ciré
+                    bicomposant</a></li>
+                <li class="evoluttionF"><a class="linkB" href="systemes/evoluttion-beton-cire-monocomposant.html">Béton
+                    ciré monocomposant</a></li>
+                <li class="efecF"><a class="linkB" href="systemes/efectto-beton-cire-pret-a-lemploi.html">Béton ciré
+                    prêt à l'emploi</a></li>
+                <li class="puremF"><a class="linkB" href="systemes/pure-mettal-revetement-metallique.html">Revêtement
+                    métallique</a></li>
+                <li class="classicF"><a class="linkB" href="systemes/classic-mettal-peintures-metallique.html">Peintures
+                    métallique</a></li>
+                <li class="elitteF"><a class="linkB" href="systemes/elitte-glacis-et-pigments-metallique.html">Glacis et
+                    pigments métallique</a></li>
+                <li class="primacemF"><a class="linkB" href="systemes/primacem-promoteurs-dadhérence.html">Promoteurs
+                    d'adhérence </a></li>
+                <li class="arcocemF"><a class="linkB" href="systemes/arcocem-pigments.html">Pigments</a></li>
+                <li class="topsealerF"><a class="linkB" href="systemes/topsealer-vernis.html">Vernis</a></li>
+                <li class="limpieF"><a class="linkB" href="systemes/nettoyage-et-entretien-du-beton-cire.html">Nettoyage
+                    et entretien du béton ciré</a></li>
+                <li class="herramF"><a class="linkB" href="systemes/outils.html">Outils</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col2F">
+              <h6 class="tituloF proyectosF"><strong>PROJETS</strong></h6>
+              <ul class="ulF proyectos">
+                <li class="suelosF"><a class="linkB" href="gallery.html#suelos">Rénovation de sols </a></li>
+                <li class="paredesF"><a class="linkB" href="gallery.html#paredes">Revêtements de murs</a></li>
+                <li class="banyoF"><a class="linkB" href="gallery.html#banyo">Rénovation de salle de bains </a></li>
+                <li class="cocinasF"><a class="linkB" href="gallery.html#cocinas">Rénovation de cuisine</a></li>
+                <li class="decontiuosF"><a class="linkB" href="gallery.html#decontinuos">Revêtements décoratives
+                    continues</a></li>
+                <li class="mueblesF"><a class="linkB" href="gallery.html#muebles">Décoration de meubles</a></li>
+                <li class="azulejosF"><a class="linkB" href="gallery.html#azulejos">Recouvrir carrelage </a></li>
 
-      <a href="https://www.youtube.com/user/TopCiment/videos" target="_blank">Voir plus de vidéos sur YouTube</a>
-
-      <!--<div id="separador50px"></div>
- -->
-      <a id="fichas-tecnicas" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
-
-      <div class="contenedorMenuOculto">
-        <div class="contenedorMagenDerecha">
-
-          <h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
-                    "y": "0",
-                    "alpha": "0",
-                    "duration": "1"}'><span style=" padding:5px;">Fiches Techniques</span><span
-              style="background-color:#FFF; padding:5px;"></span></h2>
-        </div>
-
-        <div class="contenedorMenuOculto">
-          <div class="contenedorMagenDerecha">
-            <div class="wow fadeInRight justificado" style="float:left; font-size:16px; margin-left:0; margin-top:0;">
-
-              <p>Pour consulter, télécharger et imprimer la dernière version des Fiches Techniques, cliquez sur chacun
-                des produits.</p>
-              <h3>Bétons cirés bicomposants</h3>
+              </ul>
+            </div>
+            <div class="col-md-3 col3F">
+              <h6 class="tituloF"><strong>PROFESIONNELS </strong></h6>
+              <ul class="ulF profesionalesF">
+                <li class="clientesF"><a class="linkB" href="portalcliente">Customer portal</a></li>
+                <li class="distriF"><a class="linkB" href="concessionnaires.html">Distributeurs </a></li>
+                <li class="garantF"><a class="linkB" href="garantie.html">Garantie</a></li>
+                <li class="fichatF"><a class="linkB" href="telechargements.html#fichas-tecnicas-topciment">Fiches
+                    techniques </a>
+                </li>
+                <li class="descargasF"><a class="linkB"
+                    href="telechargements.html#catalogo-topciment">Téléchargements</a></li>
+                <li class="videotutF"><a class="linkB" href="video-tutorials-microcement.html">Video tutorials</a>
+                </li>
+                <li class="calcF"><a class="linkB" href="../calc/index.html">Calculatrice </a></li>
+                <li class="selloF"><a class="linkB" href="sceau-de-qualite.html">Tampon de qualité</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col4F">
+              <h6 class="tituloF"><strong>ENTREPRISE</strong></h6>
+              <ul class="ulF empresaF">
+                <li class="nosotrosF"><a class="linkB" href="entreprise.html">Nous</a></li>
+                <li class="noticiasF"><a class="linkB" href="nouvelles.html">Informations</a></li>
+                <li class="contactoF"><a class="linkB" href="contact.html"></a>Contact</li>
+                <li class="newsletterF"><a class="linkB" href="https://zc.vg/FQ1Q2">Abonnez vous à notre newletter</a>
+                </li>
+                <li class="atencionF">Service Client Topciment du lundi au vendredi de 9h00 à 18 h </li>
+                <li class="numFooter">+34 963 92 59 89</li>
+                <li class="emailF"> info@topciment.com</li>
+              </ul>
               <p>
-                <a href="fiches-techniques/MicrobaseBI-FR.pdf" target="_blank"><strong>Microbase </strong> (béton ciré
-                  bicomposant pour les sols) </a><br>
-                <a href="fiches-techniques/MicrodeckBI-FR.pdf" target="_blank"><strong>Microdeck </strong> (béton ciré
-                  bicomposant pour les sols)</a><br>
-                <a href="fiches-techniques/MicrofinoBI-FR.pdf" target="_blank"><strong>Microfino </strong> (béton ciré
-                  fin bicomposant) </a><br>
-                <a href="fiches-techniques/MicrostoneBI-FR.pdf" target="_blank"><strong>Microstone </strong> (béton ciré
-                  bicomposant pour les espaces extérieurs) </a><br>
-                <a href="fiches-techniques/Aquaciment-FR.pdf" target="_blank"><strong>Aquaciment </strong> (béton ciré
-                  pour revêtement des piscines) </a><br>
-                <a href="fiches-techniques/Acricem-FR.pdf" target="_blank"><strong>Acricem </strong> (résine acrylique
-                  pour la préparation du béton ciré)</a><br></p>
-              <!--<h3>Microcemento Monocomponentes</h3>
-	<a href="fiches-techniques/MicrobaseBI-FR.pdf" target="_blank">Microbase MN (microcemento monocomponente de preparación)</a><br>
-	<a href="fiches-techniques/MicrobaseBI-FR.pdf" target="_blank">Microdeck MN (microcemento monocomponente para suelos)</a><br>
-	<a href="fiches-techniques/MicrobaseBI-FR.pdf" target="_blank">Microfino MN (microcemento Fino monocomponente)</a><br> -->
-              <h3>Agents de scellage</h3>
-              <a href="fiches-techniques/TopsealerWTonecoat-FR.pdf" target="_blank"><strong>Topsealer WT One Coat
-                </strong> (agent de scellage base eau pour béton ciré)</a><br>
-              <a href="fiches-techniques/TopsealerWTquickdry-FR.pdf" target="_blank"><strong>Topsealer WT Quick
-                  Dry</strong> (agent de scellage base eau pour béton ciré)</a><br>
-              <a href="fiches-techniques/TopsealerDSV-FR.pdf" target="_blank"><strong>Topsealer DSV </strong> (agent de
-                scellage pour béton ciré base dissolvant) </a><br>
-              <a href="fiches-techniques/Presealer-FR.pdf" target="_blank"><strong>Presealer </strong> (apprêt
-                bouche-pores pour les piscines)</a><br>
-              <!-- <a href="fiches-techniques/MicrobaseBI-FR.pdf" target="_blank">Aquasealer (Sellador para el sistema Aquaciment)</a><br> -->
+                <!-- Youtube -->
+                <a class="linkB social1" href="https://www.youtube.com/user/TopCiment" target="_blank">
+                  <span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                    <i class="fa fa-youtube fa-stack-1x"></i>
+                  </span></a>
+                <!-- Instagrm -->
+                <a class="linkB social2" href="https://www.instagram.com/topciment/" target="_blank">
+                  <span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                    <i class="fa fa-instagram  fa-stack-1x"></i>
+                  </span></a>
+                <!--  Whatsap -->
+                <a class="linkB social3"
+                  href="https://api.whatsapp.com/send?phone=34647913586&amp;text=Hola&amp;source=&amp;data="
+                  target="_blank"><span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                    <i class="fa fa-whatsapp fa-stack-1x"></i>
+                  </span></a>
+                <!--Pinterest -->
+                <a class="linkB social4" href="https://www.pinterest.com/topciment/" target="_blank"><span
+                    class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                    <i class="fa fa-pinterest fa-stack-1x"></i>
+                  </span></a>
+                <!--Facebook-->
+                <a class="linkB social5" href="https://es-es.facebook.com/topciment.microcemento" target="_blank"><span
+                    class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                  </span></a>
+                <!-- Twitter -->
+                <a class="linkB social6" href="https://twitter.com/topciment" target="_blank"><span class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                  </span></a>
+                <!-- Linkedin -->
+                <a class="linkB social7" href="https://www.linkedin.com/company/2880536/" target="_blank"><span
+                    class="fa-stack">
+                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                  </span></a>
               </p>
-              <h3>Apprêts</h3>
-              <a href="fiches-techniques/Primacem-FR.pdf" target="_blank"><strong>Primacem </strong> (apprêt pont
-                d’union avec effet tacking)</a><br>
-              <a href="fiches-techniques/PrimacemGRIP-FR.pdf" target="_blank"><strong>Primacem Grip </strong> (promoteur
-                d’adhérence universel à granulat)</a><br>
-              <a href="fiches-techniques/PrimacemABS-FR.pdf" target="_blank"><strong>Primacem ABS </strong> (promoteur
-                d’adhérence surfaces absorbantes)</a><br>
-              <a href="fiches-techniques/PrimacemPLUS-FR.pdf" target="_blank"><strong>Primacem Plus </strong> (promoteur
-                d’adhérence surface non absorbante)</a><br>
-              <a href="fiches-techniques/Impoxy-FR.pdf" target="_blank"><strong>Impoxy </strong> (Résine époxy
-                bicomposant - barrière d’humidité)</a><br></p>
-              <h3>Pigments</h3>
-              <a href="fiches-techniques/ArcocemBASIC-FR.pdf" target="_blank"><strong>Arcocem Basic </strong> (pigment
-                concentré pour préparer dose)</a><br>
-              <a href="fiches-techniques/ArcocemPLUS-FR.pdf" target="_blank"><strong>Arcocem Plus </strong> (pigments
-                mono dose pour béton ciré)</a><br></p>
-              <h3>Outils</h3>
-              <a href="fiches-techniques/Builtex-FR.pdf" target="_blank"><strong>Builtex </strong> (maille de fibre de
-                verre extra plate et flexible)</a><br></p>
-              <h3>Métallisés</h3>
-              <a href="fiches-techniques/ArcocemBRONCE-FR.pdf" target="_blank"><strong>Arcocem peinture de bronze
-                </strong> (peinture naturelle bronze pour effet rouille)</a><br>
-              <a href="fiches-techniques/ArcocemCOBRE-FR.pdf" target="_blank"><strong>Arcocem peinture de cuivre
-                </strong> (peinture naturelle cuivre pour effet rouille)</a><br>
-              <a href="fiches-techniques/ArcocemHIERRO-FR.pdf" target="_blank"><strong>Arcocem peinture de fer </strong>
-                (peinture naturelle fer pour effet rouille)</a><br>
-              <a href="fiches-techniques/ArcocemLATON-FR.pdf" target="_blank"><strong>Arcocem peinture de laiton
-                </strong> (peinture naturelle laiton pour effet rouille)</a><br>
-              <a href="fiches-techniques/ArcocemAGENTEOX-FR.pdf" target="_blank"><strong>Arcocem agent oxydant </strong>
-                (pour effet rouille naturel)</a><br>
-              <a href="fiches-techniques/ArcocemMETAL-FR.pdf" target="_blank"><strong>Arcocem métal </strong> (effet
-                métallisé)</a><br>
-              <h3>Nettoyage et entretien</h3>
-              <a href="fiches-techniques/Ceraciment-FR.pdf" target="_blank"><strong>NOUVEAU! Ceraciment</strong> (Cire
-                d’entretien des sols)</a><br>
-              <a href="fiches-techniques/CeracimentPRO-FR.pdf" target="_blank"><strong>NOUVEAU! Ceraciment PRO</strong>
-                (Cire d’entretien pour sols, haute résistance et métallisée.)</a><br>
-              <a href="fiches-techniques/Ecoclean-FR.pdf" target="_blank"><strong>NOUVEAU! Ecoclean</strong> (Produit
-                nettoyant domestique écologique.)</a><br>
-              <a href="fiches-techniques/EcocleanPRO-FR.pdf" target="_blank"><strong>NOUVEAU! Ecoclean PRO</strong>
-                (Produit nettoyant professionnel écologique.)</a><br></p>
-              </p>
-              <p>Si vous souhaitez consulter des <strong>Fiches de Sécurité et des Certificats </strong> , <a
-                  href="https://www.topciment.com/fr/contact.html" target="_blank">veuillez nous contacter.</a></p>
+            </div>
+          </div>
+          <div class="row row2">
+            <div class="col-md-1 col-12 col5F">
+              <a href="index.html"><img src=" ../imagenes/logos/Topciment-cuadrado-blanco.png"
+                  class="img-fluid logoF" /></a>
+            </div>
+            <div class="col-md-11 col6F">
+              <small class="direccionF"> © 2020 Grupo Negocios PO,S.L.U. Rosas 33, Manises 46940
+                España</small><br class="brF">
+              <small class="privaF">
+                <a class="linkB politicaF"
+                  href=" https://www.topciment.com/fr/termes-conditions-et-declaration-de-confidentialite.html"
+                  rel="nofollow">
+                  Termes, conditions et Déclaration de confidentialité</a> |
+                <a class="linkB cookieF" href="https://www.topciment.com/fr/politique-relative-aux-cookies.html"
+                  rel="nofollow" class="textoBlanco">Politique relative aux cookies</a></small>
             </div>
           </div>
         </div>
+      </footer>
 
-      </div>
+      <!-- include jQuery -->
+      <script src="../js/jquery-2.1.4.min.js"></script>
+
+      <script src="../js/jquery-1.9.1.min.js"></script>
+      <script src='../js/jquery.scrollto.js'></script>
 
 
 
+      <script type="text/javascript">
+        // Alto de la ventana del navegador
+        $(document).ready(function () {
+          altoPag = $(window).height();
+          altoPagOk = altoPag - 135;
 
-      <div id="separador50px"></div>
+          altoMenu = $('.menuMicrocementos').height();
+          //topMenu=((altoPagOk/2) - (altoMenu/2) + 135);
+          topMenu = 200;
+
+          //$('#wrapper').css('height', $alto);
+          anchoPag = $(window).width();
+
+          if (anchoPag > 1025) {
+
+            $('.menuMicrocementos').css('display', 'block');
+            $('.menuMicrocementos').css('top', topMenu);
+          }
+
+        });
+
+        $(window).resize(function () {
+          ancho = $(window).width();
+          topMenu = 200;
 
 
-      <section id="preguntas-frecuentes">
-        <div style="width:49%; float:left; height:auto;"><img src="../imagenes/bardot-9011.jpg" width="100%"
-            alt="microcementos" data-animate-scroll='{"x": "-100",
-                    "y": "0",
-                    "alpha": "0",
-                    "duration": "1"}'>
-        </div>
-        <div style="width:49%; float:right; height:auto;" data-animate-scroll='{"x": "0",
-                    "y": "50",
-                    "alpha": "0",
-                    "duration": "1"}'><img src="../imagenes/bardot-8316.jpg" width="100%" alt="microcementos">
-        </div>
-        <div id="separador0px"></div>
-        <a id="contacto" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
+          if (ancho > 1200) {
 
-        <div class="contenedorMenuOculto">
-          <div class="contenedorMagenDerecha">
-            <h2 id="preguntasFrecuentesH1" data-animate-scroll='{"x": "0",
-                    "y": "-100",
-                    "alpha": "0",
-                    "duration": "1"}'>Contact</h2>
-            <div class="wow fadeInRight"
-              style="float:left; text-align:justify; font-size:20px; margin-left:0; margin-top:0;">
-              Si vous avez besoin de plus d’informations, n’hésitez pas à nous contacter<br>
-              <!-- Note :
-   - You can modify the font style and form style to suit your website.
-   - Code lines with comments ���Do not remove this code���  are required for the form to work properly, make sure that you do not remove these lines of code.
-   - The Mandatory check script can modified as to suit your business needs.
-   - It is important that you test the modified form before going live.
-   - Do not remove captcha and other form elements that are necessary for the form to work.  -->
-              <div id='crmWebToEntityForm' style='width:750px;margin:auto;'>
-                <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
-                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2193829000000221025 method='POST'
-                  onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2193829000000221025()'
-                  accept-charset='UTF-8'>
+            $('.menuMicrocementos').css('display', 'block');
+            $('.menuMicrocementos').css('top', topMenu);
+          }
 
-                  <!-- Do not remove this code. -->
-                  <input type='text' style='display:none;' name='xnQsjsdp'
-                    value='0bc3358bdd3baefdb791a8c5b584c69212d1c4bf9f87c329186bb76ccb66d5cf' />
-                  <input type='hidden' name='zc_gad' id='zc_gad' value='' />
-                  <input type='text' style='display:none;' name='xmIwtLD'
-                    value='b9c761651d784b3338501c899dd43e5739f0d975f3184287b3a62c37d2318f6b' />
-                  <input type='text' style='display:none;' name='actionType' value='TGVhZHM=' />
+          if (ancho < 1199) {
 
-                  <input type='text' style='display:none;' name='returnURL'
-                    value='https&#x3a;&#x2f;&#x2f;www.topciment.com&#x2f;fr&#x2f;merci.html' />
-                  <!-- Do not remove this code. -->
-                  <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
-                  <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
-                  <!-- Do not remove this code. -->
-                  <style>
-                    tr,
-                    td {
-                      padding: 6px;
-                      border-spacing: 0px;
-                      border-width: 0px;
-                    }
-                  </style>
-                  <table>
+            $('.menuMicrocementos').css('display', 'none');
+            $('.menuGaleria').css('display', 'none');
+            $('.menuSistemas').css('display', 'none');
+            $('.menuColores').css('display', 'none');
+            $('.menuGarantia').css('display', 'none');
+            $('.menuProfesionales').css('display', 'none');
+            $('.menuDistribuidores').css('display', 'none');
+            $('.menuNosotros').css('display', 'none');
+            $('.menuContacto').css('display', 'none');
+          }
 
-                    <tr>
-                      <td colspan='2'><strong>Avez-vous besoin d&#x27;un conseil&#x3f;</strong></td>
-                    </tr>
+        });
+        //-->
+      </script>
 
-                    <tr>
-                      <td><span>Prenom<span style='color:red;'>*</span></span><br><input type='text' maxlength='40'
-                          style='width:250px;' name='First Name'></input></td>
-                    </tr>
 
-                    <tr>
-                      <td><span>Nom<span style='color:red;'>*</span></span><br><input type='text' maxlength='80'
-                          style='width:250px;' name='Last Name'></input></td>
-                    </tr>
 
-                    <tr>
-                      <td><span>Adresse e-mail<span style='color:red;'>*</span></span><br><input type='text'
-                          maxlength='100' style='width:250px;' name='Email'></input></td>
-                    </tr>
+      <script type="text/javascript" src="../js/parallax.js"></script>
+      <script type="text/javascript" src="../js/codigo2.js"></script>
 
-                    <tr>
-                      <td><span>Numéro de téléphone<span style='color:red;'>*</span></span><br><input type='text'
-                          maxlength='30' style='width:250px;' name='Phone'></input></td>
-                    </tr>
+      <script src="../js/TweenMax.min.js"></script>
 
-                    <tr>
-                      <td><span>Département ou province<span style='color:red;'>*</span></span><br><input type='text'
-                          maxlength='30' style='width:250px;' name='City'></input></td>
-                    </tr>
-
-                    <tr>
-                      <td><span>Message</span><br><textarea maxlength='2000' style='width:250px;' name='LEADCF9'
-                          style='width:250px;'>&nbsp;</textarea></td>
-                    </tr>
-
-                    <tr>
-                      <td><span
-                          style='nowrap:nowrap;text-align:top;font-size:14px;font-family:Arial;width:200px;line-height:22px;'>Entrez
-                          le captcha</span><br>
-                        <input type='text' style='width:250px;' maxlength='80' name='enterdigest' /></td>
-                    </tr>
-                    <tr>
-                      <!-- Do not remove this code. -->
-                      <td><img id='imgid'
-                          src='https://crm.zoho.com/crm/CaptchaServlet?formId=b9c761651d784b3338501c899dd43e5739f0d975f3184287b3a62c37d2318f6b&grpid=0bc3358bdd3baefdb791a8c5b584c69212d1c4bf9f87c329186bb76ccb66d5cf'>
-                        <a href='javascript:;' onclick='reloadImg()'>Recharger</a></td>
-                    </tr>
-
-                    <tr>
-                      <td><input type='checkbox' name='LEADCF102'></input><span>J'ai lu et accepte le<span
-                            style='color:red;'>*</span><a
-                            href='https&#x3a;&#x2f;&#x2f;www.topciment.com&#x2f;fr&#x2f;termes-conditions-et-declaration-de-confidentialite.html'
-                            target='_blank'>Termes, conditions et D&eacute;claration de
-                            confidentialit&eacute;</a></span><br></td>
-                      <td></td>
-
-                    <tr>
-                      <td><input type='checkbox' name='LEADCF109'></input><span>J'accepte de recevoir des communications
-                          commerciales<span style='color:red;'>*</span></span><br></td>
-                    </tr>
-
-                    <tr>
-                      <td><input type='checkbox' name='LEADCF106'></input><span>Autorisation de transfert de données à
-                          des tiers<span style='color:red;'>*</span></span><br></td>
-                    </tr>
-
-                    <tr>
-                    <tr style='display:none;'>
-                      <td style='nowrap:nowrap;text-align:top;font-size:14px;font-family:Arial;width:50%'></td>
-                      <td style='width:250px;'>
-                        <select style='width:250px;' name='Lead Source'>
-                          <option selected value='Web'>Web</option>
-                        </select></td>
-                    </tr>
-
-                    <tr>
-                      <td colspan='2' style='text-align:left; padding-top:15px;font-size:14px;'>
-                        <input type='submit' value='Envoyer' />
-                        <input type='reset' value='Réinitialiser' />
-                      </td>
-                    </tr>
-                  </table>
-                  <script>
-                    var mndFileds = new Array('First Name', 'Last Name', 'Email', 'LEADCF102', 'LEADCF109', 'LEADCF106',
-                      'City', 'Phone');
-                    var fldLangVal = new Array('Prenom', 'Nom', 'Adresse  e-mai', 'J\'ai lu et accepte le',
-                      'Acepto recibir comunicaciones comerciales', 'Autorización cesión datos a terceros',
-                      'Département ou province', 'Numéro de téléphone');
-                    var name = '';
-                    var email = '';
-
-                    /* Do not remove this code. */
-                    function reloadImg() {
-                      if (document.getElementById('imgid').src.indexOf('&d') !== -1) {
-                        document.getElementById('imgid').src = document.getElementById('imgid').src.substring(0,
-                          document.getElementById('imgid').src.indexOf('&d')) + '&d' + new Date().getTime();
-                      } else {
-                        document.getElementById('imgid').src = document.getElementById('imgid').src + '&d' + new Date()
-                          .getTime();
-                      }
-                    }
-
-                    function checkMandatory2193829000000221025() {
-                      for (i = 0; i < mndFileds.length; i++) {
-                        var fieldObj = document.forms['WebToLeads2193829000000221025'][mndFileds[i]];
-                        if (fieldObj) {
-                          if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                            if (fieldObj.type == 'file') {
-                              alert('Seleccione un archivo para cargar.');
-                              fieldObj.focus();
-                              return false;
-                            }
-                            alert(fldLangVal[i] + ' no puede estar vacío.');
-                            fieldObj.focus();
-                            return false;
-                          } else if (fieldObj.nodeName == 'SELECT') {
-                            if (fieldObj.options[fieldObj.selectedIndex].value == '-None-') {
-                              alert(fldLangVal[i] + ' no puede ser nulo.');
-                              fieldObj.focus();
-                              return false;
-                            }
-                          } else if (fieldObj.type == 'checkbox') {
-                            if (fieldObj.checked == false) {
-                              alert('Please accept  ' + fldLangVal[i]);
-                              fieldObj.focus();
-                              return false;
-                            }
-                          }
-                          try {
-                            if (fieldObj.name == 'Last Name') {
-                              name = fieldObj.value;
-                            }
-                          } catch (e) {}
-                        }
-                      }
-                      trackVisitor();
-                    }
-                  </script>
-                  <script type='text/javascript' id='VisitorTracking'>
-                    var $zoho = $zoho || {};
-                    $zoho.salesiq = $zoho.salesiq || {
-                      widgetcode: '7e78cb83d15a60689cfbb20a8903bc4acf81a6c960d39dee1212f343ec7821c9533163b23229b79e91104310dadb43de',
-                      values: {},
-                      ready: function () {
-                        $zoho.salesiq.floatbutton.visible('hide');
-                      }
-                    };
-                    var d = document;
-                    s = d.createElement('script');
-                    s.type = 'text/javascript';
-                    s.id = 'zsiqscript';
-                    s.defer = true;
-                    s.src = 'https://salesiq.zoho.com/widget';
-                    t = d.getElementsByTagName('script')[0];
-                    t.parentNode.insertBefore(s, t);
-
-                    function trackVisitor() {
-                      try {
-                        if ($zoho) {
-                          var LDTuvidObj = document.forms['WebToLeads2193829000000221025']['LDTuvid'];
-                          if (LDTuvidObj) {
-                            LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid();
-                          }
-                          var firstnameObj = document.forms['WebToLeads2193829000000221025']['First Name'];
-                          if (firstnameObj) {
-                            name = firstnameObj.value + ' ' + name;
-                          }
-                          $zoho.salesiq.visitor.name(name);
-                          var emailObj = document.forms['WebToLeads2193829000000221025']['Email'];
-                          if (emailObj) {
-                            email = emailObj.value;
-                            $zoho.salesiq.visitor.email(email);
-                          }
-                        }
-                      } catch (e) {}
-                    }
-                  </script>
-                  <input type='hidden' id="zc_gad" name="zc_gad" value="" />
-                </form>
-                <!-- Do not remove this code. -->
-                <iframe name='captchaFrame' style='display:none;'></iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-
-    <div style="float:none; clear:both; height:100px;"></div>
-
-    <div class="footerInterior">
-      <div class="footerContent">
-        <a href="https://www.youtube.com/user/TopCiment" target="_blank"><span class="fa-stack"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x icon"></i>
-              <i class="fa fa-youtube fa-stack-1x"></i>
-            </span></span></a>
-        <a href="https://www.instagram.com/topciment/" target="_blank"><span class="fa-stack"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x icon"></i>
-              <i class="fa fa-instagram  fa-stack-1x"></i>
-            </span></span></a>
-        &nbsp;<a href="https://api.whatsapp.com/send?phone=34647913586&text=Hola&source=&data=" target="_blank"><span
-            class="fa-stack"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x icon"></i>
-              <i class="fa fa-whatsapp fa-stack-1x"></i>
-            </span></a>
-        &nbsp;<a href="https://www.pinterest.com/topciment/" target="_blank"><span class="fa-stack"><span
-              class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x icon"></i>
-              <i class="fa fa-pinterest fa-stack-1x"></i>
-            </span></a>
-        &nbsp;
-        <a href="https://es-es.facebook.com/topciment.microcemento" target="_blank"><span class="fa-stack">
-            <i class="fa fa-circle fa-stack-2x icon"></i>
-            <i class="fa fa-facebook fa-stack-1x"></i>
-          </span></a>
-        &nbsp;
-        <a href="https://twitter.com/topciment" target="_blank"><span class="fa-stack"><span class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x icon"></i>
-              <i class="fa fa-twitter fa-stack-1x"></i>
-            </span></a>
-        &nbsp;
-        <a href="https://www.linkedin.com/company/2880536/" target="_blank"><span class="fa-stack"><span
-              class="fa-stack">
-              <i class="fa fa-circle fa-stack-2x icon"></i>
-              <i class="fa fa-linkedin fa-stack-1x"></i>
-            </span></a>
-        <p>Rue Rosas 33, - Manises 46940 - Espagne Téléphone: <a href="tel:+34963925989" class="textoBlanco">+34 963 92
-            59 89</a>
-
-          <a href="mailto:info@topciment.com" class="negrita textoBlanco">
-            info@topciment.com</a></p>
-        <p>
-          <a href="termes-conditions-et-declaration-de-confidentialite.html" rel="nofollow" class="textoBlanco">
-            Termes, conditions et Déclaration de confidentialité</a> |
-          <a href="politique-relative-aux-cookies.html" rel="nofollow" class="textoBlanco">
-            Politique relative aux cookies</a></p>
-
-      </div>
-    </div>
-
-    <!-- include jQuery -->
-    <script src="../js/jquery-2.1.4.min.js"></script>
-
-    <script src="../js/jquery-1.9.1.min.js"></script>
-    <script src='../js/jquery.scrollto.js'></script>
-
-    <script languaje="Javascript">
-      <!--
-      document.write('<style type="text/css">div.ocultable{display: none;}</style>');
-
-      function MostrarOcultar(capa, enlace) {
-        if (document.getElementById) {
-          var aux = document.getElementById(capa).style;
-          aux.display = aux.display ? "" : "block";
-        }
-      }
-      //
-      -->
-    </script>
-
-    <script type="text/javascript">
-      // Alto de la ventana del navegador
-      $(document).ready(function () {
-        altoPag = $(window).height();
-        altoPagOk = altoPag - 135;
-
-        altoMenu = $('.menuMicrocementos').height();
-        //topMenu=((altoPagOk/2) - (altoMenu/2) + 135);
-        topMenu = 200;
-
-        //$('#wrapper').css('height', $alto);
+      <script src="../js/animate-scroll.js"></script>
+      <script>
         anchoPag = $(window).width();
 
-        if (anchoPag > 1025) {
+        if (anchoPag > 767) {
+          $(document).animateScroll();
 
-          $('.menuMicrocementos').css('display', 'block');
-          $('.menuMicrocementos').css('top', topMenu);
         }
+      </script>
 
-      });
-
-      $(window).resize(function () {
-        ancho = $(window).width();
-        topMenu = 200;
-
-
-        if (ancho > 1200) {
-
-          $('.menuMicrocementos').css('display', 'block');
-          $('.menuMicrocementos').css('top', topMenu);
-        }
-
-        if (ancho < 1199) {
-
-          $('.menuMicrocementos').css('display', 'none');
-          $('.menuGaleria').css('display', 'none');
-          $('.menuSistemas').css('display', 'none');
-          $('.menuColores').css('display', 'none');
-          $('.menuGarantia').css('display', 'none');
-          $('.menuProfesionales').css('display', 'none');
-          $('.menuDistribuidores').css('display', 'none');
-          $('.menuNosotros').css('display', 'none');
-          $('.menuContacto').css('display', 'none');
-        }
-
-      });
-      //-->
-    </script>
-
-    <script>
-      $(document).ready(function () {
-        /**
-         * This part does the "fixed navigation after scroll" functionality
-         * We use the jQuery function scroll() to recalculate our variables as the
-         * page is scrolled/
-         */
-
-        /**
-         * This part causes smooth scrolling using scrollto.js
-         * We target all a tags inside the nav, and apply the scrollto.js to it.
-         */
-        $(".menuMicrocementos a").click(function (evn) {
-          evn.preventDefault();
-          $('html,body').scrollTo(this.hash, this.hash);
+      <script type="text/javascript">
+        $(document).ready(function () {
+          altoPag = $(window).height();
+          document.getElementById('ocultomovil').style.maxHeight = altoPag;
         });
-        /**
-         * This part handles the highlighting functionality.
-         * We use the scroll functionality again, some array creation and
-         * manipulation, class adding and class removing, and conditional testing
-         */
-        var aChildren = $(".menuMicrocementos li").children(); // find the a children of the list items
-        var aArray = []; // create the empty aArray
-        for (var i = 0; i < aChildren.length; i++) {
-          var aChild = aChildren[i];
-          var ahref = $(aChild).attr('href');
-          aArray.push(ahref);
-        } // this for loop fills the aArray with attribute href values
+      </script>
 
-        $(window).scroll(function () {
-          var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-          var windowHeight = $(window).height(); // get the height of the window
-          var docHeight = $(document).height();
-
-          for (var i = 0; i < aArray.length; i++) {
-            var theID = aArray[i];
-            var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-            var divPos = divPos - 200;
-            var divHeight = $(theID).height(); // get the height of the div in question
-            if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-              $("a[href='" + theID + "']").addClass("activo");
-            } else {
-              $("a[href='" + theID + "']").removeClass("activo");
-            }
-          }
-
-          if (windowPos + windowHeight == docHeight) {
-            if (!$(".menuMicrocementos li:last-child a").hasClass("activo")) {
-              var navActiveCurrent = $("activo").attr("href");
-              $("a[href='" + navActiveCurrent + "']").removeClass("activo");
-              $(".menuMicrocementos li:last-child a").addClass("activo");
-            }
-          }
-        });
-      });
-    </script>
-
-    <script type="text/javascript" src="../js/parallax.js"></script>
-    <script type="text/javascript" src="../js/codigo2.js"></script>
-
-    <script src="../js/TweenMax.min.js"></script>
-
-    <script src="../js/animate-scroll.js"></script>
-    <script>
-      anchoPag = $(window).width();
-
-      if (anchoPag > 767) {
-        $(document).animateScroll();
-
-      }
-    </script>
-
-    <script type="text/javascript">
-      $(document).ready(function () {
-        altoPag = $(window).height();
-        document.getElementById('ocultomovil').style.maxHeight = altoPag;
-      });
-    </script>
-
-    <script type="text/javascript">
-      document.getElementById('body').setAttribute("style", "");
-      document.getElementById('body').style.cssText = "";
-    </script>
-    <script type="text/javascript">
-      var $zoho = $zoho || {};
-      $zoho.salesiq = $zoho.salesiq || {
-        widgetcode: "fab8868be7c7826bd4dfc38932c5e31667aa7f784083239cd30a0cd43fc6a2dd6a3b789df620b2847c948e7c2859b7e2",
-        values: {},
-        ready: function () {}
-      };
-      var d = document;
-      s = d.createElement("script");
-      s.type = "text/javascript";
-      s.id = "zsiqscript";
-      s.defer = true;
-      s.src = "https://salesiq.zoho.com/widget";
-      t = d.getElementsByTagName("script")[0];
-      t.parentNode.insertBefore(s, t);
-      d.write("<div id='zsiqwidget'></div>");
-    </script>
-    <!--div id="barritaloca">
+      <script type="text/javascript">
+        document.getElementById('body').setAttribute("style", "");
+        document.getElementById('body').style.cssText = "";
+      </script>
+      <script type="text/javascript">
+        var $zoho = $zoho || {};
+        $zoho.salesiq = $zoho.salesiq || {
+          widgetcode: "fab8868be7c7826bd4dfc38932c5e31667aa7f784083239cd30a0cd43fc6a2dd6a3b789df620b2847c948e7c2859b7e2",
+          values: {},
+          ready: function () {}
+        };
+        var d = document;
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.id = "zsiqscript";
+        s.defer = true;
+        s.src = "https://salesiq.zoho.com/widget";
+        t = d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s, t);
+        d.write("<div id='zsiqwidget'></div>");
+      </script>
+      <!--div id="barritaloca">
 <div id="textoBarritaloca">
 En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies pour vous proposer des contenus et services adaptés à vos centres d’intérêts et vous permettre<br /> l'utilisation de boutons de partages sociaux.  En savoir plus et gérer ces paramètres.
 
@@ -1089,17 +742,17 @@ function PonerCookie(){
  document.getElementById("barritaloca").style.display="none";
 }
 </script-->
-    <script src="../assets/web/assets/jquery/jquery.min.js"></script>
-    <script src="../assets/tether/tether.min.js"></script>
-    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../assets/smooth-scroll/smooth-scroll.js"></script>
-    <script src="../assets/dropdown/js/script.min.js"></script>
-    <script src="../assets/touch-swipe/jquery.touch-swipe.min.js"></script>
-    <script src="../assets/viewport-checker/jquery.viewportchecker.js"></script>
-    <script src="../assets/jquery-mb-ytplayer/jquery.mb.ytplayer.min.js"></script>
-    <script src="../assets/theme/js/script.js"></script>
-    <script type='text/javascript' src='https://www.topciment.com/zcga.js'></script>
-    <script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script>
+      <script src="../assets/web/assets/jquery/jquery.min.js"></script>
+      <script src="../assets/tether/tether.min.js"></script>
+      <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="../assets/smooth-scroll/smooth-scroll.js"></script>
+      <script src="../assets/dropdown/js/script.min.js"></script>
+      <script src="../assets/touch-swipe/jquery.touch-swipe.min.js"></script>
+      <script src="../assets/viewport-checker/jquery.viewportchecker.js"></script>
+      <script src="../assets/jquery-mb-ytplayer/jquery.mb.ytplayer.min.js"></script>
+      <script src="../assets/theme/js/script.js"></script>
+      <script type='text/javascript' src='https://www.topciment.com/zcga.js'></script>
+      <script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script>
 </body>
 
 </html>

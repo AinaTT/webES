@@ -184,6 +184,55 @@ $(document).ready(function () {
 
     });
 
+  } else if (window.location.href.indexOf("/fr/") >= 0) {
+    var link1 = '<li class="cursosF"><a class="linkB"  target="_blank" href="https://training.topciment.com">Schulung Platzreservierung</a></li>';
+    $(".profesionalesF").prepend(link1);
+    var link2 = '<li class="exterioresF"><a class="linkB" href="https://www.topciment.com/de/galerie.html#exteriores">Terrassen und Draussen Bodenbeschichtungen</a></li>';
+    $(".banyoF").prepend(link2);
+    var link3 = '<li class="techoF"><a class="linkB" href="https://www.topciment.com/de/galerie.html#techo">Mirozement auf dem Dachs</a></li>';
+    $(".banyoF").prepend(link3);
+    var link3 = '<li class="piscinasF"><a class="linkB" href="https://www.topciment.com/de/galerie.html#piscinas">Mikrozement Swimingpools</a></li>';
+    $(".banyoF").prepend(link3);
+    $(".calcF a").attr("href", "https://www.topciment.com/de/calc/index.html")
+    $.gdprcookie({
+      title: "🍪 Akzeptieren Sie Cookies und die Datenschutzrichtlinie?",
+      subtitle: "Zu akzeptierende Cookies auswählen ",
+
+      message: "Diese Website verwendet eigene und fremde Cookies für ihren Betrieb sowie zum Erhalt anonymer Statistiken über die Nutzung der Website. Wenn Sie weiter blättern, gehen wir davon aus, dass Sie mit der Verwendung einverstanden sind. Sie können die Einstellungen ändern oder weitere Informationen in der  <strong> <a class='linkC' href='https://www.topciment.com/de/cookie-richtlinie.html'> Cookie-Politik </strong>",
+      delay: 600,
+      expires: 1,
+      acceptBtnLabel: "Cookies akzeptieren",
+      advancedBtnLabel: "Einrichten von Cookies",
+      cookieName: "cookieControlPrefs",
+      acceptReload: false,
+      customShowMessage: undefined,
+      customHideMessage: undefined,
+      customShowChecks: undefined,
+      cookieTypes: [{
+          type: "Grundlagen",
+          value: "Grundlagen",
+          description: "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website unerlässlich."
+        },
+        {
+          type: "Marketing ",
+          value: "Marketing",
+          description: "Cookies im Zusammenhang mit Marketing, Newslettern, sozialen Medien usw."
+        },
+        {
+          type: "Präferenzen",
+          value: "Präferenzen",
+          description: "Dabei handelt es sich um Cookies, die sich auf die Präferenzen Ihrer Site beziehen, z.B.: Speichern Ihres Benutzernamens, Farben der Site usw."
+        },
+        {
+          type: "Analytik",
+          value: "Analytik",
+          description: "Cookies im Zusammenhang mit Website-Besuchen, Browser-Typ usw."
+        }
+
+      ],
+
+    });
+
   } else {
     xenioowebchat.Start("58a8dc52-1e3d-4295-8b8e-040257ffc9cd");
     $('.zsiq_floatmain').css({

@@ -18,7 +18,16 @@
 
     <link rel="stylesheet" href="../css/animate.css">
 
-
+    <!-- Nuevo estilo y js de página -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/restyle.css">
+    <script type='text/javascript' src='../js/mycode.js'></script>
+    <!-- End new styles -->
 
     <title>Photos et images de béton ciré dans les salles de bains, cuisines, sols et murs.</title>
     <meta name="description"
@@ -134,7 +143,11 @@
         <div class="menuBar">
             <div class="menuBarContent">
 
-                <a href="index.html"><img class="imgLogo" src="../imagenes/logo-top-ciment.png" alt="Topciment"></a>
+                <a href="index.html"><img class="imgLogo logo1" src="../imagenes/microcemento-topciment.png"
+                        alt="Topciment">
+                    <img class="imgLogo logo2" src="../imagenes/logos/logoBlanco2.png" alt="Topciment"
+                        style="max-width: 60px; max-height: 60px;">
+                </a>
 
 
                 <div class="menu idiomas">
@@ -156,19 +169,28 @@
                     </ul>
                 </div>
 
-                <div class="menu botones">
+                <div class="menu botones" style="margin-left:100px">
                     <ul>
                         <li><a href="information-beton-cire.html">Béton Ciré</a></li>
-                        <li><a href="couleurs-du-beton-cire.html">Couleurs</a></li>
                         <li><a href="solutions-en-beton-cire-pour-toutes-les-surfaces.html">Systèmes</a></li>
-                        <li><a href="photos-du-revetement-decoratif-beton-cire.html" class="activo">Photos</a></li>
-                        <li><a href="garantie.html">Garantie</a></li>
-                        <li><a href="professionnels.html" onclick="ocultarmovil()">Professionnels</a></li>
-                        <li><a href="concessionnaires.html">Distributeur</a></li>
-                        <li><a href="entreprise.html">Qui sommes-nous?</a></li>
+                        <li><a class="activo" href="photos-du-revetement-decoratif-beton-cire.html">Photos</a></li>
+                        <li><a href="professionnels.html">Professionnels</a></li>
                         <li><a href="nouvelles.html">Nouvelles</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="dropdown" style="top: -20px;">
+                        <button class="dropbtn"><img src="../imagenes/flags/france.png"></button>
+                        <div class="dropdown-content">
+                            <a href="https://www.topciment.com"> <img src="../imagenes/flags/spain.png"> </a>
+                            <a href="https://www.topciment.com/fr/"><img src="../imagenes/flags/united-kingdom.png"></a>
+                            <a href="https://www.topciment.com/de/"><img src="../imagenes/flags/germany.png"></a>
+                            <a href="https://www.topciment.com/it/"><img src="../imagenes/flags/italy.png"></a>
+                            <a href="https://www.topciment.com/nl/"><img src="../imagenes/flags/netherlands.png"></a>
+                            <a href="https://www.topciment.com/gr/"><img src="../imagenes/flags/greece.png"></a>
+                            <a class="ultimo" href="https://www.topciment.ru/"><img
+                                    src="../imagenes/flags/russia.png"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -269,10 +291,10 @@
                             onclick="ocultarmovil()">Systèmes</a></li>
                     <li><a href="photos-du-revetement-decoratif-beton-cire.html" onclick="ocultarmovil()">Photos</a>
                     </li>
-                    <li><a href="garantie.html" onclick="ocultarmovil()">Garantie</a></li>
+                    <!--<li><a href="garantie.html" onclick="ocultarmovil()">Garantie</a></li>-->
                     <li><a href="professionnels.html" onclick="ocultarmovil()">Professionnels</a></li>
-                    <li><a href="concessionnaires.html" onclick="ocultarmovil()">Distributeur</a></li>
-                    <li><a href="entreprise.html" onclick="ocultarmovil()">Qui sommes-nous?</a></li>
+                    <!--<li><a href="concessionnaires.html" onclick="ocultarmovil()">Distributeur</a></li>-->
+                    <!--<li><a href="entreprise.html" onclick="ocultarmovil()">Qui sommes-nous?</a></li>-->
                     <li><a href="nouvelles.html" onclick="ocultarmovil()">Nouvelles</a></li>
                     <li class="link contacto" data-rel="menuContacto" onclick="ocultarmovil()">Contact</li>
                 </ul>
@@ -289,371 +311,428 @@
 
     </div>
 
-    <div class="contenedorMenuOculto">
-        <div class="contenedorMagenDerecha">
-            <h1 id="suelosDeMicrocementoGaleriaH1" class="wow fadeInLeft"><span style="padding:5px;">Béton Ciré</span>
-                <!--<br>
-<span style="padding:5px;">Béton Ciré</span> -->
-            </h1>
-        </div>
-    </div>
     <div id="separador50px"></div>
+
+
+
     <div class="contenedorMenuOculto">
-        <div class="contenedorMagenDerecha">
-            <div class="wow fadeInLeft" style="float:left; width:49%"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento01.jpg" alt="Topciment"
-                    width="100%"></div>
+        <div class="contenedorMagenDerecha"><a id="proyectos"
+                style="display: block; height: 60px; margin-top: -60px; visibility: hidden;"></a>
+            <h1 id="preguntasFrecuentesH1" class="wow fadeInDown"><span style="padding:5px;">Projects</span></h1>
 
-            <div class="wow fadeInRight" style="float:right;  width:49%"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento02.jpg" alt="Topciment"
-                    width="100%"></div>
             <div id="separador20px"></div>
 
-            <div class="wow fadeInRight" style="float:left"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento03.jpg" alt="Topciment"
-                    width="100%"></div>
+            <div class="item sttandard paredes techo wow fadeInRight proyectoLeft">
+                <a href="proyecto-carmen-house.html"><img
+                        src="../imagenes/carmen-house/CARLES FAUS ARQUITECTURA - CARMEN HOUSE (2).jpg" width="100%">
+                    <div class="textoProyectos">
+                        <br>
+                        <br>
+                        Carmen House
+                    </div>
+                </a>
+            </div>
+            <div class="wow fadeInRight proyectoRight"><a href="projet-sardinera.html"><img
+                        src="../imagenes/proyecto-sardinera-portada.jpg" width="100%"></a>
+                <div class="textoProyectos"><br>
+                    <br>
+                    Résidence Sardinera</div>
+            </div>
             <div id="separador20px"></div>
-
-            <div id="fotoAnchoTotal" class="wow fadeInLeft" style="float:left"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento04.jpg" alt="Topciment"
-                    width="100%"></div>
-            <div id="separador20px"></div>
-
-            <div class="wow fadeInLeft" style="float:left; width:31.5%; text-align:left;"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento05.jpg" alt="Topciment"
-                    width="100%"></div>
-
-            <div style="float:left; width:31.5%; margin-left:2.75%;"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento06.jpg" alt="Topciment"
-                    width="100%"></div>
-
-            <div class="wow fadeInRight" style="float:right; width:31.5%;"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento07.jpg" alt="Topciment"
-                    width="100%"></div>
-            <div id="separador20px"></div>
-
-            <div class="wow fadeInLeft" style="float:left; width:49%;"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento08.jpg" alt="Topciment"
-                    width="100%"></div>
-
-            <div class="wow fadeInRight" style="float:right; width:49%;"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento09.jpg" alt="Topciment"
-                    width="100%"></div>
-            <div id="separador20px"></div>
-
-            <div class="wow fadeInRight" style="float:left; width:49%;"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento10.jpg" alt="Topciment"
-                    width="100%"></div>
-
-            <div class="wow fadeInLeft" style="float:right; width:49%;"><img
-                    src="../imagenes/microcemento-galeria-de-imagenes-suelo-de-microcemento11.jpg" alt="Topciment"
-                    width="100%"></div>
-
-
-
-        </div>
-        <div id="separador0px" class="preguntasFrecuentesIpad"></div>
-
-
-        <div class="contenedorMenuOculto">
-            <div class="contenedorMagenDerecha"><a id="proyectos"
-                    style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
-                <h1 id="preguntasFrecuentesH1" class="wow fadeInDown"><span style="padding:5px;">Projects</span></h1>
-
-                <div id="separador20px"></div>
-
-                <div class="wow fadeInRight proyectoLeft"><a href="projet-sardinera.html"><img
-                            src="../imagenes/proyecto-sardinera-portada.jpg" width="100%"></a>
+            <div class="wow fadeInRight proyectoLeft"><a href="projet-casa-isabel.html"><img
+                        src="../imagenes/proyecto-casa-isabel-portada.jpg" width="100%">
                     <div class="textoProyectos"><br>
                         <br>
-                        Résidence Sardinera</div>
+                        Résidence Isabel</div>
+                </a></div>
+
+
+
+            <div class="wow fadeInRight proyectoRight"><a href="projet-altea.html"><img
+                        src="../imagenes/proyecto-altea-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Rénovation intérieure residence BHMM</div>
+                </a></div>
+            <div id="separador20px"></div>
+            <div class="wow fadeInRight proyectoLeft"><a href="projet-reverter.html"><img
+                        src="../imagenes/proyecto-reverter-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Living Reverter</div>
+                </a></div>
+
+
+
+            <div class="wow fadeInRight proyectoRight"><a href="projet-ambau.html"><img
+                        src="../imagenes/proyecto-ambau-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Living Teresa</div>
+                </a></div>
+            <div id="separador20px"></div>
+            <div class="wow fadeInRight proyectoLeft"><a href="projet-hernan-cortes.html"><img
+                        src="../imagenes/proyecto-hernan-cortes-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Living Hernan Cortés</div>
+                </a></div>
+
+
+
+            <div class="wow fadeInRight proyectoRight"><a href="projet-inmobiliaria-interiorismo.html"><img
+                        src="../imagenes/proyecto-inmobiliaria-interiorismo-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Premises I+I</div>
+                </a></div>
+            <div id="separador20px"></div>
+            <div class="wow fadeInRight proyectoLeft"><a href="projet-clinic-hernandez-arquitectos.html"><img
+                        src="../imagenes/proyecto-clinica-hernandez-arquitectos-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>Clinique dentaire</div>
+                </a></div>
+
+
+
+            <div class="wow fadeInRight proyectoRight"><a href="projet-hernandez-arquitectos.html"><img
+                        src="../imagenes/proyecto-hernandez-arquitectos-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Boutique Picaporte</div>
+                </a></div>
+
+            <div id="separador20px"></div>
+
+            <div class="wow fadeInRight proyectoLeft"><a href="projet-rebost-borja-garcia.html"><img
+                        src="../imagenes/proyecto-rebost-borja-garcia-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Restaurant le Rebost</div>
+                </a></div>
+
+
+
+
+
+
+
+            <div class="wow fadeInRight proyectoRight"><a href="projet-relais-orso.html"><img
+                        src="../imagenes/proyecto-relais-orso-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Hotel Relais Orso</div>
+                </a></div>
+
+            <div id="separador20px"></div>
+
+
+
+            <div class="wow fadeInRight proyectoLeft"><a href="projet-javier-miami-acceuil.html"><img
+                        src="../imagenes/proyecto-javier-miami-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Auberge Résidences et SPA </div>
+                </a></div>
+
+
+
+
+
+            <div class="wow fadeInRight proyectoRight"><a href="projet-malermeister.html"><img
+                        src="../imagenes/proyecto-pohlheim-malermeister.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Maison privée àPohlheim</div>
+                </a></div>
+            <div id="separador20px"></div>
+            <div class="wow fadeInRight proyectoLeft"><a
+                    href="renovee-salle-de-bains-avec-beton-cire-topciment.html"><img
+                        src="../imagenes/bathroom-renovated-microcement-fd-fliesen.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>Maison privée à Düsseldorf</div>
+                </a></div>
+
+            <div class="wow fadeInRight proyectoLeft"><a href="projet-francisco-jesus.html"><img
+                        src="../imagenes/proyecto-francisco-jesus-portada.jpg" width="100%">
+                    <div class="textoProyectos"><br>
+                        <br>
+                        Résidence Figueretes</div>
+                </a></div>
+
+            <div id="separador20px"></div>
+        </div>
+    </div>
+
+
+    <div style="float:none; clear:both; height:20px;">
+
+
+
+        <footer class="footerp">
+            <div class="contenedorMenuOculto contenedorF">
+                <div class="row row1">
+                    <div class="col-md-3 col1F">
+                        <h6 class="tituloF productosF"><strong>PRODUITS</strong></h6>
+                        <ul class="ulF productosF">
+                            <li class="sttandardF"><a class="linkB"
+                                    href="systemes/sttandard-beton-cire-bicomposant.html">Béton ciré
+                                    bicomposant</a></li>
+                            <li class="evoluttionF"><a class="linkB"
+                                    href="systemes/evoluttion-beton-cire-monocomposant.html">Béton
+                                    ciré monocomposant</a></li>
+                            <li class="efecF"><a class="linkB"
+                                    href="systemes/efectto-beton-cire-pret-a-lemploi.html">Béton
+                                    ciré
+                                    prêt à l'emploi</a></li>
+                            <li class="puremF"><a class="linkB"
+                                    href="systemes/pure-mettal-revetement-metallique.html">Revêtement
+                                    métallique</a></li>
+                            <li class="classicF"><a class="linkB"
+                                    href="systemes/classic-mettal-peintures-metallique.html">Peintures
+                                    métallique</a></li>
+                            <li class="elitteF"><a class="linkB"
+                                    href="systemes/elitte-glacis-et-pigments-metallique.html">Glacis et
+                                    pigments métallique</a></li>
+                            <li class="primacemF"><a class="linkB"
+                                    href="systemes/primacem-promoteurs-dadhérence.html">Promoteurs
+                                    d'adhérence </a></li>
+                            <li class="arcocemF"><a class="linkB" href="systemes/arcocem-pigments.html">Pigments</a>
+                            </li>
+                            <li class="topsealerF"><a class="linkB" href="systemes/topsealer-vernis.html">Vernis</a>
+                            </li>
+                            <li class="limpieF"><a class="linkB"
+                                    href="systemes/nettoyage-et-entretien-du-beton-cire.html">Nettoyage
+                                    et entretien du béton ciré</a></li>
+                            <li class="herramF"><a class="linkB" href="systemes/outils.html">Outils</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col2F">
+                        <h6 class="tituloF proyectosF"><strong>PROJETS</strong></h6>
+                        <ul class="ulF proyectos">
+                            <li class="suelosF"><a class="linkB" href="gallery.html#suelos">Rénovation de sols </a></li>
+                            <li class="paredesF"><a class="linkB" href="gallery.html#paredes">Revêtements de murs</a>
+                            </li>
+                            <li class="banyoF"><a class="linkB" href="gallery.html#banyo">Rénovation de salle de bains
+                                </a>
+                            </li>
+                            <li class="cocinasF"><a class="linkB" href="gallery.html#cocinas">Rénovation de cuisine</a>
+                            </li>
+                            <li class="decontiuosF"><a class="linkB" href="gallery.html#decontinuos">Revêtements
+                                    décoratives
+                                    continues</a></li>
+                            <li class="mueblesF"><a class="linkB" href="gallery.html#muebles">Décoration de meubles</a>
+                            </li>
+                            <li class="azulejosF"><a class="linkB" href="gallery.html#azulejos">Recouvrir carrelage </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col3F">
+                        <h6 class="tituloF"><strong>PROFESIONNELS </strong></h6>
+                        <ul class="ulF profesionalesF">
+                            <li class="clientesF"><a class="linkB" href="portalcliente">Customer portal</a></li>
+                            <li class="distriF"><a class="linkB" href="concessionnaires.html">Distributeurs </a></li>
+                            <li class="garantF"><a class="linkB" href="garantie.html">Garantie</a></li>
+                            <li class="fichatF"><a class="linkB"
+                                    href="telechargements.html#fichas-tecnicas-topciment">Fiches
+                                    techniques </a>
+                            </li>
+                            <li class="descargasF"><a class="linkB"
+                                    href="telechargements.html#catalogo-topciment">Téléchargements</a></li>
+                            <li class="videotutF"><a class="linkB" href="video-tutorials-microcement.html">Video
+                                    tutorials</a>
+                            </li>
+                            <li class="calcF"><a class="linkB" href="../calc/index.html">Calculatrice </a></li>
+                            <li class="selloF"><a class="linkB" href="sceau-de-qualite.html">Tampon de qualité</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col4F">
+                        <h6 class="tituloF"><strong>ENTREPRISE</strong></h6>
+                        <ul class="ulF empresaF">
+                            <li class="nosotrosF"><a class="linkB" href="entreprise.html">Nous</a></li>
+                            <li class="noticiasF"><a class="linkB" href="nouvelles.html">Informations</a></li>
+                            <li class="contactoF"><a class="linkB" href="contact.html"></a>Contact</li>
+                            <li class="newsletterF"><a class="linkB" href="https://zc.vg/FQ1Q2">Abonnez vous à notre
+                                    newletter</a>
+                            </li>
+                            <li class="atencionF">Service Client Topciment du lundi au vendredi de 9h00 à 18 h </li>
+                            <li class="numFooter">+34 963 92 59 89</li>
+                            <li class="emailF"> info@topciment.com</li>
+                        </ul>
+                        <p>
+                            <!-- Youtube -->
+                            <a class="linkB social1" href="https://www.youtube.com/user/TopCiment" target="_blank">
+                                <span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                                    <i class="fa fa-youtube fa-stack-1x"></i>
+                                </span></a>
+                            <!-- Instagrm -->
+                            <a class="linkB social2" href="https://www.instagram.com/topciment/" target="_blank">
+                                <span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                                    <i class="fa fa-instagram  fa-stack-1x"></i>
+                                </span></a>
+                            <!--  Whatsap -->
+                            <a class="linkB social3"
+                                href="https://api.whatsapp.com/send?phone=34647913586&amp;text=Hola&amp;source=&amp;data="
+                                target="_blank"><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                                    <i class="fa fa-whatsapp fa-stack-1x"></i>
+                                </span></a>
+                            <!--Pinterest -->
+                            <a class="linkB social4" href="https://www.pinterest.com/topciment/" target="_blank"><span
+                                    class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                                    <i class="fa fa-pinterest fa-stack-1x"></i>
+                                </span></a>
+                            <!--Facebook-->
+                            <a class="linkB social5" href="https://es-es.facebook.com/topciment.microcemento"
+                                target="_blank"><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                                    <i class="fa fa-facebook fa-stack-1x"></i>
+                                </span></a>
+                            <!-- Twitter -->
+                            <a class="linkB social6" href="https://twitter.com/topciment" target="_blank"><span
+                                    class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                                    <i class="fa fa-twitter fa-stack-1x"></i>
+                                </span></a>
+                            <!-- Linkedin -->
+                            <a class="linkB social7" href="https://www.linkedin.com/company/2880536/"
+                                target="_blank"><span class="fa-stack">
+                                    <i class="fa fa-circle fa-stack-2x icon"></i>
+                                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                                </span></a>
+                        </p>
+                    </div>
                 </div>
-
-                <div class="wow fadeInRight proyectoRight"><a href="projet-casa-isabel.html"><img
-                            src="../imagenes/proyecto-casa-isabel-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Résidence Isabel</div>
-                    </a></div>
-
-                <div id="separador20px"></div>
-
-                <div class="wow fadeInRight proyectoLeft"><a href="projet-altea.html"><img
-                            src="../imagenes/proyecto-altea-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Rénovation intérieure residence BHMM</div>
-                    </a></div>
-
-                <div class="wow fadeInRight proyectoRight"><a href="projet-reverter.html"><img
-                            src="../imagenes/proyecto-reverter-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Living Reverter</div>
-                    </a></div>
-
-                <div id="separador20px"></div>
-
-                <div class="wow fadeInRight proyectoLeft"><a href="projet-ambau.html"><img
-                            src="../imagenes/proyecto-ambau-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Living Teresa</div>
-                    </a></div>
-
-                <div class="wow fadeInRight proyectoRight"><a href="projet-hernan-cortes.html"><img
-                            src="../imagenes/proyecto-hernan-cortes-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Living Hernan Cortés</div>
-                    </a></div>
-
-                <div id="separador20px"></div>
-
-                <div class="wow fadeInRight proyectoLeft"><a href="projet-inmobiliaria-interiorismo.html"><img
-                            src="../imagenes/proyecto-inmobiliaria-interiorismo-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Premises I+I</div>
-                    </a></div>
-
-                <div class="wow fadeInRight proyectoRight"><a href="projet-clinic-hernandez-arquitectos.html"><img
-                            src="../imagenes/proyecto-clinica-hernandez-arquitectos-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>Clinique dentaire</div>
-                    </a></div>
-
-                <div id="separador20px"></div>
-
-                <div class="wow fadeInRight proyectoLeft"><a href="projet-hernandez-arquitectos.html"><img
-                            src="../imagenes/proyecto-hernandez-arquitectos-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Boutique Picaporte</div>
-                    </a></div>
-
-
-
-                <div class="wow fadeInRight proyectoRight"><a href="projet-rebost-borja-garcia.html"><img
-                            src="../imagenes/proyecto-rebost-borja-garcia-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Restaurant le Rebost</div>
-                    </a></div>
-
-                <div id="separador20px"></div>
-
-
-
-
-
-                <div class="wow fadeInRight proyectoLeft"><a href="projet-relais-orso.html"><img
-                            src="../imagenes/proyecto-relais-orso-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Hotel Relais Orso</div>
-                    </a></div>
-
-
-
-
-
-                <div class="wow fadeInRight proyectoRight"><a href="projet-javier-miami-acceuil.html"><img
-                            src="../imagenes/proyecto-javier-miami-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Auberge Résidences et SPA </div>
-                    </a></div>
-
-
-                <div id="separador20px"></div>
-
-
-                <div class="wow fadeInRight proyectoLeft"><a href="projet-malermeister.html"><img
-                            src="../imagenes/proyecto-pohlheim-malermeister.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Maison privée àPohlheim</div>
-                    </a></div>
-
-                <div class="wow fadeInRight proyectoRight"><a
-                        href="renovee-salle-de-bains-avec-beton-cire-topciment.html"><img
-                            src="../imagenes/bathroom-renovated-microcement-fd-fliesen.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>Maison privée à Düsseldorf</div>
-                    </a></div>
-
-                <div class="wow fadeInRight proyectoRight"><a href="projet-francisco-jesus.html"><img
-                            src="../imagenes/proyecto-francisco-jesus-portada.jpg" width="100%">
-                        <div class="textoProyectos"><br>
-                            <br>
-                            Résidence Figueretes</div>
-                    </a></div>
-
-                <div id="separador20px"></div>
+                <div class="row row2">
+                    <div class="col-md-1 col-12 col5F">
+                        <a href="index.html"><img src=" ../imagenes/logos/Topciment-cuadrado-blanco.png"
+                                class="img-fluid logoF" /></a>
+                    </div>
+                    <div class="col-md-11 col6F">
+                        <small class="direccionF"> © 2020 Grupo Negocios PO,S.L.U. Rosas 33, Manises 46940
+                            España</small><br class="brF">
+                        <small class="privaF">
+                            <a class="linkB politicaF"
+                                href=" https://www.topciment.com/fr/termes-conditions-et-declaration-de-confidentialite.html"
+                                rel="nofollow">
+                                Termes, conditions et Déclaration de confidentialité</a> |
+                            <a class="linkB cookieF"
+                                href="https://www.topciment.com/fr/politique-relative-aux-cookies.html" rel="nofollow"
+                                class="textoBlanco">Politique relative aux cookies</a></small>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
+        </footer>
+        <script src="../js/jquery-2.1.4.min.js"></script>
 
-    <div style="float:none; clear:both; height:20px;"></div>
+        <script languaje="Javascript">
+            <!--
+            document.write('<style type="text/css">div.ocultable{display: none;}</style>');
 
-
-
-    <div class="footerInterior">
-        <div class="footerContent">
-            <a href="https://www.youtube.com/user/TopCiment" target="_blank"><span class="fa-stack"><span
-                        class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-youtube fa-stack-1x"></i>
-                    </span></span></a>
-            <a href="https://www.instagram.com/topciment/" target="_blank"><span class="fa-stack"><span
-                        class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-instagram  fa-stack-1x"></i>
-                    </span></span></a>
-            &nbsp;<a href="https://api.whatsapp.com/send?phone=34647913586&text=Hola&source=&data="
-                target="_blank"><span class="fa-stack"><span class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-whatsapp fa-stack-1x"></i>
-                    </span></a>
-            &nbsp;<a href="https://www.pinterest.com/topciment/" target="_blank"><span class="fa-stack"><span
-                        class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-pinterest fa-stack-1x"></i>
-                    </span></a>
-            &nbsp;
-            <a href="https://es-es.facebook.com/topciment.microcemento" target="_blank"><span class="fa-stack">
-                    <i class="fa fa-circle fa-stack-2x icon"></i>
-                    <i class="fa fa-facebook fa-stack-1x"></i>
-                </span></a>
-            &nbsp;
-            <a href="https://twitter.com/topciment" target="_blank"><span class="fa-stack"><span class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-twitter fa-stack-1x"></i>
-                    </span></a>
-            &nbsp;
-            <a href="https://www.linkedin.com/company/2880536/" target="_blank"><span class="fa-stack"><span
-                        class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-linkedin fa-stack-1x"></i>
-                    </span></a>
-            <p>Rue Rosas 33, - Manises 46940 - Espagne Téléphone: <a href="tel:+34963925989" class="textoBlanco">+34 963
-                    92 59 89</a> <a href="mailto:info@topciment.com" class="negrita textoBlanco">info@topciment.com</a>
-            </p>
-            <p><a href="termes-conditions-et-declaration-de-confidentialite.html" rel="nofollow"
-                    class="textoBlanco">Termes, conditions et Déclaration de confidentialité</a> | <a
-                    href="politique-relative-aux-cookies.html" rel="nofollow" class="textoBlanco">Politique relative aux
-                    cookies</a></p>
-
-        </div>
-    </div>
-    <script src="../js/jquery-2.1.4.min.js"></script>
-
-    <script languaje="Javascript">
-        <!--
-        document.write('<style type="text/css">div.ocultable{display: none;}</style>');
-
-        function MostrarOcultar(capa, enlace) {
-            if (document.getElementById) {
-                var aux = document.getElementById(capa).style;
-                aux.display = aux.display ? "" : "block";
+            function MostrarOcultar(capa, enlace) {
+                if (document.getElementById) {
+                    var aux = document.getElementById(capa).style;
+                    aux.display = aux.display ? "" : "block";
+                }
             }
-        }
 
-        //
-        -->
-    </script>
+            //
+            -->
+        </script>
 
-    <script type="text/javascript">
-        // Alto de la ventana del navegador
-        $(document).ready(function () {
-            altoPag = $(window).height();
-            altoPagOk = altoPag - 135;
+        <script type="text/javascript">
+            // Alto de la ventana del navegador
+            $(document).ready(function () {
+                altoPag = $(window).height();
+                altoPagOk = altoPag - 135;
 
-            altoMenu = $('.menuGaleria').height();
-            //topMenu=((altoPagOk/2) - (altoMenu/2) + 135);
-            topMenu = 200;
+                altoMenu = $('.menuGaleria').height();
+                //topMenu=((altoPagOk/2) - (altoMenu/2) + 135);
+                topMenu = 200;
 
 
-            //$('#wrapper').css('height', $alto);
+                //$('#wrapper').css('height', $alto);
+                anchoPag = $(window).width();
+
+                if (anchoPag > 1025) {
+
+                    $('.menuGaleria').css('display', 'block');
+                    $('.menuGaleria').css('top', topMenu);
+                }
+
+            });
+
+            $(window).resize(function () {
+                ancho = $(window).width();
+                topMenu = 200;
+
+
+                if (ancho > 1200) {
+
+                    $('.menuGaleria').css('display', 'block');
+                    $('.menuGaleria').css('top', topMenu);
+                }
+
+                if (ancho < 1199) {
+
+                    $('.menuMicrocementos').css('display', 'none');
+                    $('.menuGaleria').css('display', 'none');
+                    $('.menuSistemas').css('display', 'none');
+                    $('.menuColores').css('display', 'none');
+                    $('.menuGarantia').css('display', 'none');
+                    $('.menuProfesionales').css('display', 'none');
+                    $('.menuDistribuidores').css('display', 'none');
+                    $('.menuNosotros').css('display', 'none');
+                    $('.menuContacto').css('display', 'none');
+                }
+
+            });
+            //-->
+        </script>
+
+        <!-- include jQuery -->
+
+
+        <script src="../js/wow.min.js"></script>
+        <script>
             anchoPag = $(window).width();
 
-            if (anchoPag > 1025) {
+            if (anchoPag > 767) {
+                new WOW().init();
 
-                $('.menuGaleria').css('display', 'block');
-                $('.menuGaleria').css('top', topMenu);
             }
+        </script>
 
-        });
+        <script type="text/javascript">
+            $(document).ready(function () {
+                altoPag = $(window).height();
+                document.getElementById('ocultomovil').style.maxHeight = altoPag;
+            });
+        </script>
 
-        $(window).resize(function () {
-            ancho = $(window).width();
-            topMenu = 200;
-
-
-            if (ancho > 1200) {
-
-                $('.menuGaleria').css('display', 'block');
-                $('.menuGaleria').css('top', topMenu);
-            }
-
-            if (ancho < 1199) {
-
-                $('.menuMicrocementos').css('display', 'none');
-                $('.menuGaleria').css('display', 'none');
-                $('.menuSistemas').css('display', 'none');
-                $('.menuColores').css('display', 'none');
-                $('.menuGarantia').css('display', 'none');
-                $('.menuProfesionales').css('display', 'none');
-                $('.menuDistribuidores').css('display', 'none');
-                $('.menuNosotros').css('display', 'none');
-                $('.menuContacto').css('display', 'none');
-            }
-
-        });
-        //-->
-    </script>
-
-    <!-- include jQuery -->
-
-
-    <script src="../js/wow.min.js"></script>
-    <script>
-        anchoPag = $(window).width();
-
-        if (anchoPag > 767) {
-            new WOW().init();
-
-        }
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            altoPag = $(window).height();
-            document.getElementById('ocultomovil').style.maxHeight = altoPag;
-        });
-    </script>
-
-    <script type="text/javascript" src="../js/parallax.js"></script>
-    <script type="text/javascript" src="../js/codigo2.js"></script>
-    <script type="text/javascript">
-        var $zoho = $zoho || {};
-        $zoho.salesiq = $zoho.salesiq || {
-            widgetcode: "fab8868be7c7826bd4dfc38932c5e31667aa7f784083239cd30a0cd43fc6a2dd6a3b789df620b2847c948e7c2859b7e2",
-            values: {},
-            ready: function () {}
-        };
-        var d = document;
-        s = d.createElement("script");
-        s.type = "text/javascript";
-        s.id = "zsiqscript";
-        s.defer = true;
-        s.src = "https://salesiq.zoho.com/widget";
-        t = d.getElementsByTagName("script")[0];
-        t.parentNode.insertBefore(s, t);
-        d.write("<div id='zsiqwidget'></div>");
-    </script>
-    <!--div id="barritaloca">
+        <script type="text/javascript" src="../js/parallax.js"></script>
+        <script type="text/javascript" src="../js/codigo2.js"></script>
+        <script type="text/javascript">
+            var $zoho = $zoho || {};
+            $zoho.salesiq = $zoho.salesiq || {
+                widgetcode: "fab8868be7c7826bd4dfc38932c5e31667aa7f784083239cd30a0cd43fc6a2dd6a3b789df620b2847c948e7c2859b7e2",
+                values: {},
+                ready: function () {}
+            };
+            var d = document;
+            s = d.createElement("script");
+            s.type = "text/javascript";
+            s.id = "zsiqscript";
+            s.defer = true;
+            s.src = "https://salesiq.zoho.com/widget";
+            t = d.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(s, t);
+            d.write("<div id='zsiqwidget'></div>");
+        </script>
+        <!--div id="barritaloca">
 	<div id="textoBarritaloca">
 En poursuivant votre navigation sur ce site, vous acceptez l’utilisation de cookies pour vous proposer des contenus et services adaptés à vos centres d’intérêts et vous permettre<br /> l'utilisation de boutons de partages sociaux.  En savoir plus et gérer ces paramètres.
 
@@ -695,8 +774,8 @@ function PonerCookie(){
  document.getElementById("barritaloca").style.display="none";
 }
 </script-->
-    <script type='text/javascript' src='https://www.topciment.com/zcga.js'></script>
-    <script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script>
+        <script type='text/javascript' src='https://www.topciment.com/zcga.js'></script>
+        <script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script>
 </body>
 
 </html>
