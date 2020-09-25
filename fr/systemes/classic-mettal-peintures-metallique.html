@@ -884,7 +884,21 @@
 
     <script src="../../js/jquery-1.9.1.min.js"></script>
     <script src='../../js/jquery.scrollto.js'></script>
+    <!-- Comparar imagenes -->
+    <script src="../../plugins/twentytwenty-master/js/jquery.event.move.js"></script>
+    <script src="../../plugins/twentytwenty-master/js/jquery.twentytwenty.js"></script>
+    <script>
+        $(document).ready(function () {
 
+            $(".color").twentytwenty();
+            /* $("#bronce .twentytwenty-overlay .twentytwenty-before-label").attr("data-content", "Antes:Bronze");
+            $("#bronce .twentytwenty-overlay .twentytwenty-after-label").attr("data-content", "Después:Bronze + Mettal
+            Activator"); */
+
+            $(".color .twentytwenty-overlay .twentytwenty-before-label").attr("data-content", "Pas d'oxyde");
+            $(".color .twentytwenty-overlay .twentytwenty-after-label").attr("data-content", "Avec oxide");
+        });
+    </script>
     <script languaje="Javascript">
         <!--
         document.write('<style type="text/css">div.ocultable{display: none;}</style>');
