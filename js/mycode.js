@@ -185,48 +185,48 @@ $(document).ready(function () {
     });
 
   } else if (window.location.href.indexOf("/fr/") >= 0) {
-    var link1 = '<li class="cursosF"><a class="linkB"  target="_blank" href="https://training.topciment.com">Schulung Platzreservierung</a></li>';
+    var link1 = '<li class="cursosF"><a class="linkB"  target="_blank" href="https://training.topciment.com">Formation à la réservation des places </a></li>';
     $(".profesionalesF").prepend(link1);
-    var link2 = '<li class="exterioresF"><a class="linkB" href="https://www.topciment.com/de/galerie.html#exteriores">Terrassen und Draussen Bodenbeschichtungen</a></li>';
+    var link2 = '<li class="exterioresF"><a class="linkB" href="https://www.topciment.com/de/photos-du-revetement-decoratif-beton-cire.html#exteriores">Terrasses et revêtements de sol extérieurs</a></li>';
     $(".banyoF").prepend(link2);
-    var link3 = '<li class="techoF"><a class="linkB" href="https://www.topciment.com/de/galerie.html#techo">Mirozement auf dem Dachs</a></li>';
+    var link3 = '<li class="techoF"><a class="linkB" href="https://www.topciment.com/de/photos-du-revetement-decoratif-beton-cire.html#techo">Béton ciré sur le blaireau</a></li>';
     $(".banyoF").prepend(link3);
-    var link3 = '<li class="piscinasF"><a class="linkB" href="https://www.topciment.com/de/galerie.html#piscinas">Mikrozement Swimingpools</a></li>';
+    var link3 = '<li class="piscinasF"><a class="linkB" href="https://www.topciment.com/de/photos-du-revetement-decoratif-beton-cire.html#piscinas">Piscines en béton ciré</a></li>';
     $(".banyoF").prepend(link3);
     $(".calcF a").attr("href", "https://www.topciment.com/de/calc/index.html")
     $.gdprcookie({
-      title: "🍪 Akzeptieren Sie Cookies und die Datenschutzrichtlinie?",
-      subtitle: "Zu akzeptierende Cookies auswählen ",
+      title: "🍪 Acceptez-vous les cookies et la politique de confidentialité?",
+      subtitle: "Sélectionnez les cookies pour accepter ",
 
-      message: "Diese Website verwendet eigene und fremde Cookies für ihren Betrieb sowie zum Erhalt anonymer Statistiken über die Nutzung der Website. Wenn Sie weiter blättern, gehen wir davon aus, dass Sie mit der Verwendung einverstanden sind. Sie können die Einstellungen ändern oder weitere Informationen in der  <strong> <a class='linkC' href='https://www.topciment.com/de/cookie-richtlinie.html'> Cookie-Politik </strong>",
+      message: "Ce site web utilise ses propres cookies et ceux de tiers pour son fonctionnement, ainsi que pour obtenir des statistiques anonymes sur l'utilisation du site web. Si vous continuez à naviguer sur le site, nous considérons que vous acceptez son utilisation.Vous pouvez modifier les paramètres ou obtenir plus d'informations dans la section <strong> <a class='linkC' href='https://www.topciment.com/fr/politique-relative-aux-cookies.html'> Politique en matière de cookies </strong>",
       delay: 600,
       expires: 1,
-      acceptBtnLabel: "Cookies akzeptieren",
-      advancedBtnLabel: "Einrichten von Cookies",
+      acceptBtnLabel: "accepter les cookies",
+      advancedBtnLabel: "Configuration des cookies",
       cookieName: "cookieControlPrefs",
       acceptReload: false,
       customShowMessage: undefined,
       customHideMessage: undefined,
       customShowChecks: undefined,
       cookieTypes: [{
-          type: "Grundlagen",
-          value: "Grundlagen",
-          description: "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website unerlässlich."
+          type: "Essentiels",
+          value: "Essentiels",
+          description: "Ces cookies sont essentiels au bon fonctionnement du site."
         },
         {
           type: "Marketing ",
           value: "Marketing",
-          description: "Cookies im Zusammenhang mit Marketing, Newslettern, sozialen Medien usw."
+          description: "Cookies liés au marketing, aux newsletters, aux réseaux sociaux, etc."
         },
         {
-          type: "Präferenzen",
-          value: "Präferenzen",
-          description: "Dabei handelt es sich um Cookies, die sich auf die Präferenzen Ihrer Site beziehen, z.B.: Speichern Ihres Benutzernamens, Farben der Site usw."
+          type: "Préférences",
+          value: "Préférences",
+          description: "Il s'agit de cookies liés aux préférences de votre site, par exemple: mémoriser votre nom d'utilisateur, les couleurs du site, etc."
         },
         {
-          type: "Analytik",
-          value: "Analytik",
-          description: "Cookies im Zusammenhang mit Website-Besuchen, Browser-Typ usw."
+          type: "Analytiques",
+          value: "Analytiques",
+          description: "Cookies liés aux visites sur le site, au type de navigateur, etc."
         }
 
       ],
