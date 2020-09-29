@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<!--[if lt IE 9]> <script src="js/css3-mediaqueries.js"></script> <![endif]-->
+	<link rel="stylesheet" type="text/css" href="https://www.topciment.com/css/estilo.css">
+	<link rel="icon" type="image/png" href="https://www.topciment.com/favicon.png" />
+	<meta http-equiv="content-language" content="es-ES">
+	<meta name="msvalidate.01" content="4FBBC1447F84ED1527E1C40295AAD72B" />
+	<link
+		href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://www.topciment.com/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.topciment.com/css/animate.css">
+	<title>Calculadora de material Topciment</title>
+	<!-- Nuevo estilo y js de página -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/restyle.css">
+	<link rel="stylesheet" type="text/css" href="../../css/boostrap.css">
+
+	<script type='text/javascript' src='../../js/mycode.js'></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+	<!-- End new styles -->
+	<link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="themes/Bootstrap.css">
+	<link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.0.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<script src="themes/jquery-1.8.2.min.js"></script>
+	<script src="themes/jquery.mobile-1.4.0.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+
+			$('#botonguardar').click(function () {
+				localStorage.setItem('metros_suelo', $('#metros_suelo').val());
+				localStorage.setItem('superficie_suelo', $('#superficie_suelo').val());
+				localStorage.setItem('color_suelo', $('#color_suelo').val());
+
+				localStorage.setItem('metros_pared', $('#metros_pared').val());
+				localStorage.setItem('superficie_pared', $('#superficie_pared').val());
+				localStorage.setItem('color_pared', $('#color_pared').val());
+
+				localStorage.setItem('metros_antideslizante', $('#metros_antideslizante').val());
+				localStorage.setItem('superficie_antideslizante', $('#superficie_antideslizante').val());
+				localStorage.setItem('color_antideslizante', $('#color_antideslizante').val());
+
+				localStorage.setItem('metros_rustico', $('#metros_rustico').val());
+				localStorage.setItem('superficie_rustico', $('#superficie_rustico').val());
+				localStorage.setItem('color_rustico', $('#color_rustico').val());
+
+				location.assign("calcula.html");
+			});
+
+			$('#borrar').click(function () {
+				window.location.reload(true);
+			});
+
+		});
+	</script>
+
+
+</head>
+
+<body>
+	<div data-role="page" data-theme="a">
+		<div id="header">
+			<div class="menuBar" style="position:fixed; transform: translate3d(0px, 0px, 1px);">
+				<div class="menuBarContent">
+
+					<a href="../index.html"><img class="imgLogo logo1" src="../../imagenes/microcemento-topciment.png"
+							alt="Topciment">
+						<img class="imgLogo logo2" src="../../imagenes/logos/logoBlanco2.png" alt="Topciment"
+							style="max-width: 60px; max-height: 60px;">
+					</a>
+
+					<div class="menu idiomas">
+						<ul>
+							<li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a>
+							</li>
+							<li class="lang"><a href="https://www.topciment.com/en/" rel="alternate"
+									hreflang="en">En</a></li>
+							<li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" class="activolang"
+									hreflang="fr">Fr</a></li>
+							<li class="lang"><a href="https://www.topciment.com/de/" rel="alternate"
+									hreflang="de">De</a></li>
+							<li class="lang"><a href="https://www.topciment.com/it/" rel="alternate"
+									hreflang="it">It</a></li>
+							<li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate"
+									hreflang="nl">Nl</a></li>
+							<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate"
+									hreflang="gr">Gr</a></li>
+							<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a>
+							</li>
+						</ul>
+					</div>
+					<!-- Start Menu -->
+					<div class="menu botones" style="margin-left:100px">
+						<ul>
+							<li><a href="../information-beton-cire.html">Béton Ciré</a></li>
+							<li><a href="../solutions-en-beton-cire-pour-toutes-les-surfaces.html">Systèmes</a></li>
+							<li><a href="../photos-du-revetement-decoratif-beton-cire.html">Photos</a></li>
+							<li><a class="activo" href="../professionnels.html">Professionnels</a></li>
+							<li><a href="../nouvelles.html">Nouvelles</a></li>
+							<li><a href="../contact.html">Contact</a></li>
+						</ul>
+						<div class="dropdown" style="top: -20px;">
+							<button class="dropbtn"><img src="../../imagenes/flags/france.png"></button>
+							<div class="dropdown-content">
+								<a href="https://www.topciment.com"> <img src="../../imagenes/flags/spain.png"> </a>
+								<a href="https://www.topciment.com/fr/"><img
+										src="../../imagenes/flags/united-kingdom.png"></a>
+								<a href="https://www.topciment.com/de/"><img src="../../imagenes/flags/germany.png"></a>
+								<a href="https://www.topciment.com/it/"><img src="../../imagenes/flags/italy.png"></a>
+								<a href="https://www.topciment.com/nl/"><img
+										src="../../imagenes/flags/netherlands.png"></a>
+								<a href="https://www.topciment.com/gr/"><img src="../../imagenes/flags/greece.png"></a>
+								<a class="ultimo" href="https://www.topciment.ru/"><img
+										src="../../imagenes/flags/russia.png"></a>
+							</div>
+						</div>
+					</div>
+					<!-- End Menu -->
+
+				</div>
+			</div>
+		</div>
+
+		<!-- MENU ESTADO INICIAL MOVIL-->
+
+		<div id="visiblemovil">
+			<div style="opacity:1; padding-top:0px; z-index:1000;"><a href="#menu"
+					style="text-decoration:none; color:#000; font-size:30px; font-weight:100"
+					onclick="mostrarmovil()"><img src="../imagenes/icono-menu-abrir-white.png" width="26" height="20"
+						alt="menu" /></a></div>
+		</div>
+
+		<!-- MENU DESPLEGADO MOVIL-->
+		<script type="text/javascript">
+			function mostrar() {
+				document.getElementById('oculto').style.display = 'block';
+				document.getElementById('visible').style.display = 'none';
+			}
+
+			function ocultar() {
+				document.getElementById('oculto').style.display = 'none';
+				document.getElementById('visible').style.display = 'block';
+			}
+
+			function mostrarmovil() {
+				document.getElementById('ocultomovil').style.display = 'block';
+				document.getElementById('visiblemovil').style.display = 'none';
+			}
+
+			function ocultarmovil() {
+				document.getElementById('ocultomovil').style.display = 'none';
+				document.getElementById('visiblemovil').style.display = 'block';
+			}
+
+			function mostrarSubmenu() {
+
+				if (document.getElementById) {
+					var aux = document.getElementById('submenumovil').style;
+					aux.display = aux.display ? "" : "block";
+				}
+
+			}
+		</script>
+		<div id="ocultomovil">
+			<div id="ocultomovilinterno">
+				<div id="menuidiomasmovil">
+					<ul>
+						<li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+						<li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en"
+								class="activolang">En</a></li>
+						<li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it">It</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+					</ul>
+				</div>
+				<div id="menuocultomovil">
+					<ul>
+						<li><a href="information-beton-cire.html" onclick="ocultarmovil()">Béton Ciré</a></li>
+						<!--<li><a href="couleurs-du-beton-cire.html" onclick="ocultarmovil()">Couleurs</a></li>-->
+						<li><a href="solutions-en-beton-cire-pour-toutes-les-surfaces.html"
+								onclick="ocultarmovil()">Systèmes</a></li>
+						<li><a href="photos-du-revetement-decoratif-beton-cire.html" onclick="ocultarmovil()">Photos</a>
+						</li>
+						<!--<li><a href="garantie.html" onclick="ocultarmovil()">Garantie</a></li>-->
+						<li><a href="professionnels.html" onclick="ocultarmovil()">Professionnels</a></li>
+						<!--<li><a href="concessionnaires.html" onclick="ocultarmovil()">Distributeur</a></li>-->
+						<!--<li><a href="entreprise.html" onclick="ocultarmovil()">Qui sommes-nous?</a></li>-->
+						<li><a href="nouvelles.html" onclick="ocultarmovil()">Nouvelles</a></li>
+						<li><a href="contact.html" onclick="ocultarmovil()">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<div id="cerrarEquis"><a href="#menu"
+					style="text-decoration:none; color:#000; font-size:30px; font-weight:100"
+					onclick="ocultarmovil()"><img src="../imagenes/equis-cerrar.png" width="28" height="28"
+						alt="Cerrar" /></a>
+			</div>
+		</div>
+		<div data-role="content" data-theme="a" class="text-center">
+			<div id="separador50px"></div>
+			<div id="separador50px"></div>
+			<div class="text-center mt-4 mb-5"
+				data-animate-scroll='{"x": "0", "y": "-200", "alpha": "0", "duration": "2"}'>
+				<h1 style="font-size: 65px;font-weight: 300;">Calculatrice de matériel</h2>
+					<h2 style="font-size: 45px;font-weight: 300;">De quoi avez vous besoin? </h3>
+						<h3 style="font-size: 25px;font-weight: 300;">Pour calculer la quantité de matériel necessaire,
+							il est important de stipuler les m² , le support et la couleur.</h4>
+			</div>
+
+
+			<!--<form action="#" method="get">-->
+			<div style="padding:.4em 1em; border:1px solid #ccc;">
+				<h3>Sols</h3>
+				<div data-role="fieldcontain">
+					<label for="superficie_suelo" class="superficie_suelo">Quelle surface ?</label>
+					<select name="superficie_suelo" id="superficie_suelo" data-native-menu="false">
+						<option value="Escoge">Choisissez la surface au sol</option>
+						<option value="Terrazo o Marmol">Terrazzo ou marbre</option>
+						<option value="Gres, azulejo o porcelánico (con juntas)">Stoneware, tile or porcelain (with
+							joints)</option>
+						<option value="Solera">Sol en béton</option>
+						<option value="Autonivelante">Auto-nivellement</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="metros_suelo">Combien de m2 ?</label>
+					<input type="range" name="metros_suelo" id="metros_suelo" value="0" min="0" max="100000"
+						data-highlight="true" />
+				</div>
+				<div data-role="fieldcontain">
+					<label for="color_suelo" class="select">Quelle couleur ?</label>
+					<select name="color_suelo" id="color_suelo" data-native-menu="false">
+						<option>Sélectionner </option>
+						<option value="A définir">A définir</option>
+						<option value="Acero">Acero</option>
+						<option value="Arena">Arena</option>
+						<option value="Atacama">Atacama</option>
+						<option value="Avellana">Avellana</option>
+						<option value="Azafran">Azafran</option>
+						<option value="Azul Noche">Azul Noche</option>
+						<option value="Azul Profundo">Azul Profundo</option>
+						<option value="Blanco">Blanco</option>
+						<option value="Café">Café</option>
+						<option value="Calabaza">Calabaza</option>
+						<option value="Carmin">Carmin</option>
+						<option value="Cemento">Cemento</option>
+						<option value="Cobre">Cobre</option>
+						<option value="Desert tan">Desert tan</option>
+						<option value="French Gray">French Gray</option>
+						<option value="Himalaya">Himalaya</option>
+						<option value="Jade">Jade</option>
+						<option value="Kalahari">Kalahari</option>
+						<option value="Kiwi">Kiwi</option>
+						<option value="Liquen">Liquen</option>
+						<option value="Maiz">Maiz</option>
+						<option value="Manzana">Manzana</option>
+						<option value="Marfil">Marfil</option>
+						<option value="Marron">Marron</option>
+						<option value="Más de un color">Más de un color</option>
+						<option value="Maya">Maya</option>
+						<option value="Mojave">Mojave</option>
+						<option value="Negro">Negro</option>
+						<option value="Niquel">Niquel</option>
+						<option value="Perla">Perla</option>
+						<option value="Piedra Paris">Piedra Paris</option>
+						<option value="Pizarra">Pizarra</option>
+						<option value="Plata">Plata</option>
+						<option value="Plomo">Plomo</option>
+						<option value="Sahara">Sahara</option>
+						<option value="Selva">Selva</option>
+						<option value="Shale Gray">Shale Gray</option>
+						<option value="Titanio">Titanio</option>
+						<option value="Topo">Topo</option>
+						<option value="Wengue">Wengue</option>
+
+					</select>
+				</div>
+			</div>
+			&nbsp; &nbsp;
+			<div style="padding:.4em 1em; border:1px solid #ccc;">
+				<h3>Murs</h3>
+				<div data-role="fieldcontain">
+					<label for="superficie_pared" class="select">Quelle surface ?</label>
+					<select name="superficie_pared" id="superficie_pared" data-native-menu="false">
+						<option value="Escoge">Choisissez la surface au mur</option>
+						<option value="Azulejo">Carrelage</option>
+						<option value="Pladur">Placo -Platre </option>
+						<option value="Enfoscado">Mortiers Platré</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="metros_pared">Combien de m2 ?</label>
+					<input type="range" name="metros_pared" id="metros_pared" value="0" min="0" max="100000"
+						data-highlight="true" />
+				</div>
+				<div data-role="fieldcontain">
+					<label for="color_pared" class="select">Quelle couleur ?</label>
+					<select name="color_pared" id="color_pared" data-native-menu="false">
+						<option>Sélectionner </option>
+						<option value="A définir">A définir</option>
+						<option value="Acero">Acero</option>
+						<option value="Arena">Arena</option>
+						<option value="Atacama">Atacama</option>
+						<option value="Avellana">Avellana</option>
+						<option value="Azafran">Azafran</option>
+						<option value="Azul Noche">Azul Noche</option>
+						<option value="Azul Profundo">Azul Profundo</option>
+						<option value="Blanco">Blanco</option>
+						<option value="Café">Café</option>
+						<option value="Calabaza">Calabaza</option>
+						<option value="Carmin">Carmin</option>
+						<option value="Cemento">Cemento</option>
+						<option value="Cobre">Cobre</option>
+						<option value="Desert tan">Desert tan</option>
+						<option value="French Gray">French Gray</option>
+						<option value="Himalaya">Himalaya</option>
+						<option value="Jade">Jade</option>
+						<option value="Kalahari">Kalahari</option>
+						<option value="Kiwi">Kiwi</option>
+						<option value="Liquen">Liquen</option>
+						<option value="Maiz">Maiz</option>
+						<option value="Manzana">Manzana</option>
+						<option value="Marfil">Marfil</option>
+						<option value="Marron">Marron</option>
+						<option value="Más de un color">Más de un color</option>
+						<option value="Maya">Maya</option>
+						<option value="Mojave">Mojave</option>
+						<option value="Negro">Negro</option>
+						<option value="Niquel">Niquel</option>
+						<option value="Perla">Perla</option>
+						<option value="Piedra Paris">Piedra Paris</option>
+						<option value="Pizarra">Pizarra</option>
+						<option value="Plata">Plata</option>
+						<option value="Plomo">Plomo</option>
+						<option value="Sahara">Sahara</option>
+						<option value="Selva">Selva</option>
+						<option value="Shale Gray">Shale Gray</option>
+						<option value="Titanio">Titanio</option>
+						<option value="Topo">Topo</option>
+						<option value="Wengue">Wengue</option>
+					</select>
+				</div>
+			</div>
+			&nbsp; &nbsp;
+			<div style="padding:.4em 1em; border:1px solid #ccc;">
+				<h3>Extérieur </h3>
+				<div data-role="fieldcontain">
+					<label for="superficie_antideslizante" class="select">Quelle surface ??</label>
+					<select name="superficie_antideslizante" id="superficie_antideslizante" data-native-menu="false">
+						<option value="Escoge">Choisissez la superficie extérieur</option>
+						<option value="Solera">Chape en béton </option>
+						<option value="Pavimento cerámico (con juntas)">Revêtement de sol en céramique (avec joints)
+						</option>
+					</select>
+				</div>
+				<div data-role="fieldcontain">
+					<label for="metros_antideslizante">Combien de m2 ?</label>
+					<input type="range" name="metros_antideslizante" id="metros_antideslizante" value="0" min="0"
+						max="100000" data-highlight="true" />
+				</div>
+				<div data-role="fieldcontain">
+					<label for="color_antideslizante" class="select">Quelle couleur ?</label>
+					<select name="color_antideslizante" id="color_antideslizante" data-native-menu="false">
+						<option>Sélectionner </option>
+						<option value="A définir">A définir</option>
+						<option value="Acero">Acero</option>
+						<option value="Arena">Arena</option>
+						<option value="Atacama">Atacama</option>
+						<option value="Avellana">Avellana</option>
+						<option value="Azafran">Azafran</option>
+						<option value="Azul Noche">Azul Noche</option>
+						<option value="Azul Profundo">Azul Profundo</option>
+						<option value="Blanco">Blanco</option>
+						<option value="Café">Café</option>
+						<option value="Calabaza">Calabaza</option>
+						<option value="Carmin">Carmin</option>
+						<option value="Cemento">Cemento</option>
+						<option value="Cobre">Cobre</option>
+						<option value="Desert tan">Desert tan</option>
+						<option value="French Gray">French Gray</option>
+						<option value="Himalaya">Himalaya</option>
+						<option value="Jade">Jade</option>
+						<option value="Kalahari">Kalahari</option>
+						<option value="Kiwi">Kiwi</option>
+						<option value="Liquen">Liquen</option>
+						<option value="Maiz">Maiz</option>
+						<option value="Manzana">Manzana</option>
+						<option value="Marfil">Marfil</option>
+						<option value="Marron">Marron</option>
+						<option value="Más de un color">Más de un color</option>
+						<option value="Maya">Maya</option>
+						<option value="Mojave">Mojave</option>
+						<option value="Negro">Negro</option>
+						<option value="Niquel">Niquel</option>
+						<option value="Perla">Perla</option>
+						<option value="Piedra Paris">Piedra Paris</option>
+						<option value="Pizarra">Pizarra</option>
+						<option value="Plata">Plata</option>
+						<option value="Plomo">Plomo</option>
+						<option value="Sahara">Sahara</option>
+						<option value="Selva">Selva</option>
+						<option value="Shale Gray">Shale Gray</option>
+						<option value="Titanio">Titanio</option>
+						<option value="Topo">Topo</option>
+						<option value="Wengue">Wengue</option>
+					</select>
+				</div>
+			</div>
+			&nbsp; &nbsp;
+
+			<!--div style="padding:.4em 1em; border:1px solid #ccc;" >
+					<h3>Acabado rústico</h3>
+					<div data-role="fieldcontain">
+						<label for="superficie_rustico" class="select">Quelle surface ??</label>
+						<select name="superficie_rustico" id="superficie_rustico" data-native-menu="false">
+							<option value="Escoge">Escoja superficie rustico</option>
+							<option value="Solera">Solera de hormigón</option>
+                            <option value="Pavimento cerámico (con juntas)">Pavimento cerámico (con juntas)</option>
+						</select>
+					</div>
+					<div data-role="fieldcontain">
+						<label for="metros_rustico">Combien de m2 ?</label>
+					 	<input type="range" name="metros_rustico" id="metros_rustico" value="0" min="0" max="100000" data-highlight="true"  />
+					</div>
+					<div data-role="fieldcontain">
+						<label for="color_rustico" class="select">Quelle couleur ?</label>
+						<select name="color_rustico" id="color_rustico" data-native-menu="false">
+							<option>Sélectionner </option>
+							<option value="A définir">A définir</option>
+							<option value="Más de un color">Más de un color</option>
+                            <option value="Negro">Negro</option>
+                            <option value="Shale Gray">Shale Gray</option>
+                            <option value="Plomo">Plomo</option>
+                            <option value="Marron">Marron</option>
+                            <option value="Wengue">Wengue</option>
+                            <option value="Pizarra">Pizarra</option>
+                            <option value="Himalaya">Himalaya</option>
+                            <option value="Cemento">Cemento</option>
+                            <option value="Café">Café</option>
+                            <option value="Topo">Topo</option>
+                            <option value="Acero">Acero</option>
+                            <option value="Titanio">Titanio</option>
+                            <option value="French Gray">French Gray</option>
+                            <option value="Piedra Paris">Piedra Paris</option>
+                            <option value="Cobre">Cobre</option>
+                            <option value="Plata">Plata</option>
+                            <option value="Perla">Perla</option>
+                            <option value="Liquen">Liquen</option>
+                            <option value="Sahara">Sahara</option>
+                            <option value="Avellana">Avellana</option>
+                            <option value="Niquel">Niquel</option>
+                            <option value="Blanco">Blanco</option>
+                            <option value="Marfil">Marfil</option>
+                            <option value="Kalahari">Kalahari</option>
+                            <option value="Desert tan">Desert tan</option>
+                            <option value="Atacama">Atacama</option>
+                            <option value="Arena">Arena</option>
+                            <option value="Mojave">Mojave</option>
+                            <option value="Maiz">Maiz</option>
+                            <option value="Selva">Selva</option>
+                            <option value="Kiwi">Kiwi</option>
+                            <option value="Manzana">Manzana</option>
+                            <option value="Azafran">Azafran</option>
+                            <option value="Calabaza">Calabaza</option>
+                            <option value="Azul Noche">Azul Noche</option>
+                            <option value="Azul Profundo">Azul Profundo</option>
+                            <option value="Maya">Maya</option>
+                            <option value="Jade">Jade</option>
+                            <option value="Carmin">Carmin</option>
+						</select>
+					</div-->
+		</div>
+		<div class="ui-body ui-body-b">
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-f">
+					<button id="botonguardar" data-theme="f">Calculer </button>
+				</div>
+			</fieldset>
+			<fieldset class="ui-grid-a">
+				<div class="ui-block-f">
+					<button id="borrar" data-theme="a">Effacer</button>
+				</div>
+			</fieldset>
+		</div>
+		<!-- START Footer -->
+		<footer class="footerp">
+			<div class="contenedorMenuOculto contenedorF">
+				<div class="row row1">
+					<div class="col-md-3 col1F">
+						<h6 class="tituloF productosF"><strong>PRODUITS</strong></h6>
+						<ul class="ulF productosF">
+							<li class="sttandardF"><a class="linkB"
+									href="../systemes/sttandard-beton-cire-bicomposant.html">Béton ciré
+									bicomposant</a></li>
+							<li class="evoluttionF"><a class="linkB"
+									href="../systemes/evoluttion-beton-cire-monocomposant.html">Béton
+									ciré monocomposant</a></li>
+							<li class="efecF"><a class="linkB"
+									href="../systemes/efectto-beton-cire-pret-a-lemploi.html">Béton ciré
+									prêt à l'emploi</a></li>
+							<li class="puremF"><a class="linkB"
+									href="../systemes/pure-mettal-revetement-metallique.html">Revêtement
+									métallique</a></li>
+							<li class="classicF"><a class="linkB"
+									href="../systemes/classic-mettal-peintures-metallique.html">Peintures
+									métallique</a></li>
+							<li class="elitteF"><a class="linkB"
+									href="../systemes/elitte-glacis-et-pigments-metallique.html">Glacis et
+									pigments métallique</a></li>
+							<li class="primacemF"><a class="linkB"
+									href="../systemes/primacem-promoteurs-dadhérence.html">Promoteurs
+									d'adhérence </a></li>
+							<li class="arcocemF"><a class="linkB" href="../systemes/arcocem-pigments.html">Pigments</a>
+							</li>
+							<li class="topsealerF"><a class="linkB" href="../systemes/topsealer-vernis.html">Vernis</a>
+							</li>
+							<li class="limpieF"><a class="linkB"
+									href="../systemes/nettoyage-et-entretien-du-beton-cire.html">Nettoyage
+									et entretien du béton ciré</a></li>
+							<li class="herramF"><a class="linkB" href="../systemes/outils.html">Outils</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col2F">
+						<h6 class="tituloF proyectosF"><strong>PROJETS</strong></h6>
+						<ul class="ulF proyectos">
+							<li class="suelosF"><a class="linkB"
+									href="../photos-du-revetement-decoratif-beton-cire.html.html#suelos">Rénovation de
+									sols </a></li>
+							<li class="paredesF"><a class="linkB"
+									href="../photos-du-revetement-decoratif-beton-cire.html.html#paredes">Revêtements de
+									murs</a>
+							</li>
+							<li class="banyoF"><a class="linkB"
+									href="../photos-du-revetement-decoratif-beton-cire.html.html#banyo">Rénovation de
+									salle de bains
+								</a></li>
+							<li class="cocinasF"><a class="linkB"
+									href="../photos-du-revetement-decoratif-beton-cire.html.html#cocinas">Rénovation de
+									cuisine</a>
+							</li>
+							<li class="decontiuosF"><a class="linkB"
+									href="../photos-du-revetement-decoratif-beton-cire.html.html#decontinuos">Revêtements
+									décoratives
+									continues</a></li>
+							<li class="mueblesF"><a class="linkB"
+									href="../photos-du-revetement-decoratif-beton-cire.html.html#muebles">Décoration de
+									meubles</a>
+							</li>
+							<li class="azulejosF"><a class="linkB"
+									href="../photos-du-revetement-decoratif-beton-cire.html.html#azulejos">Recouvrir
+									carrelage </a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col3F">
+						<h6 class="tituloF"><strong>PROFESIONNELS </strong></h6>
+						<ul class="ulF profesionalesF">
+							<li class="clientesF"><a class="linkB" href="portalcliente">Customer portal</a></li>
+							<li class="distriF"><a class="linkB" href="../concessionnaires.html">Distributeurs </a></li>
+							<li class="garantF"><a class="linkB" href="../garantie.html">Garantie</a></li>
+							<li class="fichatF"><a class="linkB"
+									href="../telechargements.html#fichas-tecnicas-topciment">Fiches
+									techniques </a>
+							</li>
+							<li class="descargasF"><a class="linkB"
+									href="../telechargements.html#catalogo-topciment">Téléchargements</a></li>
+							<li class="videotutF"><a class="linkB" href="video-tutorials-microcement.html">Video
+									tutorials</a>
+							</li>
+							<li class="calcF"><a class="linkB" href="../calc/index.html">Calculatrice </a></li>
+							<li class="selloF"><a class="linkB" href="../sceau-de-qualite.html">Tampon de qualité</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-3 col4F">
+						<h6 class="tituloF"><strong>ENTREPRISE</strong></h6>
+						<ul class="ulF empresaF">
+							<li class="nosotrosF"><a class="linkB" href="../entreprise.html">Nous</a></li>
+							<li class="noticiasF"><a class="linkB" href="../nouvelles.html">Informations</a></li>
+							<li class="contactoF"><a class="linkB" href="../contact.html">Contact</a></li>
+							<li class="newsletterF"><a class="linkB" href="https://zc.vg/FQ1Q2">Abonnez vous à notre
+									newletter</a>
+							</li>
+							<li class="atencionF">Service Client Topciment du lundi au vendredi de 9h00 à 18 h </li>
+							<li class="numFooter">+34 963 92 59 89</li>
+							<li class="emailF"> info@topciment.com</li>
+						</ul>
+						<p>
+							<!-- Youtube -->
+							<a class="linkB social1" href="https://www.youtube.com/user/TopCiment" target="_blank">
+								<span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-youtube fa-stack-1x"></i>
+								</span></a>
+							<!-- Instagrm -->
+							<a class="linkB social2" href="https://www.instagram.com/topciment/" target="_blank">
+								<span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-instagram  fa-stack-1x"></i>
+								</span></a>
+							<!--  Whatsap -->
+							<a class="linkB social3"
+								href="https://api.whatsapp.com/send?phone=34647913586&amp;text=Hola&amp;source=&amp;data="
+								target="_blank"><span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-whatsapp fa-stack-1x"></i>
+								</span></a>
+							<!--Pinterest -->
+							<a class="linkB social4" href="https://www.pinterest.com/topciment/" target="_blank"><span
+									class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-pinterest fa-stack-1x"></i>
+								</span></a>
+							<!--Facebook-->
+							<a class="linkB social5" href="https://es-es.facebook.com/topciment.microcemento"
+								target="_blank"><span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-facebook fa-stack-1x"></i>
+								</span></a>
+							<!-- Twitter -->
+							<a class="linkB social6" href="https://twitter.com/topciment" target="_blank"><span
+									class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-twitter fa-stack-1x"></i>
+								</span></a>
+							<!-- Linkedin -->
+							<a class="linkB social7" href="https://www.linkedin.com/company/2880536/"
+								target="_blank"><span class="fa-stack">
+									<i class="fa fa-circle fa-stack-2x icon"></i>
+									<i class="fa fa-linkedin fa-stack-1x"></i>
+								</span></a>
+						</p>
+					</div>
+				</div>
+				<div class="row row2">
+					<div class="col-md-1 col-12 col5F">
+						<a href="../index.html"><img src=" ../../imagenes/logos/Topciment-cuadrado-blanco.png"
+								class="img-fluid logoF" /></a>
+					</div>
+					<div class="col-md-11 col6F">
+						<small class="direccionF"> © 2020 Grupo Negocios PO,S.L.U. Rosas 33, Manises 46940
+							España</small><br class="brF">
+						<small class="privaF">
+							<a class="linkB politicaF"
+								href=" https://www.topciment.com/fr/termes-conditions-et-declaration-de-confidentialite.html"
+								rel="nofollow">
+								Termes, conditions et Déclaration de confidentialité</a> |
+							<a class="linkB cookieF"
+								href="https://www.topciment.com/fr/politique-relative-aux-cookies.html" rel="nofollow"
+								class="textoBlanco">Politique relative aux cookies</a></small>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+
+		<script data-id='xenioo' data-node='app' src="https://static.xenioo.com/webchat/xenioowebchat.js"></script>
+		<!-- END Footer -->
+
+
+		<!--</form>-->
+
+	</div>
+
+	<div data-role="footer">
+		<img src="https://www.topciment.com/imagenes/microcemento-topciment.png" id="logo" />
+	</div>
+	</div>
+	<script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script>
+</body>
+
+</html>

@@ -193,7 +193,7 @@ $(document).ready(function () {
     $(".banyoF").prepend(link3);
     var link3 = '<li class="piscinasF"><a class="linkB" href="https://www.topciment.com/de/photos-du-revetement-decoratif-beton-cire.html#piscinas">Piscines en béton ciré</a></li>';
     $(".banyoF").prepend(link3);
-    $(".calcF a").attr("href", "https://www.topciment.com/de/calc/index.html")
+    $(".calcF a").attr("href", "https://www.topciment.com/fr/calc/index.html")
     $.gdprcookie({
       title: "🍪 Acceptez-vous les cookies et la politique de confidentialité?",
       subtitle: "Sélectionnez les cookies pour accepter ",
@@ -234,7 +234,7 @@ $(document).ready(function () {
     });
 
   } else {
-    xenioowebchat.Start("58a8dc52-1e3d-4295-8b8e-040257ffc9cd");
+    xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
     $('.zsiq_floatmain').css({
       'display': 'none !important'
     });

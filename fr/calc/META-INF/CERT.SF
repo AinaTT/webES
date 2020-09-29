@@ -1,0 +1,370 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA1-Digest-Manifest: lZaevcdBF7iw/6N8N/+tXEh4udA=
+
+Name: assets/www/themes/images/icons-png/star-white.png
+SHA1-Digest: JsCe+00u7Z+VsaBQkT7cUriNJFc=
+
+Name: res/xml/config.xml
+SHA1-Digest: uY4TkyJxEiqE1w9EubQzckwfwm8=
+
+Name: assets/www/themes/images/icons-png/camera-black.png
+SHA1-Digest: RLS2DayimO9TY4376o3nc0i8J64=
+
+Name: assets/www/themes/images/icons-png/mail-white.png
+SHA1-Digest: up5fP1Z6HySQFcLsnyRpEww7tAg=
+
+Name: assets/www/themes/images/icons-png/home-white.png
+SHA1-Digest: LgBZ5wPgUak67dA4Tv0iNGtAdQ8=
+
+Name: assets/www/themes/images/icons-png/back-white.png
+SHA1-Digest: m5fJ0niKvKw31mlmxItTNdwOxMI=
+
+Name: assets/www/themes/images/icons-png/home-black.png
+SHA1-Digest: uoPI+cd5uZrEL7KJoZmX6e3H8p8=
+
+Name: assets/www/themes/images/icons-png/user-black.png
+SHA1-Digest: +xJRXEiJ8xM0/GWNTVA1y0d4J/s=
+
+Name: assets/www/themes/images/icons-png/gear-black.png
+SHA1-Digest: GSX4ilpJsBWbRW9seSfC3F9mmHU=
+
+Name: assets/www/themes/images/icons-png/heart-white.png
+SHA1-Digest: fC9N3AhNKm4hsGgf6BYdRVcTBZo=
+
+Name: assets/www/themes/images/icons-png/video-black.png
+SHA1-Digest: DyG4PmT2tXVksZhDUcb16B7qZkk=
+
+Name: assets/www/themes/images/icons-png/arrow-u-black.png
+SHA1-Digest: H+1vot7HpWNt1M0EuZ/zuwNu1h8=
+
+Name: res/drawable-hdpi-v4/icon.png
+SHA1-Digest: AqZ56skqy2Z0ijN+V6aXstuI8tQ=
+
+Name: assets/www/themes/images/icons-png/edit-black.png
+SHA1-Digest: YZcz2djaFI7TukMs6c1ua6AmGPY=
+
+Name: assets/www/themes/images/icons-png/phone-black.png
+SHA1-Digest: oI+uv8RtYjqfs2hzfHze6br3kXg=
+
+Name: assets/www/themes/images/icons-png/arrow-u-r-white.png
+SHA1-Digest: C61Hq+rjCwT0zbujksSRRwcFiIE=
+
+Name: assets/www/themes/images/icons-png/action-white.png
+SHA1-Digest: l9jD6MZ42CdDRlj8qqZ7kC4ckgs=
+
+Name: assets/www/themes/images/icons-png/arrow-u-r-black.png
+SHA1-Digest: UD+JdOIz4TZGMblikWJHLy9SK60=
+
+Name: assets/www/themes/images/icons-png/edit-white.png
+SHA1-Digest: IfRUDKExQ0wIZhTb+xnEHew7fRQ=
+
+Name: assets/www/themes/images/icons-png/arrow-u-l-black.png
+SHA1-Digest: n6UWasI6f5jL2KsvX5jG3Ak7hdE=
+
+Name: assets/www/themes/images/icons-png/power-black.png
+SHA1-Digest: Mv6sVmcyBc9eP/+IxVv64ZExLtY=
+
+Name: assets/www/themes/images/icons-png/clock-black.png
+SHA1-Digest: efBEzsElCrkSXGIW4CE0qrFccKw=
+
+Name: assets/www/themes/images/icons-png/location-white.png
+SHA1-Digest: hjQGdWp951th5gPZYbhyxM9UoFk=
+
+Name: assets/www/themes/images/icons-png/phone-white.png
+SHA1-Digest: 3oaEiCbDKkPKvYIJdRz5gn1NV/U=
+
+Name: assets/www/themes/images/icons-png/action-black.png
+SHA1-Digest: E24+dUKFuH7XrcIyOEQ7Y6pbvCE=
+
+Name: assets/www/themes/jquery.mobile.structure-1.4.0.min.css
+SHA1-Digest: BLZLHVek7cR6li7jWue0MalYlUg=
+
+Name: assets/www/themes/images/icons-png/arrow-u-white.png
+SHA1-Digest: g86qrxCydUHFgERxQwYDJPFA52I=
+
+Name: assets/www/cordova.js
+SHA1-Digest: swmHvHBtfbkh8Qr+LHv3yzd102o=
+
+Name: assets/www/themes/Bootstrap.min.css
+SHA1-Digest: Sf8bg8t7Oy0MdZQGBhA1SkSACxI=
+
+Name: assets/www/themes/images/icons-png/eye-black.png
+SHA1-Digest: W0wgTSOOUsXjda7FNhBsJuQLRHI=
+
+Name: assets/www/themes/images/icons-png/delete-black.png
+SHA1-Digest: FUxqDOGpg1ts42kDEIaaeJu7sLA=
+
+Name: assets/www/themes/images/icons-png/calendar-black.png
+SHA1-Digest: VmO0auS5P4aetmc5XkXrnmnqHXM=
+
+Name: assets/www/themes/images/icons-png/audio-black.png
+SHA1-Digest: MwbLJJRrhmCn62eX57AqWEIIB6M=
+
+Name: assets/www/themes/images/icons-png/comment-white.png
+SHA1-Digest: lcP4/5PPaGwUmWb6gAcXnZ5ef8M=
+
+Name: assets/www/themes/images/icons-png/calendar-white.png
+SHA1-Digest: 6uw5ECsjBr9gG8SS/kQP3Fbnk70=
+
+Name: assets/www/themes/images/icons-png/arrow-d-black.png
+SHA1-Digest: fGoH3MbP4RvEUmbTaXDs2KKm3p4=
+
+Name: resources.arsc
+SHA1-Digest: COPvNAVURTLQ6J8sklsHB/2X6yA=
+
+Name: assets/www/themes/images/icons-png/bars-black.png
+SHA1-Digest: W3nxjjV5OgTHJY0pVfn8sCV2tH8=
+
+Name: assets/www/themes/images/icons-png/carat-r-white.png
+SHA1-Digest: d2mNqXjLKcPvE9mkKc0MiDFMMbE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: Tv3DYekwnHUd9SBd5YKb7TOcBE8=
+
+Name: assets/www/themes/images/icons-png/bullets-white.png
+SHA1-Digest: 7DMrHj2CevdsMFzo50Lqoon15So=
+
+Name: assets/www/themes/images/icons-png/plus-black.png
+SHA1-Digest: 83EbZdu/0zrwWBDschFr4MiBtKY=
+
+Name: assets/www/themes/images/icons-png/arrow-l-black.png
+SHA1-Digest: YfZ4OJN2uuYuX0xnOzB09sagJy0=
+
+Name: assets/www/themes/images/icons-png/carat-l-white.png
+SHA1-Digest: SVOPlOa4syqZOrrFEFaG+g+DewI=
+
+Name: assets/www/themes/images/icons-png/carat-d-white.png
+SHA1-Digest: Dbj+UO3D2DzT6brzWQQeO6OPqgo=
+
+Name: assets/www/themes/images/icons-png/arrow-d-r-black.png
+SHA1-Digest: dvxeKVdHKZm1+JJ2adH9fAOyvdg=
+
+Name: assets/www/themes/images/topciment-logo.jpg
+SHA1-Digest: IGUgmSSiVG5LkJjfj7T6dh4dlac=
+
+Name: assets/www/themes/images/icons-png/arrow-r-white.png
+SHA1-Digest: dgRwUaJbRALc8iDG39DxySjLOVc=
+
+Name: assets/www/themes/images/icons-png/forbidden-white.png
+SHA1-Digest: z7x32u1xr8bN2BO5fKkFvioKmyE=
+
+Name: assets/www/themes/images/icons-png/info-black.png
+SHA1-Digest: ErP7VnmAUa2EEZwBlZHiHkPX/kU=
+
+Name: classes.dex
+SHA1-Digest: LuPKawEY3efE9EorT7NKtn4JWWs=
+
+Name: assets/www/themes/images/icons-png/grid-black.png
+SHA1-Digest: uSKznCCsQqvuwryiQWVNgMdIR8o=
+
+Name: assets/www/themes/images/icons-png/recycle-black.png
+SHA1-Digest: COhk8q/P+Arg0sPOcc37MY3gzYI=
+
+Name: res/drawable/icon.png
+SHA1-Digest: rLni5GuDmkO9n0dV1za4RIQwKG4=
+
+Name: assets/www/themes/images/icons-png/power-white.png
+SHA1-Digest: Xwnd+cBufWLGQvI2ktFTvwq8DKg=
+
+Name: assets/www/themes/images/icons-png/arrow-u-l-white.png
+SHA1-Digest: lX3pOhxnt6m9dMM9FRZckISOKc4=
+
+Name: res/drawable-ldpi-v4/icon.png
+SHA1-Digest: ImOyEnx3ypokfQ4xq2XTYJ/wyQ8=
+
+Name: assets/www/themes/images/icons-png/alert-white.png
+SHA1-Digest: ZMGY/Vt8bOZKyVdxpJEoij3lHU8=
+
+Name: assets/www/themes/images/icons-png/shop-black.png
+SHA1-Digest: UyhcbRAfe1kAPP8o1fiXQt2uxTM=
+
+Name: assets/www/calcula.html
+SHA1-Digest: cfXoDr+EAu4vEAObvVv5xYr+cRs=
+
+Name: assets/www/themes/images/icons-png/lock-white.png
+SHA1-Digest: Wy2z0lGhae9iWz1sUhgvktZKSTo=
+
+Name: assets/www/themes/images/icons-png/carat-u-black.png
+SHA1-Digest: EQWmn4ZcfIzFmT8/CztdcRcKLzo=
+
+Name: assets/www/themes/images/icons-png/arrow-d-r-white.png
+SHA1-Digest: dhmFkUUd0vBcJdz0DvoSkOHMRMs=
+
+Name: assets/www/themes/images/icons-png/arrow-r-black.png
+SHA1-Digest: zkkrUsHVybTGYkJcg3jYH6AAKr0=
+
+Name: assets/www/themes/images/icons-png/refresh-white.png
+SHA1-Digest: gHR5vLXlvtyvXQZNjch4ZXVoSDc=
+
+Name: assets/www/themes/images/icons-png/location-black.png
+SHA1-Digest: mGSFy5I85lru0f7Chx1+9cWpkdM=
+
+Name: assets/www/themes/images/icons-png/bullets-black.png
+SHA1-Digest: SwlanvA84uGT6t3rbNtAmK1cw8U=
+
+Name: assets/www/themes/images/icons-png/carat-l-black.png
+SHA1-Digest: sWwvVQX6N95SZ3X/QYbtwBDrZ8E=
+
+Name: assets/www/themes/images/icons-png/carat-r-black.png
+SHA1-Digest: +AbjnHamt8UevkrBiluLjeOyROU=
+
+Name: assets/www/themes/jquery.mobile-1.4.0.min.js
+SHA1-Digest: NyHMgW/wiHMVyPicuGCISBuCtlo=
+
+Name: assets/www/themes/images/icons-png/check-black.png
+SHA1-Digest: kjoCyYge5d6Abe14rdDWjEFVS0k=
+
+Name: assets/www/themes/images/icons-png/info-white.png
+SHA1-Digest: vZ82ZibQpA0cLV47lPV9h7NNJ7s=
+
+Name: assets/www/themes/images/icons-png/search-black.png
+SHA1-Digest: Ji0YAnru9n/E9jOZUP6Zif13r7A=
+
+Name: assets/www/themes/images/icons-png/audio-white.png
+SHA1-Digest: Dm320jqbRml7330r9YIeCp3Zft4=
+
+Name: assets/www/themes/Bootstrap.css
+SHA1-Digest: rBFM9Bp6WEAwF6ikiob37mBbitc=
+
+Name: assets/www/themes/images/icons-png/plus-white.png
+SHA1-Digest: 7K4rB1AcRhc2tnw56PG7dlNrjls=
+
+Name: assets/www/themes/images/icons-png/video-white.png
+SHA1-Digest: 43i//s9t38RhsLpbX8ihEDJRPts=
+
+Name: assets/www/themes/images/icons-png/star-black.png
+SHA1-Digest: +jtbXelY/1qQu2aslTpN4vLHVSc=
+
+Name: assets/www/themes/images/icons-png/carat-d-black.png
+SHA1-Digest: 1UaZPHQ58SDPFaYXK7L6gTLmdJM=
+
+Name: assets/www/themes/images/icons-png/refresh-black.png
+SHA1-Digest: t+SWrAejj23qL7Ibcl/HFwrk7+g=
+
+Name: res/drawable-xhdpi-v4/icon.png
+SHA1-Digest: uqeyv9W7QBzjRBuyCECcJRwKf5o=
+
+Name: assets/www/themes/images/icons-png/forward-black.png
+SHA1-Digest: tQH9hcdIwZS04m8ItBaEV3ixKvQ=
+
+Name: assets/www/themes/images/ajax-loader.gif
+SHA1-Digest: AsIpTFG624pLYiFvE5UfeHxYuMM=
+
+Name: assets/www/themes/images/icons-png/clock-white.png
+SHA1-Digest: tT4ldbi9pFhR8of5OTqRVjzuwJg=
+
+Name: assets/www/themes/images/icons-png/comment-black.png
+SHA1-Digest: G4kT6Zlg/7GgWA1IL4DqLGeEI+c=
+
+Name: assets/www/themes/images/icons-png/navigation-white.png
+SHA1-Digest: ZnLKwr4Wak5y1sNmPlPZ0mzjHmc=
+
+Name: assets/www/themes/images/icons-png/gear-white.png
+SHA1-Digest: x2qHsk6xxIoh63/ATvgTUP0TGb4=
+
+Name: assets/www/themes/images/icons-png/back-black.png
+SHA1-Digest: DQtviGHbCHWiwoz6WNzNi5ogr1A=
+
+Name: assets/www/themes/images/icons-png/bars-white.png
+SHA1-Digest: hrT6NvBpx1KB7IavbUvEX2R5klo=
+
+Name: assets/www/themes/images/icons-png/recycle-white.png
+SHA1-Digest: 7UN1tT/u1lcMoLGpJOVNXXgJ8+Q=
+
+Name: assets/www/themes/images/icons-png/eye-white.png
+SHA1-Digest: brQ0tL0xZT4+rwAyzYscCpiRRGw=
+
+Name: assets/www/index.html
+SHA1-Digest: xYpa8soknByu6St79aje28sEJwY=
+
+Name: assets/www/themes/images/icons-png/lock-black.png
+SHA1-Digest: Qk/L9Oq0DjPA11cXI7is5sr3bx4=
+
+Name: assets/www/themes/images/icons-png/search-white.png
+SHA1-Digest: tD4mCDMc0C7JwpTtEIdIiJjniRg=
+
+Name: assets/www/themes/images/icons-png/heart-black.png
+SHA1-Digest: HRH7lpcW2cVN3ovZ+92YGhC4BbU=
+
+Name: assets/www/themes/images/icons-png/arrow-l-white.png
+SHA1-Digest: NtUlyMQ/P1A4z4dyZ4sR7kqwWYA=
+
+Name: res/drawable-mdpi-v4/icon.png
+SHA1-Digest: U/rSBHhu5bXfuqcbm2LdcK099dM=
+
+Name: assets/www/themes/images/icons-png/tag-white.png
+SHA1-Digest: wDmlNkyw5yhndDrkWd43oovz1Sg=
+
+Name: assets/www/themes/images/icons-png/forward-white.png
+SHA1-Digest: Xv013XQvVun55P3H7/W8yrbYBII=
+
+Name: assets/www/themes/images/icons-png/cloud-black.png
+SHA1-Digest: /508lQnyQUmuxpuFyhwpYElV9rQ=
+
+Name: assets/www/themes/images/icons-png/delete-white.png
+SHA1-Digest: 7TQaZPAByJ+zHOSASWe/R0VSmRg=
+
+Name: assets/www/themes/images/icons-png/arrow-d-l-black.png
+SHA1-Digest: kshcNwophzN8RI6HEnZur8n29hc=
+
+Name: assets/www/themes/images/icons-png/minus-black.png
+SHA1-Digest: VcB/Nmcg0N+wEp8jk2vPIMljVY8=
+
+Name: assets/www/phonegap.js
+SHA1-Digest: RaLy0pefwVs7neXMknncd1wEVNE=
+
+Name: assets/www/themes/images/icons-png/tag-black.png
+SHA1-Digest: v34HhuJc4wZP0CPTC1hFUKKJ4po=
+
+Name: assets/www/themes/images/icons-png/shop-white.png
+SHA1-Digest: eCuyJSQtDxwOx/fOf5QglO4oJ4Q=
+
+Name: assets/www/themes/images/icons-png/arrow-d-l-white.png
+SHA1-Digest: CCRDswsSWJOHL8HL5QJM7jrp/Xo=
+
+Name: assets/www/themes/images/icons-png/alert-black.png
+SHA1-Digest: 4Q1d+BrGXZKwMeB0e6dDdH3Vj/Y=
+
+Name: assets/www/themes/images/icons-png/minus-white.png
+SHA1-Digest: CpC0+jOJOURxfWH4/zRivIv7nGI=
+
+Name: assets/www/themes/jquery-1.8.2.min.js
+SHA1-Digest: gaQLmWtZ+fCl8XZm4LLKGR3/t4g=
+
+Name: assets/www/themes/jquery.mobile.icons.min.css
+SHA1-Digest: ldP60+JV/AJHptc74/7M2X8NXcg=
+
+Name: assets/www/themes/images/icons-png/check-white.png
+SHA1-Digest: ajjA9i4YX7/zJu/6TSzBHuzjr9E=
+
+Name: assets/www/themes/images/icons-png/arrow-d-white.png
+SHA1-Digest: rM/H3MuBJqoR4+Gc/8g4030cCsA=
+
+Name: assets/www/themes/images/icons-png/camera-white.png
+SHA1-Digest: wqxdgqebvRU3tFdcdf00B/jxdl4=
+
+Name: assets/www/themes/images/icons-png/grid-white.png
+SHA1-Digest: Wc1Z/i4DkZ0A9za0vx7/VnNC394=
+
+Name: assets/www/themes/images/icons-png/carat-u-white.png
+SHA1-Digest: VwAzTovTPJYcfg2BIN6pQLsO0rM=
+
+Name: assets/www/themes/images/icons-png/user-white.png
+SHA1-Digest: qIOVxbCCqrgCct+0oxT2XdteC4A=
+
+Name: assets/www/themes/images/icons-png/mail-black.png
+SHA1-Digest: rSSu2r7o1nhowOScguowM3K2xXQ=
+
+Name: assets/www/themes/images/icons-png/cloud-white.png
+SHA1-Digest: 2uaGILByg51N3qhwX9oEIRdIugE=
+
+Name: assets/www/icon.png
+SHA1-Digest: LLxw7xPUr6FCk+tidTN4w0ak3OU=
+
+Name: assets/www/themes/images/icons-png/navigation-black.png
+SHA1-Digest: Cxk92Fg0cdqDWPfVmgqcdzBvjuY=
+
+Name: assets/www/themes/images/icons-png/forbidden-black.png
+SHA1-Digest: 1qGkoL1bRA9yXyJ09HGCQrZg/1U=
+
