@@ -187,11 +187,11 @@ $(document).ready(function () {
   } else if (window.location.href.indexOf("/fr/") >= 0) {
     var link1 = '<li class="cursosF"><a class="linkB"  target="_blank" href="https://training.topciment.com">Formation à la réservation des places </a></li>';
     $(".profesionalesF").prepend(link1);
-    var link2 = '<li class="exterioresF"><a class="linkB" href="https://www.topciment.com/de/photos-du-revetement-decoratif-beton-cire.html#exteriores">Terrasses et revêtements de sol extérieurs</a></li>';
+    var link2 = '<li class="exterioresF"><a class="linkB" href="https://www.topciment.com/fr/photos-du-revetement-decoratif-beton-cire.html#exteriores">Terrasses et revêtements de sol extérieurs</a></li>';
     $(".banyoF").prepend(link2);
-    var link3 = '<li class="techoF"><a class="linkB" href="https://www.topciment.com/de/photos-du-revetement-decoratif-beton-cire.html#techo">Béton ciré sur le blaireau</a></li>';
+    var link3 = '<li class="techoF"><a class="linkB" href="https://www.topciment.com/fr/photos-du-revetement-decoratif-beton-cire.html#techo">Béton ciré sur le blaireau</a></li>';
     $(".banyoF").prepend(link3);
-    var link3 = '<li class="piscinasF"><a class="linkB" href="https://www.topciment.com/de/photos-du-revetement-decoratif-beton-cire.html#piscinas">Piscines en béton ciré</a></li>';
+    var link3 = '<li class="piscinasF"><a class="linkB" href="https://www.topciment.com/fr/photos-du-revetement-decoratif-beton-cire.html#piscinas">Piscines en béton ciré</a></li>';
     $(".banyoF").prepend(link3);
     $(".calcF a").attr("href", "https://www.topciment.com/fr/calc/index.html")
     $.gdprcookie({
