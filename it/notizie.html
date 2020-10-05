@@ -1,598 +1,905 @@
 ﻿<!DOCTYPE html>
 <html lang="it">
+
 <head>
-<meta charset="utf-8"><meta name="theme-color" content="#000"/>
-<meta name="viewport" content="width=device-width" />
-<!--[if lt IE 9]> <script src="../js/css3-mediaqueries.js"></script> <![endif]-->
-<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-<link rel="icon" type="image/png" href="https://www.topciment.com/favicon.png" />
-<meta name="Language" content="IT" />
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#000" />
+	<meta name="viewport" content="width=device-width" />
+	<!--[if lt IE 9]> <script src="../js/css3-mediaqueries.js"></script> <![endif]-->
+	<link rel="stylesheet" type="text/css" href="../css/estilo.css">
+	<link rel="icon" type="image/png" href="https://www.topciment.com/favicon.png" />
+	<meta name="Language" content="IT" />
 
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
+	<link
+		href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext'
+		rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../css/animate.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Nuevo estilo y js de página -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/restyle.css">
+	<script type='text/javascript' src='../js/mycode.js'></script>
+	<!-- End new styles -->
 
+	<title>Topciment Notizie, Tutto ciò che deve sapere sul nostro prodotto</title>
+	<meta name="description"
+		content="Attualità, eventi, novità e notizie su Topciment microcemento. Tutto ciò che deve sapere sul nostro prodotto il microcemento" />
 
-<title>Topciment Notizie, Tutto ciò che deve sapere sul nostro prodotto</title>
-<meta name="description" content="Attualità, eventi, novità e notizie su Topciment microcemento. Tutto ciò che deve sapere sul nostro prodotto il microcemento" />
+	<link rel="canonical" href="https://www.topciment.com/it/notizie.html" />
 
-<link rel="canonical" href="https://www.topciment.com/it/notizie.html" />
+	<link rel="alternate" href="https://www.topciment.com/noticias.html" hreflang="es-ES" />
+	<link rel="alternate" href="https://www.topciment.com/en/news.html" hreflang="en-GB" />
+	<link rel="alternate" href="https://www.topciment.com/fr/nouvelles.html" hreflang="fr-FR" />
+	<link rel="alternate" href="https://www.topciment.com/de/nachrichten.html" hreflang="de-DE" />
+	<link rel="alternate" href="https://www.topciment.com/it/notizie.html" hreflang="it-IT" />
+	<link rel="alternate" href="https://www.topciment.com/nl/nieuws.html" hreflang="nl-NL" />
+	<link rel="alternate" href="https://www.topciment.com/gr/gr-news.html" hreflang="el-GR" />
+	<link rel="alternate" href="https://www.topciment.ru/novosti.html" hreflang="ru-RU" />
+	<link rel="alternate" href="https://www.topciment.us/news.html" hreflang="en-US" />
+	<link rel="alternate" href="https://www.topciment.us/es/noticias.html" hreflang="es-US" />
+	<link rel="alternate" href="https://www.topciment.cn/updates-and-news.html" hreflang="zh-CN" />
 
-<link rel="alternate" href="https://www.topciment.com/noticias.html" hreflang="es-ES" />
-<link rel="alternate" href="https://www.topciment.com/en/news.html" hreflang="en-GB" />
-<link rel="alternate" href="https://www.topciment.com/fr/nouvelles.html" hreflang="fr-FR" />
-<link rel="alternate" href="https://www.topciment.com/de/nachrichten.html" hreflang="de-DE" />
-<link rel="alternate" href="https://www.topciment.com/it/notizie.html" hreflang="it-IT" />
-<link rel="alternate" href="https://www.topciment.com/nl/nieuws.html" hreflang="nl-NL" />
-<link rel="alternate" href="https://www.topciment.com/gr/gr-news.html" hreflang="el-GR" />
-<link rel="alternate" href="https://www.topciment.ru/novosti.html" hreflang="ru-RU" />
-<link rel="alternate" href="https://www.topciment.us/news.html" hreflang="en-US" />
-<link rel="alternate" href="https://www.topciment.us/es/noticias.html" hreflang="es-US" />
-<link rel="alternate" href="https://www.topciment.cn/updates-and-news.html" hreflang="zh-CN" />
+	<style type="text/css">
+		div.ocultable {
+			display: none;
+		}
+	</style>
 
-<style type="text/css">div.ocultable{display: none;}</style>
+	<script type="text/javascript">
+		function mostrar() {
+			document.getElementById('oculto').style.display = 'block';
+			document.getElementById('visible').style.display = 'none';
+		}
 
-    <script type="text/javascript">
+		function ocultar() {
+			document.getElementById('oculto').style.display = 'none';
+			document.getElementById('visible').style.display = 'block';
+		}
 
-function mostrar(){
-document.getElementById('oculto').style.display = 'block';
-document.getElementById('visible').style.display = 'none';}
+		function mostrarmovil() {
+			document.getElementById('ocultomovil').style.display = 'block';
+			document.getElementById('visiblemovil').style.display = 'none';
+		}
 
-function ocultar(){
-document.getElementById('oculto').style.display = 'none';
-document.getElementById('visible').style.display = 'block';}
-function mostrarmovil(){
-document.getElementById('ocultomovil').style.display = 'block';
-document.getElementById('visiblemovil').style.display = 'none';}
+		function ocultarmovil() {
+			document.getElementById('ocultomovil').style.display = 'none';
+			document.getElementById('visiblemovil').style.display = 'block';
+		}
 
-function ocultarmovil(){
-document.getElementById('ocultomovil').style.display = 'none';
-document.getElementById('visiblemovil').style.display = 'block';
-}
+		function mostrarSubmenu() {
 
-function mostrarSubmenu(){
+			if (document.getElementById) {
+				var aux = document.getElementById('submenumovil').style;
+				aux.display = aux.display ? "" : "block";
+			}
 
-	if (document.getElementById)
-    {
-        var aux = document.getElementById('submenumovil').style;
-        aux.display = aux.display? "":"block";
-    }
+		}
+	</script>
+	<script>
+		(function (i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-}
+		ga('create', 'UA-7390116-30', 'auto');
+		ga('send', 'pageview');
+	</script>
+	<script>
+		! function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
 
-</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-7390116-30', 'auto');
-  ga('send', 'pageview');
-
-</script> <script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '358666781190455');
-fbq('track', "PageView"); </script> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=358666781190455&ev=PageView&noscript=1" /></noscript>
+		fbq('init', '358666781190455');
+		fbq('track', "PageView");
+	</script> <noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=358666781190455&ev=PageView&noscript=1" /></noscript>
 </head>
-<body style="-moz-transform:none; -webkit-transform:none; -o-transform:none; -ms-transform:none; transform:none; " id="body"><!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58c7cbcfe7778885"></script>
+
+<body style="-moz-transform:none; -webkit-transform:none; -o-transform:none; -ms-transform:none; transform:none; "
+	id="body">
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58c7cbcfe7778885"></script>
 
 
 
-<div id="header">
-<div class="menuBar" style="position:fixed; transform: translate3d(0px, 0px, 1px);">
-    <div class="menuBarContent" >
+	<div id="header">
+		<div class="menuBar" style="position:fixed; transform: translate3d(0px, 0px, 1px);">
+			<div class="menuBarContent">
 
-        <a href="index.html"><img class="imgLogo" src="../imagenes/logo-top-ciment.png" alt="Topciment"></a>
-
-
-        <div class="menu idiomas">
-            <ul>
-                <li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
-                <li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a></li>
-                <li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
-                <li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a></li>
-                <li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it" class="activolang">It</a></li>
-                <li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
-				<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a></li>
-				<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
-            </ul>
-        </div>
-
-        <div class="menu botones">
-            <ul>
-               	<li><a href="informazioni-microcemento.html">Microcemento</a></li>
-				<li><a href="colori-di-microcemento.html">Colori</a></li>
-				<li><a href="sistemi.html">Sistemi</a></li>
-                <li><a href="galleria.html">Galleria</a></li>
-                <li><a href="garanzia.html">Garanzia</a></li>
-                <li><a href="professionisti.html">Professionisti</a></li>
-				<li><a href="distributori.html">Distributori</a></li>
-                <li><a href="chi-siamo.html">Chi Siamo</a></li>
-                <li><a href="notizie.html" class="activo">Notizie</a></li>
-                <li><a href="contattaci.html">Contattaci</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-    <div class="contenedorMenuOculto">
-    <div id="sidebar" class="menuOculto menuMicrocementos stick">
-        <ul>
-			<li><h1><a href="#up" style="font-size:26px">Notizie</a></h1></li>
-			<li><a href="#efecttoquartz">Topciment presenta Efectto!</a></li>
-			<li><a href="#sttandard">Topciment cambia immagine!</a></li>
-			<li><a href="#rivestimentimurali">Rivestimenti murali</a></li><br>
-			<li><a href="#errori-da-evitare-nella-combinazione-dei-colori">Errori da evitare nella <br>combinazione dei colori</a></li><br>
-			<li><a href="#microcemento-in-cucina">Microcemento in cucina</a></li><br>
-			<li><a href="#microcemento-senza-problemi">Microcemento senza problemi</a></li><br>
-            <li><a href="#nuovi-prodotti">Nuovi prodotti per la <br>pulizia e la manutenzione<br> del microcemento</a></li><br>
-            <li><a href="#que-es-microcemento"> Topciment rinnova per un<br>altro anno l’accordo con CYPE</a></li><br>
-        </ul>
-    </div>
+				<a href="index.html"><img class="imgLogo logo1" src="../imagenes/microcemento-topciment.png"
+						alt="Topciment">
+					<img class="imgLogo logo2" src="../imagenes/logos/logoBlanco2.png" alt="Topciment"
+						style="max-width: 60px; max-height: 60px;">
+				</a>
 
 
+				<div class="menu idiomas">
+					<ul>
+						<li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+						<li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it"
+								class="activolang">It</a></li>
+						<li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a>
+						</li>
+						<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+					</ul>
+				</div>
 
-
-
-
-
-</div>
-</div>
-
-<!-- MENU ESTADO INICIAL MOVIL-->
-
-<div id="visiblemovil"><div style="opacity:1; padding-top:0px; z-index:1000;"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="mostrarmovil()" ><img src="../imagenes/icono-menu-abrir-white.png" width="26" height="20" alt="menu" /></a></div></div>
-
-<!-- MENU DESPLEGADO MOVIL-->
-
-<div id="ocultomovil">
-<div id="ocultomovilinterno">
-
-<div id="menuidiomasmovil">
-            <ul>
-                <li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
-                <li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a></li>
-                <li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
-                <li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a></li>
-                <li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it" class="activolang">It</a></li>
-                <li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
-				<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a></li>
-				<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
-            </ul>
-        </div>
-<div id="menuocultomovil">
-			<ul>
-				<li><a href="informazioni-microcemento.html" onclick="ocultarmovil()" >Microcemento</a></li>
-				<li><a href="colori-di-microcemento.html" onclick="ocultarmovil()">Colori</a></li>
-				<li><a href="sistemi.html" onclick="ocultarmovil()">Sistemi</a></li>
-                <li><a href="galleria.html" onclick="ocultarmovil()">Galleria</a></li>
-                <li><a href="garanzia.html" onclick="ocultarmovil()">Garanzia</a></li>
-                <li><a href="professionisti.html" onclick="ocultarmovil()">Professionisti</a></li>
-				<li><a href="distributori.html" onclick="ocultarmovil()">Distributori</a></li>
-                <li><a href="chi-siamo.html" onclick="ocultarmovil()">Chi Siamoi</a></li>
-                <li><a href="notizie.html" onclick="ocultarmovil()">Notizie</a></li>
-                <li><a href="contattaci.html" onclick="ocultarmovil()">Contattaci</a></li>
-			</ul>
-        </div>
-		</div>
-<div id="cerrarEquis"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="ocultarmovil()"><img src="../imagenes/equis-cerrar.png" width="28" height="28" alt="Cerrar" /></a></div>
-</div>
-
-
-
-<div id="main">
-    	<div class="container clearfix">
-			<div id="content">
-	<section id="up">
-
-<!-- Start new -->
-
-<a id="efecttoquartz" style="display: block; height: 135px;visibility: hidden;"></a>
-<div class="contenedorMenuOculto">
-	<div class="contenedorMagenDerecha">
-
-		<h1 id="queeselmicrocemento"
-			data-animate-scroll='{"x": "-100","y": "0", "alpha": "0", "duration": "1"}'><span style=" padding:5px;">Topciment presenta Efectto!</span></h1>
-	</div>
-
-	<div class="contenedorMenuOculto">
-		<div class="contenedorMagenDerecha">
-			<div class="titular wow fadeInRight estiloNormal16justificado">
-				<p>Topciment presenta <strong>Efectto , la nuova linea di vernici decorative continue</strong>  e pronte all'uso.
-					<br><br>
-				</p><a href="https://www.topciment.com/it/efectto.html"> <img src="https://www.topciment.com/imagenes/efectto/noticia_efecto2-.jpg"
-					alt="Efectto" width="100%" height="auto" /></a>
-
-				<br><br>
-				<p>    <strong>Efectto</strong>  è una gamma molto ampia di prodotti con un'ampia varietà di finiture che sono
-					sarà svelato nei prossimi mesi. Il primo di questi nuovi prodotti a vedere
-					la luce è Efectto Quartz.
-				</p>
-				<p><strong>Efectto Quartz</strong>   deve il suo nome alla finitura minerale e naturale che lo caratterizza. A
-					Una volta applicato, questo prodotto permette di ottenere finiture decorative molto piacevoli.
-					sia in vista che al tatto. La sua finitura è simile a quella del microcemento, ma con un
-					molto più naturale e senza filigrane.</p>
-
-				<p> Inoltre, uno dei grandi vantaggi di Efectto Quartz è che è pronto all'uso.
-					la loro preparazione è meno laboriosa e più pratica. Hai solo bisogno
-					aprire il secchio e iniziare a lavorare.</p>
-
-			 <a href="https://www.topciment.com/it/efectto.html">	<img src="https://www.topciment.com/imagenes/efectto/logo-effecto-bn.png"
-					alt="Sttandard" width="100%" height="auto" /></a>
-				<p> <strong>Efectto Quartz</strong> e tutti i prodotti della famiglia Efectto sono il risultato di
-					un'ardua ricerca di nuovi materiali e tecniche di produzione, con l'obiettivo di
-					per offrire ai nostri clienti un prodotto di altissima qualità.</p>
-				<p>Topciment, nella sua voglia di innovare, offre al professionista un prodotto unico, a margine del mercato.
-					e che rompe con le convenzioni decorative.</p>
-				<br><br>
-
+				<div class="menu botones" style="margin-left:100px">
+					<ul>
+						<li><a href="informazioni-microcemento.html">Microcemento</a></li>
+						<li><a href="sistemi.html">Sistemi</a></li>
+						<li><a href="galleria.html">Galleria</a></li>
+						<li><a href="professionisti.html">Professionisti</a></li>
+						<li><a class="activo" href="notizie.html">Notizie</a></li>
+						<li><a href="contattaci.html">Contattaci</a></li>
+					</ul>
+					<div class="dropdown" style="top: -20px;">
+						<button class="dropbtn"><img src="../imagenes/flags/italy.png"></button>
+						<div class="dropdown-content">
+							<a href="https://www.topciment.com"> <img src="../imagenes/flags/spain.png"> </a>
+							<a href="https://www.topciment.com/en/"><img src="../imagenes/flags/united-kingdom.png"></a>
+							<a href="https://www.topciment.com/fr/"><img src="../imagenes/flags/france.png"></a>
+							<a href="https://www.topciment.com/de/"><img src="../imagenes/flags/germany.png"></a>
+							<a href="https://www.topciment.com/nl/"><img src="../imagenes/flags/netherlands.png"></a>
+							<a href="https://www.topciment.com/gr/"><img src="../imagenes/flags/greece.png"></a>
+							<a class="ultimo" href="https://www.topciment.ru/"><img
+									src="../imagenes/flags/russia.png"></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<div class="contenedorMenuOculto">
+			<div id="sidebar" class="menuOculto menuMicrocementos stick">
+				<ul>
+					<li>
+						<h1><a href="#up" style="font-size:26px">Notizie</a></h1>
+					</li>
+					<li><a href="#efecttoquartz">Topciment presenta Efectto!</a></li>
+					<li><a href="#sttandard">Topciment cambia immagine!</a></li>
+					<li><a href="#rivestimentimurali">Rivestimenti murali</a></li><br>
+					<li><a href="#errori-da-evitare-nella-combinazione-dei-colori">Errori da evitare nella
+							<br>combinazione dei colori</a></li><br>
+					<li><a href="#microcemento-in-cucina">Microcemento in cucina</a></li><br>
+					<li><a href="#microcemento-senza-problemi">Microcemento senza problemi</a></li><br>
+					<li><a href="#nuovi-prodotti">Nuovi prodotti per la <br>pulizia e la manutenzione<br> del
+							microcemento</a></li><br>
+					<li><a href="#que-es-microcemento"> Topciment rinnova per un<br>altro anno l’accordo con CYPE</a>
+					</li><br>
+				</ul>
+			</div>
+
+
+
+
+
+
+
+		</div>
 	</div>
-</div>
-<!-- End new -->
-			<div style="float:none; clear:both; height:100px;"></div>
-			<a id="sttandard" style="display: block; height: 135px;visibility: hidden;"></a>
-			<div class="contenedorMenuOculto">
-					<div class="contenedorMagenDerecha" style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); perspective: 1000px;">
 
-						<h1 id="queeselmicrocemento" data-animate-scroll="{&quot;x&quot;: &quot;-100&quot;,
-			&quot;y&quot;: &quot;0&quot;,
-			&quot;alpha&quot;: &quot;0&quot;,
-			&quot;duration&quot;: &quot;1&quot;}" class="animateScroll" style="transform: matrix(1, 0, 0, 1, 0, 0); visibility: inherit; opacity: 1; transform-style: flat;"><span style=" padding:5px;">
-					Topciment cambia immagine!</span></h1>
-					</div>
+	<!-- MENU ESTADO INICIAL MOVIL-->
 
+	<div id="visiblemovil">
+		<div style="opacity:1; padding-top:0px; z-index:1000;"><a href="#menu"
+				style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="mostrarmovil()"><img
+					src="../imagenes/icono-menu-abrir-white.png" width="26" height="20" alt="menu" /></a></div>
+	</div>
+
+	<!-- MENU DESPLEGADO MOVIL-->
+
+	<div id="ocultomovil">
+		<div id="ocultomovilinterno">
+
+			<div id="menuidiomasmovil">
+				<ul>
+					<li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+					<li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a></li>
+					<li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
+					<li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a></li>
+					<li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it"
+							class="activolang">It</a></li>
+					<li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
+					<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a></li>
+					<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+				</ul>
+			</div>
+			<div id="menuocultomovil">
+				<ul>
+					<li><a href="informazioni-microcemento.html" onclick="ocultarmovil()">Microcemento</a></li>
+					<li><a href="colori-di-microcemento.html" onclick="ocultarmovil()">Colori</a></li>
+					<li><a href="sistemi.html" onclick="ocultarmovil()">Sistemi</a></li>
+					<li><a href="galleria.html" onclick="ocultarmovil()">Galleria</a></li>
+					<li><a href="garanzia.html" onclick="ocultarmovil()">Garanzia</a></li>
+					<li><a href="professionisti.html" onclick="ocultarmovil()">Professionisti</a></li>
+					<li><a href="distributori.html" onclick="ocultarmovil()">Distributori</a></li>
+					<li><a href="chi-siamo.html" onclick="ocultarmovil()">Chi Siamoi</a></li>
+					<li><a href="notizie.html" onclick="ocultarmovil()">Notizie</a></li>
+					<li><a href="contattaci.html" onclick="ocultarmovil()">Contattaci</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="cerrarEquis"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100"
+				onclick="ocultarmovil()"><img src="../imagenes/equis-cerrar.png" width="28" height="28"
+					alt="Cerrar" /></a></div>
+	</div>
+
+
+
+	<div id="main">
+		<div class="container clearfix">
+			<div id="content">
+				<section id="up">
+
+					<!-- Start new -->
+
+					<a id="efecttoquartz" style="display: block; height: 135px;visibility: hidden;"></a>
 					<div class="contenedorMenuOculto">
 						<div class="contenedorMagenDerecha">
-							<div class="titular wow fadeInRight estiloNormal16justificado">
-								<p>Da Topciment abbiamo deciso di fare un altro passo in avanti per quanto riguarda il design e abbiamo aggiornato
-									la nostra immagine e il disegno dei nostri contenitori. <strong> Presentiamo la nostra gamma di prodotti Sttandard </strong>,
-									 stesse qualità e prestazioni, ma con un'immagine rinnovata molto più accattivante ed attuale, sempre
-									 <strong>senza perdere l'essenza di Topciment.</strong>
+
+							<h1 id="queeselmicrocemento"
+								data-animate-scroll='{"x": "-100","y": "0", "alpha": "0", "duration": "1"}'><span
+									style=" padding:5px;">Topciment presenta Efectto!</span></h1>
+						</div>
+
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div class="titular wow fadeInRight estiloNormal16justificado">
+									<p>Topciment presenta <strong>Efectto , la nuova linea di vernici decorative
+											continue</strong> e pronte all'uso.
+										<br><br>
+									</p><a href="https://www.topciment.com/it/efectto.html"> <img
+											src="https://www.topciment.com/imagenes/efectto/noticia_efecto2-.jpg"
+											alt="Efectto" width="100%" height="auto" /></a>
 
 									<br><br>
-								</p><img src="https://www.topciment.com/imagenes/sttandard/Sttandard_Bodegon_Horizontal.jpg" alt="Sttandard" width="100%" height="auto">
-
-								<br><br>
-								<p>Con questo miglioramento vogliamo fare un passo avanti per quanto riguarda il design e avere una immagine che rappresenti davvero il nostro marchio.
-										<strong> Materiale TOP, design TOP.</strong>
-								</p>
-								<p>Inoltre, abbiamo associato un colore specifico ad ognuno dei nostri prodotti per rendere molto più semplice identificarli e
-									<strong> facilitare così il lavoro </strong> di tutte le persone che lavorano con i nostri prodotti.
+									<p> <strong>Efectto</strong> è una gamma molto ampia di prodotti con un'ampia
+										varietà di finiture che sono
+										sarà svelato nei prossimi mesi. Il primo di questi nuovi prodotti a vedere
+										la luce è Efectto Quartz.
 									</p>
-								<p>Il distintivo TT di Topciment acquisisce importanza in questo nuovo design ed è stato l'asse centrale di questo rinnovamento della denominazione di immagini e prodotti. Quindi la linea di microcemento bicomponente cambia nome.
-									 È un passaggio rischioso, ma passiamo da un nome molto generico come <strong> bicomponente </strong>, a un Topciment su misura: standard, sempre con il nostro TT che rafforza il marchio.</p>
-								<p> Pertanto, <strong> d'ora in poi i nostri microcementi bicomponenti verranno rinominati in: </strong></p>
-								<ul>
+									<p><strong>Efectto Quartz</strong> deve il suo nome alla finitura minerale e
+										naturale che lo caratterizza. A
+										Una volta applicato, questo prodotto permette di ottenere finiture decorative
+										molto piacevoli.
+										sia in vista che al tatto. La sua finitura è simile a quella del microcemento,
+										ma con un
+										molto più naturale e senza filigrane.</p>
 
-									<li> <a href="https://www.topciment.com/it/sttandard.html"> Sttandard Microbase
-											20KG</a></li>
-									<li><a href="https://www.topciment.com/it/sttandard.html"> Sttandard Microfino
-											20KG</a></li>
-									<li>
-										<a href="https://www.topciment.com/it/sttandard.html">Sttandard
-											Microstone 20KG</a>
-									</li>
-									<li>
-										<a href="https://www.topciment.com/it/sttandard.html">Sttandard
-											Microdeck 20KG</a>
-									</li>
-									<li>
-										<a href="https://www.topciment.com/it/sttandard.html">Sttandard
-											Aquaciment 20KG</a>
-									</li>
+									<p> Inoltre, uno dei grandi vantaggi di Efectto Quartz è che è pronto all'uso.
+										la loro preparazione è meno laboriosa e più pratica. Hai solo bisogno
+										aprire il secchio e iniziare a lavorare.</p>
 
-								</ul>
-								<p>Tuttavia, questo cambiamento non è solo a livello estetico, ma è stata implementata anche la qualità e l'ergonomia dei cubi, perché non siamo solo focalizzati sull'immagine ma anche sul raggiungimento della migliore qualità in tutto ciò che circonda Topciment.</p>
-								<a href="https://www.topciment.com/it/sttandard.html"> <img src="https://www.topciment.com/imagenes/sttandard/logo-sttandard-bn.jpg" alt="Logo Sttandard" width="100%" height="auto"></a>
-								<p>Con tutti questi miglioramenti, Topciment vuole rafforzare la sua immagine e posizionarsi come il <strong> miglior marchio di microcemento </strong> in termini di qualità dei materiali e anche nel design. Sempre senza dimenticarci delle persone che lavorano con noi, perché tutto questo miglioramento è per loro. </p>
+									<a href="https://www.topciment.com/it/efectto.html"> <img
+											src="https://www.topciment.com/imagenes/efectto/logo-effecto-bn.png"
+											alt="Sttandard" width="100%" height="auto" /></a>
+									<p> <strong>Efectto Quartz</strong> e tutti i prodotti della famiglia Efectto sono
+										il risultato di
+										un'ardua ricerca di nuovi materiali e tecniche di produzione, con l'obiettivo di
+										per offrire ai nostri clienti un prodotto di altissima qualità.</p>
+									<p>Topciment, nella sua voglia di innovare, offre al professionista un prodotto
+										unico, a margine del mercato.
+										e che rompe con le convenzioni decorative.</p>
+									<br><br>
 
-								<br><br>
-
+								</div>
 							</div>
 						</div>
 					</div>
-			</div>
-<div style="float:none; clear:both; height:100px;"></div>
-<a id="rivestimentimurali" style="display: block; height: 135px;visibility: hidden;"></a>
+					<!-- End new -->
+					<div style="float:none; clear:both; height:100px;"></div>
+					<a id="sttandard" style="display: block; height: 135px;visibility: hidden;"></a>
+					<div class="contenedorMenuOculto">
+						<div class="contenedorMagenDerecha"
+							style="transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); perspective: 1000px;">
 
-<div class="contenedorMenuOculto">
-	<div class="contenedorMagenDerecha">
+							<h1 id="queeselmicrocemento" data-animate-scroll="{&quot;x&quot;: &quot;-100&quot;,
+			&quot;y&quot;: &quot;0&quot;,
+			&quot;alpha&quot;: &quot;0&quot;,
+			&quot;duration&quot;: &quot;1&quot;}" class="animateScroll"
+								style="transform: matrix(1, 0, 0, 1, 0, 0); visibility: inherit; opacity: 1; transform-style: flat;">
+								<span style=" padding:5px;">
+									Topciment cambia immagine!</span></h1>
+						</div>
 
-			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div class="titular wow fadeInRight estiloNormal16justificado">
+									<p>Da Topciment abbiamo deciso di fare un altro passo in avanti per quanto riguarda
+										il design e abbiamo aggiornato
+										la nostra immagine e il disegno dei nostri contenitori. <strong> Presentiamo la
+											nostra gamma di prodotti Sttandard </strong>,
+										stesse qualità e prestazioni, ma con un'immagine rinnovata molto più
+										accattivante ed attuale, sempre
+										<strong>senza perdere l'essenza di Topciment.</strong>
+
+										<br><br>
+									</p><img
+										src="https://www.topciment.com/imagenes/sttandard/Sttandard_Bodegon_Horizontal.jpg"
+										alt="Sttandard" width="100%" height="auto">
+
+									<br><br>
+									<p>Con questo miglioramento vogliamo fare un passo avanti per quanto riguarda il
+										design e avere una immagine che rappresenti davvero il nostro marchio.
+										<strong> Materiale TOP, design TOP.</strong>
+									</p>
+									<p>Inoltre, abbiamo associato un colore specifico ad ognuno dei nostri prodotti per
+										rendere molto più semplice identificarli e
+										<strong> facilitare così il lavoro </strong> di tutte le persone che lavorano
+										con i nostri prodotti.
+									</p>
+									<p>Il distintivo TT di Topciment acquisisce importanza in questo nuovo design ed è
+										stato l'asse centrale di questo rinnovamento della denominazione di immagini e
+										prodotti. Quindi la linea di microcemento bicomponente cambia nome.
+										È un passaggio rischioso, ma passiamo da un nome molto generico come <strong>
+											bicomponente </strong>, a un Topciment su misura: standard, sempre con il
+										nostro TT che rafforza il marchio.</p>
+									<p> Pertanto, <strong> d'ora in poi i nostri microcementi bicomponenti verranno
+											rinominati in: </strong></p>
+									<ul>
+
+										<li> <a href="https://www.topciment.com/it/sttandard.html"> Sttandard Microbase
+												20KG</a></li>
+										<li><a href="https://www.topciment.com/it/sttandard.html"> Sttandard Microfino
+												20KG</a></li>
+										<li>
+											<a href="https://www.topciment.com/it/sttandard.html">Sttandard
+												Microstone 20KG</a>
+										</li>
+										<li>
+											<a href="https://www.topciment.com/it/sttandard.html">Sttandard
+												Microdeck 20KG</a>
+										</li>
+										<li>
+											<a href="https://www.topciment.com/it/sttandard.html">Sttandard
+												Aquaciment 20KG</a>
+										</li>
+
+									</ul>
+									<p>Tuttavia, questo cambiamento non è solo a livello estetico, ma è stata
+										implementata anche la qualità e l'ergonomia dei cubi, perché non siamo solo
+										focalizzati sull'immagine ma anche sul raggiungimento della migliore qualità in
+										tutto ciò che circonda Topciment.</p>
+									<a href="https://www.topciment.com/it/sttandard.html"> <img
+											src="https://www.topciment.com/imagenes/sttandard/logo-sttandard-bn.jpg"
+											alt="Logo Sttandard" width="100%" height="auto"></a>
+									<p>Con tutti questi miglioramenti, Topciment vuole rafforzare la sua immagine e
+										posizionarsi come il <strong> miglior marchio di microcemento </strong> in
+										termini di qualità dei materiali e anche nel design. Sempre senza dimenticarci
+										delle persone che lavorano con noi, perché tutto questo miglioramento è per
+										loro. </p>
+
+									<br><br>
+
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="float:none; clear:both; height:100px;"></div>
+					<a id="rivestimentimurali" style="display: block; height: 135px;visibility: hidden;"></a>
+
+					<div class="contenedorMenuOculto">
+						<div class="contenedorMagenDerecha">
+
+							<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
                     "y": "0",
                     "alpha": "0",
-                    "duration": "1"}'><span style=" padding:5px;font-size: 1em;">Rivestimenti murali con Topciment</span></h2>
-            </div>
+                    "duration": "1"}'><span style=" padding:5px;font-size: 1em;">Rivestimenti murali con
+									Topciment</span></h2>
+						</div>
 
-	<div class="contenedorMenuOculto">
-    	<div class="contenedorMagenDerecha">
-			<div id="mitadTextoIzquierda">
-				<p>Molte volte quando pensiamo nel <strong><a href="https://www.topciment.com/it/informazioni-microcemento.html">rivestimento delle pareti</a></strong> in alcune stanze, o l'intera casa, ci chiediamo quale sia la soluzione migliore per eseguire questi importanti cambiamenti e qual è la tecnica che ci evitera' disagi e ci farà risparmiare più e denaro . Inoltre, cerchiamo un materiale che ci dia una <strong>qualità e un risultato estetico e duraturo.</strong>
-				</p>
-				<img src="../imagenes/revestimiento-paredes/revestimiento-pared-lavabo-baño.jpg" width="100%" alt="Rivestimento murale nei bagni">
-				<p>Il <strong><a href="https://www.topciment.com/it/informazioni-microcemento.html#que-es-microcemento">microcemento</a></strong>, per la sua resistenza e facilità di manutenzione, è ideale per qualsiasi tipo di rivestimento, tuttavia, dove il microcemento brilla di luce propria è sulle pareti specialmente quelle che richiedono igiene e pulizia costante, come le pareti della cucina o del bagno.
-				 </p>
-				<p>Questo materiale rende inutili complicati lavori e la produzione di detriti, quindi è ideale per tutti i tipi di soggiorni.</p>
-				</div>
-				<div id="mitadTextoDerecha"><p>
-				<h2>Topciment ha sviluppato un prodotto imbattibile per rivestimenti murali: il <strong>Microfino</strong>.</h2>
-				<p>Il <strong>Microfino</strong> è un microcemento per finiture decorative con texture a grana fine, molto piacevole e setosa al tatto, che produce un caratteristico effetto Nuvolato. Queste proprietà rendono il Microfino il prodotto ideale per il rivestimento delle pareti e un prodotto molto richiesto da architetti e dagli interior designer di tutto il mondo.</p>
-				<br>
-				<img src="../imagenes/revestimiento-paredes/revestimiento-de-paredes-locales.jpg" width="100%" alt="Rivestimenti murali naturali">
-				<br><br>
-				<p>Un'altra opzione di alta qualità che Topciment offre ai suoi clienti è Microdeck. Il Microdeck è un microcemento con textura media, utilizzato principalmente per pavimenti, tuttavia, quando applicato alle pareti con la tecnica "bagnato su bagnato" si ottiene una finitura liscia quasi come quella che ci da il <strong>Microfino</strong>, ma più naturale . Visto che le nuvolature si apprezzano meno.</p>
-				<br>
-				<img src="../imagenes/revestimiento-paredes/revestimiento-paredes-con-microcemento-topciment.jpg" width="100%" alt="Rivestimenti murali con microcemento">
-				<br><br>
-				<p>Entrambi i prodotti, combinati con la gamma di colori, texture e vernici di Topciment, fanno si che il rivestimento delle stanze acquisisca una dimensione estetica superiore a tutto ciò a cui siamo abituati</p>
-			</div>
-		</div>
-	</div>
-</div>
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div id="mitadTextoIzquierda">
+									<p>Molte volte quando pensiamo nel <strong><a
+												href="https://www.topciment.com/it/informazioni-microcemento.html">rivestimento
+												delle pareti</a></strong> in alcune stanze, o l'intera casa, ci
+										chiediamo quale sia la soluzione migliore per eseguire questi importanti
+										cambiamenti e qual è la tecnica che ci evitera' disagi e ci farà risparmiare più
+										e denaro . Inoltre, cerchiamo un materiale che ci dia una <strong>qualità e un
+											risultato estetico e duraturo.</strong>
+									</p>
+									<img src="../imagenes/revestimiento-paredes/revestimiento-pared-lavabo-baño.jpg"
+										width="100%" alt="Rivestimento murale nei bagni">
+									<p>Il <strong><a
+												href="https://www.topciment.com/it/informazioni-microcemento.html#que-es-microcemento">microcemento</a></strong>,
+										per la sua resistenza e facilità di manutenzione, è ideale per qualsiasi tipo di
+										rivestimento, tuttavia, dove il microcemento brilla di luce propria è sulle
+										pareti specialmente quelle che richiedono igiene e pulizia costante, come le
+										pareti della cucina o del bagno.
+									</p>
+									<p>Questo materiale rende inutili complicati lavori e la produzione di detriti,
+										quindi è ideale per tutti i tipi di soggiorni.</p>
+								</div>
+								<div id="mitadTextoDerecha">
+									<p>
+										<h2>Topciment ha sviluppato un prodotto imbattibile per rivestimenti murali: il
+											<strong>Microfino</strong>.</h2>
+										<p>Il <strong>Microfino</strong> è un microcemento per finiture decorative con
+											texture a grana fine, molto piacevole e setosa al tatto, che produce un
+											caratteristico effetto Nuvolato. Queste proprietà rendono il Microfino il
+											prodotto ideale per il rivestimento delle pareti e un prodotto molto
+											richiesto da architetti e dagli interior designer di tutto il mondo.</p>
+										<br>
+										<img src="../imagenes/revestimiento-paredes/revestimiento-de-paredes-locales.jpg"
+											width="100%" alt="Rivestimenti murali naturali">
+										<br><br>
+										<p>Un'altra opzione di alta qualità che Topciment offre ai suoi clienti è
+											Microdeck. Il Microdeck è un microcemento con textura media, utilizzato
+											principalmente per pavimenti, tuttavia, quando applicato alle pareti con la
+											tecnica "bagnato su bagnato" si ottiene una finitura liscia quasi come
+											quella che ci da il <strong>Microfino</strong>, ma più naturale . Visto che
+											le nuvolature si apprezzano meno.</p>
+										<br>
+										<img src="../imagenes/revestimiento-paredes/revestimiento-paredes-con-microcemento-topciment.jpg"
+											width="100%" alt="Rivestimenti murali con microcemento">
+										<br><br>
+										<p>Entrambi i prodotti, combinati con la gamma di colori, texture e vernici di
+											Topciment, fanno si che il rivestimento delle stanze acquisisca una
+											dimensione estetica superiore a tutto ciò a cui siamo abituati</p>
+								</div>
+							</div>
+						</div>
+					</div>
 
-<div style="float:none; clear:both; height:100px;"></div>
-<a id="festool" style="display: block; height: 135px;visibility: hidden;"></a>
+					<div style="float:none; clear:both; height:100px;"></div>
+					<a id="festool" style="display: block; height: 135px;visibility: hidden;"></a>
 
-		<div class="contenedorMenuOculto">
-        <div class="contenedorMagenDerecha">
+					<div class="contenedorMenuOculto">
+						<div class="contenedorMagenDerecha">
 
-			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+							<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
                     "y": "0",
                     "alpha": "0",
-                    "duration": "1"}'><span style=" padding:5px;font-size: 1em;"> Topciment consiglia Festool per un' applicazione perfetta</span></h2>
-            </div>
+                    "duration": "1"}'><span style=" padding:5px;font-size: 1em;"> Topciment consiglia Festool per un'
+									applicazione perfetta</span></h2>
+						</div>
 
-	<div class="contenedorMenuOculto">
-    	<div class="contenedorMagenDerecha">
-			<div id="mitadTextoIzquierda">
-				<p>Una buona applicazione di Microcemento è condizionata da diversi fattori, tra i quali è essenziale contare con dei prodotti di qualità, che devono essere in mano a un professionista che domina le varie tecniche di applicazione, ma anche che utilizzi gli strumenti migliori per creare delle finiture straordinarie. Con la combinazione dei prodotti Topciment e le macchine di Festool si ottengono applicazioni di successo garantite</p>
-				<p>Il metodo di applicazione Topciment richiede diversi strumenti per ciascuno dei passaggi. A seconda dei processi di applicazione, si consiglia le seguenti macchine Festool:
-				</p>
-				<strong>Miscelatori e Agitatori MX: </strong>macchine eccellenti per ottenere una miscela uniforme e facile da lavorare. Il sistema Ergofix permette di regolare l'altezza della frusta per non soffrire lesioni alla schiena. Inoltre, i bordi di gomma sono progettati per sopportare eventuali urti e colpi pesanti. In queste macchine possiamo incorporare le fruste senza l'utilizzo di attrezzi. Specificamente, le fruste elicoidali HS si adattano perfettamente alle macchine che sono in grado di muovere fino a 60 kg di materiale. Sono ideali per le miscele pesanti e viscose, come il Microcemento, gli autolivellanti o le resine epossidiche.
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div id="mitadTextoIzquierda">
+									<p>Una buona applicazione di Microcemento è condizionata da diversi fattori, tra i
+										quali è essenziale contare con dei prodotti di qualità, che devono essere in
+										mano a un professionista che domina le varie tecniche di applicazione, ma anche
+										che utilizzi gli strumenti migliori per creare delle finiture straordinarie. Con
+										la combinazione dei prodotti Topciment e le macchine di Festool si ottengono
+										applicazioni di successo garantite</p>
+									<p>Il metodo di applicazione Topciment richiede diversi strumenti per ciascuno dei
+										passaggi. A seconda dei processi di applicazione, si consiglia le seguenti
+										macchine Festool:
+									</p>
+									<strong>Miscelatori e Agitatori MX: </strong>macchine eccellenti per ottenere una
+									miscela uniforme e facile da lavorare. Il sistema Ergofix permette di regolare
+									l'altezza della frusta per non soffrire lesioni alla schiena. Inoltre, i bordi di
+									gomma sono progettati per sopportare eventuali urti e colpi pesanti. In queste
+									macchine possiamo incorporare le fruste senza l'utilizzo di attrezzi.
+									Specificamente, le fruste elicoidali HS si adattano perfettamente alle macchine che
+									sono in grado di muovere fino a 60 kg di materiale. Sono ideali per le miscele
+									pesanti e viscose, come il Microcemento, gli autolivellanti o le resine epossidiche.
 
-				</div>
-				<div id="mitadTextoDerecha"><p>
-				<img src="https://www.topciment.com/imagenes/herramientas-festool-mezcladora-microcemento.jpg" width="100%" alt="Mixers and Stirrers MX">
-			</div>
-		</div>
-	<div style="float:none; clear:both; height:100px;"></div>
-		<div class="contenedorMagenDerecha">
-			<div id="mitadTextoIzquierda">
-				<p><strong>Levigatrici orbitali ROTEX: </strong>Questo modello di macchine è il migliore per levigare il microcemento e rimuovere imperfezioni e rilievi. È uno strumento fondamentale nella finitura del processo di applicazione. Distacca la sua impugnatura ergonomica, la facilità per cambiare i dischi e la possibilità di realizzare tre tipi di movimenti per ottenere effetti con la levigatura: grossa, fine o levigata. Si consiglia di montare sulla levigatrice il disco abrasivo ROTEX , con la durezza necessaria per i micromortai di Topciment. Con l'obiettivo di una levigatura ad alte prestazioni, con la massima qualità possibile e pensando alla salute di chi lo utilizza. Festool ha brevettato il sistema MULTI-JETSTREAM, che consente la rigenerazione costante dell'aria, il raffreddamento della macchina e la riduzione delle ostruzioni.</p>
-				</div>
-				<div id="mitadTextoDerecha"><p>
-				<img src="https://www.topciment.com/imagenes/lijadoras-excentricas-microcemento.jpg" width="100%" alt="Sanders eccentric ROTEX">
-			</div>
-		</div>
-	<div style="float:none; clear:both; height:100px;"></div>
-		<div class="contenedorMagenDerecha">
-			<div id="mitadTextoIzquierda">
-				<p><strong>Sistemi mobili cleantec:</strong>moderni aspiratori con i cuali si possono conseguire una pulizia perfetta ad una velocita' record. E' il modo migliore per evitare le nuvole di sporco durante i lavori. Allo stesso tempo, si impedisce l'inalazione continua di polveri che possono causare effetti nocivi sulla salute delle persone che fanno quotidianamente uso di levigatrici. Diversamente, il suo design è pensato per un comodo trasporto, visto che dispone di una struttura robusta, grandi ruote e l'asse in acciaio per non danneggiarlo durante gli spostamenti ed evitare ribaltamenti.</p>
+								</div>
+								<div id="mitadTextoDerecha">
+									<p>
+										<img src="https://www.topciment.com/imagenes/herramientas-festool-mezcladora-microcemento.jpg"
+											width="100%" alt="Mixers and Stirrers MX">
+								</div>
+							</div>
+							<div style="float:none; clear:both; height:100px;"></div>
+							<div class="contenedorMagenDerecha">
+								<div id="mitadTextoIzquierda">
+									<p><strong>Levigatrici orbitali ROTEX: </strong>Questo modello di macchine è il
+										migliore per levigare il microcemento e rimuovere imperfezioni e rilievi. È uno
+										strumento fondamentale nella finitura del processo di applicazione. Distacca la
+										sua impugnatura ergonomica, la facilità per cambiare i dischi e la possibilità
+										di realizzare tre tipi di movimenti per ottenere effetti con la levigatura:
+										grossa, fine o levigata. Si consiglia di montare sulla levigatrice il disco
+										abrasivo ROTEX , con la durezza necessaria per i micromortai di Topciment. Con
+										l'obiettivo di una levigatura ad alte prestazioni, con la massima qualità
+										possibile e pensando alla salute di chi lo utilizza. Festool ha brevettato il
+										sistema MULTI-JETSTREAM, che consente la rigenerazione costante dell'aria, il
+										raffreddamento della macchina e la riduzione delle ostruzioni.</p>
+								</div>
+								<div id="mitadTextoDerecha">
+									<p>
+										<img src="https://www.topciment.com/imagenes/lijadoras-excentricas-microcemento.jpg"
+											width="100%" alt="Sanders eccentric ROTEX">
+								</div>
+							</div>
+							<div style="float:none; clear:both; height:100px;"></div>
+							<div class="contenedorMagenDerecha">
+								<div id="mitadTextoIzquierda">
+									<p><strong>Sistemi mobili cleantec:</strong>moderni aspiratori con i cuali si
+										possono conseguire una pulizia perfetta ad una velocita' record. E' il modo
+										migliore per evitare le nuvole di sporco durante i lavori. Allo stesso tempo, si
+										impedisce l'inalazione continua di polveri che possono causare effetti nocivi
+										sulla salute delle persone che fanno quotidianamente uso di levigatrici.
+										Diversamente, il suo design è pensato per un comodo trasporto, visto che dispone
+										di una struttura robusta, grandi ruote e l'asse in acciaio per non danneggiarlo
+										durante gli spostamenti ed evitare ribaltamenti.</p>
 
-				<p>I risultati dell'utiliizzo di questi strumenti insieme ai prodotti Topciment per l'applicazione di Microcemento creano risultati della massima qualità possibile, puliti e salutari.
+									<p>I risultati dell'utiliizzo di questi strumenti insieme ai prodotti Topciment per
+										l'applicazione di Microcemento creano risultati della massima qualità possibile,
+										puliti e salutari.
 
-</p>
-				<P>Maggiori informazioni:<a href=" https://www.festool.it">https://www.festool.it/ </a>
+									</p>
+									<P>Maggiori informazioni:<a href=" https://www.festool.it">https://www.festool.it/
+										</a>
 
-				</div>
-				<div id="mitadTextoDerecha"><p>
-				<img src="https://www.topciment.com/imagenes/modernos-aspiradores-cleantex-para-microcemento.jpg" width="100%" alt="CLEANTEC mobile systems">
-			</div>
-		</div>
-	</div>
+								</div>
+								<div id="mitadTextoDerecha">
+									<p>
+										<img src="https://www.topciment.com/imagenes/modernos-aspiradores-cleantex-para-microcemento.jpg"
+											width="100%" alt="CLEANTEC mobile systems">
+								</div>
+							</div>
+						</div>
 
-		</div>
+					</div>
 
 
-<div style="float:none; clear:both; height:100px;"></div>
+					<div style="float:none; clear:both; height:100px;"></div>
 
-<a id="errori-da-evitare-nella-combinazione-dei-colori" style="display: block; height: 135px; visibility: hidden;"></a>
+					<a id="errori-da-evitare-nella-combinazione-dei-colori"
+						style="display: block; height: 135px; visibility: hidden;"></a>
 
-		<div class="contenedorMenuOculto">
-        <div class="contenedorMagenDerecha">
+					<div class="contenedorMenuOculto">
+						<div class="contenedorMagenDerecha">
 
-			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+							<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
                     "y": "0",
                     "alpha": "0",
-                    "duration": "0"}'><span style=" padding:5px;">Errori da evitare nella combinazione dei colori</span></h2>
-            </div>
+                    "duration": "0"}'><span style=" padding:5px;">Errori da evitare nella combinazione dei
+									colori</span></h2>
+						</div>
 
-                    <div class="contenedorMenuOculto">
-    	<div class="contenedorMagenDerecha">
-			<div id="mitadTextoIzquierda">
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div id="mitadTextoIzquierda">
 
-				<h2>Errori da evitare nella combinazione dei colori</h2>
-				<p>L'uso di colori audaci nella colorazione è oggi di tendenza, besò bisogna fare attenzione e non commettere errori. Nel disegno di interiori la combinazione di alcuni toni può risultare un vero disastro. Mischiare colori può essere un gioco pericoloso ma accessibile a tutti; spesso si pensa che sia un' arte riservata unicamente a pochi professionisti della decorazione. <strong>.In Topciment vi proponiamo alguni trucchi per riuscire a ridefinire con successo i diversi spazi della casa.</strong>.</p>
-				<p><a href="https://www.topciment.com/it/colori-di-microcemento.html" ><img src="../imagenes/combinar-colores/colores-microcemento-1.jpg" width="100%" alt="combinazione dei colori"></a>
-				<h3>Errore 1 - associare più di tre colori</h3>
-				<p>Nel design di interi questa è una delle principali regole: con l'unione di più toni diversi nella stessa stanza non si ottiene armonia.<strong>. Mescolare quattro o più colori può creare confusione.</strong>. Una buona idea può essere scegliere diversi toni di un colore, per esempio: dal rosa chiaro al fucsia, aggiungendo un color lampone. l'uso di <strong><a href="https://www.topciment.com/it/colori-di-microcemento.html">diverse tonalità cromatiche </a></strong>aiuta a non commettere errori.</p>
-				<p><a href="https://www.topciment.com/it/colori-di-microcemento.html" ><img src="../imagenes/combinar-colores/colores-microcemento-2.jpg" width="100%" alt="combinazione dei colori"></a>
+									<h2>Errori da evitare nella combinazione dei colori</h2>
+									<p>L'uso di colori audaci nella colorazione è oggi di tendenza, besò bisogna fare
+										attenzione e non commettere errori. Nel disegno di interiori la combinazione di
+										alcuni toni può risultare un vero disastro. Mischiare colori può essere un gioco
+										pericoloso ma accessibile a tutti; spesso si pensa che sia un' arte riservata
+										unicamente a pochi professionisti della decorazione. <strong>.In Topciment vi
+											proponiamo alguni trucchi per riuscire a ridefinire con successo i diversi
+											spazi della casa.</strong>.</p>
+									<p><a href="https://www.topciment.com/it/colori-di-microcemento.html"><img
+												src="../imagenes/combinar-colores/colores-microcemento-1.jpg"
+												width="100%" alt="combinazione dei colori"></a>
+										<h3>Errore 1 - associare più di tre colori</h3>
+										<p>Nel design di interi questa è una delle principali regole: con l'unione di
+											più toni diversi nella stessa stanza non si ottiene armonia.<strong>.
+												Mescolare quattro o più colori può creare confusione.</strong>. Una
+											buona idea può essere scegliere diversi toni di un colore, per esempio: dal
+											rosa chiaro al fucsia, aggiungendo un color lampone. l'uso di <strong><a
+													href="https://www.topciment.com/it/colori-di-microcemento.html">diverse
+													tonalità cromatiche </a></strong>aiuta a non commettere errori.</p>
+										<p><a href="https://www.topciment.com/it/colori-di-microcemento.html"><img
+													src="../imagenes/combinar-colores/colores-microcemento-2.jpg"
+													width="100%" alt="combinazione dei colori"></a>
 
-			</div>
-			<div id="mitadTextoDerecha" >
+								</div>
+								<div id="mitadTextoDerecha">
 
-				<h3>Errore 2 - Esagerare con i contrasti</h3>
-				<p>I toni forti generano attrazione a prima vista, ma esagerare con questi può rendere l'ambiente pesante giorno dopo giorno. Le combinazioni attrattive che funzionano in ristoranti e hotel, in una cucina possono stancare l'occhio e produrre un rifiuto visivo. Una buona alternativa è provare su una parete, e se l'effetto non risulta essere quello desiderato, si possono riorganizzare o cambiare gli elementi decorativi fino a raggiungere un buon risultato.</p>
+									<h3>Errore 2 - Esagerare con i contrasti</h3>
+									<p>I toni forti generano attrazione a prima vista, ma esagerare con questi può
+										rendere l'ambiente pesante giorno dopo giorno. Le combinazioni attrattive che
+										funzionano in ristoranti e hotel, in una cucina possono stancare l'occhio e
+										produrre un rifiuto visivo. Una buona alternativa è provare su una parete, e se
+										l'effetto non risulta essere quello desiderato, si possono riorganizzare o
+										cambiare gli elementi decorativi fino a raggiungere un buon risultato.</p>
 
-				<h3>Errore 3 - Non separare gli spazi</h3>
-				<p>In una casa esistono diverse stanze dove una miscela esplosiva di colori può risultare fastidios. Le camere da letto, le cucine e i saloni sono le zone incui si passa la maggior parte del tempo, e i colori inusuali tendono a stancare. Le aree di transito come i corridoi e la sala d'entrata <strong>permettono invece di poter sfidare la propria immaginazione con diverse miscele e opportunità.</strong></p>
+									<h3>Errore 3 - Non separare gli spazi</h3>
+									<p>In una casa esistono diverse stanze dove una miscela esplosiva di colori può
+										risultare fastidios. Le camere da letto, le cucine e i saloni sono le zone incui
+										si passa la maggior parte del tempo, e i colori inusuali tendono a stancare. Le
+										aree di transito come i corridoi e la sala d'entrata <strong>permettono invece
+											di poter sfidare la propria immaginazione con diverse miscele e
+											opportunità.</strong></p>
 
-				<h3>Errore 4 - Pensare solo alle pareti</h3>
-				<p>Bisogna ricordare che, nella decorazione, non partecipano solo <strong><a href="https://www.topciment.com/en/systems.html" >pavimenti e pareti</a></strong>, ma anche i battiscopa, le porte, i mobili e i soffitti. Creando una decorazione su una parete o giocando con i contrasti sulle cornici delle porte si possono raggiungere composizioni sorprendenti. Allo stesso modo sono rilevanti nel risultato finale anche i divani, i cuscini e i tappeti che con diversi toni del colore scelto aggiungerano valore alla stanza. Tutto è questione di variare le proporzioni, i dosaggi, e azzardarsi.</p>
+									<h3>Errore 4 - Pensare solo alle pareti</h3>
+									<p>Bisogna ricordare che, nella decorazione, non partecipano solo <strong><a
+												href="https://www.topciment.com/en/systems.html">pavimenti e
+												pareti</a></strong>, ma anche i battiscopa, le porte, i mobili e i
+										soffitti. Creando una decorazione su una parete o giocando con i contrasti sulle
+										cornici delle porte si possono raggiungere composizioni sorprendenti. Allo
+										stesso modo sono rilevanti nel risultato finale anche i divani, i cuscini e i
+										tappeti che con diversi toni del colore scelto aggiungerano valore alla stanza.
+										Tutto è questione di variare le proporzioni, i dosaggi, e azzardarsi.</p>
 
-				<h3>Errore 5 - Scurire la decorazione originale</h3>
-				<pL'idea di cambiamento non deve farci dimenticare che la stanza esistente è già colorata, tanto su pareti e pavimenti come su finestre e porte. Iniziare una composizione senza tener conto dei toni già presenti può impoverire il risultato finale. La soluzione più semplice è cominciare un progetto tenendo conto deli elementi già esistentie e raggiungere un equilibrio a partire da essi.</p>
+									<h3>Errore 5 - Scurire la decorazione originale</h3>
+									<pL'idea di cambiamento non deve farci dimenticare che la stanza esistente è già
+										colorata, tanto su pareti e pavimenti come su finestre e porte. Iniziare una
+										composizione senza tener conto dei toni già presenti può impoverire il risultato
+										finale. La soluzione più semplice è cominciare un progetto tenendo conto deli
+										elementi già esistentie e raggiungere un equilibrio a partire da essi.</p> <p><a
+											href="https://www.topciment.com/it/colori-di-microcemento.html"><img
+												src="../imagenes/combinar-colores/colores-microcemento-3.jpg"
+												width="100%" alt="combinazione dei colori"></a>
+								</div>
+							</div>
+						</div>
 
-				<p><a href="https://www.topciment.com/it/colori-di-microcemento.html" ><img src="../imagenes/combinar-colores/colores-microcemento-3.jpg" width="100%" alt="combinazione dei colori"></a>
-				</div>
-		</div>
-	</div>
+					</div>
 
-		</div>
-
-<div style="float:none; clear:both; height:100px;"></div>
+					<div style="float:none; clear:both; height:100px;"></div>
 
 
-<a id="microcemento-in-cucina" style="display: block; height: 135px; visibility: hidden;"></a>
+					<a id="microcemento-in-cucina" style="display: block; height: 135px; visibility: hidden;"></a>
 
-		<div class="contenedorMenuOculto">
-        <div class="contenedorMagenDerecha">
+					<div class="contenedorMenuOculto">
+						<div class="contenedorMagenDerecha">
 
-			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+							<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
                     "y": "0",
                     "alpha": "0",
                     "duration": "1"}'><span style=" padding:5px;">Microcemento in cucina</span></h2>
-            </div>
+						</div>
 
-                    <div class="contenedorMenuOculto">
-    	<div class="contenedorMagenDerecha">
-			<div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
                     "y": "0",
                     "alpha": "0",
                     "duration": "1"}'>
-				<h2>I migliori piatti si preparano in un ambiente che serva da fonte d'ispirazione. </h2>
-				<p>Ogni cuoco ha bisogno di elementi che accompagnano la sua creativitá, e il microcemento è versatile tanto quanto le persone: esiste una finitura per ogni stile. Che sia per fare una cucina nuova o per ristrutturarne una antica, si possono raggiungere effetti di finitura completamente unici. In caso di una ristrutturazione, si aderisce alla superficie esistente con uno <strong>spessore massimo di 3 millimetri</strong>, ciò che permette una posa in pareti e pavimenti più veloce e senza bisogno di cantieri, rumori o rifiuti.</p>
-				<p>Il microcemento è un materiale neutro che si adatta a qualsiasi tipo di cucina, che sia classica o contemporanea, con uno stile industriale o nordico. I toni chiari regalano luminosità e ampiezza, mentre i toni scuri creano ambienti più accoglienti. In cucine aperte,<strong> il microcemento offre la possibilità di mantenere la continuità del pavimento con quello del salone, conferendo armonia all'insieme</strong>. Se invece lo scopo è di separare e creare contrasto, scegliendo colori opposti si potranno meglio differenziare le stanze. Dopo aver scelto la finitura del microcemento, il passo successivo sarà scegliere dei mobili in accordo con i colori usati e gli effetti ottenuti. In questo caso, anche i mobili possono essere rivestiti con microcemento per raggiungere un disegno originale ed esclusivo al 100%.</p>
+									<h2>I migliori piatti si preparano in un ambiente che serva da fonte d'ispirazione.
+									</h2>
+									<p>Ogni cuoco ha bisogno di elementi che accompagnano la sua creativitá, e il
+										microcemento è versatile tanto quanto le persone: esiste una finitura per ogni
+										stile. Che sia per fare una cucina nuova o per ristrutturarne una antica, si
+										possono raggiungere effetti di finitura completamente unici. In caso di una
+										ristrutturazione, si aderisce alla superficie esistente con uno <strong>spessore
+											massimo di 3 millimetri</strong>, ciò che permette una posa in pareti e
+										pavimenti più veloce e senza bisogno di cantieri, rumori o rifiuti.</p>
+									<p>Il microcemento è un materiale neutro che si adatta a qualsiasi tipo di cucina,
+										che sia classica o contemporanea, con uno stile industriale o nordico. I toni
+										chiari regalano luminosità e ampiezza, mentre i toni scuri creano ambienti più
+										accoglienti. In cucine aperte,<strong> il microcemento offre la possibilità di
+											mantenere la continuità del pavimento con quello del salone, conferendo
+											armonia all'insieme</strong>. Se invece lo scopo è di separare e creare
+										contrasto, scegliendo colori opposti si potranno meglio differenziare le stanze.
+										Dopo aver scelto la finitura del microcemento, il passo successivo sarà
+										scegliere dei mobili in accordo con i colori usati e gli effetti ottenuti. In
+										questo caso, anche i mobili possono essere rivestiti con microcemento per
+										raggiungere un disegno originale ed esclusivo al 100%.</p>
 
 
-			</div>
-			<div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
+								</div>
+								<div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
                     "y": "50",
                     "alpha": "0",
                     "duration": "2"}'>
 
-				<h3>La cucina deve essere pulita, visto che in essa si lavora con alimenti.</h3>
-				<p>Il pavimento e le pareti sono sempre esposti a schizzi di olio e/o gocce di liquidi. Sotto questo aspetto, il microcemento ha un grande vantaggio: la sua manutenzione è molto semplice. Non avendo fughe, la pulizia è facile: con la gamma di prodotti <a href="https://www.topciment.com/it/sistemi.html#preguntas-frecuentes" >Ecoclean di Topciment</a> si otterranno pavimenti e pareti risplendenti. Si eviterà così l'uso di prodotti aggressivi come la candeggina o l' ammoniaca, che generano vapori sgradevoli e possono essere nocivi per la salute.</p>
-				<p><strong>Comodità e personalizzazione si uniscono per ottenere cucine fantastiche con un elemento in comune: il rivestimento di microcemento.</strong></p>
-				<p><a href="https://www.topciment.com/it/informazioni-microcemento.html" ><img src="../imagenes/microcemento-cocinas.jpg" width="100%" alt="Microcemento in cucina"></a>
-				</div>
-		</div>
-	</div>
+									<h3>La cucina deve essere pulita, visto che in essa si lavora con alimenti.</h3>
+									<p>Il pavimento e le pareti sono sempre esposti a schizzi di olio e/o gocce di
+										liquidi. Sotto questo aspetto, il microcemento ha un grande vantaggio: la sua
+										manutenzione è molto semplice. Non avendo fughe, la pulizia è facile: con la
+										gamma di prodotti <a
+											href="https://www.topciment.com/it/sistemi.html#preguntas-frecuentes">Ecoclean
+											di Topciment</a> si otterranno pavimenti e pareti risplendenti. Si eviterà
+										così l'uso di prodotti aggressivi come la candeggina o l' ammoniaca, che
+										generano vapori sgradevoli e possono essere nocivi per la salute.</p>
+									<p><strong>Comodità e personalizzazione si uniscono per ottenere cucine fantastiche
+											con un elemento in comune: il rivestimento di microcemento.</strong></p>
+									<p><a href="https://www.topciment.com/it/informazioni-microcemento.html"><img
+												src="../imagenes/microcemento-cocinas.jpg" width="100%"
+												alt="Microcemento in cucina"></a>
+								</div>
+							</div>
+						</div>
 
-		</div>
+					</div>
 
-<div style="float:none; clear:both; height:100px;"></div>
+					<div style="float:none; clear:both; height:100px;"></div>
 
 
-<a id="microcemento-senza-problemi" style="display: block; height: 135px; visibility: hidden;"></a>
+					<a id="microcemento-senza-problemi" style="display: block; height: 135px; visibility: hidden;"></a>
 
-		<div class="contenedorMenuOculto">
-        <div class="contenedorMagenDerecha">
+					<div class="contenedorMenuOculto">
+						<div class="contenedorMagenDerecha">
 
-			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+							<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
                     "y": "0",
                     "alpha": "0",
                     "duration": "1"}'><span style=" padding:5px;">Microcemento senza problemi</span></h2>
-            </div>
+						</div>
 
-                    <div class="contenedorMenuOculto">
-    	<div class="contenedorMagenDerecha">
-			<div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
                     "y": "0",
                     "alpha": "0",
                     "duration": "1"}'>
-				<h2>Come evitare problemi con il microcemento? Un'applicazione Topciment garantisce i prodotti della migliore qualità, applicatori certificati, ed esperti in microcemento.</h2>
-				<p>Una ristrutturazione con microcemento realizzata da professionisti specializzati ed eseguita con prodotti di qualità evita l'apparizione di problemi durante e dopo la conclusione del lavoro.</p>
-				<p>Il primo passo è scegliere uno specialista che conosca i diversi materiali e che tra questi scelga quello di maggiore qualità.</p>
-				<p>Differenziare i tipi di microcemento e applicarli sulla superficie per il quale sono stati creati è fondamentale per garantire una ristrutturazione con esito. Un' adeguata consulenza inizia con l'analisi del supporto da rivestire e un calcolo stimato di prodotti, tempo e prezzi a seconda dei metri quadrati da ristrutturare.</p>
+									<h2>Come evitare problemi con il microcemento? Un'applicazione Topciment garantisce
+										i prodotti della migliore qualità, applicatori certificati, ed esperti in
+										microcemento.</h2>
+									<p>Una ristrutturazione con microcemento realizzata da professionisti specializzati
+										ed eseguita con prodotti di qualità evita l'apparizione di problemi durante e
+										dopo la conclusione del lavoro.</p>
+									<p>Il primo passo è scegliere uno specialista che conosca i diversi materiali e che
+										tra questi scelga quello di maggiore qualità.</p>
+									<p>Differenziare i tipi di microcemento e applicarli sulla superficie per il quale
+										sono stati creati è fondamentale per garantire una ristrutturazione con esito.
+										Un' adeguata consulenza inizia con l'analisi del supporto da rivestire e un
+										calcolo stimato di prodotti, tempo e prezzi a seconda dei metri quadrati da
+										ristrutturare.</p>
 
-			</div>
-			<div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
+								</div>
+								<div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
                     "y": "50",
                     "alpha": "0",
                     "duration": "2"}'>
 
-				<p>Per posare il microcemento non è necessario togliere il supporto originale, è però necessario prepararlo correttamente. Se ci sono fughe nel pavimento o nella parete, bisognerà livellare l'altezza e l'assorbimento tra il materiale e la fuga. Una volta livellata la base si dovrà realizzare un' imprimazione che, oltre a garantire l'aderenza tra il materiale esistente e quello nuovo, lascierà una porosità omogenea in tutta la superficie. Inoltre si consiglia l'uso della rete in fibra di vetro per prevenire crepe nella base.</p>
-				<p>Le <a href="https://www.topciment.com/it/sistemi.html">istruzione d'uso del microcemento</a> devono essere rigorosamente rispettata per assicurare una ristrutturazione senza problemi. Un buon professionista miscelerè correttamente i componenti dei differenti prodotti per assicurarsi di raggiungere le massime prestazioni degli stessi (durezza, impermeabilità, ecc..). Inoltre, il rispetto dei tempi di asciugatura è indispensabile per evitare l'apparizione di macchie d'umidità. Un cantiere dove si seguono alla perfezione le fasi di applicazione non genera difficoltà.</p>
-				<p>Un'applicazione con Topciment garantisce prodotti della miglior qualità, applicatori certificati ed esperti di microcemento, consulenza tecnica durante la realizzazione della ristrutturazione e una squadra efficiente risolvendo ogni dubio. Contattaci per ulteriori informazioni.</p>
-				<p><a href="https://www.topciment.com/it/professionisti.html" ><img src="../imagenes/evita-problemas-microcemento-con-profesionales-2.jpg" width="100%" alt=" Un'applicazione Topciment garantisce i prodotti della migliore qualità, applicatori certificati, ed esperti in microcemento."></a></p>
-				</div>
-		</div>
-	</div>
+									<p>Per posare il microcemento non è necessario togliere il supporto originale, è
+										però necessario prepararlo correttamente. Se ci sono fughe nel pavimento o nella
+										parete, bisognerà livellare l'altezza e l'assorbimento tra il materiale e la
+										fuga. Una volta livellata la base si dovrà realizzare un' imprimazione che,
+										oltre a garantire l'aderenza tra il materiale esistente e quello nuovo, lascierà
+										una porosità omogenea in tutta la superficie. Inoltre si consiglia l'uso della
+										rete in fibra di vetro per prevenire crepe nella base.</p>
+									<p>Le <a href="https://www.topciment.com/it/sistemi.html">istruzione d'uso del
+											microcemento</a> devono essere rigorosamente rispettata per assicurare una
+										ristrutturazione senza problemi. Un buon professionista miscelerè correttamente
+										i componenti dei differenti prodotti per assicurarsi di raggiungere le massime
+										prestazioni degli stessi (durezza, impermeabilità, ecc..). Inoltre, il rispetto
+										dei tempi di asciugatura è indispensabile per evitare l'apparizione di macchie
+										d'umidità. Un cantiere dove si seguono alla perfezione le fasi di applicazione
+										non genera difficoltà.</p>
+									<p>Un'applicazione con Topciment garantisce prodotti della miglior qualità,
+										applicatori certificati ed esperti di microcemento, consulenza tecnica durante
+										la realizzazione della ristrutturazione e una squadra efficiente risolvendo ogni
+										dubio. Contattaci per ulteriori informazioni.</p>
+									<p><a href="https://www.topciment.com/it/professionisti.html"><img
+												src="../imagenes/evita-problemas-microcemento-con-profesionales-2.jpg"
+												width="100%"
+												alt=" Un'applicazione Topciment garantisce i prodotti della migliore qualità, applicatori certificati, ed esperti in microcemento."></a>
+									</p>
+								</div>
+							</div>
+						</div>
 
-		</div>
+					</div>
 
-<div style="float:none; clear:both; height:100px;"></div>
+					<div style="float:none; clear:both; height:100px;"></div>
 
 
-		<a id="nuovi-prodotti" style="display: block; height: 135px; visibility: hidden;"></a>
+					<a id="nuovi-prodotti" style="display: block; height: 135px; visibility: hidden;"></a>
 
-		<div class="contenedorMenuOculto">
-        <div class="contenedorMagenDerecha">
+					<div class="contenedorMenuOculto">
+						<div class="contenedorMagenDerecha">
 
-			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+							<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
                     "y": "0",
                     "alpha": "0",
-                    "duration": "1"}'><span style=" padding:5px;">Nuovi prodotti per la pulizia e la manutenzione del microcemento</span></h2>
-            </div>
+                    "duration": "1"}'><span style=" padding:5px;">Nuovi prodotti per la pulizia e la manutenzione del
+									microcemento</span></h2>
+						</div>
 
-                    <div class="contenedorMenuOculto">
-    	<div class="contenedorMagenDerecha">
-			<div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
-                    "y": "0",
-                    "alpha": "0",
-                    "duration": "1"}'>
-				<p>Topciment inserisce nel mercato quattro nuovi prodotti specialmente formulati per la cura, la manutenzione e la pulizia del microcemento. I detergenti Ecoclean ed Ecoclean Pro sono ecologici e indicati sia per un uso domestico che professionale.</p>
-			</div>
-			<div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
-                    "y": "50",
-                    "alpha": "0",
-                    "duration": "2"}'>
-				<p>Le cere Ceraciment e Ceraciment Pro utilizzate per la manutenzione dei pavimenti ne garantiscono  la durezza e la lucentezza naturale per molto piú tempo. Le loro formule speciali  ne permettono la nutrizione e l’assorbimento nelle superfici trattate, ed é specialmente indicato per pavimenti di microcemento.</p>
-				<p>Nella sezione per Professonisti >> Schede Tecniche troverá i dettagli tecnici di questa nuova gamma di prodotti per la cura e la pulizia di Topciment.</p>
-				<p><a href="https://www.topciment.com/it/professionisti.html#fichas-tecnicas" ><img border="0" src="../imagenes/productos-limpieza-y-mantenimiento.jpg" height="100%" width"100%" alt="Nuovi prodotti per la pulizia e la manutenzione del microcemento" title="Nuovi prodotti per la pulizia e la manutenzione del microcemento" ></a></p>
-				</div>
-		</div>
-	</div>
-
-		</div>
-
-<div style="float:none; clear:both; height:100px;"></div>
-
-
-<a id="que-es-microcemento" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
-
-		<div class="contenedorMenuOculto">
-        <div class="contenedorMagenDerecha">
-
-			<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
-                    "y": "0",
-                    "alpha": "0",
-                    "duration": "1"}'><span style=" padding:5px;"> Topciment rinnova per un altro anno l’accordo con CYPE</span></h2>
-            </div>
-
-                    <div class="contenedorMenuOculto">
-    	<div class="contenedorMagenDerecha">
-			<div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
                     "y": "0",
                     "alpha": "0",
                     "duration": "1"}'>
-				<p>Anche quest’anno Topciment ha rinnovato con CYPE. Con questo accordo, l’azienda produttrice di microcemento potrà continuare a fornire assistenza ai professionisti dell’edilizia in fase di elaborazione di preventivi.<br>
-			    </p>
-				<p>La società con sede a Manises si afferma come una delle imprese più impegnate nei confronti di architetti e ingegneri. L’accordo, infatti, consentirà a questi professionisti di avvalersi di una descrizione precisa ed esaustiva delle caratteristiche di ogni unità di prodotto, in questo caso il microcemento, mediante il Generatore di prezzi.</p>
-			</div>
-			<div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
+									<p>Topciment inserisce nel mercato quattro nuovi prodotti specialmente formulati per
+										la cura, la manutenzione e la pulizia del microcemento. I detergenti Ecoclean ed
+										Ecoclean Pro sono ecologici e indicati sia per un uso domestico che
+										professionale.</p>
+								</div>
+								<div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
                     "y": "50",
                     "alpha": "0",
                     "duration": "2"}'>
-				<p>Il Generatore di prezzi, alla cui <strong>piattaforma </strong>accedono più di 2 milioni di utenti l’anno, è un efficace strumento informatico utilizzato da architetti e responsabili di progetto che fornisce prezzi con stime dei costi agevolando l’elaborazione di una documentazione di progetto completa e di qualità. Allo stesso tempo, lo strumento include informazioni dirette sui fabbricanti e i loro prodotti.</p>
-				<p>Topciment, integrando la sua offerta nel Generatore di prezzi, ha inserito i suoi prodotti nella vetrina più consultata della costruzione. I tecnici potranno così trovare velocemente le informazioni e le immagini dei prodotti Topciment che più si adattano alle esigenze di ogni loro progetto.</p>
-				<p>			    Il Generatore di prezzi è <strong>un’efficace guida di progettazione</strong> ancora più completa grazie alla presenza dei prodotti Topciment.</p>
-				</div>
-		</div>
-	</div>
+									<p>Le cere Ceraciment e Ceraciment Pro utilizzate per la manutenzione dei pavimenti
+										ne garantiscono la durezza e la lucentezza naturale per molto piú tempo. Le loro
+										formule speciali ne permettono la nutrizione e l’assorbimento nelle superfici
+										trattate, ed é specialmente indicato per pavimenti di microcemento.</p>
+									<p>Nella sezione per Professonisti >> Schede Tecniche troverá i dettagli tecnici di
+										questa nuova gamma di prodotti per la cura e la pulizia di Topciment.</p>
+									<p><a href="https://www.topciment.com/it/professionisti.html#fichas-tecnicas"><img
+												border="0" src="../imagenes/productos-limpieza-y-mantenimiento.jpg"
+												height="100%" width"100%"
+												alt="Nuovi prodotti per la pulizia e la manutenzione del microcemento"
+												title="Nuovi prodotti per la pulizia e la manutenzione del microcemento"></a>
+									</p>
+								</div>
+							</div>
+						</div>
 
-		</div>
+					</div>
 
-<!--<div style="float:none; clear:both; height:100px;"></div>
+					<div style="float:none; clear:both; height:100px;"></div>
+
+
+					<a id="que-es-microcemento"
+						style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
+
+					<div class="contenedorMenuOculto">
+						<div class="contenedorMagenDerecha">
+
+							<h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'><span style=" padding:5px;"> Topciment rinnova per un altro anno l’accordo con
+									CYPE</span></h2>
+						</div>
+
+						<div class="contenedorMenuOculto">
+							<div class="contenedorMagenDerecha">
+								<div id="mitadTextoIzquierda" data-animate-scroll='{"x": "-100",
+                    "y": "0",
+                    "alpha": "0",
+                    "duration": "1"}'>
+									<p>Anche quest’anno Topciment ha rinnovato con CYPE. Con questo accordo, l’azienda
+										produttrice di microcemento potrà continuare a fornire assistenza ai
+										professionisti dell’edilizia in fase di elaborazione di preventivi.<br>
+									</p>
+									<p>La società con sede a Manises si afferma come una delle imprese più impegnate nei
+										confronti di architetti e ingegneri. L’accordo, infatti, consentirà a questi
+										professionisti di avvalersi di una descrizione precisa ed esaustiva delle
+										caratteristiche di ogni unità di prodotto, in questo caso il microcemento,
+										mediante il Generatore di prezzi.</p>
+								</div>
+								<div id="mitadTextoDerecha" data-animate-scroll='{"x": "0",
+                    "y": "50",
+                    "alpha": "0",
+                    "duration": "2"}'>
+									<p>Il Generatore di prezzi, alla cui <strong>piattaforma </strong>accedono più di 2
+										milioni di utenti l’anno, è un efficace strumento informatico utilizzato da
+										architetti e responsabili di progetto che fornisce prezzi con stime dei costi
+										agevolando l’elaborazione di una documentazione di progetto completa e di
+										qualità. Allo stesso tempo, lo strumento include informazioni dirette sui
+										fabbricanti e i loro prodotti.</p>
+									<p>Topciment, integrando la sua offerta nel Generatore di prezzi, ha inserito i suoi
+										prodotti nella vetrina più consultata della costruzione. I tecnici potranno così
+										trovare velocemente le informazioni e le immagini dei prodotti Topciment che più
+										si adattano alle esigenze di ogni loro progetto.</p>
+									<p> Il Generatore di prezzi è <strong>un’efficace guida di progettazione</strong>
+										ancora più completa grazie alla presenza dei prodotti Topciment.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!--<div style="float:none; clear:both; height:100px;"></div>
 
         <a id="resbaladicidad" style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
 
@@ -760,207 +1067,262 @@ fbq('track', "PageView"); </script> <noscript><img height="1" width="1" style="d
 	</div>
 
 		</div> -->
-        </div>
+			</div>
 
- </div>
-        </div>
-<div style="float:none; clear:both; height:100px;"></div>
+		</div>
+	</div>
+	<div style="float:none; clear:both; height:100px;"></div>
 
-<div class="footerInterior">
-    <div class="footerContent">
-<a href="https://www.youtube.com/user/TopCiment" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-youtube fa-stack-1x"></i>
-        </span></span></a>
-<a href="https://www.instagram.com/topciment/" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-instagram  fa-stack-1x"></i>
-        </span></span></a>
-        &nbsp;<a href="https://api.whatsapp.com/send?phone=34647913586&text=Hola&source=&data=" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-whatsapp fa-stack-1x"></i>
-        </span></a>
-        &nbsp;<a href="https://www.pinterest.com/topciment/" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-pinterest fa-stack-1x"></i>
-        </span></a>
-        &nbsp;
-        <a href="https://es-es.facebook.com/topciment.microcemento" target="_blank"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-facebook fa-stack-1x"></i>
-        </span></a>
-        &nbsp;
-        <a href="https://twitter.com/topciment" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-twitter fa-stack-1x"></i>
-        </span></a>
-        &nbsp;
-        <a href="https://www.linkedin.com/company/2880536/" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-linkedin fa-stack-1x"></i>
-        </span></a>
-       <p>Rosas 33,  · Manises 46940 · Spagna · Telefono: <a href="tel:+34963925989" class="textoBlanco">+34 963 92 59 89</a> · <a href="mailto:info@topciment.com" class="negrita textoBlanco">info@topciment.com</a></p>
-        <p><a href="termini-condizioni-e-dichiarazione-sulla-privacy.html" rel="nofollow" class="textoBlanco">Termini, condizioni e dichiarazione sulla privacy</a> | <a href="nota-legale.html" rel="nofollow" class="textoBlanco">Nota Legale</a></p>
+	<footer class="footerp">
+		<div class="contenedorMenuOculto contenedorF">
+			<div class="row row1">
+				<div class="col-md-3 col1F">
+					<h6 class="tituloF productosF"><strong>PRODOTTI</strong></h6>
+					<ul class="ulF productosF">
+						<li class="sttandardF"><a class="linkB"
+								href="sistemi/sttandard-microcemento-bicomponente.html">Microcemento
+								bicomponente</a></li>
+						<li class="evoluttionF"><a class="linkB"
+								href="sistemi/evoluttion-microcemento-monocomponente.html">Microcemento monocomponente
+							</a></li>
+						<li class="efecF"><a class="linkB"
+								href="sistemi/efectto-microcemento-pronto-all-uso.html">Microcemento
+								pronto all'uso</a></li>
+						<li class="puremF"><a class="linkB" href="sistemi/pure-mettal-rivestimento-metallico.html">
+								Rivestimento
+								metallico </a></li>
+						<li class="classicF"><a class="linkB"
+								href="sistemi/classic-mettal-vernici-metallizzate.html">Vernici
+								metallizzate</a>
+						</li>
+						<li class="elitteF"><a class="linkB"
+								href="sistemi/elitte-velature-e-pigmenti-metalizzati.html">Velature e
+								pigmenti metalizzati</a></li>
+						<li class="primacemF"><a class="linkB" href="sistemi/primacem-primers.html">Primers</a></li>
+						<li class="arcocemF"><a class="linkB" href="sistemi/arcocem-pigmenti.html">Pigmenti</a></li>
+						<li class="topsealerF"><a class="linkB" href="sistemi/topsealer-vernici.html">Vernici</a></li>
+						<li class="limpieF"><a class="linkB" href="sistemi/pulizia-e-cura-del-microcemento.html">Pulizia
+								e cura del
+								microcemento</a></li>
+						<li class="herramF"><a class="linkB" href="sistemi/strumenti.html">Strumenti</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col2F">
+					<h6 class="tituloF proyectosF"><strong>PROGETTI</strong></h6>
+					<ul class="ulF proyectos">
+						<li class="suelosF"><a class="linkB" href="galleria.html#suelos">Rinnovamento del pavimento</a>
+						</li>
+						<li class="paredesF"><a class="linkB" href="galleria.html#paredes">Rivestimento pareti</a></li>
+						<li class="banyoF"><a class="linkB" href="galleria.html#banyo">Ristrutturazione dei bagni</a>
+						</li>
+						<li class="cocinasF"><a class="linkB" href="galleria.html#cocinas">Ristrutturazione di
+								cucine</a></li>
+						<li class="decontiuosF"><a class="linkB" href="galleria.html#decontinuos">Rivestimenti
+								decorativi
+								continui</a>
+						</li>
+						<li class="mueblesF"><a class="linkB" href="galleria.html#muebles">Arredo di mobili</a></li>
+						<li class="azulejosF"><a class="linkB" href="galleria.html#azulejos">Coprire piastrelle</a></li>
+						<li class="metalicosF"><a class="linkB" href="galleria.html#metalicos">Effetti metallizzati</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col3F">
+					<h6 class="tituloF"><strong>PROFESSIONALI</strong></h6>
+					<ul class="ulF profesionalesF">
+						<li class="clientesF"><a class="linkB" href="portalcliente">Customer portal</a></li>
+						<li class="distriF"><a class="linkB" href="distributori.html">Distributori</a></li>
+						<li class="garantF"><a class="linkB" href="garanzia.html">Garanzia</a></li>
+						<li class="fichatF"><a class="linkB" href="downloads.html#fichas-tecnicas-topciment">Schede
+								tecniche</a>
+						</li>
+						<li class="descargasF"><a class="linkB" href="downloads.html#catalogo-topciment">Downloads</a>
+						</li>
+						<li class="videotutF"><a class="linkB" href="video-tutorials-microcement.html">Video
+								tutorials</a></li>
+						<li class="calcF"><a class="linkB" href="../calc/index.html">Calcolatrice</a></li>
+						<li class="selloF"><a class="linkB" href="marchio-di-qualita.html">Etichetta di qualità</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col4F">
+					<h6 class="tituloF"><strong>L'AZIENDA</strong></h6>
+					<ul class="ulF empresaF">
+						<li class="nosotrosF"><a class="linkB" href="chi-siamo.html">Chi siamo</a></li>
+						<li class="noticiasF"><a class="linkB" href="notizie.html">Notizie</a></li>
+						<li class="contactoF"><a class="linkB" href="contattaci.html">Contatto</a></li>
+						<li class="newsletterF"><a class="linkB" href="https://zc.vg/u1iSr">Iscriviti alla nostra
+								newsletter</a>
+						</li>
+						<li class="atencionF">Assistenza cliente a lunedì al venerdì dalle 9:00 alle 18:00</li>
+						<li class="numFooter">+34 963 92 59 89</li>
+						<li class="emailF"> info@topciment.com</li>
+					</ul>
+					<p>
+						<!-- Youtube -->
+						<a class="linkB social1" href="https://www.youtube.com/user/TopCiment" target="_blank">
+							<span class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x icon"></i>
+								<i class="fa fa-youtube fa-stack-1x"></i>
+							</span></a>
+						<!-- Instagrm -->
+						<a class="linkB social2" href="https://www.instagram.com/topciment/" target="_blank">
+							<span class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x icon"></i>
+								<i class="fa fa-instagram  fa-stack-1x"></i>
+							</span></a>
+						<!--  Whatsap -->
+						<a class="linkB social3"
+							href="https://api.whatsapp.com/send?phone=34647913586&amp;text=Hola&amp;source=&amp;data="
+							target="_blank"><span class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x icon"></i>
+								<i class="fa fa-whatsapp fa-stack-1x"></i>
+							</span></a>
+						<!--Pinterest -->
+						<a class="linkB social4" href="https://www.pinterest.com/topciment/" target="_blank"><span
+								class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x icon"></i>
+								<i class="fa fa-pinterest fa-stack-1x"></i>
+							</span></a>
+						<!--Facebook-->
+						<a class="linkB social5" href="https://es-es.facebook.com/topciment.microcemento"
+							target="_blank"><span class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x icon"></i>
+								<i class="fa fa-facebook fa-stack-1x"></i>
+							</span></a>
+						<!-- Twitter -->
+						<a class="linkB social6" href="https://twitter.com/topciment" target="_blank"><span
+								class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x icon"></i>
+								<i class="fa fa-twitter fa-stack-1x"></i>
+							</span></a>
+						<!-- Linkedin -->
+						<a class="linkB social7" href="https://www.linkedin.com/company/2880536/" target="_blank"><span
+								class="fa-stack">
+								<i class="fa fa-circle fa-stack-2x icon"></i>
+								<i class="fa fa-linkedin fa-stack-1x"></i>
+							</span></a>
+					</p>
+				</div>
+			</div>
+			<div class="row row2">
+				<div class="col-md-1 col-12 col5F">
+					<a href="index.html"><img src=" ../imagenes/logos/Topciment-cuadrado-blanco.png"
+							class="img-fluid logoF" /></a>
+				</div>
+				<div class="col-md-11 col6F">
+					<small class="direccionF"> © 2020 Grupo Negocios PO,S.L.U. Rosas 33, Manises 46940
+						España</small><br class="brF">
+					<small class="privaF">
+						<a class="linkB politicaF"
+							href=" https://www.topciment.com/it/termini-condizioni-e-dichiarazione-sulla-privacy.html"
+							rel="nofollow">
+							Termini, condizioni e dichiarazione sulla privacy</a> |
+						<a class="linkB cookieF" href="https://www.topciment.com/it/nota-legale.html" rel="nofollow"
+							class="textoBlanco">Nota Legale</a></small>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-  </div>
-</div>
+	<!-- include jQuery -->
+	<script src="../js/jquery-2.1.4.min.js"></script>
 
-<!-- include jQuery -->
-<script src="../js/jquery-2.1.4.min.js"></script>
+	<script src="../js/jquery-1.9.1.min.js"></script>
+	<script src='../js/jquery.scrollto.js'></script>
 
-<script src="../js/jquery-1.9.1.min.js"></script>
-<script src='../js/jquery.scrollto.js'></script>
+	<script languaje="Javascript">
+		<!--
+		document.write('<style type="text/css">div.ocultable{display: none;}</style>');
 
-<script languaje="Javascript">
-<!--
-document.write('<style type="text/css">div.ocultable{display: none;}</style>');
-function MostrarOcultar(capa,enlace)
-{
-    if (document.getElementById)
-    {
-        var aux = document.getElementById(capa).style;
-        aux.display = aux.display? "":"block";
-    }
-}
-//-->
-</script>
+		function MostrarOcultar(capa, enlace) {
+			if (document.getElementById) {
+				var aux = document.getElementById(capa).style;
+				aux.display = aux.display ? "" : "block";
+			}
+		}
+		//
+		-->
+	</script>
 
-<script type="text/javascript">
+	<script type="text/javascript">
+		// Alto de la ventana del navegador
+		$(document).ready(function () {
+			altoPag = $(window).height();
+			altoPagOk = altoPag - 135;
 
+			altoMenu = $('.menuMicrocementos').height();
+			//topMenu=((altoPagOk/2) - (altoMenu/2) + 135);
+			topMenu = 200;
 
-// Alto de la ventana del navegador
-$(document).ready(function() {
-	altoPag = $(window).height();
-	altoPagOk = altoPag - 135;
+			//$('#wrapper').css('height', $alto);
+			anchoPag = $(window).width();
 
-	altoMenu = $('.menuMicrocementos').height();
-		//topMenu=((altoPagOk/2) - (altoMenu/2) + 135);
-topMenu=200;
+			if (anchoPag > 1025) {
 
-	//$('#wrapper').css('height', $alto);
-	anchoPag = $(window).width();
+				$('.menuMicrocementos').css('display', 'block');
+				$('.menuMicrocementos').css('top', topMenu);
+			}
 
-	if(anchoPag > 1025) {
+		});
 
-		$('.menuMicrocementos').css('display', 'block');
-		$('.menuMicrocementos').css('top', topMenu);
-	}
-
-});
-
-$(window).resize(function () {
-	ancho=$(window).width();
-	topMenu=200;
+		$(window).resize(function () {
+			ancho = $(window).width();
+			topMenu = 200;
 
 
-	if(ancho > 1200) {
+			if (ancho > 1200) {
 
-		$('.menuMicrocementos').css('display', 'block');
-		$('.menuMicrocementos').css('top', topMenu);
-	}
+				$('.menuMicrocementos').css('display', 'block');
+				$('.menuMicrocementos').css('top', topMenu);
+			}
 
-	if(ancho < 1199) {
+			if (ancho < 1199) {
 
-		$('.menuMicrocementos').css('display', 'none');
-		$('.menuGaleria').css('display', 'none');
-		$('.menuSistemas').css('display', 'none');
-		$('.menuColores').css('display', 'none');
-		$('.menuGarantia').css('display', 'none');
-		$('.menuProfesionales').css('display', 'none');
-		$('.menuDistribuidores').css('display', 'none');
-		$('.menuNosotros').css('display', 'none');
-		$('.menuContacto').css('display', 'none');
-	}
+				$('.menuMicrocementos').css('display', 'none');
+				$('.menuGaleria').css('display', 'none');
+				$('.menuSistemas').css('display', 'none');
+				$('.menuColores').css('display', 'none');
+				$('.menuGarantia').css('display', 'none');
+				$('.menuProfesionales').css('display', 'none');
+				$('.menuDistribuidores').css('display', 'none');
+				$('.menuNosotros').css('display', 'none');
+				$('.menuContacto').css('display', 'none');
+			}
 
-});
-//-->
-</script>
+		});
+		//-->
+	</script>
 
-<script>
-    $(document).ready(function(){
-        /**
-         * This part does the "fixed navigation after scroll" functionality
-         * We use the jQuery function scroll() to recalculate our variables as the
-         * page is scrolled/
-         */
+	<script type="text/javascript" src="../js/parallax.js"></script>
+	<script type="text/javascript" src="../js/codigo2.js"></script>
 
-        /**
-         * This part causes smooth scrolling using scrollto.js
-         * We target all a tags inside the nav, and apply the scrollto.js to it.
-         */
-        $(".menuMicrocementos a").click(function(evn){
-            evn.preventDefault();
-            $('html,body').scrollTo(this.hash, this.hash);
-        });
-        /**
-         * This part handles the highlighting functionality.
-         * We use the scroll functionality again, some array creation and
-         * manipulation, class adding and class removing, and conditional testing
-         */
-        var aChildren = $(".menuMicrocementos li").children(); // find the a children of the list items
-        var aArray = []; // create the empty aArray
-        for (var i=0; i < aChildren.length; i++) {
-            var aChild = aChildren[i];
-            var ahref = $(aChild).attr('href');
-            aArray.push(ahref);
-        } // this for loop fills the aArray with attribute href values
+	<script src="../js/TweenMax.min.js"></script>
 
-        $(window).scroll(function(){
-            var windowPos = $(window).scrollTop(); // get the offset of the window from the top of page
-            var windowHeight = $(window).height(); // get the height of the window
-            var docHeight = $(document).height();
+	<script src="../js/animate-scroll.js"></script>
+	<script>
+		anchoPag = $(window).width();
 
-            for (var i=0; i < aArray.length; i++) {
-                var theID = aArray[i];
-                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
-				var divPos = divPos - 200;
-                var divHeight = $(theID).height(); // get the height of the div in question
-                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                    $("a[href='" + theID + "']").addClass("activo");
-                } else {
-                    $("a[href='" + theID + "']").removeClass("activo");
-                }
-            }
+		if (anchoPag > 767) {
+			$(document).animateScroll();
 
-            if(windowPos + windowHeight == docHeight) {
-                if (!$(".menuMicrocementos li:last-child a").hasClass("activo")) {
-                    var navActiveCurrent = $("activo").attr("href");
-                    $("a[href='" + navActiveCurrent + "']").removeClass("activo");
-                    $(".menuMicrocementos li:last-child a").addClass("activo");
-                }
-            }
-        });
-    });
-</script>
+		}
+	</script>
 
-<script type="text/javascript" src="../js/parallax.js"></script>
-<script type="text/javascript" src="../js/codigo2.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			altoPag = $(window).height();
+			document.getElementById('ocultomovil').style.maxHeight = altoPag;
+		});
+	</script>
 
-<script src="../js/TweenMax.min.js"></script>
-
-<script src="../js/animate-scroll.js"></script>
-<script>
-anchoPag = $(window).width();
-
-	if(anchoPag > 767) {
-      $(document).animateScroll();
-
-	}
-</script>
-
-<script type="text/javascript">
-
-$(document).ready(function() {
-	altoPag = $(window).height();
-	document.getElementById('ocultomovil').style.maxHeight = altoPag;
-});
-</script>
-
-<script type="text/javascript"> document.getElementById('body').setAttribute("style",""); document.getElementById('body').style.cssText="";  </script>
+	<script type="text/javascript">
+		document.getElementById('body').setAttribute("style", "");
+		document.getElementById('body').style.cssText = "";
+	</script>
 
 
 
-<!--div id="barritaloca">
+	<!--div id="barritaloca">
 <div id="textoBarritaloca">
 Questo sito web utilizza proprie e di terze parti i cookie per il funzionamento e per ottenere statistiche di utilizzo anonime del web. <br />
 Se si continua a navigare considerare di accettare il suo utilizzo. È possibile modificare le impostazioni o avere maggiori informazioni .  <a href="https://www.topciment.com/it/nota-legale.html" target="_blank" style="color:#fff">Politica di cookie</a>. <a href="javascript:void(0);" style="padding:4px;background:#F5B026;text-decoration:none;color:#fff;" onclick="PonerCookie();"><b>ACCETTO</b></a>
@@ -999,6 +1361,8 @@ function PonerCookie(){
  document.getElementById("barritaloca").style.display="none";
 }
 </script-->
-<script type='text/javascript' src='https://www.topciment.com/zcga.js'></script>
-<script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script></body>
+	<script type='text/javascript' src='https://www.topciment.com/zcga.js'></script>
+	<script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script>
+</body>
+
 </html>

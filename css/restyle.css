@@ -96,7 +96,7 @@
 }
 
 .links {
-  color: #053f7e;
+  color: #053f7e !important;
 }
 
 .linkC:hover {

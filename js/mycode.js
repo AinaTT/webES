@@ -262,23 +262,23 @@ $(document).ready(function () {
       customHideMessage: undefined,
       customShowChecks: undefined,
       cookieTypes: [{
-          type: "Essentials",
-          value: "Essentials",
+          type: "Essentialss",
+          value: "Essentialss",
           description: "These cookies are essential for the website to function properly."
         },
         {
-          type: "Marketing ",
-          value: "Marketing",
+          type: "Marketingg ",
+          value: "Marketingg",
           description: "Cookies related to marketing, newsletters, social media, etc."
         },
         {
-          type: "Preferences",
-          value: "Preferences",
+          type: "Preferencess",
+          value: "Preferencess",
           description: "These are cookies related to your site's preferences, for example: remembering your user name, site colors, etc."
         },
         {
-          type: "Analytics",
-          value: "Analytics",
+          type: "Analyticss",
+          value: "Analyticss",
           description: "Cookies related to site visits, browser type, etc."
         }
       ],
