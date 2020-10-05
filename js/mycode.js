@@ -233,8 +233,9 @@ $(document).ready(function () {
 
     });
 
+
   } else {
-    xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
+    // xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
     $('.zsiq_floatmain').css({
       'display': 'none !important'
     });
@@ -294,7 +295,7 @@ $(document).ready(function () {
     });
   }
   if (window.location.href.indexOf("bot") >= 0) {
-    xenioowebchat.Start("58a8dc52-1e3d-4295-8b8e-040257ffc9cd");
+    xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
   }
 
 
