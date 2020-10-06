@@ -1,28 +1,46 @@
 ﻿<!DOCTYPE html>
 <html lang="it">
+
 <head>
-<meta charset="utf-8"><meta name="theme-color" content="#000"/>
-<meta name="viewport" content="width=device-width" />
-<!--[if lt IE 9]> <script src="../js/css3-mediaqueries.js"></script> <![endif]-->
-<link rel="stylesheet" type="text/css" href="../css/estilo.css">
-<link rel="icon" type="image/png" href="https://www.topciment.com/favicon.png" />
-<meta name="Language" content="IT" />
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#000" />
+    <meta name="viewport" content="width=device-width" />
+    <!--[if lt IE 9]> <script src="../js/css3-mediaqueries.js"></script> <![endif]-->
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="icon" type="image/png" href="https://www.topciment.com/favicon.png" />
+    <meta name="Language" content="IT" />
 
-<link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
+    <link
+        href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&subset=latin,latin-ext'
+        rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="../css/animate.css">
+    <link rel="stylesheet" href="../css/animate.css">
+    <!-- Nuevo estilo y js de página -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/restyle.css">
+    <script type='text/javascript' src='../js/mycode.js'></script>
+    <!-- End new styles -->
+
+
+    <title> Ristrutturazione con microcemento di pavimenti e pareti di una casa.</title>
+    <meta name="description"
+        content=" Duplex con microcemento in pavimenti e pareti. Ristrutturazione a carico di Interiorisme & Projectes di Disseny." />
 
 
 
-<title> Ristrutturazione con microcemento di pavimenti e pareti di una casa.</title>
-<meta name="description" content=" Duplex con microcemento in pavimenti e pareti. Ristrutturazione a carico di Interiorisme & Projectes di Disseny." />
+    <style type="text/css">
+        div.ocultable {
+            display: none;
+        }
+    </style>
 
-
-
-<style type="text/css">div.ocultable{display: none;}</style>
-
- <!--[if IE]>
+    <!--[if IE]>
         <script type="text/javascript">
              var console = { log: function() {} };
         </script>
@@ -32,161 +50,198 @@
     <script src="../js/jquery-ui.min.js"></script>
 
 
-<script type="text/javascript">
+    <script type="text/javascript">
+        function mostrar() {
+            document.getElementById('oculto').style.display = 'block';
+            document.getElementById('visible').style.display = 'none';
+        }
 
-function mostrar(){
-document.getElementById('oculto').style.display = 'block';
-document.getElementById('visible').style.display = 'none';}
+        function ocultar() {
+            document.getElementById('oculto').style.display = 'none';
+            document.getElementById('visible').style.display = 'block';
+        }
 
-function ocultar(){
-document.getElementById('oculto').style.display = 'none';
-document.getElementById('visible').style.display = 'block';}
-function mostrarmovil(){
-document.getElementById('ocultomovil').style.display = 'block';
-document.getElementById('visiblemovil').style.display = 'none';}
+        function mostrarmovil() {
+            document.getElementById('ocultomovil').style.display = 'block';
+            document.getElementById('visiblemovil').style.display = 'none';
+        }
 
-function ocultarmovil(){
-document.getElementById('ocultomovil').style.display = 'none';
-document.getElementById('visiblemovil').style.display = 'block';
+        function ocultarmovil() {
+            document.getElementById('ocultomovil').style.display = 'none';
+            document.getElementById('visiblemovil').style.display = 'block';
 
-}
-function mostrarSubmenu(){
+        }
 
-	if (document.getElementById)
-    {
-        var aux = document.getElementById('submenumovil').style;
-        aux.display = aux.display? "":"block";
-    }
+        function mostrarSubmenu() {
 
-}
+            if (document.getElementById) {
+                var aux = document.getElementById('submenumovil').style;
+                aux.display = aux.display ? "" : "block";
+            }
 
-$(document).ready(function() {
-	$altoPag = $(window).height();
-	document.getElementById('ocultomovil').style.height =300;
-});
+        }
+
+        $(document).ready(function () {
+            $altoPag = $(window).height();
+            document.getElementById('ocultomovil').style.height = 300;
+        });
     </script>
 
 </head>
+
 <body>
 
-<div id="header">
+    <div id="header">
 
-<div class="menuBar">
-    <div class="menuBarContent">
+        <div class="menuBar">
+            <div class="menuBarContent">
 
-        <a href="index.html"><img class="imgLogo" src="../imagenes/logo-top-ciment.png" alt="Topciment"></a>
+                <a href="index.html"><img class="imgLogo logo1" src="../imagenes/microcemento-topciment.png"
+                        alt="Topciment">
+                    <img class="imgLogo logo2" src="../imagenes/logos/logoBlanco2.png" alt="Topciment"
+                        style="max-width: 60px; max-height: 60px;">
+                </a>
 
+                <div class="menu idiomas">
+                    <ul>
+                        <li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+                        <li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a>
+                        </li>
+                        <li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a>
+                        </li>
+                        <li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a>
+                        </li>
+                        <li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it"
+                                class="activolang">It</a></li>
+                        <li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a>
+                        </li>
+                        <li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a>
+                        </li>
+                        <li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+                    </ul>
+                </div>
 
-        <div class="menu idiomas">
-            <ul>
-                <li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
-                <li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a></li>
-                <li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
-                <li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a></li>
-                <li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it" class="activolang">It</a></li>
-                <li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
-	<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a></li>
-	<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
-            </ul>
-        </div>
-
-        <div class="menu botones">
-            <ul>
-                <li><a href="informazioni-microcemento.html">Microcemento</a></li>
-				<li><a href="colori-di-microcemento.html">Colori</a></li>
-				<li><a href="sistemi.html">Sistemi</a></li>
-                <li><a href="galleria.html" class="activo">Galleria</a></li>
-                <li><a href="garanzia.html">Garanzia</a></li>
-                <li><a href="professionisti.html">Professionisti</a></li>
-<li><a href="distributori.html">Distributori</a></li>
-                <li><a href="chi-siamo.html">Chi Siamo</a></li>
-                <li><a href="notizie.html">Notizie</a></li>
-                <li><a href="contattaci.html">Contattaci</a></li>
-            </ul>
+                <div class="menu botones" style="margin-left:100px">
+                    <ul>
+                        <li><a href="informazioni-microcemento.html">Microcemento</a></li>
+                        <li><a href="sistemi.html">Sistemi</a></li>
+                        <li><a class="activo" href="galleria.html">Galleria</a></li>
+                        <li><a href="professionisti.html">Professionisti</a></li>
+                        <li><a href="notizie.html">Notizie</a></li>
+                        <li><a href="contattaci.html">Contattaci</a></li>
+                    </ul>
+                    <div class="dropdown" style="top: -20px;">
+                        <button class="dropbtn"><img src="../imagenes/flags/italy.png"></button>
+                        <div class="dropdown-content">
+                            <a href="https://www.topciment.com"> <img src="../imagenes/flags/spain.png"> </a>
+                            <a href="https://www.topciment.com/en/"><img src="../imagenes/flags/united-kingdom.png"></a>
+                            <a href="https://www.topciment.com/fr/"><img src="../imagenes/flags/france.png"></a>
+                            <a href="https://www.topciment.com/de/"><img src="../imagenes/flags/germany.png"></a>
+                            <a href="https://www.topciment.com/nl/"><img src="../imagenes/flags/netherlands.png"></a>
+                            <a href="https://www.topciment.com/gr/"><img src="../imagenes/flags/greece.png"></a>
+                            <a class="ultimo" href="https://www.topciment.ru/"><img
+                                    src="../imagenes/flags/russia.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
     <div class="contenedorMenuOculto">
 
-    <div class="menuOculto menuGaleria">
-        <ul>
-            <li><a href="#up" style="font-size:26px">Residenza Figueretes</a></li>
-            <li><a href="galleria.html#proyectos">Torna indietro</a></li>
-        </ul>
-    </div>
-
-</div>
-
-<!-- MENU ESTADO INICIAL MOVIL-->
-
-<div id="visiblemovil"><div style="opacity:1; padding-top:0px; z-index:1000;"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="mostrarmovil()" ><img src="../imagenes/icono-menu-abrir-white.png" width="26" height="20" alt="menu" /></a></div></div>
-
-<!-- MENU DESPLEGADO MOVIL-->
-
-<div id="ocultomovil">
-<div id="ocultomovilinterno">
-<div id="menuidiomasmovil">
+        <div class="menuOculto menuGaleria">
             <ul>
-                <li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
-                <li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a></li>
-                <li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
-                <li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a></li>
-                <li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it" class="activolang">It</a></li>
-                <li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
-	<li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a></li>
-	<li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+                <li><a href="#up" style="font-size:26px">Residenza Figueretes</a></li>
+                <li><a href="galleria.html#proyectos">Torna indietro</a></li>
             </ul>
         </div>
-<div id="menuocultomovil"><ul>
-				<li><a href="informazioni-microcemento.html" onclick="ocultarmovil()" >Microcemento</a>
-                <li><a href="colori-di-microcemento.html" onclick="ocultarmovil()">Colori</li>
-<li><a href="sistemi.html" onclick="ocultarmovil()">Sistemi</a></li>
-<li><a href="galleria.html" onclick="ocultarmovil()">Galleria</a></li>
-<li><a href="garanzia.html" onclick="ocultarmovil()">Garanzia</a></li>
-<li><a href="professionisti.html" onclick="ocultarmovil()">Professionisti</a></li>
-<li><a href="distributori.html" onclick="ocultarmovil()">Distributori</a></li>
-<li><a href="chi-siamo.html" onclick="ocultarmovil()">Chi Siamoi</a></li>
-<li><a href="notizie.html" onclick="ocultarmovil()">Notizie</a></li>
-<li><a href="contattaci.html" onclick="ocultarmovil()">Contattaci</a></li>
-		</ul>
-        </div></div>
-<div id="cerrarEquis"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="ocultarmovil()"><img src="../imagenes/equis-cerrar.png" width="28" height="28" alt="Cerrar" /></a></div>
-</div>
+
+    </div>
+
+    <!-- MENU ESTADO INICIAL MOVIL-->
+
+    <div id="visiblemovil">
+        <div style="opacity:1; padding-top:0px; z-index:1000;"><a href="#menu"
+                style="text-decoration:none; color:#000; font-size:30px; font-weight:100" onclick="mostrarmovil()"><img
+                    src="../imagenes/icono-menu-abrir-white.png" width="26" height="20" alt="menu" /></a></div>
+    </div>
+
+    <!-- MENU DESPLEGADO MOVIL-->
+
+    <div id="ocultomovil">
+        <div id="ocultomovilinterno">
+            <div id="menuidiomasmovil">
+                <ul>
+                    <li class="lang"><a href="https://www.topciment.com" rel="alternate" hreflang="es">Es</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/en/" rel="alternate" hreflang="en">En</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/fr/" rel="alternate" hreflang="fr">Fr</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/de/" rel="alternate" hreflang="de">De</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/it/" rel="alternate" hreflang="it"
+                            class="activolang">It</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/nl/" rel="alternate" hreflang="nl">Nl</a></li>
+                    <li class="lang"><a href="https://www.topciment.com/gr/" rel="alternate" hreflang="gr">Gr</a></li>
+                    <li class="lang"><a href="https://www.topciment.ru/" rel="alternate" hreflang="ru">Ru</a></li>
+                </ul>
+            </div>
+            <div id="menuocultomovil">
+                <ul>
+                    <li><a href="informazioni-microcemento.html" onclick="ocultarmovil()">Microcemento</a>
+                    <li><a href="colori-di-microcemento.html" onclick="ocultarmovil()">Colori</li>
+                    <li><a href="sistemi.html" onclick="ocultarmovil()">Sistemi</a></li>
+                    <li><a href="galleria.html" onclick="ocultarmovil()">Galleria</a></li>
+                    <li><a href="garanzia.html" onclick="ocultarmovil()">Garanzia</a></li>
+                    <li><a href="professionisti.html" onclick="ocultarmovil()">Professionisti</a></li>
+                    <li><a href="distributori.html" onclick="ocultarmovil()">Distributori</a></li>
+                    <li><a href="chi-siamo.html" onclick="ocultarmovil()">Chi Siamoi</a></li>
+                    <li><a href="notizie.html" onclick="ocultarmovil()">Notizie</a></li>
+                    <li><a href="contattaci.html" onclick="ocultarmovil()">Contattaci</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="cerrarEquis"><a href="#menu" style="text-decoration:none; color:#000; font-size:30px; font-weight:100"
+                onclick="ocultarmovil()"><img src="../imagenes/equis-cerrar.png" width="28" height="28"
+                    alt="Cerrar" /></a></div>
+    </div>
 
 
-<div class="fullscreen background parallax" style="background-image:url('../imagenes/proyecto-francisco-jesus01.jpg');" data-img-width="1500" data-img-height="1000" data-diff="100">
-<div class="content-a" id="up">
-    <!--<div class="contenedorTexto">
+    <div class="fullscreen background parallax"
+        style="background-image:url('../imagenes/proyecto-francisco-jesus01.jpg');" data-img-width="1500"
+        data-img-height="1000" data-diff="100">
+        <div class="content-a" id="up">
+            <!--<div class="contenedorTexto">
 	  <div class="content-b textoAbajoDerecha wow fadeInLeft">
 			El <strong>microcemento</strong> fino tradicional, de acabado sedoso y agradable al tacto, ha sido concebido para ser utilizado únicamente en paredes y superficies no transitables.
         </div>
     </div> -->
-</div>
-</div>
+        </div>
+    </div>
 
-<div class="contenedorMenuOculto"><div class="contenedorMagenDerecha">
-<h1 id="suelosDeMicrocementoGaleriaH1" class="wow fadeInLeft" style="width:100%">Residenza Figueretes</h1>
-<h2 id="galeriaH2" class="wow fadeInLeft justificado">Barcelona, Spain.<br>
-Lara Pujol | Interiorisme & Projectes de Disseny.</h2>
-</div>
-</div>
-	<div id="separador50px"></div>
-<div class="contenedorMenuOculto">
-<div class="contenedorMagenDerecha" >
-
-
-<div id="fotoAnchoTotal" class="wow fadeInRight" style="float:left"><img src="../imagenes/proyecto-francisco-jesus02.jpg" alt="Topciment" width="100%"></div>
-	<div id="separador20px"></div>
+    <div class="contenedorMenuOculto">
+        <div class="contenedorMagenDerecha">
+            <h1 id="suelosDeMicrocementoGaleriaH1" class="wow fadeInLeft" style="width:100%">Residenza Figueretes</h1>
+            <h2 id="galeriaH2" class="wow fadeInLeft justificado">Barcelona, Spain.<br>
+                Lara Pujol | Interiorisme & Projectes de Disseny.</h2>
+        </div>
+    </div>
+    <div id="separador50px"></div>
+    <div class="contenedorMenuOculto">
+        <div class="contenedorMagenDerecha">
 
 
-<div id="fotoAnchoTotal" class="wow fadeInLeft" style="float:left;"><img src="../imagenes/proyecto-francisco-jesus03.jpg" alt="Topciment" width="100%"></div>
-	<div id="separador20px"></div>
-<div id="fotoAnchoTotal" class="wow fadeInRight" style="float:left;"><img src="../imagenes/proyecto-francisco-jesus04.jpg" alt="Topciment" width="100%"></div>
-	<div id="separador20px"></div>
+            <div id="fotoAnchoTotal" class="wow fadeInRight" style="float:left"><img
+                    src="../imagenes/proyecto-francisco-jesus02.jpg" alt="Topciment" width="100%"></div>
+            <div id="separador20px"></div>
 
 
-<!--
+            <div id="fotoAnchoTotal" class="wow fadeInLeft" style="float:left;"><img
+                    src="../imagenes/proyecto-francisco-jesus03.jpg" alt="Topciment" width="100%"></div>
+            <div id="separador20px"></div>
+            <div id="fotoAnchoTotal" class="wow fadeInRight" style="float:left;"><img
+                    src="../imagenes/proyecto-francisco-jesus04.jpg" alt="Topciment" width="100%"></div>
+            <div id="separador20px"></div>
+
+
+            <!--
 <div id="fotoAnchoTotal" class="wow fadeInLeft" style="float:left"><img src="../imagenes/proyecto-picaporte05.jpg" alt="Topciment" width="100%"></div>
 	<div id="separador20px"></div>
 
@@ -203,13 +258,13 @@ Lara Pujol | Interiorisme & Projectes de Disseny.</h2>
 
 
 	<div id="separador20px"></div> -->
-<!--
+            <!--
 <div id="fotoAnchoTotal" class="wow fadeInLeft" style="float:left"><img src="../imagenes/proyecto-picaporte09.jpg" alt="Topciment" width="100%"></div>
 
 <div id="separador20px"></div>
 
 <div id="fotoAnchoTotal" class="wow fadeInRight" style="float:left;"><img src="../imagenes/proyecto-picaporte08.jpg" alt="Topciment" width="100%"></div>-->
-<!--
+            <!--
 <div class="wow fadeInLeft" style="float:right; width:49%;"><img src="../imagenes/proyecto-casa-isabel10.jpg" alt="Topciment" width="100%"></div>
 
 <div id="separador20px"></div>
@@ -222,160 +277,278 @@ Lara Pujol | Interiorisme & Projectes de Disseny.</h2>
 
 <div class="wow fadeInLeft" style="float:right; width:49%;"><img src="../imagenes/proyecto-casa-isabel13.jpg" alt="Topciment" width="100%"></div>
  -->
-</div>
-	<div id="separador0px" class="preguntasFrecuentesIpad"></div>
+        </div>
+        <div id="separador0px" class="preguntasFrecuentesIpad"></div>
 
 
 
-</div>
+    </div>
 
-<div style="float:none; clear:both; height:20px;"></div>
-
-
-
-<div class="footerInterior">
-    <div class="footerContent">
-<a href="https://www.youtube.com/user/TopCiment" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-youtube fa-stack-1x"></i>
-        </span></span></a>
-<a href="https://www.instagram.com/topciment/" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-instagram  fa-stack-1x"></i>
-        </span></span></a>
-        &nbsp;<a href="https://api.whatsapp.com/send?phone=34647913586&text=Hola&source=&data=" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-whatsapp fa-stack-1x"></i>
-        </span></a>
-        &nbsp;<a href="https://www.pinterest.com/topciment/" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-pinterest fa-stack-1x"></i>
-        </span></a>
-        &nbsp;
-        <a href="https://es-es.facebook.com/topciment.microcemento" target="_blank"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-facebook fa-stack-1x"></i>
-        </span></a>
-        &nbsp;
-        <a href="https://twitter.com/topciment" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-twitter fa-stack-1x"></i>
-        </span></a>
-        &nbsp;
-        <a href="https://www.linkedin.com/company/2880536/" target="_blank"><span class="fa-stack"><span class="fa-stack">
-          <i class="fa fa-circle fa-stack-2x icon"></i>
-          <i class="fa fa-linkedin fa-stack-1x"></i>
-        </span></a>
-       <p>Rosas 33,  · Manises 46940 · Spagna · Telefono: <a href="tel:+34963925989" class="textoBlanco">+34 963 92 59 89</a> · <a href="mailto:info@topciment.com" class="negrita textoBlanco">info@topciment.com</a></p>
-        <p><a href="termini-condizioni-e-dichiarazione-sulla-privacy.html" rel="nofollow" class="textoBlanco">Termini, condizioni e dichiarazione sulla privacy</a> | <a href="nota-legale.html" rel="nofollow" class="textoBlanco">Nota Legale</a></p>
-
-  </div>
-</div>
-<script src="../js/jquery-2.1.4.min.js"></script>
-
-<script languaje="Javascript">
-<!--
-document.write('<style type="text/css">div.ocultable{display: none;}</style>');
-function MostrarOcultar(capa,enlace)
-{
-    if (document.getElementById)
-    {
-        var aux = document.getElementById(capa).style;
-        aux.display = aux.display? "":"block";
-    }
-}
-
-//-->
-</script>
-
-<script type="text/javascript">
+    <div style="float:none; clear:both; height:20px;"></div>
 
 
-// Alto de la ventana del navegador
-$(document).ready(function() {
-	altoPag = $(window).height();
-	altoPagOk = altoPag - 135;
 
-	altoMenu = $('.menuGaleria').height();
-		//topMenu=((altoPagOk/2) - (altoMenu/2) + 135);
-topMenu=200;
+    <footer class="footerp">
+        <div class="contenedorMenuOculto contenedorF">
+            <div class="row row1">
+                <div class="col-md-3 col1F">
+                    <h6 class="tituloF productosF"><strong>PRODOTTI</strong></h6>
+                    <ul class="ulF productosF">
+                        <li class="sttandardF"><a class="linkB"
+                                href="sistemi/sttandard-microcemento-bicomponente.html">Microcemento
+                                bicomponente</a></li>
+                        <li class="evoluttionF"><a class="linkB"
+                                href="sistemi/evoluttion-microcemento-monocomponente.html">Microcemento monocomponente
+                            </a></li>
+                        <li class="efecF"><a class="linkB"
+                                href="sistemi/efectto-microcemento-pronto-all-uso.html">Microcemento
+                                pronto all'uso</a></li>
+                        <li class="puremF"><a class="linkB" href="sistemi/pure-mettal-rivestimento-metallico.html">
+                                Rivestimento
+                                metallico </a></li>
+                        <li class="classicF"><a class="linkB"
+                                href="sistemi/classic-mettal-vernici-metallizzate.html">Vernici
+                                metallizzate</a>
+                        </li>
+                        <li class="elitteF"><a class="linkB"
+                                href="sistemi/elitte-velature-e-pigmenti-metalizzati.html">Velature e
+                                pigmenti metalizzati</a></li>
+                        <li class="primacemF"><a class="linkB" href="sistemi/primacem-primers.html">Primers</a></li>
+                        <li class="arcocemF"><a class="linkB" href="sistemi/arcocem-pigmenti.html">Pigmenti</a></li>
+                        <li class="topsealerF"><a class="linkB" href="sistemi/topsealer-vernici.html">Vernici</a></li>
+                        <li class="limpieF"><a class="linkB" href="sistemi/pulizia-e-cura-del-microcemento.html">Pulizia
+                                e
+                                cura del
+                                microcemento</a></li>
+                        <li class="herramF"><a class="linkB" href="sistemi/strumenti.html">Strumenti</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col2F">
+                    <h6 class="tituloF proyectosF"><strong>PROGETTI</strong></h6>
+                    <ul class="ulF proyectos">
+                        <li class="suelosF"><a class="linkB" href="galleria.html#suelos">Rinnovamento del pavimento</a>
+                        </li>
+                        <li class="paredesF"><a class="linkB" href="galleria.html#paredes">Rivestimento pareti</a></li>
+                        <li class="banyoF"><a class="linkB" href="galleria.html#banyo">Ristrutturazione dei bagni</a>
+                        </li>
+                        <li class="cocinasF"><a class="linkB" href="galleria.html#cocinas">Ristrutturazione di
+                                cucine</a>
+                        </li>
+                        <li class="decontiuosF"><a class="linkB" href="galleria.html#decontinuos">Rivestimenti
+                                decorativi
+                                continui</a>
+                        </li>
+                        <li class="mueblesF"><a class="linkB" href="galleria.html#muebles">Arredo di mobili</a></li>
+                        <li class="azulejosF"><a class="linkB" href="galleria.html#azulejos">Coprire piastrelle</a></li>
+                        <li class="metalicosF"><a class="linkB" href="galleria.html#metalicos">Effetti metallizzati</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col3F">
+                    <h6 class="tituloF"><strong>PROFESSIONALI</strong></h6>
+                    <ul class="ulF profesionalesF">
+                        <li class="clientesF"><a class="linkB" href="portalcliente">Customer portal</a></li>
+                        <li class="distriF"><a class="linkB" href="distributori.html">Distributori</a></li>
+                        <li class="garantF"><a class="linkB" href="garanzia.html">Garanzia</a></li>
+                        <li class="fichatF"><a class="linkB" href="downloads.html#fichas-tecnicas-topciment">Schede
+                                tecniche</a>
+                        </li>
+                        <li class="descargasF"><a class="linkB" href="downloads.html#catalogo-topciment">Downloads</a>
+                        </li>
+                        <li class="videotutF"><a class="linkB" href="video-tutorials-microcement.html">Video
+                                tutorials</a>
+                        </li>
+                        <li class="calcF"><a class="linkB" href="../calc/index.html">Calcolatrice</a></li>
+                        <li class="selloF"><a class="linkB" href="marchio-di-qualita.html">Etichetta di qualità</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col4F">
+                    <h6 class="tituloF"><strong>L'AZIENDA</strong></h6>
+                    <ul class="ulF empresaF">
+                        <li class="nosotrosF"><a class="linkB" href="chi-siamo.html">Chi siamo</a></li>
+                        <li class="noticiasF"><a class="linkB" href="notizie.html">Notizie</a></li>
+                        <li class="contactoF"><a class="linkB" href="contattaci.html">Contatto</a></li>
+                        <li class="newsletterF"><a class="linkB" href="https://zc.vg/u1iSr">Iscriviti alla nostra
+                                newsletter</a>
+                        </li>
+                        <li class="atencionF">Assistenza cliente a lunedì al venerdì dalle 9:00 alle 18:00</li>
+                        <li class="numFooter">+34 963 92 59 89</li>
+                        <li class="emailF"> info@topciment.com</li>
+                    </ul>
+                    <p>
+                        <!-- Youtube -->
+                        <a class="linkB social1" href="https://www.youtube.com/user/TopCiment" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon"></i>
+                                <i class="fa fa-youtube fa-stack-1x"></i>
+                            </span></a>
+                        <!-- Instagrm -->
+                        <a class="linkB social2" href="https://www.instagram.com/topciment/" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon"></i>
+                                <i class="fa fa-instagram  fa-stack-1x"></i>
+                            </span></a>
+                        <!--  Whatsap -->
+                        <a class="linkB social3"
+                            href="https://api.whatsapp.com/send?phone=34647913586&amp;text=Hola&amp;source=&amp;data="
+                            target="_blank"><span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon"></i>
+                                <i class="fa fa-whatsapp fa-stack-1x"></i>
+                            </span></a>
+                        <!--Pinterest -->
+                        <a class="linkB social4" href="https://www.pinterest.com/topciment/" target="_blank"><span
+                                class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon"></i>
+                                <i class="fa fa-pinterest fa-stack-1x"></i>
+                            </span></a>
+                        <!--Facebook-->
+                        <a class="linkB social5" href="https://es-es.facebook.com/topciment.microcemento"
+                            target="_blank"><span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon"></i>
+                                <i class="fa fa-facebook fa-stack-1x"></i>
+                            </span></a>
+                        <!-- Twitter -->
+                        <a class="linkB social6" href="https://twitter.com/topciment" target="_blank"><span
+                                class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon"></i>
+                                <i class="fa fa-twitter fa-stack-1x"></i>
+                            </span></a>
+                        <!-- Linkedin -->
+                        <a class="linkB social7" href="https://www.linkedin.com/company/2880536/" target="_blank"><span
+                                class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon"></i>
+                                <i class="fa fa-linkedin fa-stack-1x"></i>
+                            </span></a>
+                    </p>
+                </div>
+            </div>
+            <div class="row row2">
+                <div class="col-md-1 col-12 col5F">
+                    <a href="index.html"><img src=" ../imagenes/logos/Topciment-cuadrado-blanco.png"
+                            class="img-fluid logoF" /></a>
+                </div>
+                <div class="col-md-11 col6F">
+                    <small class="direccionF"> © 2020 Grupo Negocios PO,S.L.U. Rosas 33, Manises 46940
+                        España</small><br class="brF">
+                    <small class="privaF">
+                        <a class="linkB politicaF"
+                            href=" https://www.topciment.com/it/termini-condizioni-e-dichiarazione-sulla-privacy.html"
+                            rel="nofollow">
+                            Termini, condizioni e dichiarazione sulla privacy</a> |
+                        <a class="linkB cookieF" href="https://www.topciment.com/it/nota-legale.html" rel="nofollow"
+                            class="textoBlanco">Nota Legale</a></small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/jquery-2.1.4.min.js"></script>
+
+    <script languaje="Javascript">
+        <!--
+        document.write('<style type="text/css">div.ocultable{display: none;}</style>');
+
+        function MostrarOcultar(capa, enlace) {
+            if (document.getElementById) {
+                var aux = document.getElementById(capa).style;
+                aux.display = aux.display ? "" : "block";
+            }
+        }
+
+        //
+        -->
+    </script>
+
+    <script type="text/javascript">
+        // Alto de la ventana del navegador
+        $(document).ready(function () {
+            altoPag = $(window).height();
+            altoPagOk = altoPag - 135;
+
+            altoMenu = $('.menuGaleria').height();
+            //topMenu=((altoPagOk/2) - (altoMenu/2) + 135);
+            topMenu = 200;
 
 
-	//$('#wrapper').css('height', $alto);
-	anchoPag = $(window).width();
+            //$('#wrapper').css('height', $alto);
+            anchoPag = $(window).width();
 
-	if(anchoPag > 1025) {
+            if (anchoPag > 1025) {
 
-		$('.menuGaleria').css('display', 'block');
-		$('.menuGaleria').css('top', topMenu);
-	}
+                $('.menuGaleria').css('display', 'block');
+                $('.menuGaleria').css('top', topMenu);
+            }
 
-});
+        });
 
-$(window).resize(function () {
-	ancho=$(window).width();
-	topMenu=200;
-
-
-	if(ancho > 1200) {
-
-		$('.menuGaleria').css('display', 'block');
-		$('.menuGaleria').css('top', topMenu);
-	}
-
-	if(ancho < 1199) {
-
-		$('.menuMicrocementos').css('display', 'none');
-		$('.menuGaleria').css('display', 'none');
-		$('.menuSistemas').css('display', 'none');
-		$('.menuColores').css('display', 'none');
-		$('.menuGarantia').css('display', 'none');
-		$('.menuProfesionales').css('display', 'none');
-		$('.menuDistribuidores').css('display', 'none');
-		$('.menuNosotros').css('display', 'none');
-		$('.menuContacto').css('display', 'none');
-	}
-
-});
-//-->
-</script>
-
-<!-- include jQuery -->
+        $(window).resize(function () {
+            ancho = $(window).width();
+            topMenu = 200;
 
 
-<script src="../js/wow.min.js"></script>
-<script>
-anchoPag = $(window).width();
+            if (ancho > 1200) {
 
-	if(anchoPag > 767) {
-      new WOW().init();
+                $('.menuGaleria').css('display', 'block');
+                $('.menuGaleria').css('top', topMenu);
+            }
 
-	}
-</script>
+            if (ancho < 1199) {
 
-<script type="text/javascript">
+                $('.menuMicrocementos').css('display', 'none');
+                $('.menuGaleria').css('display', 'none');
+                $('.menuSistemas').css('display', 'none');
+                $('.menuColores').css('display', 'none');
+                $('.menuGarantia').css('display', 'none');
+                $('.menuProfesionales').css('display', 'none');
+                $('.menuDistribuidores').css('display', 'none');
+                $('.menuNosotros').css('display', 'none');
+                $('.menuContacto').css('display', 'none');
+            }
 
-$(document).ready(function() {
-	altoPag = $(window).height();
-	document.getElementById('ocultomovil').style.maxHeight = altoPag;
-});
-</script>
+        });
+        //-->
+    </script>
 
-<script type="text/javascript" src="../js/parallax.js"></script>
-<script type="text/javascript" src="../js/codigo2.js"></script>
+    <!-- include jQuery -->
 
-<script type="text/javascript">
-var $zoho= $zoho || {salesiq:{values:{},ready:function(){}}};
-var d=document;s=d.createElement("script");
-s.type="text/javascript";
-s.defer=true;
-s.src="https://salesiq.zoho.com/gruponegociosposlu/button.ls?embedname=gruponegociosposlu";
-t=d.getElementsByTagName("script")[0];
-t.parentNode.insertBefore(s,t);
-document.write("<div id='zldbtnframe'></div>")
-</script>
 
-<!--div id="barritaloca">
+    <script src="../js/wow.min.js"></script>
+    <script>
+        anchoPag = $(window).width();
+
+        if (anchoPag > 767) {
+            new WOW().init();
+
+        }
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            altoPag = $(window).height();
+            document.getElementById('ocultomovil').style.maxHeight = altoPag;
+        });
+    </script>
+
+    <script type="text/javascript" src="../js/parallax.js"></script>
+    <script type="text/javascript" src="../js/codigo2.js"></script>
+
+    <script type="text/javascript">
+        var $zoho = $zoho || {
+            salesiq: {
+                values: {},
+                ready: function () {}
+            }
+        };
+        var d = document;
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.defer = true;
+        s.src = "https://salesiq.zoho.com/gruponegociosposlu/button.ls?embedname=gruponegociosposlu";
+        t = d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s, t);
+        document.write("<div id='zldbtnframe'></div>")
+    </script>
+
+    <!--div id="barritaloca">
 <div id="textoBarritaloca">
 Questo sito web utilizza proprie e di terze parti i cookie per il funzionamento e per ottenere statistiche di utilizzo anonime del web. <br />
 Se si continua a navigare considerare di accettare il suo utilizzo. È possibile modificare le impostazioni o avere maggiori informazioni .  <a href="https://www.topciment.com/it/nota-legale.html" target="_blank" style="color:#fff">Politica di cookie</a>. <a href="javascript:void(0);" style="padding:4px;background:#F5B026;text-decoration:none;color:#fff;" onclick="PonerCookie();"><b>ACCETTO</b></a>
@@ -414,6 +587,8 @@ function PonerCookie(){
  document.getElementById("barritaloca").style.display="none";
 }
 </script-->
-<script type='text/javascript' src='https://www.topciment.com/zcga.js'></script>
-<script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script></body>
+    <script type='text/javascript' src='https://www.topciment.com/zcga.js'></script>
+    <script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script>
+</body>
+
 </html>

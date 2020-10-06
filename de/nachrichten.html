@@ -168,6 +168,36 @@
                     </ul>
                 </div>
 
+                <script type="text/javascript">
+                    function mostrar() {
+                        document.getElementById('oculto').style.display = 'block';
+                        document.getElementById('visible').style.display = 'none';
+                    }
+
+                    function ocultar() {
+                        document.getElementById('oculto').style.display = 'none';
+                        document.getElementById('visible').style.display = 'block';
+                    }
+
+                    function mostrarmovil() {
+                        document.getElementById('ocultomovil').style.display = 'block';
+                        document.getElementById('visiblemovil').style.display = 'none';
+                    }
+
+                    function ocultarmovil() {
+                        document.getElementById('ocultomovil').style.display = 'none';
+                        document.getElementById('visiblemovil').style.display = 'block';
+                    }
+
+                    function mostrarSubmenu() {
+
+                        if (document.getElementById) {
+                            var aux = document.getElementById('submenumovil').style;
+                            aux.display = aux.display ? "" : "block";
+                        }
+
+                    }
+                </script>
                 <!-- Start Menu -->
                 <div class="menu botones" style="margin-left:100px">
                     <ul>

@@ -287,7 +287,7 @@ $(document).ready(function () {
 
 
   } else {
-    // xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
+    xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
     $('.zsiq_floatmain').css({
       'display': 'none !important'
     });
