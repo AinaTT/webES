@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="it">
+	<head>
+		<meta charset="utf-8"><meta name="theme-color" content="#000"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>Calculadora de microcemento TopCiment</title>
+		<link rel="stylesheet" href="themes/Bootstrap.css">
+		<link rel="stylesheet" href="themes/jquery.mobile.structure-1.4.0.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+		<script src="themes/jquery-1.8.2.min.js"></script>
+		<script src="themes/jquery.mobile-1.4.0.min.js"></script>
+
+		<style>
+			#myTable{ border: 1px solid #d6d6d6;}
+			thead {  background: #DFE2E3;}
+            th{ border-bottom: 1px solid #d6d6d6;}
+            tr:nth-child(even) {  background: #f3f3f3;}
+        </style>
+
+<script>
+$(document).ready(function(){
+
+// ### DATA BASE ### ///
+	// MICROS rendimiento según metros	// envase 20kg
+	var r_base_suelo_juntas = 3;
+	var r_base_pared_juntas = 3;
+	var r_base_suelo_liso = 2;
+	var r_base_pared_lisa = 2;
+	var r_base_suelo_stone = 1;
+	var r_base_suelo_stone_juntas = 2;
+
+	var r_fino = 0.6;		// envases 10kg y 20kg
+	var r_deck = 0.6;		// envase 20kg
+	var r_stone = 2;	// envase 20kg
+
+	// RESINA  rendimiento según kilos de micro no metros
+	var r_resina_base = 0.30;	// envases 5L y 25L
+	var r_resina_fino = 0.45;
+	var r_resina_deck = 0.30;
+	var r_resina_stone = 0.27;
+
+
+
+	// PROMOTOR  rendimiento según metros
+	var r_promotor = 0.07;	// envase 5L
+
+	var r_malla = 1;	// envase 50m
+
+	// Pigmentos, por mano / cantidad de manos pigmentadas en el sistema ¡¡¡POR ENVASE!!!
+	var pigmento_suelo_juntas = 3;// 2 base 1 deck  - 1 base
+	var pigmento_suelo_liso = 2;  // 1 base 1 deck  - 1 base
+	var pigmento_pared_juntas = 4;// 1 base 2 fino  - 2 base
+	var pigmento_pared_lisa = 3;  // 1 base 2 de fino - 1 base
+	var pigmento_suelo_stone = 2; // 1 base 1 stone - 1 base
+
+	// SELLADOR  rendimiento según metros
+	var r_prepol = 0.06;	// envase 5L
+	var r_sellador = 0.11;	// envase 6L
+// ### FIN DATA BASE ### ///
+
+
+	var metros_suelo = localStorage.getItem('metros_suelo');
+	var superficie_suelo = localStorage.getItem('superficie_suelo');
+	var color_suelo = localStorage.getItem('color_suelo');
+
+	var metros_pared = localStorage.getItem('metros_pared');
+	var superficie_pared = localStorage.getItem('superficie_pared');
+	var color_pared = localStorage.getItem('color_pared');
+
+	var metros_antideslizante = localStorage.getItem('metros_antideslizante');
+	var superficie_antideslizante = localStorage.getItem('superficie_antideslizante');
+	var color_antideslizante = localStorage.getItem('color_antideslizante');
+
+
+// ### ES SUELO
+	if( metros_suelo >= 1 && superficie_suelo != 'Escoge' ){
+
+		switch(superficie_suelo) {
+			case 'Terrazo o Marmol':
+				var promotor_suelo = 'Primacem Plus';
+				var kilos_base_suelo = Math.ceil( metros_suelo * r_base_suelo_liso);
+				break;
+			case 'Gres, azulejo o porcelánico (con juntas)':
+				var promotor_suelo = 'Primacem Plus';
+				var kilos_base_suelo = Math.ceil( metros_suelo * r_base_suelo_juntas);
+				break;
+			case 'Solera':
+				var promotor_suelo = 'Primacem ABS';
+				var kilos_base_suelo = Math.ceil( metros_suelo * r_base_suelo_liso);
+				break;
+			case 'Autonivelante':
+				var promotor_suelo = 'Primacem ABS';
+				var kilos_base_suelo = Math.ceil( metros_suelo * r_base_suelo_liso);
+				break;
+		}
+
+		var litros_promotor_suelo = Math.ceil( metros_suelo * r_promotor );
+		var kilos_micro_suelo = Math.ceil( metros_suelo * r_deck );
+		var unidades_base_suelo = Math.ceil( kilos_base_suelo / 20 );
+		var unidades_micro_suelo = Math.ceil( kilos_micro_suelo / 20 );
+		var litros_resina_base_suelo = ( kilos_base_suelo * r_resina_base );
+		var litros_resina_micro_suelo = ( kilos_micro_suelo * r_resina_deck );
+		var litros_resina_total_suelo = Math.ceil( litros_resina_base_suelo + litros_resina_micro_suelo );
+		var unidades_malla_suelo = Math.ceil( metros_suelo / 50 );
+		var unidades_pigmento_suelo = unidades_base_suelo + unidades_micro_suelo;
+		var litros_prepol_suelo = Math.ceil(  metros_suelo * r_prepol );
+		var litros_sellador_suelo = Math.ceil(  metros_suelo * r_sellador );
+
+		var suelo = '<strong>Tipo de soporte</strong>: ' + superficie_suelo + ' | <strong>Metros</strong>: ' + metros_suelo + ' | <strong>Color</strong>: ' + color_suelo;
+		var _suelo = '<tr><td>Promotor <strong>' + promotor_suelo + '</td><td>' + litros_promotor_suelo + ' litros </td></tr>' +
+		'<tr><td>Malla <strong>Builtex</strong> ' + metros_suelo + ' metros</td><td>' + unidades_malla_suelo + ' de 50 m2</td></tr>' +
+		'<tr><td><strong>Microcemento Microbase</strong></td><td> ' + kilos_base_suelo + ' kilos</td></tr>' +
+		'<tr><td><strong>Microcemento Microdeck</strong></td><td> ' + kilos_micro_suelo + ' kilos</td></tr>' +
+		'<tr><td><strong>Resina Acricem</strong></td><td> ' + litros_resina_total_suelo + ' litros</td></tr>' +
+		'<tr><td><strong>Dósis de pigmentos</strong> ' + unidades_pigmento_suelo + '</td><td>color ' + color_suelo +'</td></tr>' +
+		'<tr><td>Imprimación <strong>Prepol</strong></td><td> ' + litros_prepol_suelo + ' litros</td></tr>' +
+		'<tr><td><strong>Topsealer wt</strong></td><td> ' + litros_sellador_suelo + ' litros</td></tr>';
+
+		$('#suelo').html( suelo );
+		$('#_suelo').html( _suelo );
+
+	}
+
+
+// ### ES PARED
+	if( metros_pared >= 1 && superficie_pared != 'Escoge' ){
+		switch(superficie_pared) {
+			case 'Azulejo':
+				var promotor_pared = 'Primacem Plus';
+				var kilos_base_pared = Math.ceil( metros_pared * r_base_pared_juntas);
+				break;
+			case 'Pladur':
+				var promotor_pared = 'Primacem ABS';
+				var kilos_base_pared = Math.ceil( metros_pared * r_base_pared_lisa);
+				break;
+			case 'Enfoscado':
+				var promotor_pared = 'Acricem';
+				var kilos_base_pared = Math.ceil( metros_pared * r_base_pared_lisa);
+				break;
+		}
+
+		var litros_promotor_pared = Math.ceil( metros_pared * r_promotor );
+		var kilos_micro_pared = Math.ceil( metros_pared * r_fino);
+		var unidades_base_pared = Math.ceil( kilos_base_pared / 20 );
+		var unidades_micro_pared = Math.ceil( kilos_micro_pared / 20 );
+		var litros_resina_base_pared = ( kilos_base_pared * r_resina_base );
+		var litros_resina_micro_pared = ( kilos_micro_pared * r_resina_fino );
+		var litros_resina_total_pared = Math.ceil( litros_resina_base_pared + litros_resina_micro_pared );
+		var unidades_malla_pared = Math.ceil( metros_pared / 50 );
+		var unidades_pigmento_pared = unidades_base_pared + unidades_micro_pared;
+		var litros_prepol_pared = Math.ceil( metros_pared * r_prepol );
+		var litros_sellador_pared = Math.ceil( metros_pared * r_sellador );
+
+		var pared = '<strong>Tipo de soporte</strong>: ' + superficie_pared + ' | <strong>Metros</strong>: ' + metros_pared + ' | <strong>Color</strong>: ' + color_pared;
+
+		var _pared = '<tr><td>Promotor <strong>' + promotor_pared + '</strong></td><td> ' + litros_promotor_pared + ' litros</td></tr>' +
+		'<tr><td>Malla <strong>Builtex</strong> ' + metros_pared + ' metros</td><td>' + unidades_malla_pared + ' de 50 m2</td></tr>' +
+		'<tr><td><strong>Microcemento Microbase</strong></td><td> ' + kilos_base_pared + ' kilos</td></tr>' +
+		'<tr><td><strong>Microcemento Microfino</strong></td><td> ' + kilos_micro_pared + ' kilos</td></tr>' +
+		'<tr><td><strong>Resina Acricem</strong></td><td> ' + litros_resina_total_pared + ' litros</td></tr>' +
+		'<tr><td><strong>Dósis de pigmentos</strong> ' + unidades_pigmento_pared + '</td><td>color ' + color_pared +'</td></tr>' +
+		'<tr><td>Imprimación <strong>Prepol</strong></td><td> ' + litros_prepol_pared + ' litros</td></tr>' +
+		'<tr><td><strong>Topsealer wt</strong></td><td>' + litros_sellador_pared + ' litros</td></tr>';
+
+		$('#pared').html( pared );
+		$('#_pared').html( _pared );
+	}
+
+
+
+// ES ANTIDESLIZANTE
+	if( metros_antideslizante >= 1 && superficie_antideslizante != 'Escoge' ){
+
+		switch(superficie_suelo) {
+			case 'Solera':
+				var promotor_suelo = 'Primacem ABS';
+				var kilos_base_suelo = Math.ceil( metros_suelo * r_base_suelo_stone);
+				break;
+			case 'Pavimento cerámico (con juntas)':
+				var promotor_suelo = 'Primacem Plus';
+				var kilos_base_suelo = Math.ceil( metros_suelo * r_base_suelo_stone_juntas);
+				break;
+		}
+
+		var promotor_antideslizante = 'Primacem ABS';
+		var litros_promotor_antideslizante = Math.ceil( metros_antideslizante * r_promotor );
+		var kilos_base_antideslizante = Math.ceil( metros_antideslizante * r_base_suelo_stone );
+		var kilos_micro_antideslizante = Math.ceil( metros_antideslizante * r_stone );
+		var unidades_base_antideslizante = Math.ceil( kilos_base_antideslizante / 20 );
+		var unidades_micro_antideslizante = Math.ceil( kilos_micro_antideslizante / 20 );
+		var litros_resina_base_antideslizante = ( kilos_base_antideslizante * r_resina_base );
+		var litros_resina_micro_antideslizante = ( kilos_micro_antideslizante * r_resina_stone );
+		var litros_resina_total_antideslizante = Math.ceil( litros_resina_base_antideslizante + litros_resina_micro_antideslizante );
+		var unidades_malla_antideslizante = Math.ceil( metros_antideslizante / 50 );
+		var unidades_pigmento_antideslizante = unidades_micro_antideslizante;
+		var litros_prepol_antideslizante = Math.ceil( metros_antideslizante * r_prepol );
+		var litros_sellador_antideslizante = Math.ceil( metros_antideslizante * r_sellador );
+
+		var antideslizante	= '<strong>Tipo de soporte</strong>: ' + superficie_antideslizante + ' | <strong>Metros</strong>: ' + metros_antideslizante + ' | <strong>Color</strong>: ' + color_antideslizante;
+
+		var _antideslizante = '<tr><td>Promotor <strong>' + promotor_antideslizante + '</strong></td><td> ' + litros_promotor_antideslizante + ' litros</td></tr>' +
+		'<tr><td>Malla <strong>Builtex</strong> ' + metros_antideslizante + ' metros</td><td>' + unidades_malla_antideslizante + ' de 50 m2</td></tr>' +
+		'<tr><td><strong>Microcemento Microbase</strong></td><td> ' + kilos_base_antideslizante + ' kilos</td></tr>' +
+		'<tr><td><strong>Microcemento Microstone</strong></td><td> ' + kilos_micro_antideslizante + ' kilos</td></tr>' +
+		'<tr><td><strong>Resina Acricem</strong></td><td>' + litros_resina_total_antideslizante + ' litros</td></tr>' +
+		'<tr><td><strong>Dósis de pigmentos</strong> ' + unidades_pigmento_antideslizante + '</td><td>color ' + color_antideslizante +'</td></tr>' +
+		'<tr><td>Imprimación <strong>Prepol</strong></td><td> ' + litros_prepol_antideslizante + ' litros</td></tr>' +
+		'<tr><td><strong>Topsealer wt</strong></td><td> ' + litros_sellador_antideslizante + ' litros</td></tr>';
+
+		$('#antideslizante').html( antideslizante );
+		$('#_antideslizante').html( _antideslizante );
+	}
+
+});
+
+</script>
+
+
+	</head>
+	<body>
+		<div data-role="page" data-theme="a">
+			<div data-role="header" data-position="inline">
+				<h1>Calculadora TopCiment</h1>
+				<div data-role="navbar">
+					<ul>
+                    	<li><a href="#" data-icon="arrow-l" data-rel="back">volver</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div data-role="main" class="ui-content">
+
+				<h2>Has indicado para suelo</h2>
+                <p id="suelo"></p>
+                <table data-role="table" data-mode="" class="ui-responsive ui-shadow" id="myTable">
+                  <thead>
+                    <tr>
+                      <th>Producto necesario</th>
+                      <th>Uds. necesarias</th>
+                    </tr>
+                  </thead>
+                  <tbody id="_suelo">
+                    <tr>
+                      <td>No has indicado suelo</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>  <br/><hr/>
+
+				<h2>Has indicado para pared</h2>
+                <p id="pared"></p>
+                <table data-role="table" data-mode="" class="ui-responsive ui-shadow" id="myTable">
+                  <thead>
+                    <tr>
+                      <th>Producto necesario</th>
+                      <th>Uds. necesarias</th>
+                    </tr>
+                  </thead>
+                  <tbody id="_pared">
+                    <tr>
+                      <td>No has indicado pared</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>  <br/><hr/>
+
+				<h2>Has indicado para suelo antideslizante</h2>
+                <p id="antideslizante"></p>
+                <table data-role="table" data-mode="" class="ui-responsive ui-shadow" id="myTable">
+                  <thead>
+                    <tr>
+                      <th>Producto necesario</th>
+                      <th>Uds. necesarias</th>
+                    </tr>
+                  </thead>
+                  <tbody id="_antideslizante">
+                    <tr>
+                      <td>No has indicado suelo antideslizante</td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+			</div>
+
+            <div data-role="footer">
+                 <img src="themes/images/topciment-logo.jpg" id="logo" />
+            </div>
+		</div>
+	<script type='text/javascript' src='https://www.topciment.com/js/cookies.js'></script></body>
+</html>

@@ -16,6 +16,15 @@
     <link rel="stylesheet" href="../font-awesome-4.6.3/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../css/animate.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/restyle.css">
+<script type='text/javascript' src='../js/mycode.js'></script>
+<!-- End new styles -->
+
 
     <link rel="canonical" href="https://www.topciment.com/it/garanzia.html" />
 
@@ -124,8 +133,10 @@
         <div class="menuBar" style="position:fixed; transform: translate3d(0px, 0px, 1px);">
             <div class="menuBarContent">
 
-                <a href="index.html"><img class="imgLogo" src="../imagenes/logo-top-ciment.png" alt="Topciment"></a>
-
+             <a href="index.html"><img class="imgLogo logo1" src="../imagenes/microcemento-topciment.png" alt="Topciment">
+    <img class="imgLogo logo2" src="../imagenes/logos/logoBlanco2.png" alt="Topciment"
+        style="max-width: 60px; max-height: 60px;">
+</a>
 
                 <div class="menu idiomas">
                     <ul>
@@ -146,23 +157,29 @@
                     </ul>
                 </div>
 
-                <div class="menu botones">
-                    <ul>
-                        <li><a href="informazioni-microcemento.html">Microcemento</a>
-                        </li>
-                        <li><a href="colori-di-microcemento.html">Colori</a>
-                        </li>
-                        <li><a href="sistemi.html">Sistemi</a></li>
-                        <li><a href="galleria.html">Galleria</a></li>
-                        <li><a href="garanzia.html" class="activo">Garanzia</a></li>
-                        <li><a href="professionisti.html">Professionisti</a>
-                        </li>
-                        <li><a href="distributori.html">Distributori</a></li>
-                        <li><a href="chi-siamo.html">Chi Siamo</a></li>
-                        <li><a href="notizie.html">Notizie</a></li>
-                        <li><a href="contattaci.html">Contattaci</a></li>
-                    </ul>
-                </div>
+       <div class="menu botones" style="margin-left:100px">
+    <ul>
+        <li><a href="informazioni-microcemento.html">Microcemento</a></li>
+        <li><a href="sistemi.html">Sistemi</a></li>
+        <li><a  href="galleria.html">Galleria</a></li>
+        <li><a class="activo" href="professionisti.html">Professionisti</a></li>
+        <li><a href="notizie.html">Notizie</a></li>
+        <li><a href="contattaci.html">Contattaci</a></li>
+    </ul>
+    <div class="dropdown" style="top: -20px;">
+        <button class="dropbtn"><img src="../imagenes/flags/italy.png"></button>
+        <div class="dropdown-content">
+            <a href="https://www.topciment.com"> <img src="../imagenes/flags/spain.png"> </a>
+            <a href="https://www.topciment.com/en/"><img src="../imagenes/flags/united-kingdom.png"></a>
+            <a href="https://www.topciment.com/fr/"><img src="../imagenes/flags/france.png"></a>
+            <a href="https://www.topciment.com/de/"><img src="../imagenes/flags/germany.png"></a>
+            <a href="https://www.topciment.com/nl/"><img src="../imagenes/flags/netherlands.png"></a>
+            <a href="https://www.topciment.com/gr/"><img src="../imagenes/flags/greece.png"></a>
+            <a class="ultimo" href="https://www.topciment.ru/"><img src="../imagenes/flags/russia.png"></a>
+        </div>
+    </div>
+</div>
+
             </div>
         </div>
 
@@ -221,11 +238,11 @@
                     </li>
                     <li><a href="sistemi.html" onclick="ocultarmovil()">Sistemi</a></li>
                     <li><a href="galleria.html" onclick="ocultarmovil()">Galleria</a></li>
-                    <li><a href="garanzia.html" onclick="ocultarmovil()">Garanzia</a></li>
+                    <!--<li><a href="garanzia.html" onclick="ocultarmovil()">Garanzia</a></li>-->
                     <li><a href="professionisti.html" onclick="ocultarmovil()">Professionisti</a>
                     </li>
-                    <li><a href="distributori.html" onclick="ocultarmovil()">Distributori</a></li>
-                    <li><a href="chi-siamo.html" onclick="ocultarmovil()">Chi Siamoi</a></li>
+                    <!--<li><a href="distributori.html" onclick="ocultarmovil()">Distributori</a></li>-->
+                    <!--<li><a href="chi-siamo.html" onclick="ocultarmovil()">Chi Siamoi</a></li>-->
                     <li><a href="notizie.html" onclick="ocultarmovil()">Notizie</a></li>
                     <li><a href="contattaci.html" onclick="ocultarmovil()">Contattaci</a></li>
                 </ul>
@@ -239,7 +256,7 @@
 
 
     <div id="main">
-        <div class="container clearfix">
+        <div >
             <div id="content">
                 <section id="up">
                     <div class="fullscreen background parallax"
@@ -702,378 +719,155 @@
                 </div>
             </div>
 
-            <!--<div style="float:none; clear:both; height:50px;"></div>
-
-<div id="top" class="fullscreen background parallax" style="background-image:url('../imagenes/garantia11.jpg'); " data-img-width="1500" data-img-height="945" data-diff="100">
-</div>
-<div style="float:none; clear:both; height:10px;"></div> -->
-
-            <!--<div id="separador50px"></div>
- -->
-            <a id="certificados-y-ensayos"
-                style="display: block; height: 135px; margin-top: -135px; visibility: hidden;"></a>
-
-            <div class="contenedorMenuOculto">
-
-
-                <div class="contenedorMenuOculto">
-                    <div class="contenedorMagenDerecha">
-                        <div class="wow fadeInRight estiloNormal16justificado"
-                            style="float:left;  margin-left:0; margin-top:0;">
-                            <h2 id="queeselmicrocemento" data-animate-scroll='{"x": "-100",
-                    "y": "0",
-                    "alpha": "0",
-                    "duration": "1"}' class="anchoMinimo600px"><span style=" padding:5px;">Certificati e test</span>
-                            </h2>
-
-                            <p>Siamo a tua disposizione. Compila il modulo seguente per richiedere i certificati e i
-                                test relativi ai nostri prodotti di tuo interesse:</p>
-                            <br>
-                            <div id='crmWebToEntityForm' style='width:404px;margin:auto;'>
-                                <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'>
-                                <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads2193829000000221068
-                                    method='POST'
-                                    onSubmit='javascript:document.charset="UTF-8"; return checkMandatory2193829000000221068()'
-                                    accept-charset='UTF-8'>
-                                    <input type='text' style='display:none;' name='xnQsjsdp'
-                                        value='0bc3358bdd3baefdb791a8c5b584c69212d1c4bf9f87c329186bb76ccb66d5cf'></input>
-                                    <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
-                                    <input type='text' style='display:none;' name='xmIwtLD'
-                                        value='b9c761651d784b3338501c899dd43e5796545d326daca6ce03166c49f36a9af9'></input>
-                                    <input type='text' style='display:none;' name='actionType' value='TGVhZHM='></input>
-                                    <input type='text' style='display:none;' name='returnURL'
-                                        value='https://www.topciment.com/it/gracias.html'> </input><br></br>
-                                    <!-- Do not remove this code. -->
-                                    <input type='text' style='display:none;' id='ldeskuid' name='ldeskuid'></input>
-                                    <input type='text' style='display:none;' id='LDTuvid' name='LDTuvid'></input>
-                                    <!-- Do not remove this code. -->
-                                    <style>
-                                        #crmWebToEntityForm tr,
-                                        #crmWebToEntityForm td {
-                                            padding: 6px;
-                                            border-spacing: 0px;
-                                            border-width: 0px;
-                                        }
-                                    </style>
-                                    <table
-                                        style='width:404px;background-color:#ffffff;background-color:&#x23;ffffff;color:black'>
-                                        <tr>
-                                            <td colspan='2' align='left'
-                                                style='color:black;font-family:Arial;font-size:16px;word-break: break-word;'>
-                                                <strong>Hai bisogno di un consiglio&#x3f;</strong></td>
-                                        </tr> <br></br>
-                                        <tr>
-                                            <td style='width:260px;'><span
-                                                    style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Nome<span
-                                                        style='color:red;'>*</span></span><br><input type='text'
-                                                    maxlength='40' style='width:100%;' name='First Name'></input></td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-                                        <tr>
-                                            <td style='width:260px;'><span
-                                                    style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Cognome<span
-                                                        style='color:red;'>*</span></span><br><input type='text'
-                                                    maxlength='80' style='width:100%;' name='Last Name'></input></td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-                                        <tr>
-                                            <td style='width:260px;'><span
-                                                    style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Email<span
-                                                        style='color:red;'>*</span></span><br><input type='text'
-                                                    maxlength='100' style='width:100%;' name='Email'></input></td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-                                        <tr>
-                                            <td style='width:260px;'><span
-                                                    style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Numero
-                                                    di telefono<span style='color:red;'>*</span></span><br><input
-                                                    type='text' maxlength='30' style='width:100%;' name='Phone'></input>
-                                            </td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-                                        <tr>
-                                            <td style='width:260px;'><span
-                                                    style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Paese
-                                                    / Territorio<span style='color:red;'>*</span></span><br><input
-                                                    type='text' maxlength='100' style='width:100%;' name='City'></input>
-                                            </td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-                                        <tr>
-                                            <td style='width:260px;'><span
-                                                    style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Messagio<span
-                                                        style='color:red;'>*</span></span><br><textarea maxlength='2000'
-                                                    style='width:100%;' name='LEADCF9'
-                                                    style='width:100%;box-sizing:border-box;'>&nbsp;</textarea></td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-                                        <tr>
-                                            <td style='width:260px;'><span
-                                                    style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Ho
-                                                    letto e accetto<span style='color:red;'>*</span></span><br><input
-                                                    type='checkbox' name='LEADCF102'></input></td>
-                                            <td style='width: 140px;word-break: break-word; vertical-align: bottom;'><a
-                                                    href='https&#x3a;&#x2f;&#x2f;www.topciment.com&#x2f;it&#x2f;termini-condizioni-e-dichiarazione-sulla-privacy.html'
-                                                    target='_blank'>Termini, condizioni e dichiarazione sulla
-                                                    privacy</a>
-                                            </td>
-                                        <tr>
-                                            <td style='width:260px;'><span
-                                                    style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Accetto
-                                                    di ricevere comunicazioni commerciali<span
-                                                        style='color:red;'>*</span></span><br><input type='checkbox'
-                                                    name='LEADCF109'></input></td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-                                        <tr>
-                                            <td style='width:260px;'><span
-                                                    style='word-break: break-word; font-size:14px;font-family:Arial;width:100%;line-height: 22px;'>Autorizzazione
-                                                    del trasferimento dei dati a terzi<span
-                                                        style='color:red;'>*</span></span><br><input type='checkbox'
-                                                    name='LEADCF106'></input></td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-                                        <tr>
-                                            <td style='width:260px;box-sizing:border-box;'><span
-                                                    style='nowrap:nowrap;text-align:top;font-size:14px;font-family:Arial;width:100%;box-sizing:border-box;line-height:22px;'>Introduzca
-                                                    el captcha</span><br>
-                                                <input type='text' style='width:100%;box-sizing:border-box;'
-                                                    maxlength='80' name='enterdigest' /></td>
-                                            <td style='min-width:140px;'></td>
-                                        </tr>
-                                        <tr>
-                                            <!-- Do not remove this code. -->
-                                            <td style='width:260px;box-sizing:border-box;'><img id='imgid'
-                                                    src='https://crm.zoho.com/crm/CaptchaServlet?formId=b9c761651d784b3338501c899dd43e5796545d326daca6ce03166c49f36a9af9&grpid=0bc3358bdd3baefdb791a8c5b584c69212d1c4bf9f87c329186bb76ccb66d5cf'>
-                                                <a href='javascript:;' onclick='reloadImg()'>Recargar</a></td>
-                                            <td style='min-width:140px;'></td>
-                                        </tr>
-                                        <tr>
-                                        <tr style='display:none;'>
-                                            <td
-                                                style='word-break: break-word;text-align:top;font-size:14px;font-family:Arial;width:30%'>
-                                                Fuente de Posible cliente</td>
-                                            <td style='width:40%;'>
-                                                <select style='width:100%;box-sizing:border-box;' name='Lead Source'>
-                                                    <option value='-None-'>-None-</option>
-                                                    <option value='00&#x20;Importado&#x20;A3ERP'>00 Importado A3ERP
-                                                    </option>
-                                                    <option value='04&#x20;Captaci&oacute;n&#x20;nuestra'>04
-                                                        Captaci&oacute;n nuestra</option>
-                                                    <option value='05&#x20;Distribuidor'>05 Distribuidor</option>
-                                                    <option value='Cambio&#x20;de&#x20;nombre'>Cambio de nombre</option>
-                                                    <option value='Facebook'>Facebook</option>
-                                                    <option value='Feria'>Feria</option>
-                                                    <option value='Festool'>Festool</option>
-                                                    <option value='Recuperado&#x20;de&#x20;Topciment'>Recuperado de
-                                                        Topciment</option>
-                                                    <option value='Web'>Web</option>
-                                                </select></td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-                                        <tr>
-                                        <tr style='display:none;'>
-                                            <td
-                                                style='word-break: break-word;text-align:top;font-size:14px;font-family:Arial;width:30%'>
-                                                Empresa grupo</td>
-                                            <td style='width:40%;'>
-                                                <select style='width:100%;box-sizing:border-box;' name='LEADCF20'
-                                                    multiple>
-                                                    <option selected value='Topciment'>Topciment</option>
-                                                    <option value='Luxury&#x20;Concrete'>Luxury Concrete</option>
-                                                    <option value='Bet&oacute;n&#x20;Cir&eacute;'>Bet&oacute;n
-                                                        Cir&eacute;
-                                                    </option>
-                                                    <option value='Marca&#x20;Blanca&#x20;TT'>Marca Blanca TT</option>
-                                                    <option value='Generic&#x20;LX'>Generic LX</option>
-                                                    <option value='Smartcret'>Smartcret</option>
-                                                </select></td>
-                                            <td style='width: 140px;'></td>
-                                        </tr>
-
-                                        <tr>
-                                            <td colspan='2' align='center'
-                                                style='text-align:left; padding-top:15px;font-size:14px;'>
-                                                <input
-                                                    style='margin-right: 5px;cursor: pointer;font-size:14px;color:black'
-                                                    id='formsubmit' type='submit' value='Enviar'></input> <input
-                                                    type='reset' name='reset'
-                                                    style='cursor: pointer;font-size:14px;color:black'
-                                                    value='Restablecer'></input> </td>
-                                        </tr>
-                                    </table>
-                                    <script>
-                                        var mndFileds = new Array('First Name', 'Last Name', 'Phone', 'Email',
-                                            'LEADCF9',
-                                            'LEADCF102', 'LEADCF109', 'LEADCF106', 'City');
-                                        var fldLangVal = new Array('Nome', 'Cognome', 'Numero di telefono', 'Email',
-                                            'Messagio', 'Ho letto e accetto',
-                                            'Accetto di ricevere comunicazioni commerciali',
-                                            'Autorizzazione del trasferimento dei dati a terzi',
-                                            'Paese / Territorio');
-                                        var name = '';
-                                        var email = '';
-
-                                        /* Do not remove this code. */
-                                        function reloadImg() {
-                                            if (document.getElementById('imgid').src.indexOf('&d') !== -1) {
-                                                document.getElementById('imgid').src = document.getElementById('imgid')
-                                                    .src
-                                                    .substring(0, document.getElementById('imgid').src.indexOf('&d')) +
-                                                    '&d' + new Date().getTime();
-                                            } else {
-                                                document.getElementById('imgid').src = document.getElementById('imgid')
-                                                    .src + '&d' + new Date().getTime();
-                                            }
-                                        }
-
-                                        function checkMandatory2193829000000221068() {
-                                            for (i = 0; i < mndFileds.length; i++) {
-                                                var fieldObj = document.forms['WebToLeads2193829000000221068'][
-                                                    mndFileds[
-                                                        i]
-                                                ];
-                                                if (fieldObj) {
-                                                    if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length == 0) {
-                                                        if (fieldObj.type == 'file') {
-                                                            alert('Seleccione un archivo para cargar.');
-                                                            fieldObj.focus();
-                                                            return false;
-                                                        }
-                                                        alert(fldLangVal[i] + ' no puede estar vacío.');
-                                                        fieldObj.focus();
-                                                        return false;
-                                                    } else if (fieldObj.nodeName == 'SELECT') {
-                                                        if (fieldObj.options[fieldObj.selectedIndex].value ==
-                                                            '-None-') {
-                                                            alert(fldLangVal[i] + ' no puede ser nulo.');
-                                                            fieldObj.focus();
-                                                            return false;
-                                                        }
-                                                    } else if (fieldObj.type == 'checkbox') {
-                                                        if (fieldObj.checked == false) {
-                                                            alert('Please accept  ' + fldLangVal[i]);
-                                                            fieldObj.focus();
-                                                            return false;
-                                                        }
-                                                    }
-                                                    try {
-                                                        if (fieldObj.name == 'Last Name') {
-                                                            name = fieldObj.value;
-                                                        }
-                                                    } catch (e) {}
-                                                }
-                                            }
-                                            trackVisitor();
-                                            document.getElementById('formsubmit').disabled = true;
-                                        }
-                                    </script>
-                                    <script type='text/javascript' id='VisitorTracking'>
-                                        var $zoho = $zoho || {};
-                                        $zoho.salesiq = $zoho.salesiq || {
-                                            widgetcode: 'fab8868be7c7826bd4dfc38932c5e31667aa7f784083239cd30a0cd43fc6a2dd6a3b789df620b2847c948e7c2859b7e2',
-                                            values: {},
-                                            ready: function () {
-                                                $zoho.salesiq.floatbutton.visible('hide');
-                                            }
-                                        };
-                                        var d = document;
-                                        s = d.createElement('script');
-                                        s.type = 'text/javascript';
-                                        s.id = 'zsiqscript';
-                                        s.defer = true;
-                                        s.src = 'https://salesiq.zoho.com/widget';
-                                        t = d.getElementsByTagName('script')[0];
-                                        t.parentNode.insertBefore(s, t);
-
-                                        function trackVisitor() {
-                                            try {
-                                                if ($zoho) {
-                                                    var LDTuvidObj = document.forms['WebToLeads2193829000000221068'][
-                                                        'LDTuvid'
-                                                    ];
-                                                    if (LDTuvidObj) {
-                                                        LDTuvidObj.value = $zoho.salesiq.visitor.uniqueid();
-                                                    }
-                                                    var firstnameObj = document.forms['WebToLeads2193829000000221068'][
-                                                        'First Name'
-                                                    ];
-                                                    if (firstnameObj) {
-                                                        name = firstnameObj.value + ' ' + name;
-                                                    }
-                                                    $zoho.salesiq.visitor.name(name);
-                                                    var emailObj = document.forms['WebToLeads2193829000000221068'][
-                                                        'Email'
-                                                    ];
-                                                    if (emailObj) {
-                                                        email = emailObj.value;
-                                                        $zoho.salesiq.visitor.email(email);
-                                                    }
-                                                }
-                                            } catch (e) {}
-                                        }
-                                    </script>
-                                </form>
-                                <!-- Do not remove this code. -->
-                                <iframe name='captchaFrame' style='display:none;'></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
     </div>
 
     <div style="float:none; clear:both; height:100px;"></div>
 
-    <div class="footerInterior">
-        <div class="footerContent">
-            <a href="https://www.youtube.com/user/TopCiment" target="_blank"><span class="fa-stack"><span
-                        class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-youtube fa-stack-1x"></i>
-                    </span></span></a>
-            <a href="https://www.instagram.com/topciment/" target="_blank"><span class="fa-stack"><span
-                        class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-instagram  fa-stack-1x"></i>
-                    </span></span></a>
-            &nbsp;<a href="https://api.whatsapp.com/send?phone=34647913586&text=Hola&source=&data="
-                target="_blank"><span class="fa-stack"><span class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-whatsapp fa-stack-1x"></i>
-                    </span></a>
-            &nbsp;<a href="https://www.pinterest.com/topciment/" target="_blank"><span class="fa-stack"><span
-                        class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-pinterest fa-stack-1x"></i>
-                    </span></a>
-            &nbsp;
-            <a href="https://es-es.facebook.com/topciment.microcemento" target="_blank"><span class="fa-stack">
-                    <i class="fa fa-circle fa-stack-2x icon"></i>
-                    <i class="fa fa-facebook fa-stack-1x"></i>
-                </span></a>
-            &nbsp;
-            <a href="https://twitter.com/topciment" target="_blank"><span class="fa-stack"><span class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-twitter fa-stack-1x"></i>
-                    </span></a>
-            &nbsp;
-            <a href="https://www.linkedin.com/company/2880536/" target="_blank"><span class="fa-stack"><span
-                        class="fa-stack">
-                        <i class="fa fa-circle fa-stack-2x icon"></i>
-                        <i class="fa fa-linkedin fa-stack-1x"></i>
-                    </span></a>
-            <p>Rosas 33, · Manises 46940 · Spagna · Telefono: <a href="tel:+34963925989" class="textoBlanco">+34 963 92
-                    59 89</a> · <a href="mailto:info@topciment.com" class="negrita textoBlanco">info@topciment.com</a>
-            </p>
-            <p><a href="termini-condizioni-e-dichiarazione-sulla-privacy.html" rel="nofollow"
-                    class="textoBlanco">Termini, condizioni e dichiarazione sulla privacy</a> | <a
-                    href="nota-legale.html" rel="nofollow" class="textoBlanco">Nota Legale</a></p>
-
+    <footer class="footerp">
+    <div class="contenedorMenuOculto contenedorF">
+        <div class="row row1">
+            <div class="col-md-3 col1F">
+                <h6 class="tituloF productosF"><strong>PRODOTTI</strong></h6>
+                <ul class="ulF productosF">
+                    <li class="sttandardF"><a class="linkB"
+                            href="sistemi/sttandard-microcemento-bicomponente.html">Microcemento
+                            bicomponente</a></li>
+                    <li class="evoluttionF"><a class="linkB"
+                            href="sistemi/evoluttion-microcemento-monocomponente.html">Microcemento monocomponente
+                        </a></li>
+                    <li class="efecF"><a class="linkB"
+                            href="sistemi/efectto-microcemento-pronto-all-uso.html">Microcemento
+                            pronto all'uso</a></li>
+                    <li class="puremF"><a class="linkB" href="sistemi/pure-mettal-rivestimento-metallico.html">
+                            Rivestimento
+                            metallico </a></li>
+                    <li class="classicF"><a class="linkB"
+                            href="sistemi/classic-mettal-vernici-metallizzate.html">Vernici
+                            metallizzate</a>
+                    </li>
+                    <li class="elitteF"><a class="linkB"
+                            href="sistemi/elitte-velature-e-pigmenti-metalizzati.html">Velature e
+                            pigmenti metalizzati</a></li>
+                    <li class="primacemF"><a class="linkB" href="sistemi/primacem-primers.html">Primers</a></li>
+                    <li class="arcocemF"><a class="linkB" href="sistemi/arcocem-pigmenti.html">Pigmenti</a></li>
+                    <li class="topsealerF"><a class="linkB" href="sistemi/topsealer-vernici.html">Vernici</a></li>
+                    <li class="limpieF"><a class="linkB" href="sistemi/pulizia-e-cura-del-microcemento.html">Pulizia e
+                            cura del
+                            microcemento</a></li>
+                    <li class="herramF"><a class="linkB" href="sistemi/strumenti.html">Strumenti</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col2F">
+                <h6 class="tituloF proyectosF"><strong>PROGETTI</strong></h6>
+                <ul class="ulF proyectos">
+                    <li class="suelosF"><a class="linkB" href="galleria.html#suelos">Rinnovamento del pavimento</a></li>
+                    <li class="paredesF"><a class="linkB" href="galleria.html#paredes">Rivestimento pareti</a></li>
+                    <li class="banyoF"><a class="linkB" href="galleria.html#banyo">Ristrutturazione dei bagni</a></li>
+                    <li class="cocinasF"><a class="linkB" href="galleria.html#cocinas">Ristrutturazione di cucine</a>
+                    </li>
+                    <li class="decontiuosF"><a class="linkB" href="galleria.html#decontinuos">Rivestimenti decorativi
+                            continui</a>
+                    </li>
+                    <li class="mueblesF"><a class="linkB" href="galleria.html#muebles">Arredo di mobili</a></li>
+                    <li class="azulejosF"><a class="linkB" href="galleria.html#azulejos">Coprire piastrelle</a></li>
+                    <li class="metalicosF"><a class="linkB" href="galleria.html#metalicos">Effetti metallizzati</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col3F">
+                <h6 class="tituloF"><strong>PROFESSIONALI</strong></h6>
+                <ul class="ulF profesionalesF">
+                    <li class="clientesF"><a class="linkB" href="portalcliente">Customer portal</a></li>
+                    <li class="distriF"><a class="linkB" href="distributori.html">Distributori</a></li>
+                    <li class="garantF"><a class="linkB" href="garanzia.html">Garanzia</a></li>
+                    <li class="fichatF"><a class="linkB" href="downloads.html#fichas-tecnicas-topciment">Schede
+                            tecniche</a>
+                    </li>
+                    <li class="descargasF"><a class="linkB" href="downloads.html#catalogo-topciment">Downloads</a></li>
+                    <li class="videotutF"><a class="linkB" href="video-tutorials-microcement.html">Video tutorials</a>
+                    </li>
+                    <li class="calcF"><a class="linkB" href="../calc/index.html">Calcolatrice</a></li>
+                    <li class="selloF"><a class="linkB" href="marchio-di-qualita.html">Etichetta di qualità</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col4F">
+                <h6 class="tituloF"><strong>L'AZIENDA</strong></h6>
+                <ul class="ulF empresaF">
+                    <li class="nosotrosF"><a class="linkB" href="chi-siamo.html">Chi siamo</a></li>
+                    <li class="noticiasF"><a class="linkB" href="notizie.html">Notizie</a></li>
+                    <li class="contactoF"><a class="linkB" href="contattaci.html">Contatto</a></li>
+                    <li class="newsletterF"><a class="linkB" href="https://zc.vg/u1iSr">Iscriviti alla nostra
+                            newsletter</a>
+                    </li>
+                    <li class="atencionF">Assistenza cliente a lunedì al venerdì dalle 9:00 alle 18:00</li>
+                    <li class="numFooter">+34 963 92 59 89</li>
+                    <li class="emailF"> info@topciment.com</li>
+                </ul>
+                <p>
+                    <!-- Youtube -->
+                    <a class="linkB social1" href="https://www.youtube.com/user/TopCiment" target="_blank">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x icon"></i>
+                            <i class="fa fa-youtube fa-stack-1x"></i>
+                        </span></a>
+                    <!-- Instagrm -->
+                    <a class="linkB social2" href="https://www.instagram.com/topciment/" target="_blank">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x icon"></i>
+                            <i class="fa fa-instagram  fa-stack-1x"></i>
+                        </span></a>
+                    <!--  Whatsap -->
+                    <a class="linkB social3"
+                        href="https://api.whatsapp.com/send?phone=34647913586&amp;text=Hola&amp;source=&amp;data="
+                        target="_blank"><span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x icon"></i>
+                            <i class="fa fa-whatsapp fa-stack-1x"></i>
+                        </span></a>
+                    <!--Pinterest -->
+                    <a class="linkB social4" href="https://www.pinterest.com/topciment/" target="_blank"><span
+                            class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x icon"></i>
+                            <i class="fa fa-pinterest fa-stack-1x"></i>
+                        </span></a>
+                    <!--Facebook-->
+                    <a class="linkB social5" href="https://es-es.facebook.com/topciment.microcemento"
+                        target="_blank"><span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x icon"></i>
+                            <i class="fa fa-facebook fa-stack-1x"></i>
+                        </span></a>
+                    <!-- Twitter -->
+                    <a class="linkB social6" href="https://twitter.com/topciment" target="_blank"><span
+                            class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x icon"></i>
+                            <i class="fa fa-twitter fa-stack-1x"></i>
+                        </span></a>
+                    <!-- Linkedin -->
+                    <a class="linkB social7" href="https://www.linkedin.com/company/2880536/" target="_blank"><span
+                            class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x icon"></i>
+                            <i class="fa fa-linkedin fa-stack-1x"></i>
+                        </span></a>
+                </p>
+            </div>
+        </div>
+        <div class="row row2">
+            <div class="col-md-1 col-12 col5F">
+                <a href="index.html"><img src=" ../imagenes/logos/Topciment-cuadrado-blanco.png"
+                        class="img-fluid logoF" /></a>
+            </div>
+            <div class="col-md-11 col6F">
+                <small class="direccionF"> © 2020 Grupo Negocios PO,S.L.U. Rosas 33, Manises 46940
+                    España</small><br class="brF">
+                <small class="privaF">
+                    <a class="linkB politicaF"
+                        href=" https://www.topciment.com/it/termini-condizioni-e-dichiarazione-sulla-privacy.html"
+                        rel="nofollow">
+                        Termini, condizioni e dichiarazione sulla privacy</a> |
+                    <a class="linkB cookieF" href="https://www.topciment.com/it/nota-legale.html" rel="nofollow"
+                        class="textoBlanco">Nota Legale</a></small>
+            </div>
         </div>
     </div>
+</footer>
 
     <!-- include jQuery -->
     <script src="../js/jquery-2.1.4.min.js"></script>
@@ -1144,64 +938,7 @@
         //-->
     </script>
 
-    <script>
-        $(document).ready(function () {
-            /**
-             * This part does the "fixed navigation after scroll" functionality
-             * We use the jQuery function scroll() to recalculate our variables as the
-             * page is scrolled/
-             */
-
-            /**
-             * This part causes smooth scrolling using scrollto.js
-             * We target all a tags inside the nav, and apply the scrollto.js to it.
-             */
-            $(".menuMicrocementos a").click(function (evn) {
-                evn.preventDefault();
-                $('html,body').scrollTo(this.hash, this.hash);
-            });
-            /**
-             * This part handles the highlighting functionality.
-             * We use the scroll functionality again, some array creation and
-             * manipulation, class adding and class removing, and conditional testing
-             */
-            var aChildren = $(".menuMicrocementos li").children(); // find the a children of the list items
-            var aArray = []; // create the empty aArray
-            for (var i = 0; i < aChildren.length; i++) {
-                var aChild = aChildren[i];
-                var ahref = $(aChild).attr('href');
-                aArray.push(ahref);
-            } // this for loop fills the aArray with attribute href values
-
-            $(window).scroll(function () {
-                var windowPos = $(window)
-                    .scrollTop(); // get the offset of the window from the top of page
-                var windowHeight = $(window).height(); // get the height of the window
-                var docHeight = $(document).height();
-
-                for (var i = 0; i < aArray.length; i++) {
-                    var theID = aArray[i];
-                    var divPos = $(theID).offset()
-                        .top; // get the offset of the div from the top of page
-                    var divPos = divPos - 200;
-                    var divHeight = $(theID).height(); // get the height of the div in question
-                    if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
-                        $("a[href='" + theID + "']").addClass("activo");
-                    } else {
-                        $("a[href='" + theID + "']").removeClass("activo");
-                    }
-                }
-
-                if (windowPos + windowHeight == docHeight) {
-                    if (!$(".menuMicrocementos li:last-child a").hasClass("activo")) {
-                        var navActiveCurrent = $("activo").attr("href");
-                        $("a[href='" + navActiveCurrent + "']").removeClass("activo");
-                        $(".menuMicrocementos li:last-child a").addClass("activo");
-                    }
-                }
-            });
-        });
-    </script>
+  
 
     <script type="text/javascript" src="../js/parallax.js"></script>
     <script type="text/javascript" src="../js/codigo2.js"></script>
