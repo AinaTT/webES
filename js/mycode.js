@@ -1,4 +1,12 @@
 $(document).ready(function () {
+
+
+  window.addEventListener('resize', () => { 
+  document.querySelector(':root').style
+    .setProperty('--vh', window.innerHeight/100 + 'px');
+})
+
+
   $("img").attr("loading", "lazy")
   // $("img").attr("src", "data-src");
   $('img').addClass('lazyload');
@@ -234,7 +242,7 @@ $(document).ready(function () {
     });
 
 
-  } else if (window.location.href.indexOf("/it/") >= 0) {
+  } else if (window.location.href.indexOf("/it2/") >= 0) {
 
 
     var link1 = '<li class="cursosF"><a class="linkB"  target="_blank" href="https://training.topciment.com">Riserva il tuo corso</a></li>';
@@ -248,10 +256,10 @@ $(document).ready(function () {
     $(".calcF a").attr("href", "https://www.topciment.com/it/calc/index.html")
 
     $.gdprcookie({
-      title: "🍪 Do you accept cookies and the privacy policy?",
-      subtitle: "Select cookies to accept ",
+      title: "🍪 Accettate i cookie e l'informativa sulla privacy?",
+      subtitle: "Selezionare i cookie per accettare. ",
 
-      message: "This website uses its own and third party cookies for its operation, as well as to obtain anonymous statistics on the use of the website. If you continue to browse we consider that you accept its use. You can change the settings or get more information in the  <strong> <a class='linkC' href='https://www.topciment.com/en/cookie-policy.html'>  Cookie Policy </strong>",
+      message: "Questo sito web utilizza i propri cookie e quelli di terzi per il suo funzionamento, nonché per ottenere statistiche anonime sull'utilizzo del sito web. Se continuate a navigare, riteniamo che accettiate il suo utilizzo. È possibile modificare le impostazioni o ottenere ulteriori informazioni nella <strong> <a class='linkC' href='https://www.topciment.com/it/nota-legale.html'> Cookie Policy </strong>",
       delay: 600,
       expires: 1,
       acceptBtnLabel: "Accept Cookies",
@@ -262,24 +270,24 @@ $(document).ready(function () {
       customHideMessage: undefined,
       customShowChecks: undefined,
       cookieTypes: [{
-          type: "Essentialss",
-          value: "Essentialss",
-          description: "These cookies are essential for the website to function properly."
+          type: "Essentials",
+          value: "Essentials",
+          description: "Questi cookie sono essenziali per il corretto funzionamento del sito web."
         },
         {
           type: "Marketingg ",
           value: "Marketingg",
-          description: "Cookies related to marketing, newsletters, social media, etc."
+          description: "Cookie relativi a marketing, newsletter, social media, ecc."
         },
         {
-          type: "Preferencess",
-          value: "Preferencess",
-          description: "These are cookies related to your site's preferences, for example: remembering your user name, site colors, etc."
+          type: "Preferenze",
+          value: "Preferenze",
+          description: "Si tratta di cookie relativi alle preferenze del vostro sito, ad esempio: ricordare il vostro nome, i colori del sito, ecc."
         },
         {
-          type: "Analyticss",
-          value: "Analyticss",
-          description: "Cookies related to site visits, browser type, etc."
+          type: "Analytics",
+          value: "Analytics",
+          description: "Cookie relativi alle visite al sito, al tipo di browser, ecc."
         }
       ],
 
@@ -401,9 +409,6 @@ $(document).ready(function () {
         });
       }
     }
-
-
-
 
     if (scrollTop >= 100) {
 
