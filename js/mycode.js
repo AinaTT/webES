@@ -242,7 +242,7 @@ $(document).ready(function () {
     });
 
 
-  } else if (window.location.href.indexOf("/it2/") >= 0) {
+  } else if (window.location.href.indexOf("/it/") >= 0) {
 
 
     var link1 = '<li class="cursosF"><a class="linkB"  target="_blank" href="https://training.topciment.com">Riserva il tuo corso</a></li>';
