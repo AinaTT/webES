@@ -3,11 +3,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 
-.class1 {
-  /* width: 600px;
+.class1{
+      /* width: 600px;
       left: 600px; */
 }
-
 .h3s {
   font-weight: 400;
   font-size: 16px;
@@ -455,12 +454,11 @@ a {
   }
 
   .txHome2 {
-
-    font-size: 14px;
+  
+     font-size: 14px; 
   }
-
-  .enHome3 {
-    margin-top: -70px;
+  .enHome3{
+     margin-top: -70px;
   }
 }
 
@@ -999,14 +997,6 @@ p a {
   background-color: black !important;
   border: none !important;
   float: right;
-  margin-right: 10px;
-}
-
-.leermas {
-  /* margin-left: 285px !important; */
-  background-color: black !important;
-  border: none !important;
-  margin-top: 20px;
   margin-right: 10px;
 }
 

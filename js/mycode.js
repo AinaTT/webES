@@ -295,6 +295,11 @@ $(document).ready(function () {
 
 
   } else {
+    // var nosotros='<li><a href="https://www.topciment.com/Nosotros.html">Nosotros</a></li>'
+    // $('.botones ul li:last').prepend(nosotros)
+
+    console.log("hola");
+    $(".calcF a").attr("href", "https://www.topciment.com/calc/index.html")
     xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
     $('.zsiq_floatmain').css({
       'display': 'none !important'
@@ -419,14 +424,14 @@ $(document).ready(function () {
         });
 
         $('.botones li').css({
-          'margin-right': '60px'
+          'margin-right': '42px'
         });
       } else {
         $('.botones li').css({
-          'margin-right': '82px'
+          'margin-right': '58px'
         });
       }
-
+  
       $('.dropdown').css({
         'display': 'table'
       });
@@ -473,7 +478,7 @@ $(document).ready(function () {
 
       }
       $('.botones li').css({
-        'margin-right': '82px'
+        'margin-right': '58px'
       });
       $('.botones li').css({
         'margin-right': '129px'

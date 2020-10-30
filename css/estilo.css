@@ -311,7 +311,7 @@ li {}
 
 	.content-a {
 		display: table;
-		font-size: 26px;
+		/* font-size: 26px; */
 	}
 
 	.content-b {
@@ -405,6 +405,7 @@ li {}
 		font-weight: 500;
 	}
 
+
 	.idiomas li a:hover,
 	.idiomas li a.activolang {
 		font-weight: 700;
@@ -424,7 +425,8 @@ li {}
 
 	.botones li a,
 	li.link {
-		color: #808080;
+		/* color: #808080; */
+		color: white;
 	}
 
 	.menuOculto {
