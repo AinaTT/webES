@@ -1,10 +1,10 @@
 $(document).ready(function () {
 
 
-  window.addEventListener('resize', () => { 
-  document.querySelector(':root').style
-    .setProperty('--vh', window.innerHeight/100 + 'px');
-})
+  window.addEventListener('resize', () => {
+    document.querySelector(':root').style
+      .setProperty('--vh', window.innerHeight / 100 + 'px');
+  })
 
 
   $("img").attr("loading", "lazy")
@@ -13,7 +13,7 @@ $(document).ready(function () {
 
   $('div.fullscreen').addClass('lazy2');
   $("img").attr("src", $("img").attr("data-src"));
-  console.log($("img").attr("src", $("img").attr("data-src")));
+  // console.log($("img").attr("src", $("img").attr("data-src")));
 
   $("img").each(function () {
     var datasrc = $(this).attr("data-src");
@@ -24,25 +24,25 @@ $(document).ready(function () {
 
     var datasrc1 = $(this).attr("data-src");
     var src1 = $(this).attr("src");
-    console.log("data-src:" + datasrc1 + "/ src:" + src1);
+    // console.log("data-src:" + datasrc1 + "/ src:" + src1);
   });
 
 
 
   var lazyloadImages;
-  console.log("3");
+
   if ("IntersectionObserver" in window) {
-    console.log("3");
+    
 
     lazyloadImages = document.querySelectorAll(".lazy");
     var imageObserver = new IntersectionObserver(function (entries, observer) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          console.log("a3");
+        
 
           var image = entry.target;
           image.src = image.dataset.src;
-          console.log("3");
+        
           image.classList.remove("lazy");
           imageObserver.unobserve(image);
         }
@@ -298,7 +298,7 @@ $(document).ready(function () {
     // var nosotros='<li><a href="https://www.topciment.com/Nosotros.html">Nosotros</a></li>'
     // $('.botones ul li:last').prepend(nosotros)
 
-    console.log("hola");
+    
     $(".calcF a").attr("href", "https://www.topciment.com/calc/index.html")
     xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
     $('.zsiq_floatmain').css({
@@ -431,7 +431,7 @@ $(document).ready(function () {
           'margin-right': '58px'
         });
       }
-  
+
       $('.dropdown').css({
         'display': 'table'
       });
