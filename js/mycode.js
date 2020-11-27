@@ -295,8 +295,8 @@ $(document).ready(function () {
 
 
   } else {
-    // var nosotros='<li><a href="https://www.topciment.com/Nosotros.html">Nosotros</a></li>'
-    // $('.botones ul li:last').prepend(nosotros)
+     var nosotros='<li><a href="https://www.topciment.com/Nosotros.html">Nosotros</a></li>'
+     $('.botones ul li:last').prepend(nosotros)
 
     
     $(".calcF a").attr("href", "https://www.topciment.com/calc/index.html")

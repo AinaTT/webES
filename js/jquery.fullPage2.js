@@ -1825,7 +1825,7 @@
                 return scroller.y >= 0 && !scrollable.scrollTop();
             } else if (type === 'bottom') {
                 return (0 - scroller.y) + scrollable.scrollTop() + 1 + scrollable.innerHeight() >= scrollable[0].scrollHeight;
-            }
+            } 
         },
         scrollable: function (activeSection) {
             var scrollTop = 0;
@@ -1836,57 +1836,56 @@
             if ($(window).width() > 1200 && $(window).width() < 1345) {
 
 
-                $('.imagen1').css({
-                    'background-position': 'top'
-                });
+                  $('.imagen1').css({
+          'background-position': 'top'
+        });
 
-                $('.botones li').css({
-                    'margin-right': '60px'
-                });
-            } else {
-                $('.botones li').css({
-                    'margin-right': '82px'
-                });
-            }
+        $('.botones li').css({
+          'margin-right': '42px'
+        });
+      } else {
+        $('.botones li').css({
+          'margin-right': '58px'
+        });
+      }
 
-            $('.dropdown').css({
-                'display': 'table'
-            });
-            $('.logo1').css({
-                'display': 'none'
-            });
-            $('.logo2').css({
-                'display': 'inline-block'
-            });
-            $('#header').css({
-                'height': '64px'
-            });
-            $('.menuBar').css({
-                'height': 'inherit'
-            });
-            $('.menuBarContent').css({
-                'width': '1400px'
-            });
-            $('.botones').css({
-                'clear': 'none ',
-                'padding-top': '20px',
-                'margin-left': '100px'
-            });
+      $('.dropdown').css({
+        'display': 'table'
+      });
+      $('.logo1').css({
+        'display': 'none'
+      });
+      $('.logo2').css({
+        'display': 'inline-block'
+      });
+      $('#header').css({
+        'height': '64px'
+      });
+      $('.menuBar').css({
+        'height': 'inherit'
+      });
+      $('.menuBarContent').css({
+        'width': '1400px'
+      });
+      $('.botones').css({
+        'clear': 'none ',
+        'padding-top': '20px',
+        'margin-left': '100px'
+      });
 
-            $('#visiblemovil').css({
-                'top': '0px'
-            });
-            $('.idiomas').css({
-                'display': 'none'
-            });
-            $('#sidebar').css({
-                /* 70px */
-                'top': '100px'
-            });
-            $('#producmenu').css({
-                'margin-left': '30px'
-            });
-
+      $('#visiblemovil').css({
+        'top': '0px'
+      });
+      $('.idiomas').css({
+        'display': 'none'
+      });
+      $('#sidebar').css({
+        /* 70px */
+        'top': '100px'
+      });
+      $('#producmenu').css({
+        'margin-left': '30px'
+      });
 
 
             if (activeSection.find(SLIDES_WRAPPER_SEL).length) {
