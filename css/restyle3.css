@@ -3,10 +3,43 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
 
-.class1 {
-  /* width: 600px;
-      left: 600px; */
+.sistema_link a {
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  border: 1px solid white;
+  transition: all 0.3s ease-in;
+
 }
+
+.sistema_link a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.home_link a {
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  border: 1px solid black;
+  transition: all 0.3s ease-in;
+
+}
+
+.home_link a:hover {
+  color: white;
+  background-color: black;
+}
+
 
 .h3s {
   font-weight: 400;

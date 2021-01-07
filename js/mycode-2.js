@@ -13,7 +13,7 @@ $(document).ready(function () {
 
   $('div.fullscreen').addClass('lazy2');
   $("img").attr("src", $("img").attr("data-src"));
-
+  // console.log($("img").attr("src", $("img").attr("data-src")));
 
   $("img").each(function () {
     var datasrc = $(this).attr("data-src");
@@ -24,7 +24,7 @@ $(document).ready(function () {
 
     var datasrc1 = $(this).attr("data-src");
     var src1 = $(this).attr("src");
-
+    // console.log("data-src:" + datasrc1 + "/ src:" + src1);
   });
 
 
@@ -32,15 +32,17 @@ $(document).ready(function () {
   var lazyloadImages;
 
   if ("IntersectionObserver" in window) {
+    
+
     lazyloadImages = document.querySelectorAll(".lazy");
     var imageObserver = new IntersectionObserver(function (entries, observer) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-
+        
 
           var image = entry.target;
           image.src = image.dataset.src;
-
+        
           image.classList.remove("lazy");
           imageObserver.unobserve(image);
         }
@@ -79,6 +81,15 @@ $(document).ready(function () {
     window.addEventListener("resize", lazyload);
     window.addEventListener("orientationChange", lazyload);
   }
+
+
+
+
+
+
+
+
+
 
 
   /* EN */
@@ -284,8 +295,12 @@ $(document).ready(function () {
 
 
   } else {
+    //  var nosotros='<li><a href="https://www.topciment.com/Nosotros.html">Nosotros</a></li>'
+    //  $('.botones ul li:last').prepend(nosotros)
+
+    
     $(".calcF a").attr("href", "https://www.topciment.com/calc/index.html")
-    xenioowebchat.Start("restore_83659ee5-4d66-473d-8243-6698f86a86c3");
+    xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
     $('.zsiq_floatmain').css({
       'display': 'none !important'
     });
@@ -409,11 +424,11 @@ $(document).ready(function () {
         });
 
         $('.botones li').css({
-          'margin-right': '60px'
+          'margin-right': '42px'
         });
       } else {
         $('.botones li').css({
-          'margin-right': '82px'
+          'margin-right': '58px'
         });
       }
 
@@ -463,7 +478,7 @@ $(document).ready(function () {
 
       }
       $('.botones li').css({
-        'margin-right': '82px'
+        'margin-right': '58px'
       });
       $('.botones li').css({
         'margin-right': '129px'
