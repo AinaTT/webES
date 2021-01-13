@@ -348,10 +348,13 @@ a {
 }
 
 .en2 {
-  font-size: 65px;
-  font-weight: 300;
+  /* font-size: 65px;
+  font-weight: 300; */
+  font-size: 55px;
+  font-weight: 400;
   margin-bottom: 30px;
   margin-top: 30px;
+
 }
 
 .en3 {
@@ -360,6 +363,7 @@ a {
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
 
 .en4 {
   font-size: 34px;
