@@ -30,4 +30,5 @@ ErrorDocument 404 /404page.html
 Redirect 301 /colores.html https://www.topciment.com/sistemas/sttandard-microcemento-bicomponente.html#colores
 Redirect 301 /sttandard.html https://www.topciment.com/sistemas/sttandard-microcemento-bicomponente.html
 Redirect 301 /efectto.html https://www.topciment.com/sistemas/sttandard-microcemento-bicomponente.html
-
+Redirect 301 /nosotros.html https://www.topciment.com/fabricante-microcemento.html
+Redirect 301 /Nosotros.html https://www.topciment.com/fabricante-microcemento.html

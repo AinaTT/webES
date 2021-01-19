@@ -32,17 +32,17 @@ $(document).ready(function () {
   var lazyloadImages;
 
   if ("IntersectionObserver" in window) {
-    
+
 
     lazyloadImages = document.querySelectorAll(".lazy");
     var imageObserver = new IntersectionObserver(function (entries, observer) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-        
+
 
           var image = entry.target;
           image.src = image.dataset.src;
-        
+
           image.classList.remove("lazy");
           imageObserver.unobserve(image);
         }
@@ -295,10 +295,10 @@ $(document).ready(function () {
 
 
   } else {
-    //  var nosotros='<li><a href="https://www.topciment.com/Nosotros.html">Nosotros</a></li>'
+    //  var nosotros='<li><a href="https://www.topciment.com/fabricante-microcemento.html">Nosotros</a></li>'
     //  $('.botones ul li:last').prepend(nosotros)
 
-    
+
     $(".calcF a").attr("href", "https://www.topciment.com/calc/index.html")
     xenioowebchat.Start("83659ee5-4d66-473d-8243-6698f86a86c3");
     $('.zsiq_floatmain').css({
